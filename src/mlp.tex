@@ -6,15 +6,15 @@
 In this chapter we give a more precise definition of the Microarray Layout
 Problem (MLP) and define criteria for evaluating a given layout. The description
 that follows assumes that probes are synthesized with photolithographic masks,
-but the concepts apply to the maskless production as well (with micromirror
+but the concepts also apply to the maskless production (with micromirror
 arrays). Two evaluation criteria are presented: \emph{border length} and \emph{
 conflict index}. As shown later, the conflict index model can be seen as a
 generalization of the border length model.
 
 Formally, we have a set of probes $\CalP = \{p_{1}, p_{2}, \dots, p_{n}\}$,
 where each $p_k \in \{\text{A,C,G,T}\}^\ast$ is produced by a series of $T$
-synthesis steps (frequently, but not necessarily, all probes have the same
-length $\ell$). Each synthesis step $t$ uses a mask $M_t$ to induce the addition
+synthesis steps. Frequently, but not necessarily, all probes have the same
+length $\ell$. Each synthesis step $t$ uses a mask $M_t$ to induce the addition
 of a particular nucleotide $N_t \in \{\text{A,C,G,T}\}$ to a subset of~$\CalP$
 (Fig.~\ref{fig:masking_process}). The \emph{nucleotide deposition sequence}
 $N = N_{1} N_{2} \ldots N_{T}$ corresponding to the sequence of nucleotides
@@ -28,7 +28,7 @@ $p_k$ although, in practice, it contains several million copies of it. Each
 probe is synthesized at a unique spot, hence there is a one-to-one assignment
 between probes and spots (if we assume that there are as many spots as probes,
 i.e., $m=n$). Real microarrays may have complex physical structures but, in this
-thesis, we shall assume that the spots are arranged in a rectangular grid with
+thesis, we assume that the spots are arranged in a rectangular grid with
 $n_r$ rows and $n_c$ columns. We also assume that probes can be assigned to any
 spot.
 
@@ -51,8 +51,8 @@ spots, respectively.
 \centerline{\includegraphics[width=\textwidth]{figures/chip.eps}}
 \caption{Synthesis of a hypothetical 3$\times$3 chip with photolithographic
   masks. Left: chip layout and the 3-mer probe sequences. Center: deposition
-  sequence with 2.5 cycles and probe embeddings (asynchronous). Right: first six
-  masks.}
+  sequence with 2.5 cycles (cycles are delimited with dashed lines) and probe
+  embeddings (asynchronous). Right: first six masks (masks 7 to 10 not shown).}
 \label{fig:masking_process}
 \end{figure}
 
@@ -66,12 +66,12 @@ For cyclic deposition sequences, it is possible to distinguish between two types
 of embeddings: \emph{synchronous} and \emph{asynchronous}. In the former, each
 probe has exactly one nucleotide synthesized in every cycle of the deposition
 sequence; hence, 25 cycles or 100 steps are needed to synthesize probes of
-length 25. With asynchronous embeddings, probes can have any number of
-nucleotides synthesized in any given cycle, allowing shorter deposition
-sequences. For this reason, asynchronous embeddings are usually the choice for
-commercial microarrays.  For instance, all GeneChip arrays that we know of can
-be asynchronously synthesized in 74~steps with 18.5 cycles of TGCA --- we will
-refer to this sequence as the \emph{standard Affymetrix deposition sequence}.
+length 25. In the latter, probes can have any number of nucleotides synthesized
+in any given cycle, allowing shorter deposition sequences. For this reason,
+asynchronous embeddings are usually the choice for commercial microarrays.  For
+instance, all GeneChip arrays that we know of can be asynchronously synthesized
+in 74~steps with 18.5 cycles of TGCA --- we refer to this sequence as the
+\emph{standard Affymetrix deposition sequence} (see Chapter~\ref{ch:affy}).
 
 Ideally, the deposition sequence should be as short as possible in order to
 reduce manufacturing time, cost and probability of errors \citep{Rahmann2003}.
@@ -104,8 +104,8 @@ functions: total border length and total conflict index.
 \section{Border length}
 \label{sec:mlp_border_length}
 
-The first formal definition to the problem of unintended illumination was given
-by \citet{Hannenhalli2002}, who defined the \emph{border length}~$\CalB_t$ of a
+The first formal definition of unintended illumination problem was given by
+\citet{Hannenhalli2002}, who defined the \emph{border length}~$\CalB_t$ of a
 mask~$M_{t}$ as the number of borders separating masked and unmasked spots at
 synthesis step~$t$, that is, the number of border conflicts in $M_{t}$.
 Formally,
@@ -134,9 +134,9 @@ $\CalB_6 = 9$. The total border length of that layout is 52 (masks 7 to 10 not
 shown).
 
 \paragraph{Hamming distance.}
-In the rest of this thesis, we will refer to the \emph{Hamming distance}
-$H(k,k')$ between the embeddings $\eps_k$ and $\eps_{k'}$ as the number of
-synthesis steps in which they differ. Formally,
+In the next chapters, we refer to the \emph{Hamming distance} $H(k,k')$ between
+the embeddings $\eps_k$ and $\eps_{k'}$ as the number of synthesis steps in
+which they differ. Formally,
 %%
 \begin{equation}
 \label{eq:hamming}
@@ -163,7 +163,7 @@ four arcs with the least weights of every node. Furthermore, assuming that the
 chip is a rectangular grid with $n_r$ rows and $n_c$ columns, we delete the
 heaviest $2 \cdot (n_r + n_c)$ remaining arcs, because the spots on the borders
 of the chip have less than four neighbors. It is not difficult to see that the
-cost of any placement must be greather than the total weight of $L$, and we
+cost of any placement must be greather than the total arc weight of $L$, and we
 obtain the following theorem.
 
 \begin{theorem}
@@ -207,8 +207,8 @@ affected in approximately the same way.
 
 The \emph{conflict index} is a quality measure defined with the aim of
 estimating the risk of damaging probes at a particular spot
-\citep{Carvalho2006a} -- it is thus a per-spot or per-probe measure instead of a
-per-mask measure.  Additionally, it takes into account two practical
+\citep{Carvalho2006a}; it is thus a per-spot or per-probe measure instead of a
+per-mask measure. Additionally, it takes into account two practical
 considerations observed by \citet{Kahng2003}:
 %%
 \begin{itemize}
@@ -234,70 +234,11 @@ embedding vector $\eps_{k(s)}$ is
 
 The indicator functions ensure the following conflict condition: During
 step~$t$, there is a conflict at spot~$s$ if and only if $s$ is masked
-($\eps_{k(s),t}=0$) and a close neighbor $s'$ is unmasked ($\eps_{k(s'),t}=1$),
-since light directed at $s'$ may somehow reach $s$.  When $s$ is productive, it
+($\eps_{k(s),t}=0$) and a close neighbor $s'$ is unmasked ($\eps_{k(s'),t}=1$)
+--- since light directed at $s'$ may somehow reach $s$. When $s$ is unmasked, it
 does not matter if it accidentally receives light targeted at a neighbor, and
-when $s'$ is unproductive, there is no risk that it damages probes of $s$.
-
-Function $\gamma(s,s')$ is a ``closeness'' measure between $s$ and $s'$ (to
-account for observation a). It is defined as
-%%
-\begin{equation}\label{eq:dist_weight}
-\gamma(s,s') := (d(s,s'))^{-2},\nopagebreak
-\end{equation}\nopagebreak
-%%
-where $d(s,s')$ is the Euclidean distance between the spots $s$ and $s'$. Note
-that in (\ref{eq:conf_idx}), $s'$ ranges over all neighboring spots that are at
-most three cells away from $s$ (see Fig.~\ref{fig:conflictindex}~left), which is
-in accordance with observation a.
-
-In general, we use the terms \emph{close neighbor} or simply \emph{neighbor} of
-a spot $s$ to refer to a spot $s'$ that is at most three cells away (vertically
-and horizontally) from $s$. In other words, $s'$ is inside a $7\times 7$ region
-centered around $s$. This is in contrast to the terms \emph{direct} or \emph{
-immediate neighbor} of $s$, used to denote a spot $s'$ that is adjacent to $s$
-(in other words, $s'$ shares a common border with $s$ on the chip). Obviously,
-an immediate neighbor $s'$ is also a close neighbor of $s$.
-
-The position-dependent weighting function $\omega(\eps,t)$ accounts for the
-significance of the location inside the probe where the undesired nucleotide is
-introduced in case of accidental illumination (observation b). It is defined as:
-%%
-\begin{equation}\label{eq:pos_mult}
-\omega(\eps,t) := c \cdot \exp{\left(\theta \cdot \lambda(\eps,t)\right)}
-\end{equation}
-%%
-where $c>0$ and $\theta>0$ are constants, and for $1\leq t\leq T$,
-%%
-\begin{equation}\label{eq:base_pos}
-  \lambda(\eps,t) := 1 + \min(b_{\eps,t},\ell_{\eps} - b_{\eps,t}),
-\end{equation}
-%%
-\begin{equation}\label{eq:b_ell}
-  b_{\eps,t} := \sum_{t'=1}^{t} \eps_{t'},
-  \qquad
-  \ell_{\eps} := \sum_{t=1}^{T} \eps_t = b_{\eps,T}.
-\end{equation}
-
-In other words, $\ell_\eps$ is the length of the final probe specified by $\eps$
-(equal to the number of ones in the embedding), and $b_{\eps,t}$ denotes the
-number of nucleotides synthesized up to and including step~$t$.
-
-Note that $\omega(\eps,t)$ grows exponentially from the extremities of the probe
-to its center (see Fig.~\ref{fig:conflictindex} right). The motivation behind
-this definition is that the probability of a successful stable hybridization of
-a probe with its target should increase exponentially with the absolute value of
-its Gibbs free energy, which increases linearly with the length of the longest
-perfect match between probe and target. The parameter $\theta$ controls how
-steeply the exponential weighting function rises towards the middle of the
-probe. In Fig.~\ref{fig:conflictindex} and our experiments, we use probes of
-length $\ell=25$, and parameters $\theta = 5/\ell$ and $c = 1/\exp{(\theta)}$.
-
-Although it is generally agreed that the chances of a successful hybridization
-between probe and target are higher if a mismatched base occurs at the
-extremities of the formed duplex instead of at its center \citep{Hubbell1999}.
-The precise effects of this position is not yet fully understood and has been an
-active topic of research \citep{Binder2005}.
+when $s'$ is masked, there is no risk that it damages probes of $s$ since it is
+not receiving light.
 
 \begin{figure}
 %%
@@ -338,24 +279,102 @@ active topic of research \citep{Binder2005}.
 %%
 \vspace*{-3ex}
 \caption{\label{fig:conflictindex}
-  Ranges of values for both $\gamma$ and $\omega$ on a typical Affymetrix
-  chip where probes of length~25 are synthesized in~74 masking steps. Left:
-  approximate values of the distance-dependent weighting function
-  $\gamma(s,s')$ for a spot $s$ in the center and close
-  neighbors~$s'$. Right:
-  position-dependent weights $\omega(\eps,t)$ on the y-axis for each value
-  of~$b_{\eps,t}\in\{0,\dots,25\}$ on the x-axis, assuming $\ell_\eps=25$.}%
+  Ranges of values for both $\gamma$ and $\omega$ on a typical Affymetrix chip
+  where probes of length $\ell=25$ are synthesized in $T=74$ masking steps.
+  Left: approximate values of the distance-dependent weighting function
+  $\gamma(s,s')$ for a spot $s$ in the center and close neighbors~$s'$. Right:
+  position-dependent weights $\omega(\eps,t)$ on the y-axis for each value of~
+  $b_{\eps,t}\in\{0,\dots,25\}$ on the x-axis, using $\theta = 5/\ell$ and
+  $c = 1/\exp{(\theta)}$.
+  }%
 \end{figure}
 
+Function $\gamma(s,s')$ is a ``closeness'' measure between $s$ and $s'$ (to
+account for observation a). We defined it as
+%%
+\begin{equation}\label{eq:dist_weight}
+\gamma(s,s') := (d(s,s'))^{-2},\nopagebreak
+\end{equation}\nopagebreak
+%%
+where $d(s,s')$ is the Euclidean distance between the spots $s$ and $s'$. Note
+that in (\ref{eq:conf_idx}), $s'$ ranges over all neighboring spots that are at
+most three cells away from $s$ (see Fig.~\ref{fig:conflictindex}, left), which is
+in accordance with observation a.
+
+In general, we use the terms \emph{close neighbor} or simply \emph{neighbor} of
+a spot $s$ to refer to a spot $s'$ that is at most three cells away (vertically
+and horizontally) from $s$. In other words, $s'$ is inside a $7\times 7$ region
+centered around $s$. This is in contrast to the terms \emph{direct} or \emph{
+immediate neighbor} of $s$, used to denote a spot $s'$ that is adjacent to $s$
+(in other words, when $s'$ shares a common border with $s$ on the chip).
+Obviously, an immediate neighbor $s'$ is also a close neighbor of $s$.
+
+The position-dependent weighting function $\omega(\eps,t)$ accounts for the
+significance of the location inside the probe where the undesired nucleotide is
+introduced in case of accidental illumination (observation b). We defined it as:
+%%
+\begin{equation}\label{eq:pos_mult}
+\omega(\eps,t) := c \cdot \exp{\left(\theta \cdot \lambda(\eps,t)\right)}
+\end{equation}
+%%
+where $c>0$ and $\theta>0$ are constants, and for $1\leq t\leq T$,
+%%
+\begin{equation}\label{eq:base_pos}
+  \lambda(\eps,t) := 1 + \min(b_{\eps,t},\ell_{\eps} - b_{\eps,t}),
+\end{equation}
+%%
+\begin{equation}\label{eq:b_ell}
+  b_{\eps,t} := \sum_{t'=1}^{t} \eps_{t'},
+  \qquad
+  \ell_{\eps} := \sum_{t=1}^{T} \eps_t = b_{\eps,T}.
+\end{equation}
+
+In other words, $\ell_\eps$ is the length of the final probe specified by $\eps$
+(equal to the number of ones in the embedding), and $b_{\eps,t}$ denotes the
+number of nucleotides synthesized up to and including step~$t$.
+
+Note that $\omega(\eps,t)$ grows exponentially from the extremities of the probe
+to its center (see Fig.~\ref{fig:conflictindex}, right). The motivation behind
+this definition is that the probability of a successful stable hybridization of
+a probe with its target should increase exponentially with the absolute value of
+its Gibbs free energy, which increases linearly with the length of the longest
+perfect match between probe and target. The parameter $\theta$ controls how
+steeply the exponential weighting function rises towards the middle of the
+probe. In our experiments, unless stated otherwise, we use probes of length
+$\ell=25$, and parameters $\theta = 5/\ell$ and $c = 1/\exp{(\theta)}$.
+
+Although it is generally agreed that the chances of a successful hybridization
+between probe and target are higher if a mismatched base occurs at the
+extremities of the formed duplex instead of at its center \citep{Hubbell1999}.
+The precise effects of this position is not yet fully understood and has been an
+active topic of research \citep{Binder2005}.
+
+The conflict index $\CalC(s)$ attempts to estimate the risk of damaging the
+probes of a spot $s$ due to unintended illumination. The definitions of $\gamma$
+and $\omega$ given here are an arbitrary choice in an attempt to capture the
+characteristics of the problem.
+
+The most appropriate choice of $\gamma$ and $\omega$ depend on several
+attributes of the specific technology utilized to produce the chips such as the
+size of the spots, the density of the probes on the chip, the physical
+properties of the light being used (intensity, frequency, etc.), the distance
+between the light source and the mask, and the distance between the mask and the
+chip surface.
+
+Finding the best choice of $\gamma$ and $\omega$ for a particular technology is
+beyond the scope of this thesis. We note, however, that all algorithms discussed
+in the next chapters were developed to work independently of the values given by
+these functions.
+
 \paragraph{Conflict Index distance.}
-Many of the algorithms that will be discussed in later chapters were initially
-developed for border length minimization, and they usually rely on the Hamming
-distance defined earlier (\ref{eq:hamming}). We have adapted some of these
-algorithms to work with conflict index minimization by using the \emph{conflict
-index distance}, which extends the Hamming distance by taking into account the
-position inside the probe where the conflict occurs (observation b). We define
-the conflict index distance $C(k,k')$ between the embeddings $\eps_k$ and
-$\eps_{k'}$ as:
+Many of the algorithms discussed in later chapters were initially developed for
+border length minimization, and they usually rely on the Hamming distance
+defined earlier (\ref{eq:hamming}). We have adapted some of these algorithms to
+work with conflict index minimization by using the \emph{conflict index
+distance}, which extends the Hamming distance by taking into account the
+position inside the probe where the conflict occurs (observation b). The
+conflict index distance $C(k,k')$ between the embeddings $\eps_k$ and
+$\eps_{k'}$ is defined as:
 %%
 \begin{equation}
 \label{eq:ci_dist}
@@ -370,28 +389,10 @@ C(k,k') := \sum_{t=1}^{T}
 \end{equation}
 
 The conflict index distance $C(k,k')$ can be interpreted as the sum of the
-conflict indices resulting from placing probes $p_k$ and $p_{k'}$ at
-hypothetical neighboring spots, ignoring the distance between these spots (note
-that there is no dependency on $\gamma$) and the conflicts generated by other
-neighbors.
-
-\subsection{The Meaning of Conflict Index}
-
-The conflict index $\CalC(s)$ attempts to estimate the risk of damaging the
-probes of a spot $s$ due to the unwanted illumination problem. The definitions
-of $\gamma$ and $\omega$ given here are an arbitrary choice in an attempt to
-capture the characteristics of the problem.
-
-The most appropriate choice of $\gamma$ and $\omega$ depend on several
-attributes of the specific technology used to produce the chips such as the
-physical properties of the light (intensity, frequency, etc.), the size of the
-spots, the density of the probes on the chip, the distance between the light
-source and the mask and the distance between the mask and the chip surface.
-
-Finding the best choice of $\gamma$ and $\omega$ for a particular technology is
-beyond the scope of this thesis. We note, however, that all algorithms discussed
-in the next chapters were developed to work independently of the values given by
-these functions.
+conflict indices resulting from placing probes with embeddings $\eps_k$ and
+$\eps_{k'}$ at hypothetical neighboring spots, ignoring the distance between
+these spots (note that there is no dependency on $\gamma$) and the conflicts
+generated by other neighbors.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Chip Quality Measures}
@@ -402,25 +403,26 @@ length as well as conflict index minimization. The relation between these two
 measures becomes clear if $\gamma(s,s')$ and $\omega(\eps,t)$ are re-defined as
 follows: Set $\gamma(s,s') := 1$ if $s'$ is a direct neighbor of~ $s$, and $:=0$
 otherwise. Also, set $\omega(\eps,t) := 1/2$, so that conflicts always have the
-same weight, independently of where they occur. Now
+same weight, independently of the position in the probe where they occur. Now
 $\sum_s\, \CalC(s) = \sum_{t=1}^T\, \CalB_t$; that is, total border length is
 equivalent to the sum of conflict indices for a particular choice of $\gamma$
 and $\omega$. For the choices~(\ref{eq:dist_weight}) and~(\ref{eq:pos_mult}),
 they are not equivalent but still correlated, since a good layout has low border
 lengths as well as low conflict indices.
 
-To better compare border lengths for chips of different sizes, we divide by the
-number of internal borders of the chip $n_b$, which equals
-$n_b = n_r(n_c - 1) + n_c(n_r - 1)$, assuming that the chip is a rectangular
-grid with $n_r$ rows and $n_c$ columns. We thus call
+To better compare border lengths for chips of different sizes, we usually divide
+the total border length by the number of internal borders of the chip, $n_b$,
+which equals $n_r(n_c - 1) + n_c(n_r - 1)$ if the the chip is a rectangular grid
+with $n_r$ rows and $n_c$ columns. We thus call
 $1/n_b \cdot \sum_{t=1}^T\, \CalB_t$ the \emph{normalized border length}. This
-can be further divided by the number of synthesis steps to give the
-\emph{normalized border length per mask}
-$1/(n_b \cdot T) \cdot \sum_{t=1}^T\, \CalB_t$.
+can be further divided by the number of synthesis steps to give the \emph{
+normalized border length per mask}
+$1/(n_b \cdot T) \cdot \sum_{t=1}^T\, \CalB_t$. We may also refer to the
+normalized border length of a particular mask $M_t$ as $B_t/n_b$.
 
 Similarly, it is useful to divide the total conflict index by the number of
-probes, and we define the \emph{average conflict index} as
-$1/|\CalP| \cdot \sum_s\, \CalC(s)$.
+probes on the chip, and we define the \emph{average conflict index} of a layout
+as $1/|\CalP| \cdot \sum_s\, \CalC(s)$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{How hard is the Microarray Layout Problem?}
@@ -428,7 +430,7 @@ $1/|\CalP| \cdot \sum_s\, \CalC(s)$.
 
 The MLP appears to be hard because of the super-exponential number of possible
 arrangements, although no NP-hardness proof is yet known. A formulation of the
-MLP as a Quadratic Assignment Problem (QAP) was given by \citet{Carvalho2006a}.
+MLP as a Quadratic Assignment Problem (QAP) is given in Chapter~\ref{ch:qap}.
 The QAP is a classical combinatorial optimization problem that is, in general,
 NP-hard, and particularly hard to solve in practice \citep{Cela1997}. Optimal
 solutions are thus unlikely to be found even for small chips and even if we
@@ -446,8 +448,7 @@ into smaller sub-regions before the placement phase in order to reduce running
 times, especially on larger chips.
 
 The most important placement algorithms are surveyed in
-Chapter~\ref{ch:placement}. The QAP formulation of the MLP is then presented in
-Chapter~\ref{ch:qap}. Re-embedding algorithms are discussed in
-Chapter~\ref{ch:reembed}, whereas partitioning algorithms are the focus of
+Chapter~\ref{ch:placement}, whereas re-embedding algorithms are discussed in
+Chapter~\ref{ch:reembed}. Partitioning algorithms are the focus of
 Chapter~\ref{ch:part}. Finally, we present recent developments that
 simultaneously place and re-embed probes in Chapter~\ref{ch:merge}.
