@@ -28,7 +28,7 @@ combined approaches.
 As a suggestion for further work, we note the needed for improving
 the selection of probe candidates considered for filling each spot. For
 example, instead using a sorted list of probes, one could use a TSP tour
-like the early algorithms described in Sec.~\ref{sec:placement}. However,
+like the early algorithms described in Sec.~\ref{sec:placement_early}. However,
 it is not clear if the more time-consuming TSP approach will pay off
 (instead, we could use this extra time to look at more candidates).
 
@@ -36,3 +36,6 @@ An alternative that sounds interesting would be to build some kind of
 ``clustering'' of the probes, perhaps based on a graph or a tree, in such a
 way that we can find similar probes more easily and spend time on candidates
 that are more likely to produce less conflicts.
+
+Question: why PM and MM probes are placed together and aligned except for the
+middle base?

@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Analysis of Affymetrix Microarrays}
+\label{ch:affy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+General physical structure of GeneChip arrays. Control and special probes,
+checkerboard patterns on the borders, empty spots.
+
+Probe pairs: perfect match (PM) and mismatch (MM) probes. Rows of PM and MM
+probes on the chip.
+
+As we mentioned in Chaper~\ref{ch:affy}, all GeneChip arrays that we know of can be
+asynchronously synthesized in 74~steps with the standard Affymetrix deposition sequence
+(18.5 cycles of TGCA).
+
+This suggests that only sub-sequences of this sequence
+can be used as probes on Affymetrix chips.
+\citet{Rahmann2006SubsequenceCombinatorics} shows that this
+covers about 98.45\% of all 25-mers, however, it seems that Affymetrix uses
+an even more restrictive probe selection criterion. This is because 
+GeneChip probes
+always appear in pairs, with the perfect match (PM) and the mismatch (MM) probes being located
+next to each other (in alternating rows of PM and MM probes),
+and there is evidence that the embeddings of these probes are aligned in such a way
+that only the middle bases are not aligned.

@@ -1,6 +1,6 @@
 set terminal epslatex color 10
 set output "posweights.eps"
-set size .55,.55
+set size .75,.65
 
 #set terminal png size 880,660
 #set output "position_weights.png"
