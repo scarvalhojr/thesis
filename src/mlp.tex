@@ -138,8 +138,7 @@ In the next chapters, we refer to the \emph{Hamming distance} $H(k,k')$ between
 the embeddings $\eps_k$ and $\eps_{k'}$ as the number of synthesis steps in
 which they differ. Formally,
 %%
-\begin{equation}
-\label{eq:hamming}
+\begin{equation}\label{eq:hamming}
   H(k,k') := \sum_{t=1}^{T} \Ind{\eps_{k,t} \neq \eps_{k',t}}.
 \end{equation}
 
@@ -402,8 +401,8 @@ Most of the algorithms discussed in the next chapters can work with border
 length as well as conflict index minimization. The relation between these two
 measures becomes clear if $\gamma(s,s')$ and $\omega(\eps,t)$ are re-defined as
 follows: Set $\gamma(s,s') := 1$ if $s'$ is a direct neighbor of~ $s$, and $:=0$
-otherwise. Also, set $\omega(\eps,t) := 1/2$, so that conflicts always have the
-same weight, independently of the position in the probe where they occur. Now
+otherwise. Also, set $c=1/2$ and $\theta=0$ so that $\omega(\eps,t) := 1/2$
+independently of the position in the probe where the conflict occurs. Now
 $\sum_s\, \CalC(s) = \sum_{t=1}^T\, \CalB_t$; that is, total border length is
 equivalent to the sum of conflict indices for a particular choice of $\gamma$
 and $\omega$. For the choices~(\ref{eq:dist_weight}) and~(\ref{eq:pos_mult}),
