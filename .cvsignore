@@ -1,10 +1,2 @@
-*.aux
-*.dvi
-*.log
-*.pdf
-*.flc
-*.bbl
-*.blg
-*.toc
 examples
 thrash
