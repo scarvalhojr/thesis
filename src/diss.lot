@@ -1,0 +1,10 @@
+\select@language {american}
+\select@language {american}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces \relax \mathversion {bold}Normalized border length (NBL) and average conflict index (ACI) of layouts produced by Row-Epitaxial and Greedy+\ placement (Pl.), followed by Sequential re-embedding (Re-emb.) with thresholds $W = 0.1\%$ for border length minimization and $W = 0.5\%$ for conflict index minimization. $Q$ is the number of probe candidates considered for each spot during placement. Running times are given in seconds.}}{31}
+\addvspace {10\p@ }

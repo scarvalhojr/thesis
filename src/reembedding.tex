@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Re-embedding}
+\label{ch:reembed}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Once the probes have been placed, conflicts can be further reduced by
+re-embedding the probes without changing their locations. All
+re-embedding algorithms presented in this section are based on the
+Optimum Single Probe Embedding (OSPE) introduced by \citet{Kahng2002}.
+OSPE is a dynamic programming for computing an optimum embedding of a
+single probe with respect to its neighbors, whose embeddings are
+considered as fixed. The algorithm was originally developed for border
+length minimization but here we present a more general form designed
+for the conflict index model \citep{Carvalho2006}.
+
+\section{Optimum Single Probe Embedding}
+\label{sec:reembed_ospe}
+
+The OSPE algorithm can be seen as a special case of a global alignment
+between a probe sequence $p$ of length $\ell$ and the deposition
+sequence $N$ of length $T$, disallowing mismatches and gaps in $N$.
+We assume that $p$ is placed at spot $s$, and that we know the
+embeddings of all probes placed at spots near $s$.
+
+The optimal embedding of $p$ into $N$ is built by determining the
+minimum cost of embedding a prefix of $p$ into a prefix of $N$: We use
+an $(\ell + 1) \times (T + 1)$ matrix $D$, where $D[i,t]$ is defined
+as the minimum cost of an embedding of $p[1..i]$ into $N[1..t]$. The
+cost is the sum of conflicts induced by the embedding of $p[1..i]$ on
+its neighbors, plus the conflicts suffered by $p[1..i]$ because of the
+embeddings of its neighbors.
+
+We can compute the value for $D[i,t]$ by looking at two previous
+entries in the matrix: $D[i,t-1]$ and $D[i-1,t-1]$. The reason is that
+$D[i,t]$ is the minimum cost of embedding $p[1..i]$ up to the
+$t$-th synthesis step, which can only be obtained from the previous
+step ($t-1$) by either masking or unmasking spot~$s$ at step~$t$.
+
+If $s$ is productive at step $t$, base $N_t$ is appended to
+$p[1..i-1]$; this is only possible if $p[i]=N[t]$. In this case a cost
+$U_t$ is added for the risk of damaging probes at neighboring spots
+$s'$. We know that $p[1..i-1]$ can be embedded in $N[1..t-1]$ with
+optimal cost $D[i-1,t-1]$.  Hence, the minimum cost at step $t$, if
+$s$ is productive, is $D[i-1,t-1] + U_t$.  According to the conflict
+index model,
+\[
+U_t := \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
+  \Ind{\eps_{k(s'),t}=0}
+  \cdot \omega(\eps_{k(s')},t)
+  \cdot \gamma(s',s).
+\]
+
+
+If $s$ is masked at step $t$, no base is appended to $p[1..i]$, but a
+cost $M_{i,t}$ must be added for the risk of damaging $p$ (by light
+directed at neighboring spots $s'$). Since $D[i,t-1]$ is the minimum
+cost of embedding $p[1..i]$ in $N[1..t-1]$, the minimum cost up to step
+$t$, if $s$ is unmasked, is $D[i,t-1] + M_{i,t}$.
+
+Note that $M_{i,t}$ depends on the number of bases $p$ already
+contains (that is, on $i$): Each unmasked neighboring spot $s'$
+generates a conflict on $p$ with cost $\gamma(s,s') \cdot c \cdot
+\exp[\theta\cdot (1+\min\{i,\ell-i\})]$, in accordance with
+(\ref{eq:pos_mult})--(\ref{eq:b_ell}). Thus
+\[
+M_{i,t} := c \cdot \exp[\theta\cdot (1+\min\{i,\ell-i\})] \cdot
+\sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
+\Ind{\eps_{k(s'),t}=1}  \cdot \gamma(s,s').
+\]
+
+Finally, $D[i,t]$ is computed as the minimum cost of the possible
+actions,
+%%
+\[
+D[i,t] := \begin{cases}
+  \min \{\, D[i,t-1] + M_{i,t},\;  D[i-1,t-1] + U_t \,\}
+  & \text{ if $p[i]=N[t]$,}\\
+  D[i,t-1] + M_{i,t}
+  & \text{ if $p[i]\neq N[t]$.}
+  \end{cases}
+\]
+
+The first column of $D$ is initialized as follows: $D[0,0] = 0$ and
+$D[i,0] = \infty$ for $0 < i \leq \ell$, since no probe of length
+$\ell > 0$ can be embedded into an empty deposition sequence. The
+first row is initialized by setting $D[0,t] = D[0,t-1]+M_{0,t}$ for
+$0<t\leq T$.
+
+If we assume that costs $U_t$ and $M_{i,t}$ can be computed in
+constant time, the time complexity of the OSPE algorithm is $O(\ell
+T)$ since there are $O(\ell T)$ entries in $D$ to compute. The algorithm can
+be rather time-consuming in the general form presented here, since we
+have to look at the embeddings of up to 48 neighbors around~$s$.
+Naturally, it runs much faster for border length minimization, since
+there are only four neighbors, and there are neither
+position-dependent ($\omega$) nor distance-dependent ($\gamma$)
+weights to compute. In any case, a few optimizations significantly
+reduce the running time.  For instance, in each row, only the columns
+between the left-most and the right-most embedding of $p$ in $N$ need
+to be computed.
+
+Once $D$ is computed, the minimum cost is $D[\ell,T]$, and an
+optimal embedding of $p$ into $N$ can be constructed by tracing a path from
+$D[\ell,T]$ back to $D[0,0]$, similarly to the procedure used to build an
+optimal global alignment.  This takes $O(T)$ time.
+
+
+
+\section{Re-embedding algorithms}
+\label{sec:reembed_alg}
+
+The OSPE algorithm is the basic operation of several post-placement
+optimization algorithms: Greedy, Batched Greedy and Chessboard
+\citep{Kahng2002}, and Sequential~\citep{Kahng2003a}. Their main difference
+lies in the order in which the probes are re-embedded.
+
+Since OSPE never increases the amount of conflicts in the region
+around the re-embedded probe, optimization algorithms can execute
+several re-embedding operations without risk of worsening the current
+solution. Moreover, probes can be re-embedded several times since new
+improvements may be possible once neighbors are changed.
+In fact, the following
+algorithms work in repeating cycles of optimization until no more
+improvements are possible (when a local optimal solution is found), or
+until improvements drop below a given threshold.
+  
+The Greedy algorithm uses OSPE to compute, for each spot of the chip,
+the maximum reduction of border conflicts achievable by optimally
+re-embedding its probe. It then selects a spot $s$ with the highest
+gain (reduction of conflicts) and re-embeds its probe optimally,
+updating the gains of affected neighboring spots.
+
+A faster version of this algorithm, called Batched Greedy, pre-selects
+several spots for re-embedding and thus sacrifices its greedy nature
+by postponing the update of gains.
+
+The Chessboard optimization is based on the fact that a chip can be bi-colored
+like a chessboard, in such a way that the embeddings of probes located on
+white spots are independent of those placed on black spots (with respect to
+border length), and vice-versa. The Chessboard uses this coloring to alternate
+the optimal re-embedding of probes located on black and white spots.
+
+The Sequential optimization is the simplest algorithm among the four.
+It proceeds spot by spot, from top to bottom, from left to right,
+re-embedding each probe optimally. Once the end of the array is
+reached, it restarts at the top left for the next iteration.
+
+Surprisingly, the Sequential algorithm achieves the greatest reduction
+of border conflicts with a running time comparable to Batched Greedy,
+the fastest among the four.  All re-embedding algorithms mentioned
+here were initially developed for border length minimization, but they
+can all be applied to the conflict index model as well. For the
+Chessboard optimization, $4\times 4=16$ colors must be used
+instead of~$2$.

@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: diss.aux
+The style file: abbrvnat.bst
+Database file #1: diss.bib
+Warning--I didn't find a database entry for "BINDER05"
+You've used 13 entries,
+            2774 wiz_defined-function locations,
+            713 strings with 7657 characters,
+and the built_in function-call counts, 7600 in all, are:
+= -- 713
+> -- 442
+< -- 17
++ -- 150
+- -- 135
+* -- 627
+:= -- 1146
+add.period$ -- 53
+call.type$ -- 13
+change.case$ -- 67
+chr.to.int$ -- 11
+cite$ -- 26
+duplicate$ -- 327
+empty$ -- 587
+format.name$ -- 154
+if$ -- 1636
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 14
+newline$ -- 82
+num.names$ -- 58
+pop$ -- 157
+preamble$ -- 1
+purify$ -- 55
+quote$ -- 0
+skip$ -- 255
+stack$ -- 0
+substring$ -- 363
+swap$ -- 85
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 138
+warning$ -- 0
+while$ -- 72
+width$ -- 0
+write$ -- 202
+(There was 1 warning)

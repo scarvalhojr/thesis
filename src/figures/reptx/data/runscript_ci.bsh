@@ -1,0 +1,34 @@
+LOGFILE="`basename $0`.log"
+ARRAYOPT="java -cp $ARRAYOPT_HOME/bin arrayopt.textui.ArrayOpt"
+
+probelen="25"
+
+echo "Start: `date`" >> ${LOGFILE}
+echo "Host: `hostname`" >> ${LOGFILE}
+
+for (( filenum = 1; filenum <= 5; filenum++))
+do
+	for dim in 200 350 500
+	do
+		let "nprobes = dim * dim"
+
+		for alg in "GREEDY-CI-10K-S" "GREEDY-CI-20K-S" "GREEDY-CI-30K-S"
+		do
+			optimiz="NONE"
+			
+			basename="SRS_${dim}x${dim}-${nprobes}-25_0${filenum}"
+			input="${basename}_rand_sync"
+			output="${basename}_${alg}_${optimiz}"
+			param="simple nofix ${input} ${dim} ${dim} ${nprobes} ${probelen} SYNC ${alg} ${optimiz}"
+			options="check calc-ci no-print"
+			
+			echo "---------------------------" >> ${LOGFILE}
+			top -b -d1 | head -2 >> ${LOGFILE}
+			echo >> ${LOGFILE}
+			echo ${input} ${alg} ${optimiz} >> ${LOGFILE}
+			
+			#${ARRAYOPT} ${param} ${options} > ${output} 2>> ${LOGFILE}
+			${ARRAYOPT} ${param} ${options} 2>> ${LOGFILE}
+		done
+	done
+done

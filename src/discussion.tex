@@ -1,0 +1,38 @@
+\chapter{Discussion}
+\label{ch:discussion}
+
+This thesis makes several contributions to the field of....
+
+We introduce the \emph{conflict index}...
+
+In Chapter X we present a algorithm...
+
+We are not aware of any previous work that combines placement and
+re-embedding, even our results showed that such an approach has
+obvious benefits...
+
+We have surveyed algorithms for the microarray layout problem (MLP), divided
+into placement, (re-)embedding, and partitioning algorithms.  Because of the
+super-exponential number of possible layouts and the relation to the quadratic
+assignment problem (QAP), we cannot expect to find optimal solutions. Indeed,
+the algorithms we present are heuristics with an emphasis on good scalability
+and ideally a user-controllable trade-off between running time and solution
+quality, albeit without any known provable guarantees.
+
+Among the presented approaches, two recent ones (Pivot Partitioning and
+\Greedyplus) indicate that the traditional ``place first and then re-embed''
+approach can be improved upon by merging the partitioning/placement and
+(re-)embedding phases. Ongoing work will show the full potential of such
+combined approaches.
+
+As a suggestion for further work, we note the needed for improving
+the selection of probe candidates considered for filling each spot. For
+example, instead using a sorted list of probes, one could use a TSP tour
+like the early algorithms described in Sec.~\ref{sec:placement}. However,
+it is not clear if the more time-consuming TSP approach will pay off
+(instead, we could use this extra time to look at more candidates).
+
+An alternative that sounds interesting would be to build some kind of
+``clustering'' of the probes, perhaps based on a graph or a tree, in such a
+way that we can find similar probes more easily and spend time on candidates
+that are more likely to produce less conflicts.

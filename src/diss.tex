@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  D I S S E R T A T I O N
+%%
+%%  Sergio A. de Carvalho Jr.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,pagesize,a4paper,BCOR1cm,DIV13,headsepline,cleardoubleplain,chapterprefix,halfparskip,pointlessnumbers,tablecaptionabove]{scrbook}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{latexsym}
+\usepackage[american]{babel} 
+\usepackage[round]{natbib}
+\usepackage{longtable}
+\usepackage{graphicx}\graphicspath{{./figures/}}
+\usepackage{url}
+\usepackage{bbm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Further document formatting instructions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcapindent{1em}
+\addtokomafont{caption}{\small}
+\setkomafont{captionlabel}{\sffamily\bfseries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New environments and commands; hyphenation exceptions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{def}
+\hyphenation{phyco-erythrin strept-avidin oligo-nu-cleo-tide
+Af-fy-met-rix tran-script hy-bri-di-za-tion cRNAs cRNA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Date handed-in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\handindate}{January~2007}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beginning of document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\selectlanguage{\american}
+\frontmatter\pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title pages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Improving the Production of Oligonucleotide Microarrays}
+\author{S\'ergio Anibal de Carvalho Junior}
+\date{\handindate}
+\publishers{\large{PhD thesis submitted to the\\
+  Techinical Faculty of Bielefeld University, Germany\\
+  for the degree of Dr.~rer.~nat.\\
+  ~\\
+  Supervisor:\\
+  Dr.~Sven Rahmann\\
+  }}
+\lowertitleback{
+  1. Referee: Prof.~Dr.~Jens~Stoye\\
+  2. Referee: Prof.~Dr.~Robert~Giegerich\\[2ex]
+  }
+%% \dedication{}
+\maketitle[-1]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Front matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\setcounter{tocdepth}{1}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{notation}
+
+\input{foreword}
+\clearpage\pagestyle{headings}
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Main Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{introduction}
+\input{mlp}
+\input{placement}
+\input{reembedding}
+\input{partitioning}
+\input{merging}
+\input{discussion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{abbrvnat}
+\bibliography{diss}
+
+%\cleardoublepage
+%\part*{Appendix}
+%\appendix
+%\input{Software}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

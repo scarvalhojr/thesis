@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Foreword}
+\addcontentsline{toc}{chapter}{Foreword}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Microarrays are a ubiquitous tool in molecular biology with a wide range of
+applications on a whole-genome scale including high-throughput gene expression
+analysis, genotyping, and resequencing.
+
+Several different microarray platforms exist, but this thesis focuses on
+high-density oligonucleotide arrays. The advantage of higher densities arrays
+is that they allow, for instance, the simultaneous measurement of the expression
+of several thousand genes at once.
+
+High-density microarrays are usually produced by light-directed combinatorial
+chemistry that builds the probe sequences base-by-base. Because of the natural
+properties of light, the quality of a microarray can be improved by carefully
+designing the physical arrangement, or \emph{layout}, of its probes.
+
+In this thesis, we review models for evaluating the layout of oligonucleotide
+microarrays and survey algorithmic approaches that can be used in their design.
+
+%% What follows is from Sven's thesis: use it as a template
+
+DNA chips allow to quickly obtain and compare gene expression profiles
+of different cell or tissue samples. As one of many applications, one
+hopes to better understand various types and subtypes of cancer and to
+improve cancer therapy by characterizing the differences between
+the expression profiles of healthy cells and tumor cells.
+
+The first chapter of this thesis offers an overview of existing
+microarray technologies and contrasts them with other techniques for
+gene expression analysis. High-density oligonucleotide arrays are
+described in detail.
+
+Gene expression analysis with DNA chips is a high-throughput technique
+that produces massive amounts of data; however, this technique is not
+error-free. Each step of an experiment must be performed carefully. In
+particular, the DNA chip must be carefully designed and manufactured.
+This thesis proposes and describes solutions for some of the
+algorithmic problems that arise in this phase. These problems are
+formulated in detail in the last section of Chapter x.
+
+My research started with the general question of how to find
+oligonucleotide probes for highly homologous transcripts when it
+cannot be guaranteed that a sufficiently large set of clearly
+transcript-specific (or \emph{unique}) probes can be found. An
+interesting future large-scale application could be the individual
+expression measurement of all splice variations of all genes in the
+human genome, for example. The basic idea was to find several
+\emph{non-unique} probes such that different probes hybridize to
+different combinations of targets, with the hope that the measured
+signal can then be decoded into the individual expression levels. Two
+question then follow immediately: How does the decoding work, and how
+can the probes be designed in a way that makes the decoding as simple
+as possible?
+
+In early 2001, custom probe design was in its infancy. The design of
+the large commercial chips, such as the Affymetrix GeneChip\textR, was
+a well guarded secret of the respective companies. Several other
+research groups were also beginning to work on probe selection, and
+their results, made the
+problem more popular.  I soon realized that, before actually working
+on non-unique probes, more fundamental questions should be addressed.
+A high-performance large-scale probe selection system for unique
+probes would be very useful but did not exist. Such a system could
+then be used as a basis for non-unique probe design. These
+considerations are reflected in this thesis.
+
+Once a set of probes is chosen for a chip design, the chip must be
+produced. With several technologies, such as the Affymetrix
+GeneChip\textR\ arrays and febit's {\sffamily geniom}\textR\ 
+{\sffamily one} system, the probes are synthesized in situ on the chip
+with a combination of photolithography and combinatorial chemistry.
+We consider the problem of optimizing the nucleotide deposition
+sequence to lower production costs and to decrease the overall error
+rate during synthesis.
+
+A concluding discussion about the results of this thesis and an
+outlook into the future can be found in Chapter~\ref{ch:discussion}.
+
+\paragraph{Publications.}
+Parts of this thesis have been published in advance.
+
+This thesis also contains previously unpublished material, namely
+\begin{itemize}
+\item new placement algorithm that simultaneously places and re-embeds
+  the probes
+\end{itemize}
+
+\paragraph{Acknowledgments.}
+This work was carried out while I was at the...
+It has been a very enjoyable experience, thanks to all present and
+former colleagues and students in the Bioinformatics program.
+
+I would especially like to thank Sven Rahmann for suggesting the
+topic, providing initial ideas, and for the opportunity to write this
+thesis under his guidance.
+
+The support of the whole computer service group at the CeBiTec was
+crucial to the success of this work, and I cannot thank them enough
+for their help.
+
+I enjoyed fruitful discussions with many people while this thesis was
+underway; in particular, I am grateful to ...
+for their valuable hints and comments. 
+
+... read early drafts of several chapters of this thesis and
+helped to improve it in many ways through their comments.
+
+\ignore{
+Last but not least, I thank Karla Aleluia de Carvalho for her love and
+patience while I was writing this thesis. Heartfelt thanks also go to
+my parents and the rest of the family.}
+
+\vspace*{6ex}
+S\'ergio A. de Carvalho Jr.\hfill Bielefeld, \handindate

@@ -1,0 +1,34 @@
+\select@language {american}
+\select@language {american}
+\contentsline {paragraph}{Trademark Notice.}{xii}
+\contentsline {chapter}{Foreword}{xiii}
+\contentsline {paragraph}{Publications.}{xiv}
+\contentsline {paragraph}{Acknowledgments.}{xiv}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}DNA and Genes}{1}
+\contentsline {section}{\numberline {1.2}Functional Genomics}{1}
+\contentsline {section}{\numberline {1.3}High-density Oligonucleotide Microarrays}{1}
+\contentsline {subsection}{\numberline {1.3.1}Oligonucleotide Microarray Production}{2}
+\contentsline {subsection}{\numberline {1.3.2}The Problem of Unintended Illumination}{4}
+\contentsline {chapter}{\numberline {2}The Microarray Layout Problem}{5}
+\contentsline {section}{\numberline {2.1}Problem statement}{6}
+\contentsline {section}{\numberline {2.2}Border length}{7}
+\contentsline {section}{\numberline {2.3}Conflict index}{7}
+\contentsline {section}{\numberline {2.4}Conflict Index and Border Length as Chip Quality Measures}{9}
+\contentsline {section}{\numberline {2.5}How hard is the Microarray Layout Problem?}{10}
+\contentsline {chapter}{\numberline {3}Placement Algorithms}{11}
+\contentsline {section}{\numberline {3.1}Early approaches}{11}
+\contentsline {section}{\numberline {3.2}Sliding-Window Matching}{13}
+\contentsline {section}{\numberline {3.3}Row-Epitaxial}{14}
+\contentsline {chapter}{\numberline {4}Re-embedding}{17}
+\contentsline {section}{\numberline {4.1}Optimum Single Probe Embedding}{17}
+\contentsline {section}{\numberline {4.2}Re-embedding algorithms}{19}
+\contentsline {chapter}{\numberline {5}Partitioning}{21}
+\contentsline {section}{\numberline {5.1}1-Dimensional Partitioning}{22}
+\contentsline {section}{\numberline {5.2}2-Dimensional Partitioning}{23}
+\contentsline {section}{\numberline {5.3}Centroid-based Quadrisection}{25}
+\contentsline {section}{\numberline {5.4}Pivot Partitioning: Merging partitioning and re-embedding}{27}
+\contentsline {chapter}{\numberline {6}Merging Placement and Re-embedding}{29}
+\contentsline {section}{\numberline {6.1}Greedy+}{29}
+\contentsline {section}{\numberline {6.2}Results}{30}
+\contentsline {chapter}{\numberline {7}Discussion}{33}

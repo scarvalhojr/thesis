@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Algorithm names
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Greedyplus}{Greedy+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AMS definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{claim}[definition]{Claim}
+\newtheorem{example}[definition]{Example}
+\newtheorem{corollary}[definition]{Corollary}
+
+\theoremstyle{plain}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{theorem}[definition]{Theorem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Ignore, forcebreak, ...
+\newcommand{\ignore}[1]{}
+\newcommand{\forcebreak}{\nopagebreak\mbox{ }\\[-3ex]\nopagebreak}
+\newcommand{\eop}{\hfill$\bullet$}
+
+% Sets
+\newcommand{\setR}{\mathbb{R}}
+
+% Nucleotides
+\newcommand{\DNA}{\text{DNA}}
+\newcommand{\RNA}{\text{RNA}}
+\newcommand{\tA}{\text{\ttfamily A}}
+\newcommand{\tC}{\text{\ttfamily C}}
+\newcommand{\tG}{\text{\ttfamily G}}
+\newcommand{\tN}{\text{\ttfamily N}}
+\newcommand{\tT}{\text{\ttfamily T}}
+\newcommand{\tU}{\text{\ttfamily U}}
+\newcommand{\NucA}{\text{\ttfamily A}}
+\newcommand{\NucC}{\text{\ttfamily C}}
+\newcommand{\NucG}{\text{\ttfamily G}}
+\newcommand{\NucN}{\text{\ttfamily N}}
+\newcommand{\NucT}{\text{\ttfamily T}}
+\newcommand{\NucU}{\text{\ttfamily U}}
+\newcommand{\NucX}{\text{\ttfamily X}}
+\newcommand{\Nucs}[1]{{\tt{#1}}}
+\newcommand{\emptyseq}{\epsilon}
+\newcommand{\sep}{\text{\ttfamily \$}}
+\newcommand{\wild}{\text{\ttfamily X}}
+\newcommand{\SigmaX}{(\Sigma\cup\{\wild\})}
+
+% Probability
+\newcommand{\Erw}{\mathbb{E}}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\Probhat}{\hat{\mathbb{P}}}
+%%\newcommand{\Ind}[1]{\ensuremath{{\mathbb{I}}_{\{#1\}} }}
+\newcommand{\Ind}[1]{\mathbbm{1}_{\{{#1}\}}}
+\newcommand{\Eins}{{\mathbb{I}}}
+\newcommand{\given}{\,|\,}
+
+% Cal Letters
+\newcommand{\CalA}{{\mathcal{A}}}
+\newcommand{\CalB}{{\mathcal{B}}}
+\newcommand{\CalC}{{\mathcal{C}}}
+\newcommand{\CalD}{{\mathcal{D}}}
+\newcommand{\CalE}{{\mathcal{E}}}
+\newcommand{\CalF}{{\mathcal{F}}}
+\newcommand{\CalG}{{\mathcal{G}}}
+\newcommand{\CalL}{{\mathcal{L}}}
+\newcommand{\CalM}{{\mathcal{M}}}
+\newcommand{\CalN}{{\mathcal{N}}}
+\newcommand{\CalP}{{\mathcal{P}}}
+\newcommand{\CalQ}{{\mathcal{Q}}}
+\newcommand{\CalS}{{\mathcal{S}}}
+\newcommand{\CalT}{{\mathcal{T}}}
+\newcommand{\CalU}{{\mathcal{U}}}
+\newcommand{\CalX}{{\mathcal{X}}}
+\newcommand{\CalY}{{\mathcal{Y}}}
+
+% Algorithms
+\newcommand{\aname}[1]{\textsc{#1}}
+\newcommand{\atab}{\makebox[6ex]{}}
+\newcommand{\MFOLD}{\aname{Mfold}}
+
+% Binomial-like coefficients
+\newcommand{\schoose}[2]{{\genfrac{(}{)}{0pt}{}{{#1}}{{#2}}}}
+\newcommand{\ssubset}[2]{{\genfrac{\{}{\}}{0pt}{}{{#1}}{{#2}}}}
+\newcommand{\scycle}[2]{{\genfrac{[}{]}{0pt}{}{{#1}}{{#2}}}}
+\newcommand{\falling}[2]{{{#1}^{\underline{#2}}}}
+
+% Other Math
+\newcommand{\mathand}{{\text{ and }}}
+\newcommand{\diag}{{\text{diag}}}
+\newcommand{\N}{{\mathbb{N}}}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\sig}{\varsigma}
+\newcommand{\vphi}{\varphi}
+\newcommand{\valpha}{{\underline{\alpha}}}
+\newcommand{\vbeta}{{\underline{\beta}}}
+
+% Bars and Hats
+\newcommand{\betabar}{{\overline{\beta}}}
+\newcommand{\lambdabar}{{\overline{\lambda}}}
+\newcommand{\nbar}{{\overline{n}}}
+\newcommand{\Thetabar}{\ensuremath{\overline{\Theta}}}
+\newcommand{\Bbar}{{\overline{B}}}
+\newcommand{\Ubar}{{\overline{U}}}
+\newcommand{\ubar}{{\overline{u}}}
+\newcommand{\vbar}{{\overline{v}}}
+\newcommand{\xbar}{\ensuremath{\overline{x}}}
+\newcommand{\Xbar}{\ensuremath{\overline{X}}}
+\newcommand{\ybar}{{\overline{y}}}
+\newcommand{\Phihat}{{\ensuremath{\hat{\Phi}}}}
+
+%% (R)
+%% \newcommand{\textR}{${}^\text{\textregistered}$}
+\newcommand{\textR}{\raisebox{.6ex}{\scriptsize \textregistered}}
+
+%% Na+, TM, *C, A, differential d.
+\newcommand{\Naplus}{{\ensuremath{\text{Na}^+}}}
+\newcommand{\TM}{T_\text{M}}
+\newcommand{\degC}{\ensuremath{{}^\circ\text{C}}}
+\newcommand{\Angstrom}{\text{\AA}}
+\newcommand{\diff}{\,\text{d}}
+\newcommand{\Dstd}[1]{\Delta{#1}^\circ}
+\newcommand{\stdm}[1]{{#1}^\circ_\text{m}}
+\newcommand{\Drstd}[1]{\Delta_\text{r}{#1}^\circ}
+\newcommand{\Dr}[1]{\Delta_\text{r}{#1}}
+\newcommand{\conceq}[1]{[{#1}]_\text{eq}}
+\newcommand{\fd}[1]{$5'$-\Nucs{#1}-$3'$}
+\newcommand{\rfd}[1]{r($5'$-\Nucs{#1}-$3'$)}
+\newcommand{\dfd}[1]{d($5'$-\Nucs{#1}-$3'$)}
+
+%% Strings, lcf and so on 
+\newcommand{\substring}{\lhd}
+\newcommand{\suf}[2]{{#1}_{(#2)}}
+
+\newcommand{\lcf}{\ensuremath{\text{\upshape lcf}}}
+\newcommand{\lcfe}{\ensuremath{\text{\upshape lcf}^1}}
+\newcommand{\lcfvec}{\ensuremath{\text{\upshape LCF}}}
+\newcommand{\lcfstat}{\ensuremath{\text{\upshape LCFS}}}
+
+\newcommand{\lcpr}{\text{lcp}}  %% lcpr = lcp in roman font
+
+\newcommand{\ms}{\text{\upshape ms}}
+\newcommand{\mse}{\text{\upshape ms}^1}
+
+\newcommand{\Romin}{{R^0_{\min}}}
+\newcommand{\Remin}{{R^1_{\min}}}
+\newcommand{\Rmax}{{R_{\max}}}
+
+\newcommand{\pos}{\text{\upshape\ttfamily pos}}
+\newcommand{\rank}{\text{\upshape\ttfamily rank}}
+\newcommand{\cl}{\text{\upshape\ttfamily cl}}
+\newcommand{\bck}{\text{\upshape\ttfamily bck}}
+\newcommand{\lcp}{\text{\upshape\ttfamily lcp}}
+\newcommand{\MS}{\text{\upshape\ttfamily MS}}
+\newcommand{\MSe}{{\text{\upshape\ttfamily MS}^1}}
+\newcommand{\qcode}[1]{\langle{#1}\rangle}
+
+\newcommand{\csms}{\text{\upshape csms}}
+\newcommand{\CSMS}{{\text{\upshape\ttfamily CSMS}}}
+
+\newcommand{\Lo}{{L^\circ}}
+
+%% Other Stuff
+\newcommand{\steep}{\text{\textit{drop}}}
+\newcommand{\clust}{\mathcal{B}}
+
+%% Matrices
+\newcommand{\cond}{\ensuremath{\text{\upshape cond}}}
+\newcommand{\Rank}{\ensuremath{\text{\upshape rank}}}
+\newcommand{\scond}{\ensuremath{\text{\upshape cond}_\text{\upshape{s}}}}
+\newcommand{\tp}{\ensuremath{{}^\text{\sffamily\upshape T}}}
+\newcommand{\MR}[2]{\ensuremath{\setR^{{#1}\times{#2}}}}
+\newcommand{\Id}[1]{\ensuremath{\text{\upshape I}}_{#1}}
+\newcommand{\eqmin}{\ensuremath{\simeq}}
+\newcommand{\nm}[1]{\ensuremath{\| {#1} \|}}
+\newcommand{\expm}{\ensuremath{\text{\upshape expm}}}
+
+%% NonUnique
+\newcommand{\mcov}{\mathcal{M}}
+\newcommand{\acov}{\mathcal{A}}
+\newcommand{\cmin}{\gamma}
+\newcommand{\hmin}{\sigma}
+\newcommand{\SDiff}[2]{{#1}\Delta{#2}}
+\newcommand{\Separate}{\text{\textsc{Separate}}}
+\newcommand{\ddpvec}{\begin{pmatrix}\delta\\\delta^+\end{pmatrix}}
+\newcommand{\ddpvectp}{\begin{pmatrix}\delta\\\delta^+\end{pmatrix}^\text{\sffamily\upshape T}}
+\newcommand{\hhpvec}[1]{\begin{pmatrix}h_{#1}\\h^+_{#1}\end{pmatrix}}
+\newcommand{\zzpvec}[1]{\begin{pmatrix}z^{#1}\\z^{+,{#1}}\end{pmatrix}}

@@ -1,0 +1,106 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{\c{C}ela}(1997)]{Cela1997}
+E.~{\c{C}ela}.
+\newblock \emph{The Quadratic Assignment Problem: Theory and Algorithms}.
+\newblock Kluwer Academic Publishers, 1997.
+
+\bibitem[Chase(1976)]{Chase1976}
+P.~Chase.
+\newblock Subsequence numbers and logarithmic concavity.
+\newblock \emph{Discrete Mathematics}, 16:\penalty0 123--140, 1976.
+
+\bibitem[de~Carvalho~Jr. and Rahmann(2006{\natexlab{a}})]{Carvalho2006}
+S.~A. de~Carvalho~Jr. and S.~Rahmann.
+\newblock Improving the layout of oligonucleotide microarrays: {P}ivot
+  partitioning.
+\newblock In \emph{Algorithms in Bioinformatics (Proceedings of WABI)}, volume
+  4175 of \emph{Lecture Notes in Computer Science}, pages 321--332. Springer,
+  2006{\natexlab{a}}.
+\newblock \doi{10.1007/11851561}.
+\newblock URL \url{http://www.springerlink.com/content/h9r4n673058032xm}.
+
+\bibitem[de~Carvalho~Jr. and Rahmann(2006{\natexlab{b}})]{Carvalho2006a}
+S.~A. de~Carvalho~Jr. and S.~Rahmann.
+\newblock Microarray layout as quadratic assignment problem.
+\newblock In D.~Huson, O.~Kohlbacher, A.~Lupas, K.~Nieselt, and A.~Zell,
+  editors, \emph{Proceedings of the German Conference on Bioinformatics},
+  volume P-83 of \emph{Lecture Notes in Informatics (LNI)}, pages 11--20.
+  Gesellschaft f\"ur Informatik, 2006{\natexlab{b}}.
+
+\bibitem[Feldman and Pevzner(1994)]{Feldman1994}
+W.~Feldman and P.~Pevzner.
+\newblock Gray code masks for sequencing by hybridization.
+\newblock \emph{Genomics}, 23\penalty0 (1):\penalty0 233--235, 1994.
+\newblock \doi{10.1006/geno.1994.1482}.
+\newblock URL \url{http://dx.doi.org/10.1006/geno.1994.1482}.
+
+\bibitem[Fodor et~al.(1991)Fodor, Read, Pirrung, Stryer, Lu, and
+  Solas]{Fodor1991}
+S.~P. Fodor, J.~L. Read, M.~C. Pirrung, L.~Stryer, A.~T. Lu, and D.~Solas.
+\newblock Light-directed, spatially addressable parallel chemical synthesis.
+\newblock \emph{Science}, 251\penalty0 (4995):\penalty0 767--773, 1991.
+
+\bibitem[Hannenhalli et~al.(2002)Hannenhalli, Hubell, Lipshutz, and
+  Pevzner]{Hannenhalli2002}
+S.~Hannenhalli, E.~Hubell, R.~Lipshutz, and P.~A. Pevzner.
+\newblock Combinatorial algorithms for design of {DNA} arrays.
+\newblock \emph{Adv Biochem Eng Biotechnol}, 77:\penalty0 1--19, 2002.
+
+\bibitem[Kahng et~al.(2002)Kahng, Mandoiu, Pevzner, Reda, and
+  Zelikovsky]{Kahng2002}
+A.~Kahng, I.~Mandoiu, P.~Pevzner, S.~Reda, and A.~Zelikovsky.
+\newblock Border length minimization in {DNA} array design.
+\newblock In R.~Guig\'o and D.~Gusfield, editors, \emph{Algorithms in
+  Bioinformatics (Proceedings of WABI)}, volume 2452 of \emph{Lecture Notes in
+  Computer Science}, pages 435--448. Springer, 2002.
+\newblock URL \url{http://www.springerlink.com/content/pqp7c7emyk7gmx3u}.
+
+\bibitem[Kahng et~al.(2003{\natexlab{a}})Kahng, Mandoiu, Pevzner, Reda, and
+  Zelikovsky]{Kahng2003}
+A.~B. Kahng, I.~Mandoiu, P.~Pevzner, S.~Reda, and A.~Zelikovsky.
+\newblock Engineering a scalable placement heuristic for {DNA} probe arrays.
+\newblock In \emph{Proceedings of the seventh annual international conference
+  on research in computational molecular biology (RECOMB)}, pages 148--156. ACM
+  Press, 2003{\natexlab{a}}.
+\newblock \doi{http://doi.acm.org/10.1145/640075.640095}.
+
+\bibitem[Kahng et~al.(2003{\natexlab{b}})Kahng, Mandoiu, Reda, Xu, and
+  Zelikovsky]{Kahng2003a}
+A.~B. Kahng, I.~Mandoiu, S.~Reda, X.~Xu, and A.~Z. Zelikovsky.
+\newblock Evaluation of placement techniques for {DNA} probe array layout.
+\newblock In \emph{Proceedings of the 2003 IEEE/ACM international conference on
+  Computer-aided design (ICCAD)}, pages 262--269. IEEE Computer Society,
+  2003{\natexlab{b}}.
+\newblock \doi{http://dx.doi.org/10.1109/ICCAD.2003.65}.
+
+\bibitem[Rahmann(2003)]{Rahmann2003}
+S.~Rahmann.
+\newblock The shortest common supersequence problem in a microarray production
+  setting.
+\newblock \emph{Bioinformatics}, 19\penalty0 (Suppl~2):\penalty0 ii156--ii161,
+  Oct 2003.
+
+\bibitem[Rahmann(2006)]{Rahmann2006SubsequenceCombinatorics}
+S.~Rahmann.
+\newblock Subsequence combinatorics and applications to microarray production,
+  {DNA} sequencing and chaining algorithms.
+\newblock In M.~Lewenstein and G.~Valiente, editors, \emph{Combinatorial
+  Pattern Matching (CPM)}, volume 4009 of \emph{LNCS}, pages 153--164, 2006.
+
+\bibitem[Singh-Gasson et~al.(1999)Singh-Gasson, Green, Yue, Nelson, Blattner,
+  Sussman, and Cerrina]{Singh-Gasson1999}
+S.~Singh-Gasson, R.~D. Green, Y.~Yue, C.~Nelson, F.~Blattner, M.~R. Sussman,
+  and F.~Cerrina.
+\newblock Maskless fabrication of light-directed oligonucleotide microarrays
+  using a digital micromirror array.
+\newblock \emph{Nat Biotechnol}, 17\penalty0 (10):\penalty0 974--978, Oct 1999.
+\newblock \doi{10.1038/13664}.
+\newblock URL \url{http://dx.doi.org/10.1038/13664}.
+
+\end{thebibliography}

@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Merging Placement and Re-embedding}
+\label{ch:merge}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The problem with the traditional ``place and re-embed'' approach is that the
+arrangement of probes on the chip is decided based on embeddings that are
+likely to change during the re-embedding phase. Intuitively, better results
+should be obtained when the placement and embedding phases are considered
+simultaneously instead of separately. However, because of the generally high
+number of embeddings of each single probe, it is not easy to design algorithms
+that efficiently use the additional freedom and run reasonably fast in
+practice.
+
+We describe \Greedyplus , the first placement algorithm that simultaneously
+places and re-embeds the probes, and compare it with Row-Epitaxial, the best
+known large-scale placement algorithm.
+
+\section{\Greedyplus}
+\label{sec:merge_greedyplus}
+
+The goal is to design an algorithm that is similar to Row-Epitaxial, so that we
+can make a better assessment of the gains resulting from merging the placement
+and re-embedding phases.
+
+\Greedyplus\ fills the spots row-by-row, from left to right, in a
+greedy fashion, similarly to Row-Epitaxial. Also, for each spot $s$,
+it looks at $Q$ probe candidates and chooses the one that can be
+placed at $s$ with minimum cost. The difference is that we now
+consider all possible embeddings of a candidate $p$ instead of only
+$p$'s initial embedding. This is done by temporarily placing $p$ at
+$s$ and computing its optimal embedding with respect to the
+already-filled neighbors of $s$ (using OSPE from
+Sec.~\ref{sec:reembed_ospe}).
+
+Compared to Row-Epitaxial, \Greedyplus\ spends more time evaluating each probe
+candidate $p$ for a spot $s$. While Row-Epitaxial takes $O(T)$ time to compute
+the conflict index or the border length resulting from placing $p$ at $s$,
+\Greedyplus\ requires $O(\ell T)$ time since it uses OSPE (recall that $\ell$
+is the probe length and $T$ is the length of the deposition sequence). To
+achieve a running time comparable to Row-Epitaxial, we must therefore consider
+lower candidate numbers $Q$.
+
+There are a few optimizations that reduce the time spent with OSPE
+computations when several probe candidates are examined in succession
+for the same spot. First, we note that if two probe candidates $p$ and
+$p'$ share a common prefix of length $l$, the first $l + 1$ rows of
+the OSPE dynamic programming matrix $D$ will be identical. In other
+words, if we have calculated the minimum cost of $p$, we can speed up
+the calculation of the minimum cost of $p'$ by skipping the first $l +
+1$ rows of $D$.
+
+In order to fully exploit this fact, we examine the probes in
+lexicographical order so that we maximize the length of the common
+prefix between two consecutive candidates. We keep a doubly-linked
+list of probes and remove a probe $p$ from the list when it is placed.
+For the next spot to be filled, we look at $Q$ probes in the list
+around $p$'s former position, e.g., at $Q/2$ probes to the left and to
+the right of $p$.
+
+Second, the $U_t$ costs of OSPE need to be computed only once for a given spot
+$s$ since $U_t$ does not depend on the probe placed at $s$. Thus, in order to
+examine another candidate, we only need to recompute the $M_{i,t}$ costs.
+
+Finally, once we know that a probe candidate $p$ can be placed at $s$
+with minimum cost $C$, we can stop the OSPE computation for another
+candidate $p'$ as soon as all values in a row of $D$ are greater than
+or equal to $C$.
+
+
+\section{Results}
+\label{sec:merge_results}
+
+\begin{table}[t!]\centering
+\caption{\label{tab:reptxplus}\boldmath%
+  Normalized border length (NBL) and average conflict index (ACI) 
+  of layouts produced by Row-Epitaxial and \Greedyplus\ placement (Pl.), 
+  followed by Sequential re-embedding (Re-emb.)
+  with thresholds $W = 0.1\%$ for border length minimization
+  and $W = 0.5\%$ for conflict index minimization. $Q$ is the number of
+  probe candidates considered for each spot during placement.
+  Running times are given in seconds.}
+\vspace*{1ex}
+\begin{tabular*}{\hsize}{lrrrr}  % formerly {@{\extracolsep{\fill}}lrrrr}
+\hline
+\textbf{Border length min.} & \multicolumn{2}{c}{$335 \times 335$ (E.Coli)} & \multicolumn{2}{c}{$515 \times 515$ (Maize)} \cr
+\hline
+\textbf{Row-Epitaxial.}\; $Q$ &    10 K &   20 K   &  10 K     &  20 K    \cr
+Time (Pl. + Re-emb.)     & 629 + 9 & 1211 + 9 & 3333 + 38 & 6806 + 38\cr
+NBL (Pl.)                & 34.11   & 33.81    & 33.11     & 32.87    \cr
+NBL (Pl. + Re-emb.)      & 33.93   & 33.66    & 32.95     & 32.73    \cr
+\hline
+\textbf{\Greedyplus.}\; $Q$            & 350     &   700    &   350     &    700   \cr
+Time (Pl. + Re-emb.)     & 596 + 12& 1158 + 12& 2633 + 53 & 4974 + 53\cr
+NBL (Pl.)                & 33.79   & 33.22    & 33.07     & 32.38    \cr
+NBL (Pl. + Re-emb.)      & 33.53   & 32.98    & 32.82     & 32.16    \cr
+\hline
+\cr
+\hline
+\textbf{Conflict index min.} & \multicolumn{2}{c}{$335 \times 335$ (E.Coli)} & \multicolumn{2}{c}{$515 \times 515$ (Maize)} \cr
+\hline
+\textbf{Row-Epitaxial.}\; $Q$ & 5 K        & 10 K        & 5 K         & 10 K       \cr
+Time (Pl. + Re-emb.)          & 930 + 1169 & 1732 + 1167 & 4082 + 4424 & 7856 + 4415\cr
+ACI (Pl.)                     & 584.92     & 544.93      & 604.04      & 574.68     \cr
+ACI (Pl. + Re-emb.)           & 544.23     & 514.10      & 554.87      & 532.74     \cr
+\hline
+\textbf{\Greedyplus.}\; $Q$ &    200 &     300 &    200 &    300 \cr
+Time (Pl. + Re-emb.)        & 522 + 788 & 685 + 788 & 2131 + 2926 & 2757 + 2930\cr
+ACI (Pl.)                   & 462.52 &  450.15 & 459.38 & 446.76 \cr
+ACI (Pl. + Re-emb.)         & 458.02 &  445.98 & 454.84 & 442.55 \cr
+\hline
+\end{tabular*}
+\end{table}
+
+We compare the results of \Greedyplus\ with Row-Epitaxial. To be fair,
+since Row-Epitaxial is a traditional placement algorithm that does not
+change the embeddings, we need to compare the layouts obtained by both
+algorithms after a re-embedding phase. For this task we use the
+Sequential algorithm (Sec.~\ref{sec:reembed_alg}) with
+thresholds of $W=0.1\%$ for border length minimization and $W=0.5\%$
+for conflict index minimization, so that the algorithm stops as soon
+as the improvement in one iteration drops below $W$.
+
+Table~\ref{tab:reptxplus} shows the total border length and the
+average conflict index of layouts produced by both algorithms on two
+chips with dimensions $335 \times 335$ and $515 \times 515$, filled
+with probes randomly selected from existing GeneChip arrays (E.Coli
+Genome 2.0 and Maize Genome, respectively). Probes are initially
+left-most embedded into the standard 74-step Affymetrix deposition
+sequence \{TGCA\}$^{18}$TG. The parameter $Q$ is chosen differently
+for both algorithms so that the running time is approximately
+comparable (e.g., for border length minimization, $Q=350$ for
+\Greedyplus\ corresponds to $Q=10\,000$ for Row-Epitaxial). We make
+the following observations.
+
+First, increasing $Q$ linearly increases placement time, while only
+marginally improving chip quality for border length minimization.
+
+Second, re-embedding runs very quickly for border length minimization,
+even on the larger chip. For conflict index minimization, the time for
+the re-embedding phase exceeds the time for the placement phase for
+both algorithms.
+
+Finally, \Greedyplus\ always produces better layouts in the same amount of
+time (or less) while looking at fewer probe candidates.  In particular, for
+conflict index minimization on the $515\times 515$ chip with $Q=5\,000$ resp.\ 
+$200$, \Greedyplus\;and Sequential improve the average conflict index by 18\%
+(from 554.87 to 454.84) and need only 60\% of the time, compared to
+Row-Epitaxial and Sequential.
