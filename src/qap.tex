@@ -9,14 +9,14 @@ general distance-dependent and position-dependent weights is an instance of the
 optimization problem introduced by~\citet{Koopmans1957}, which opens up the way
 for using QAP techniques to design microarray chips.
 
-To validate our formulation, we use an existing QAP heuristic algorithm called
-GRASP to design the layout of small artificial chips. We then compare this
-approach with the best known placement algorithm and describe how it can be
-combined with other existing algorithms to design and improve larger
+We then use an existing QAP heuristic algorithm called GRASP to design the
+layout of small artificial chips, comparing our results with the best known
+placement algorithm. The chapter ends with a discussion about how this approach
+can be combined with other existing algorithms to design and improve larger
 microarrays.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Quadratic Assignment Problem}
+\section{Quadratic assignment problem}
 \label{sec:qap_qap}
 
 The quadratic assignment problem (QAP) can be stated as follows. Given
@@ -56,13 +56,13 @@ $\pi$ defines a one-to-one assignment of facilities to locations with minimum
 cost.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{QAP Formulation of the MLP}
+\section{QAP formulation of the MLP}
 \label{sec:qap_mlp}
 
-The MLP can be seen as an instance of the QAP, where we want to find a one-to-
-one correspondence between spots and probes minimizing a given penalty funtion
-such as total border length or total conflict index (defined in Chapter
-\ref{ch:mlp}. To formulate it, we use the facility location example by viewing
+The MLP can be seen as an instance of the QAP, where we want to find a
+one-to-one correspondence between spots and probes minimizing a given penalty
+funtion such as total border length or total conflict index (defined in Chapter
+\ref{ch:mlp}). To formulate it, we use the facility location example by viewing
 the probes as locations and the spots as facilities, i.e., the spots are
 assigned to the probes. The flow matrix $F$ then contains the ``closeness''
 values between spots, while the distance matrix $D$ contains the conflicts
@@ -194,7 +194,7 @@ initially find pairs of objects with large flow values and place them close to
 each other. Therefore, the way of modeling $F$ and $D$ may be significant.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{QAP Heuristics}
+\section{QAP heuristics}
 \label{sec:qap_heuristics}
 
 We have shown how the microarray placement problem can be modeled as a
@@ -210,7 +210,7 @@ microarrays minimizing either the sum of border lengths or conflict indices.
 As an example, we briefly describe a general QAP heuristic known as GRASP \citep
 {Li1994}, which was first used for solving the QAP by \citet{Feo1995}, and an
 improved version called GRASP with path-relinking \citep{Oliveira2004}, that we
-used to validate our formulation.
+used to design small microarray chips with our formulation.
 
 \subsection{GRASP with Path-relinking}
 \label{sec:qap_grasp}
@@ -218,12 +218,12 @@ used to validate our formulation.
 GRASP (Greedy Randomized Adaptive Search Procedure) is comprised of two phases:
 a construction phase where a random feasible solution is built, and a local
 search phase where a local optimum in the neighborhood of that solution is
-sought. In the description that follows we use the terms of the facility
-location problem: $f_{ij}$ is the flow between facilities $i$ and $j$, $d_{kl}$
-is the distance between locations $k$ and $l$.
+sought. In the following description we use the terms of the facility location
+problem: $f_{ij}$ is the flow between facilities $i$ and $j$, $d_{kl}$ is the
+distance between locations $k$ and $l$.
 
 The construction phase starts by sorting the $(n^2 - n)$ elements of the
-distance matrix in increasing order and keeping the first
+distance matrix in increasing order and keeping the smallest
 $E:= \lfloor \beta (n^2 - n) \rfloor$ elements, where $0 < \beta < 1$ is a
 restriction parameter given as input.
 %%
@@ -232,7 +232,7 @@ d_{k_1 l_1} \le d_{k_2 l_2} \le \cdots \le d_{k_E l_E}.
 \end{displaymath}
 
 Similarly, the $(n^2 - n)$ elements of the flow matrix are sorted, this time in
-decreasing order, and the first $E$ elements are kept:
+decreasing order, and the largest $E$ elements are kept:
 %%
 \begin{displaymath}
 f_{i_1 j_1} \ge f_{i_2 j_2} \ge \cdots \ge f_{i_E j_E}.
@@ -244,9 +244,9 @@ facility $j_q$ to location $l_q$ for some $q\in\{1,\ldots,E\}$ is
 $d_{k_q l_q} f_{i_q j_q}$. GRASP sorts the vector
 %%
 \begin{displaymath}
-(d_{k_1 l_1}  f_{i_1 j_1},\;
- d_{k_2 l_2}  f_{i_2 j_2},\; \ldots,\;
- d_{k_E, l_E} f_{i_E j_E}),
+(d_{k_1 l_1} f_{i_1 j_1},\;
+ d_{k_2 l_2} f_{i_2 j_2},\; \ldots,\;
+ d_{k_E l_E} f_{i_E j_E}),
 \end{displaymath}
 %%
 keeping the $\lfloor \alpha E \rfloor$ smallest elements, where $0 < \alpha < 1$
@@ -265,8 +265,8 @@ The construction and local search phases are repeated for a given number of
 times, and the best solution found is returned.
 
 \paragraph{Path-relinking.}
-GRASP takes no advantage of the knowledge gained in previously iterations to
-build or improve an obtained solution, i.e. each new solution is built from
+GRASP takes no advantage of the knowledge gained in previous iterations to
+build or improve an obtained solution, i.e., each new solution is built from
 scratch.
 
 GRASP with path-relinking is an extension of the basic GRASP algorithm that uses
@@ -280,7 +280,7 @@ $p_k$ assigned to location $k$ in  solution $p$ with facility $q_k$ assigned to
 location $k$ in the elite solution. In order to keep the solution $p$ feasible,
 it exchanges $p_k$ with $p_l$, where $p_l = q_k$. This exchange is performed
 only if it results in a better solution. The result of the path-relinking phase
-is a solution $r$ that is as good as $p$ and $q$.
+is a solution $r$ that is at least as good as the better of $p$ and $q$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -329,7 +329,7 @@ Our results show that GRASP-PR produces layouts with lower border lengths than
 Row-epitaxial on the smaller chips. On 6\,x\,6 chips, GRASP-PR outperforms Row-
 epitaxial by $2.14$ percentage points on average ($15.94\% - 13.80\%$), when
 compared to the initial random layout. On 9\,x\,9 chips, however, this
-difference drops to $0.16$ percentage point, while Row-epitaxial generates
+difference drops to $0.16$ percentage points, while Row-epitaxial generates
 better layouts on 11\,x\,11 or larger chips. In terms of running time,
 Row-epitaxial is faster and shows little variation as the number of probes
 grows. In contrast, the time required to compute a layout with GRASP-PR
@@ -340,7 +340,7 @@ indices. GRASP-PR consistently produces better layouts on all chip dimensions,
 achieving up to $6.38$\% less conflicts on 10\,x\,10 chips, for example, when
 compared to Row-epitaxial. In terms of running times, GRASP-PR is even slower
 than in the border length case. The reason is not clear, but it could be related
-to the fact that the distance matrix contains less zero entries with the
+to the fact that the distance matrix contains fewer zero entries with the
 conflict index formulation.
 
 The gains in terms of conflict index of both Row-Epitaxial and GRASP-PR are
