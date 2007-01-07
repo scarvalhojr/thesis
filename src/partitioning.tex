@@ -84,7 +84,7 @@ $\mathcal{P}_1$ are created during step $t=2$:
   previous steps (there are no border conflicts between spots separated by
   solid lines). Masked (shaded) regions are labeled ``0'',
   unmasked (white) regions are labeled ``1''. This labeling forms
-  a Gray code (shown in the first three steps only).}
+  a binary Gray code (shown in the first three steps only).}
 \end{figure}
 
 
@@ -95,8 +95,9 @@ possible, resulting in masks that consist of alternating layers of masked and
 unmasked spots. This process is illustrated in Fig.~\ref{fig:1dpart}, where at
 each step~$t$, a band is labeled ``0'' when its embeddings are unproductive,
 and ``1'' when its embeddings are productive. The resulting binary numbers
-from top to bottom form a Gray code, i.e., two successive numbers differ in
-only one bit.
+from top to bottom form a binary Gray code, which is defined as a permutation of
+the binary numbers between 0 and $2^n - 1$ such that neighboring elements have
+exactly one differing bit, as do the first and last elements \citep{Kreher1999}.
 
 The Gray code highlights an interesting property of 1-D Partitioning.
 After $d$~levels of partitionings (based on steps $1$ to $d$), the
@@ -146,7 +147,7 @@ for instance).
   the divisions performed in each step; solid lines indicate regions
   delimited in previous steps. Masked regions are labeled with ``0'',
   unmasked regions with ``1''; this labeling forms an approximation to
-  a two-dimensional Gray code.}%
+  a two-dimensional binary Gray code.}%
 \end{figure}
 %%%
 
@@ -156,7 +157,7 @@ as many masks. The algorithm is similar: $\mathcal{P}$ is divided into
 subsets based on the state of the embeddings at a particular
 synthesis step. The difference is that 2-D Partitioning alternates
 horizontal and vertical divisions of regions, and that the assignments
-of probes to regions obey a two-dimensional Gray code
+of probes to regions obey a two-dimensional binary Gray code
 (Fig.~\ref{fig:2dpart}).
 
 In a 2-D Gray code, two neighboring numbers differ in at most one
@@ -190,38 +191,38 @@ this a \emph{centered mask optimization}.
 %%%
 \begin{figure}[p]\centering
 %%
-\begin{picture}(435,595)\footnotesize{
-\put( -2,465){\makebox(145,130){\includegraphics{part/2dmasks/mask01}}}
-\put(147,465){\makebox(145,130){\includegraphics{part/2dmasks/mask02}}}
-\put(292,465){\makebox(145,130){\includegraphics{part/2dmasks/mask03}}}
-\put( -2,450){\makebox(145, 15){$M_1$}}
-\put(147,450){\makebox(145, 15){$M_2$}}
-\put(292,450){\makebox(145, 15){$M_3$}}
-\put( -2,315){\makebox(145,130){\includegraphics{part/2dmasks/mask04}}}
-\put(147,315){\makebox(145,130){\includegraphics{part/2dmasks/mask05}}}
-\put(292,315){\makebox(145,130){\includegraphics{part/2dmasks/mask06}}}
-\put( -2,300){\makebox(145, 15){$M_4$}}
-\put(147,300){\makebox(145, 15){$M_5$}}
-\put(292,300){\makebox(145, 15){$M_6$}}
-\put( -2,165){\makebox(145,130){\includegraphics{part/2dmasks/mask07}}}
-\put(147,165){\makebox(145,130){\includegraphics{part/2dmasks/mask08}}}
-\put(292,165){\makebox(145,130){\includegraphics{part/2dmasks/mask13}}}
-\put( -2,150){\makebox(145, 15){$M_7$}}
-\put(147,150){\makebox(145, 15){$M_8$}}
-\put(292,150){\makebox(145, 15){$M_{13}$}}
-\put( -2, 15){\makebox(145,130){\includegraphics{part/2dmasks/mask18}}}
-\put(147, 15){\makebox(145,130){\includegraphics{part/2dmasks/mask25}}}
-\put(292, 15){\makebox(145,130){\includegraphics{part/2dmasks/mask68}}}
-\put( -2,  0){\makebox(145, 15){$M_{18}$}}
-\put(147,  0){\makebox(145, 15){$M_{25}$}}
-\put(292,  0){\makebox(145, 15){$M_{68}$}}
+\begin{picture}(435,567)\footnotesize{
+\put( -2,439){\makebox(145,128){\includegraphics{part/2dmasks/mask01}}}
+\put(147,439){\makebox(145,128){\includegraphics{part/2dmasks/mask02}}}
+\put(292,439){\makebox(145,128){\includegraphics{part/2dmasks/mask03}}}
+\put( -2,429){\makebox(145, 10){$M_1$}}
+\put(147,429){\makebox(145, 10){$M_2$}}
+\put(292,429){\makebox(145, 10){$M_3$}}
+\put( -2,296){\makebox(145,128){\includegraphics{part/2dmasks/mask04}}}
+\put(147,296){\makebox(145,128){\includegraphics{part/2dmasks/mask05}}}
+\put(292,296){\makebox(145,128){\includegraphics{part/2dmasks/mask06}}}
+\put( -2,286){\makebox(145, 10){$M_4$}}
+\put(147,286){\makebox(145, 10){$M_5$}}
+\put(292,286){\makebox(145, 10){$M_6$}}
+\put( -2,153){\makebox(145,128){\includegraphics{part/2dmasks/mask07}}}
+\put(147,153){\makebox(145,128){\includegraphics{part/2dmasks/mask08}}}
+\put(292,153){\makebox(145,128){\includegraphics{part/2dmasks/mask13}}}
+\put( -2,143){\makebox(145, 10){$M_7$}}
+\put(147,143){\makebox(145, 10){$M_8$}}
+\put(292,143){\makebox(145, 10){$M_{13}$}}
+\put( -2, 10){\makebox(145,128){\includegraphics{part/2dmasks/mask18}}}
+\put(147, 10){\makebox(145,128){\includegraphics{part/2dmasks/mask25}}}
+\put(292, 10){\makebox(145,128){\includegraphics{part/2dmasks/mask68}}}
+\put( -2,  0){\makebox(145, 10){$M_{18}$}}
+\put(147,  0){\makebox(145, 10){$M_{25}$}}
+\put(292,  0){\makebox(145, 10){$M_{68}$}}
 }\end{picture}
 %%
 \caption{\label{fig:2dpart_masks}%
   Selected masks generated by 2-D Partitioning for a random $300\times 300$ chip
   with 25-mer probes leftmost embedded into the standard Affymetrix deposition
   sequence. Unmasked spots are represented by red dots, masked spots by black
-  dots}
+  dots.}
 \end{figure}
 %%%
 

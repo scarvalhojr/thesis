@@ -1,0 +1,2244 @@
+Start: Fri Dec 22 19:38:17 CET 2006
+Host: gimli
+---------------------------
+last pid: 14325;  load averages:  0.06,  0.87,  1.12    19:38:17
+154 processes: 151 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 0-threading-SortSequences...
+Elapsed time: 1.569109 sec
+Total border length: 4479082 -> normalized: 24.96701226309922
+Running RowEpitaxial-BL-5000...
+Elapsed time: 312.4387806 sec
+Total border length: 3284010 -> normalized: 18.30551839464883
+Total time: 314.0078896 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14353;  load averages:  3.08,  2.33,  1.71    19:43:40
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 0-threading-SortSequences...
+Elapsed time: 1.3226786 sec
+Total border length: 4479082 -> normalized: 24.96701226309922
+Running RowEpitaxial-BL-10000...
+Elapsed time: 626.551479 sec
+Total border length: 3256508 -> normalized: 18.15221850613155
+Total time: 627.8741576 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14382;  load averages:  3.10,  3.01,  2.41    19:54:16
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 0-threading-SortSequences...
+Elapsed time: 1.0210096 sec
+Total border length: 4479082 -> normalized: 24.96701226309922
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1178.8456222 sec
+Total border length: 3234642 -> normalized: 18.030334448160534
+Total time: 1179.8666318 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14420;  load averages:  3.10,  3.10,  2.92    20:14:04
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 1-threading-SortSequences...
+Elapsed time: 1.0983906 sec
+Total border length: 4327878 -> normalized: 24.12418060200669
+Running RowEpitaxial-BL-5000...
+Elapsed time: 322.584499 sec
+Total border length: 3283500 -> normalized: 18.30267558528428
+Total time: 323.6828896 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14434;  load averages:  3.16,  3.13,  2.98    20:19:35
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 1-threading-SortSequences...
+Elapsed time: 0.932962 sec
+Total border length: 4327878 -> normalized: 24.12418060200669
+Running RowEpitaxial-BL-10000...
+Elapsed time: 634.5536364 sec
+Total border length: 3257946 -> normalized: 18.160234113712374
+Total time: 635.4865984 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14464;  load averages:  3.10,  3.11,  3.05    20:30:18
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 1-threading-SortSequences...
+Elapsed time: 1.2355544 sec
+Total border length: 4327878 -> normalized: 24.12418060200669
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1192.9453794 sec
+Total border length: 3237110 -> normalized: 18.044091415830547
+Total time: 1194.1809338 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14501;  load averages:  3.09,  3.10,  3.09    20:50:20
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 2-threading-SortSequences...
+Elapsed time: 1.484459 sec
+Total border length: 4284208 -> normalized: 23.880758082497213
+Running RowEpitaxial-BL-5000...
+Elapsed time: 328.9381792 sec
+Total border length: 3285842 -> normalized: 18.31573021181717
+Total time: 330.4226382 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14505;  load averages:  3.11,  3.11,  3.09    20:55:58
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 2-threading-SortSequences...
+Elapsed time: 1.1437954 sec
+Total border length: 4284208 -> normalized: 23.880758082497213
+Running RowEpitaxial-BL-10000...
+Elapsed time: 621.6760908 sec
+Total border length: 3257660 -> normalized: 18.158639910813825
+Total time: 622.8198862 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14540;  load averages:  3.12,  3.12,  3.11    21:06:29
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 2-threading-SortSequences...
+Elapsed time: 1.0633848 sec
+Total border length: 4284208 -> normalized: 23.880758082497213
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1189.406727 sec
+Total border length: 3234952 -> normalized: 18.0320624303233
+Total time: 1190.4701118 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14574;  load averages:  3.12,  3.11,  3.11    21:26:27
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 3-threading-SortSequences...
+Elapsed time: 1.206607 sec
+Total border length: 4270174 -> normalized: 23.80253065774805
+Running RowEpitaxial-BL-5000...
+Elapsed time: 322.4528904 sec
+Total border length: 3288306 -> normalized: 18.329464882943142
+Total time: 323.6594974 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14594;  load averages:  3.11,  3.12,  3.11    21:31:59
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 3-threading-SortSequences...
+Elapsed time: 1.2043582 sec
+Total border length: 4270174 -> normalized: 23.80253065774805
+Running RowEpitaxial-BL-10000...
+Elapsed time: 620.807203 sec
+Total border length: 3258264 -> normalized: 18.16200668896321
+Total time: 622.0115612 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14626;  load averages:  3.18,  3.13,  3.12    21:42:29
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 3-threading-SortSequences...
+Elapsed time: 1.052612 sec
+Total border length: 4270174 -> normalized: 23.80253065774805
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1194.0270708 sec
+Total border length: 3236064 -> normalized: 18.038260869565217
+Total time: 1195.0796828 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14663;  load averages:  3.13,  3.12,  3.12    22:02:31
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 4-threading-SortSequences...
+Elapsed time: 1.3977158 sec
+Total border length: 4262932 -> normalized: 23.76216276477146
+Running RowEpitaxial-BL-5000...
+Elapsed time: 318.8960868 sec
+Total border length: 3287822 -> normalized: 18.326767001114828
+Total time: 320.2938026 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14671;  load averages:  3.10,  3.11,  3.12    22:07:59
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 4-threading-SortSequences...
+Elapsed time: 1.1084722 sec
+Total border length: 4262932 -> normalized: 23.76216276477146
+Running RowEpitaxial-BL-10000...
+Elapsed time: 625.8331024 sec
+Total border length: 3256144 -> normalized: 18.150189520624302
+Total time: 626.9415746 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14695;  load averages:  3.11,  3.11,  3.11    22:18:34
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running 4-threading-SortSequences...
+Elapsed time: 1.118115 sec
+Total border length: 4262932 -> normalized: 23.76216276477146
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1193.7804316 sec
+Total border length: 3235490 -> normalized: 18.035061315496097
+Total time: 1194.8985466 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14731;  load averages:  3.12,  3.12,  3.12    22:38:37
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 0-threading-SortSequences...
+Elapsed time: 3.6578354 sec
+Total border length: 12114508 -> normalized: 24.277571142284568
+Running RowEpitaxial-BL-5000...
+Elapsed time: 929.2953328 sec
+Total border length: 8780342 -> normalized: 17.595875751503005
+Total time: 932.9531682 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14765;  load averages:  3.11,  3.12,  3.12    22:54:26
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 0-threading-SortSequences...
+Elapsed time: 3.571523 sec
+Total border length: 12114508 -> normalized: 24.277571142284568
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1916.3450816 sec
+Total border length: 8708916 -> normalized: 17.4527374749499
+Total time: 1919.9166046 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14814;  load averages:  3.14,  3.13,  3.12    23:26:41
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 0-threading-SortSequences...
+Elapsed time: 3.1944328 sec
+Total border length: 12114508 -> normalized: 24.277571142284568
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3767.5223316 sec
+Total border length: 8646026 -> normalized: 17.326705410821642
+Total time: 3770.7167644 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14901;  load averages:  3.13,  3.14,  3.14    00:29:47
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 1-threading-SortSequences...
+Elapsed time: 3.598695 sec
+Total border length: 11656028 -> normalized: 23.358773547094188
+Running RowEpitaxial-BL-5000...
+Elapsed time: 917.6039466 sec
+Total border length: 8784694 -> normalized: 17.604597194388777
+Total time: 921.2026416 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14928;  load averages:  3.12,  3.12,  3.13    00:45:23
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 1-threading-SortSequences...
+Elapsed time: 3.6757532 sec
+Total border length: 11656028 -> normalized: 23.358773547094188
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1964.702027 sec
+Total border length: 8708488 -> normalized: 17.451879759519038
+Total time: 1968.3777802 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14975;  load averages:  3.12,  3.12,  3.12    01:18:26
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 1-threading-SortSequences...
+Elapsed time: 3.240882 sec
+Total border length: 11656028 -> normalized: 23.358773547094188
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3869.1292452 sec
+Total border length: 8647024 -> normalized: 17.328705410821645
+Total time: 3872.3701272 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15067;  load averages:  3.18,  3.14,  3.12    02:23:13
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 2-threading-SortSequences...
+Elapsed time: 4.0142796 sec
+Total border length: 11520476 -> normalized: 23.08712625250501
+Running RowEpitaxial-BL-5000...
+Elapsed time: 925.0792174 sec
+Total border length: 8792680 -> normalized: 17.62060120240481
+Total time: 929.093497 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15098;  load averages:  3.15,  3.14,  3.13    02:38:57
+159 processes: 155 sleeping, 2 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 2-threading-SortSequences...
+Elapsed time: 3.8735132 sec
+Total border length: 11520476 -> normalized: 23.08712625250501
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1981.8511522 sec
+Total border length: 8713832 -> normalized: 17.462589178356712
+Total time: 1985.7246654 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15143;  load averages:  3.12,  3.12,  3.12    03:12:18
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 2-threading-SortSequences...
+Elapsed time: 3.7584584 sec
+Total border length: 11520476 -> normalized: 23.08712625250501
+Running RowEpitaxial-BL-20000...
+Elapsed time: 4122.7477958 sec
+Total border length: 8645674 -> normalized: 17.326
+Total time: 4126.5062542 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15254;  load averages:  3.15,  3.15,  3.15    04:21:20
+159 processes: 154 sleeping, 3 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 3-threading-SortSequences...
+Elapsed time: 3.6033172 sec
+Total border length: 11462754 -> normalized: 22.971450901803607
+Running RowEpitaxial-BL-5000...
+Elapsed time: 905.4706802 sec
+Total border length: 8807704 -> normalized: 17.650709418837675
+Total time: 909.0739974 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15284;  load averages:  3.12,  3.13,  3.14    04:36:44
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 3-threading-SortSequences...
+Elapsed time: 4.4921884 sec
+Total border length: 11462754 -> normalized: 22.971450901803607
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1947.1609006 sec
+Total border length: 8716614 -> normalized: 17.468164328657316
+Total time: 1951.653089 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15332;  load averages:  3.12,  3.12,  3.12    05:09:31
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 3-threading-SortSequences...
+Elapsed time: 3.875014 sec
+Total border length: 11462754 -> normalized: 22.971450901803607
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3872.3851492 sec
+Total border length: 8645202 -> normalized: 17.32505410821643
+Total time: 3876.2601632 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15419;  load averages:  3.14,  3.14,  3.13    06:14:22
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 4-threading-SortSequences...
+Elapsed time: 3.9809882 sec
+Total border length: 11438164 -> normalized: 22.92217234468938
+Running RowEpitaxial-BL-5000...
+Elapsed time: 926.593234 sec
+Total border length: 8813770 -> normalized: 17.662865731462926
+Total time: 930.5742222 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15453;  load averages:  3.12,  3.13,  3.13    06:30:08
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 4-threading-SortSequences...
+Elapsed time: 4.0307224 sec
+Total border length: 11438164 -> normalized: 22.92217234468938
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1883.7493976 sec
+Total border length: 8721546 -> normalized: 17.478048096192385
+Total time: 1887.78012 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15498;  load averages:  3.13,  3.12,  3.12    07:01:52
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running 4-threading-SortSequences...
+Elapsed time: 3.1810878 sec
+Total border length: 11438164 -> normalized: 22.92217234468938
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3909.7763678 sec
+Total border length: 8648470 -> normalized: 17.331603206412826
+Total time: 3912.9574556 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15586;  load averages:  3.15,  3.15,  3.14    08:07:20
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 0-threading-SortSequences...
+Elapsed time: 12.020738 sec
+Total border length: 30263252 -> normalized: 23.672756570713393
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2571.0879818 sec
+Total border length: 21704284 -> normalized: 16.977693992490615
+Total time: 2583.1087198 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15646;  load averages:  3.13,  3.13,  3.14    08:50:55
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 0-threading-SortSequences...
+Elapsed time: 11.9140342 sec
+Total border length: 30263252 -> normalized: 23.672756570713393
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5671.6546494 sec
+Total border length: 21479478 -> normalized: 16.801844493116395
+Total time: 5683.5686836 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15765;  load averages:  3.15,  3.16,  3.16    10:26:09
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 0-threading-SortSequences...
+Elapsed time: 12.1027788 sec
+Total border length: 30263252 -> normalized: 23.672756570713393
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13057.1189378 sec
+Total border length: 21319390 -> normalized: 16.676619211514392
+Total time: 13069.2217166 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 16048;  load averages:  3.14,  3.14,  3.14    14:04:30
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 1-threading-SortSequences...
+Elapsed time: 12.7796222 sec
+Total border length: 28895094 -> normalized: 22.602545369211516
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2582.8625888 sec
+Total border length: 21720712 -> normalized: 16.990544430538172
+Total time: 2595.642211 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 16101;  load averages:  3.13,  3.12,  3.12    14:48:17
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 1-threading-SortSequences...
+Elapsed time: 12.0399158 sec
+Total border length: 28895094 -> normalized: 22.602545369211516
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5775.787202 sec
+Total border length: 21492802 -> normalized: 16.81226689612015
+Total time: 5787.8271178 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 16221;  load averages:  3.13,  3.12,  3.12    16:25:17
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 1-threading-SortSequences...
+Elapsed time: 12.3064374 sec
+Total border length: 28895094 -> normalized: 22.602545369211516
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13353.142599 sec
+Total border length: 21321472 -> normalized: 16.6782478097622
+Total time: 13365.4490364 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 16511;  load averages:  3.19,  3.19,  3.17    20:08:35
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 2-threading-SortSequences...
+Elapsed time: 12.9496096 sec
+Total border length: 28525726 -> normalized: 22.313615456821026
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2635.8374354 sec
+Total border length: 21750770 -> normalized: 17.014056633291613
+Total time: 2648.787045 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 16628;  load averages:  3.13,  3.14,  3.19    20:53:18
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running 2-threading-SortSequences...
+Elapsed time: 12.0187312 sec
+Total border length: 28525726 -> normalized: 22.313615456821026
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5763.823888 sec
+Total border length: 21509072 -> normalized: 16.82499374217772
+Total time: 5775.8426192 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Skipping records while load averages were instable...
+---------------------------
+last pid: 19666;  load averages:  3.07,  3.06,  3.05    08:52:23
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running 3-threading-SortSequences...
+Elapsed time: 11.5241528 sec
+Total border length: 28378554 -> normalized: 22.198493429286607
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2561.3627862 sec
+Total border length: 21808526 -> normalized: 17.059234981226535
+Total time: 2572.886939 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 19717;  load averages:  3.05,  3.05,  3.05    09:35:50
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running 3-threading-SortSequences...
+Elapsed time: 11.5334714 sec
+Total border length: 28378554 -> normalized: 22.198493429286607
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5698.0162242 sec
+Total border length: 21523426 -> normalized: 16.836221839799748
+Total time: 5709.5496956 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 19853;  load averages:  3.06,  3.06,  3.06    11:11:31
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running 3-threading-SortSequences...
+Elapsed time: 12.2319954 sec
+Total border length: 28378554 -> normalized: 22.198493429286607
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13012.8493818 sec
+Total border length: 21338714 -> normalized: 16.69173498122653
+Total time: 13025.0813772 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20160;  load averages:  3.05,  3.05,  3.05    14:49:07
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running 4-threading-SortSequences...
+Elapsed time: 12.0403824 sec
+Total border length: 28294120 -> normalized: 22.13244680851064
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2532.924586 sec
+Total border length: 21869910 -> normalized: 17.107251251564456
+Total time: 2544.9649684 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20227;  load averages:  3.06,  3.06,  3.05    15:32:06
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running 4-threading-SortSequences...
+Elapsed time: 10.8766644 sec
+Total border length: 28294120 -> normalized: 22.13244680851064
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5663.2980236 sec
+Total border length: 21556704 -> normalized: 16.862252816020025
+Total time: 5674.174688 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20353;  load averages:  3.05,  3.05,  3.05    17:07:12
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running 4-threading-SortSequences...
+Elapsed time: 12.7510788 sec
+Total border length: 28294120 -> normalized: 22.13244680851064
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13020.5915522 sec
+Total border length: 21351654 -> normalized: 16.70185700876095
+Total time: 13033.342631 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20567;  load averages:  3.06,  3.05,  3.05    20:44:57
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 0-threading-SortSequences...
+Elapsed time: 1.0161906 sec
+Total border length: 4476628 -> normalized: 24.953333333333333
+Running RowEpitaxial-BL-5000...
+Elapsed time: 319.2406144 sec
+Total border length: 3281344 -> normalized: 18.290657748049053
+Total time: 320.256805 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20575;  load averages:  3.05,  3.05,  3.05    20:50:24
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 0-threading-SortSequences...
+Elapsed time: 0.9949742 sec
+Total border length: 4476628 -> normalized: 24.953333333333333
+Running RowEpitaxial-BL-10000...
+Elapsed time: 615.8110618 sec
+Total border length: 3255034 -> normalized: 18.144002229654404
+Total time: 616.806036 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20599;  load averages:  3.05,  3.06,  3.05    21:00:49
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 0-threading-SortSequences...
+Elapsed time: 1.3360182 sec
+Total border length: 4476628 -> normalized: 24.953333333333333
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1209.157063 sec
+Total border length: 3234234 -> normalized: 18.028060200668897
+Total time: 1210.4930812 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20632;  load averages:  3.05,  3.05,  3.05    21:21:08
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 1-threading-SortSequences...
+Elapsed time: 0.880385 sec
+Total border length: 4326918 -> normalized: 24.118829431438126
+Running RowEpitaxial-BL-5000...
+Elapsed time: 325.744247 sec
+Total border length: 3281858 -> normalized: 18.293522853957636
+Total time: 326.624632 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20644;  load averages:  3.05,  3.05,  3.05    21:26:43
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 1-threading-SortSequences...
+Elapsed time: 1.361526 sec
+Total border length: 4326918 -> normalized: 24.118829431438126
+Running RowEpitaxial-BL-10000...
+Elapsed time: 618.3742132 sec
+Total border length: 3256072 -> normalized: 18.14978818283166
+Total time: 619.7357392 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20668;  load averages:  3.05,  3.06,  3.05    21:37:10
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 1-threading-SortSequences...
+Elapsed time: 1.042058 sec
+Total border length: 4326918 -> normalized: 24.118829431438126
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1208.1423068 sec
+Total border length: 3234898 -> normalized: 18.031761426978818
+Total time: 1209.1843648 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20704;  load averages:  3.05,  3.05,  3.05    21:57:27
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 2-threading-SortSequences...
+Elapsed time: 1.4860186 sec
+Total border length: 4278722 -> normalized: 23.850178372352286
+Running RowEpitaxial-BL-5000...
+Elapsed time: 311.6342046 sec
+Total border length: 3284614 -> normalized: 18.308885172798217
+Total time: 313.1202232 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20720;  load averages:  3.09,  3.07,  3.06    22:02:48
+149 processes: 146 sleeping, 2 running, 1 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 2-threading-SortSequences...
+Elapsed time: 1.4587588 sec
+Total border length: 4278722 -> normalized: 23.850178372352286
+Running RowEpitaxial-BL-10000...
+Elapsed time: 638.5388274 sec
+Total border length: 3256140 -> normalized: 18.150167224080267
+Total time: 639.9975862 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20735;  load averages:  3.06,  3.06,  3.06    22:13:35
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 2-threading-SortSequences...
+Elapsed time: 1.1144236 sec
+Total border length: 4278722 -> normalized: 23.850178372352286
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1182.6499394 sec
+Total border length: 3233162 -> normalized: 18.022084726867334
+Total time: 1183.764363 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20768;  load averages:  3.05,  3.05,  3.05    22:33:27
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 3-threading-SortSequences...
+Elapsed time: 1.3913736 sec
+Total border length: 4269428 -> normalized: 23.798372352285394
+Running RowEpitaxial-BL-5000...
+Elapsed time: 330.086128 sec
+Total border length: 3286092 -> normalized: 18.317123745819398
+Total time: 331.4775016 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20780;  load averages:  3.05,  3.05,  3.05    22:39:05
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 3-threading-SortSequences...
+Elapsed time: 1.468941 sec
+Total border length: 4269428 -> normalized: 23.798372352285394
+Running RowEpitaxial-BL-10000...
+Elapsed time: 641.6030662 sec
+Total border length: 3257126 -> normalized: 18.15566332218506
+Total time: 643.0720072 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20807;  load averages:  3.05,  3.06,  3.05    22:49:56
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 3-threading-SortSequences...
+Elapsed time: 1.2349112 sec
+Total border length: 4269428 -> normalized: 23.798372352285394
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1210.0144018 sec
+Total border length: 3232552 -> normalized: 18.018684503901895
+Total time: 1211.249313 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20840;  load averages:  3.05,  3.05,  3.05    23:10:16
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 4-threading-SortSequences...
+Elapsed time: 1.3000788 sec
+Total border length: 4261554 -> normalized: 23.75448160535117
+Running RowEpitaxial-BL-5000...
+Elapsed time: 322.0576214 sec
+Total border length: 3288118 -> normalized: 18.328416945373466
+Total time: 323.3577002 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20843;  load averages:  3.05,  3.05,  3.05    23:15:47
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 4-threading-SortSequences...
+Elapsed time: 1.35652 sec
+Total border length: 4261554 -> normalized: 23.75448160535117
+Running RowEpitaxial-BL-10000...
+Elapsed time: 627.5974626 sec
+Total border length: 3258528 -> normalized: 18.163478260869564
+Total time: 628.9539826 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20875;  load averages:  3.07,  3.06,  3.05    23:26:23
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running 4-threading-SortSequences...
+Elapsed time: 1.1030428 sec
+Total border length: 4261554 -> normalized: 23.75448160535117
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1180.002088 sec
+Total border length: 3235788 -> normalized: 18.036722408026755
+Total time: 1181.1051308 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20909;  load averages:  3.06,  3.05,  3.05    23:46:12
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 0-threading-SortSequences...
+Elapsed time: 2.9795826 sec
+Total border length: 12107918 -> normalized: 24.26436472945892
+Running RowEpitaxial-BL-5000...
+Elapsed time: 917.5482266 sec
+Total border length: 8784624 -> normalized: 17.604456913827654
+Total time: 920.5278092 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20934;  load averages:  3.06,  3.06,  3.05    00:01:48
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 0-threading-SortSequences...
+Elapsed time: 3.9473038 sec
+Total border length: 12107918 -> normalized: 24.26436472945892
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1836.9155432 sec
+Total border length: 8707250 -> normalized: 17.44939879759519
+Total time: 1840.862847 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20976;  load averages:  3.05,  3.05,  3.05    00:32:43
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 0-threading-SortSequences...
+Elapsed time: 3.6230976 sec
+Total border length: 12107918 -> normalized: 24.26436472945892
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3859.37104 sec
+Total border length: 8648294 -> normalized: 17.331250501002003
+Total time: 3862.9941376 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21057;  load averages:  3.06,  3.05,  3.05    01:37:21
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 1-threading-SortSequences...
+Elapsed time: 3.3082494 sec
+Total border length: 11648856 -> normalized: 23.344400801603207
+Running RowEpitaxial-BL-5000...
+Elapsed time: 923.205309 sec
+Total border length: 8788610 -> normalized: 17.61244488977956
+Total time: 926.5135584 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21082;  load averages:  3.05,  3.06,  3.05    01:53:02
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 1-threading-SortSequences...
+Elapsed time: 3.8636002 sec
+Total border length: 11648856 -> normalized: 23.344400801603207
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1947.3888444 sec
+Total border length: 8708978 -> normalized: 17.452861723446894
+Total time: 1951.2524446 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21124;  load averages:  3.05,  3.05,  3.05    02:25:48
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 1-threading-SortSequences...
+Elapsed time: 3.9685036 sec
+Total border length: 11648856 -> normalized: 23.344400801603207
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3874.4100424 sec
+Total border length: 8646590 -> normalized: 17.327835671342687
+Total time: 3878.378546 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21208;  load averages:  3.06,  3.05,  3.05    03:30:41
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 2-threading-SortSequences...
+Elapsed time: 3.6360058 sec
+Total border length: 11519752 -> normalized: 23.085675350701404
+Running RowEpitaxial-BL-5000...
+Elapsed time: 928.0945526 sec
+Total border length: 8796806 -> normalized: 17.628869739478958
+Total time: 931.7305584 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21237;  load averages:  3.07,  3.06,  3.05    03:46:28
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 2-threading-SortSequences...
+Elapsed time: 2.789903 sec
+Total border length: 11519752 -> normalized: 23.085675350701404
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1912.7641998 sec
+Total border length: 8711344 -> normalized: 17.457603206412827
+Total time: 1915.5541028 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21281;  load averages:  3.05,  3.05,  3.05    04:18:37
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 2-threading-SortSequences...
+Elapsed time: 3.822461 sec
+Total border length: 11519752 -> normalized: 23.085675350701404
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3859.3201162 sec
+Total border length: 8648804 -> normalized: 17.33227254509018
+Total time: 3863.1425772 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21356;  load averages:  3.06,  3.06,  3.05    05:23:16
+149 processes: 145 sleeping, 2 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 3-threading-SortSequences...
+Elapsed time: 2.8199958 sec
+Total border length: 11460538 -> normalized: 22.96701002004008
+Running RowEpitaxial-BL-5000...
+Elapsed time: 921.7717756 sec
+Total border length: 8807138 -> normalized: 17.649575150300603
+Total time: 924.5917714 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21385;  load averages:  3.05,  3.05,  3.05    05:38:55
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 3-threading-SortSequences...
+Elapsed time: 3.0961864 sec
+Total border length: 11460538 -> normalized: 22.96701002004008
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1888.515825 sec
+Total border length: 8718258 -> normalized: 17.471458917835673
+Total time: 1891.6120114 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21430;  load averages:  3.06,  3.06,  3.05    06:10:41
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 3-threading-SortSequences...
+Elapsed time: 3.0718006 sec
+Total border length: 11460538 -> normalized: 22.96701002004008
+Running RowEpitaxial-BL-20000...
+Elapsed time: 4061.4475002 sec
+Total border length: 8650668 -> normalized: 17.336008016032064
+Total time: 4064.5193008 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21509;  load averages:  3.05,  3.05,  3.05    07:18:40
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 4-threading-SortSequences...
+Elapsed time: 4.058334 sec
+Total border length: 11434224 -> normalized: 22.914276553106212
+Running RowEpitaxial-BL-5000...
+Elapsed time: 927.919987 sec
+Total border length: 8814844 -> normalized: 17.665018036072144
+Total time: 931.978321 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21537;  load averages:  3.06,  3.06,  3.05    07:34:28
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 4-threading-SortSequences...
+Elapsed time: 3.7595942 sec
+Total border length: 11434224 -> normalized: 22.914276553106212
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1918.3165204 sec
+Total border length: 8721188 -> normalized: 17.477330661322647
+Total time: 1922.0761146 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21591;  load averages:  3.09,  3.07,  3.05    08:06:44
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running 4-threading-SortSequences...
+Elapsed time: 3.9762994 sec
+Total border length: 11434224 -> normalized: 22.914276553106212
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3960.9038834 sec
+Total border length: 8650260 -> normalized: 17.335190380761524
+Total time: 3964.8801828 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21663;  load averages:  3.05,  3.05,  3.05    09:13:03
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 0-threading-SortSequences...
+Elapsed time: 11.3471276 sec
+Total border length: 30290424 -> normalized: 23.6940112640801
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2581.1155114 sec
+Total border length: 21705962 -> normalized: 16.97900657071339
+Total time: 2592.462639 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21721;  load averages:  3.06,  3.05,  3.05    09:56:46
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 0-threading-SortSequences...
+Elapsed time: 11.8508098 sec
+Total border length: 30290424 -> normalized: 23.6940112640801
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5675.1401864 sec
+Total border length: 21484216 -> normalized: 16.80555068836045
+Total time: 5686.9909962 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21809;  load averages:  3.05,  3.05,  3.05    11:32:04
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 0-threading-SortSequences...
+Elapsed time: 11.987814 sec
+Total border length: 30290424 -> normalized: 23.6940112640801
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13124.837879 sec
+Total border length: 21318930 -> normalized: 16.676259386733417
+Total time: 13136.825693 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22049;  load averages:  3.05,  3.05,  3.05    15:11:32
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 1-threading-SortSequences...
+Elapsed time: 11.73229 sec
+Total border length: 28908058 -> normalized: 22.612686170212765
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2576.9986394 sec
+Total border length: 21726190 -> normalized: 16.99482947434293
+Total time: 2588.7309294 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22105;  load averages:  3.05,  3.05,  3.05    15:55:12
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 1-threading-SortSequences...
+Elapsed time: 11.44476 sec
+Total border length: 28908058 -> normalized: 22.612686170212765
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5645.808683 sec
+Total border length: 21497132 -> normalized: 16.815653942428035
+Total time: 5657.253443 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22208;  load averages:  3.05,  3.05,  3.05    17:30:02
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 1-threading-SortSequences...
+Elapsed time: 12.1358668 sec
+Total border length: 28908058 -> normalized: 22.612686170212765
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13082.786187 sec
+Total border length: 21324830 -> normalized: 16.680874530663328
+Total time: 13094.9220538 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22438;  load averages:  3.05,  3.05,  3.05    21:08:48
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 2-threading-SortSequences...
+Elapsed time: 10.5859774 sec
+Total border length: 28539600 -> normalized: 22.324468085106382
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2582.4113482 sec
+Total border length: 21763590 -> normalized: 17.024084793491866
+Total time: 2592.9973256 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22496;  load averages:  3.06,  3.05,  3.05    21:52:33
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 2-threading-SortSequences...
+Elapsed time: 12.1512408 sec
+Total border length: 28539600 -> normalized: 22.324468085106382
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5763.9121498 sec
+Total border length: 21512964 -> normalized: 16.828038172715896
+Total time: 5776.0633906 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22605;  load averages:  3.07,  3.06,  3.05    23:29:19
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 2-threading-SortSequences...
+Elapsed time: 11.589239 sec
+Total border length: 28539600 -> normalized: 22.324468085106382
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13099.1965104 sec
+Total border length: 21334500 -> normalized: 16.688438673341675
+Total time: 13110.7857494 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22816;  load averages:  3.05,  3.05,  3.05    03:08:22
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 3-threading-SortSequences...
+Elapsed time: 11.3484526 sec
+Total border length: 28375952 -> normalized: 22.196458072590737
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2495.1606994 sec
+Total border length: 21812914 -> normalized: 17.062667396745933
+Total time: 2506.509152 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22892;  load averages:  3.05,  3.05,  3.05    03:50:38
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 3-threading-SortSequences...
+Elapsed time: 11.7924404 sec
+Total border length: 28375952 -> normalized: 22.196458072590737
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5730.4321694 sec
+Total border length: 21525186 -> normalized: 16.837598560700876
+Total time: 5742.2246098 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23083;  load averages:  3.07,  3.07,  3.05    05:26:51
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 3-threading-SortSequences...
+Elapsed time: 11.3737554 sec
+Total border length: 28375952 -> normalized: 22.196458072590737
+Running RowEpitaxial-BL-20000...
+Elapsed time: 12922.8475442 sec
+Total border length: 21337840 -> normalized: 16.69105131414268
+Total time: 12934.2212996 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23422;  load averages:  3.06,  3.05,  3.05    09:02:57
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 4-threading-SortSequences...
+Elapsed time: 11.8011602 sec
+Total border length: 28290108 -> normalized: 22.1293085106383
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2531.5876492 sec
+Total border length: 21872266 -> normalized: 17.10909418022528
+Total time: 2543.3888094 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23477;  load averages:  3.05,  3.05,  3.05    09:45:52
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 4-threading-SortSequences...
+Elapsed time: 12.2479042 sec
+Total border length: 28290108 -> normalized: 22.1293085106383
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5688.4248226 sec
+Total border length: 21553954 -> normalized: 16.860101689612016
+Total time: 5700.6727268 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23601;  load averages:  3.05,  3.05,  3.05    11:21:25
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running 4-threading-SortSequences...
+Elapsed time: 11.8923006 sec
+Total border length: 28290108 -> normalized: 22.1293085106383
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13166.5057864 sec
+Total border length: 21349386 -> normalized: 16.70008291614518
+Total time: 13178.398087 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23901;  load averages:  3.05,  3.05,  3.05    15:01:35
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 0-threading-SortSequences...
+Elapsed time: 1.003056 sec
+Total border length: 4477506 -> normalized: 24.958227424749165
+Running RowEpitaxial-BL-5000...
+Elapsed time: 322.7173742 sec
+Total border length: 3281744 -> normalized: 18.29288740245262
+Total time: 323.7204302 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23908;  load averages:  3.05,  3.05,  3.05    15:07:06
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 0-threading-SortSequences...
+Elapsed time: 1.0867018 sec
+Total border length: 4477506 -> normalized: 24.958227424749165
+Running RowEpitaxial-BL-10000...
+Elapsed time: 647.5291654 sec
+Total border length: 3254110 -> normalized: 18.138851727982164
+Total time: 648.6158672 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23935;  load averages:  3.10,  3.07,  3.05    15:18:02
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 0-threading-SortSequences...
+Elapsed time: 1.180522 sec
+Total border length: 4477506 -> normalized: 24.958227424749165
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1201.7579036 sec
+Total border length: 3232828 -> normalized: 18.020222965440357
+Total time: 1202.9384256 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23969;  load averages:  3.05,  3.05,  3.05    15:38:14
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 1-threading-SortSequences...
+Elapsed time: 1.3649496 sec
+Total border length: 4326342 -> normalized: 24.11561872909699
+Running RowEpitaxial-BL-5000...
+Elapsed time: 318.4593644 sec
+Total border length: 3283304 -> normalized: 18.301583054626533
+Total time: 319.824314 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23977;  load averages:  3.05,  3.05,  3.05    15:43:41
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 1-threading-SortSequences...
+Elapsed time: 1.0574814 sec
+Total border length: 4326342 -> normalized: 24.11561872909699
+Running RowEpitaxial-BL-10000...
+Elapsed time: 636.7219526 sec
+Total border length: 3256072 -> normalized: 18.14978818283166
+Total time: 637.779434 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24004;  load averages:  3.06,  3.06,  3.05    15:54:27
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 1-threading-SortSequences...
+Elapsed time: 0.9880544 sec
+Total border length: 4326342 -> normalized: 24.11561872909699
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1204.0006386 sec
+Total border length: 3232588 -> normalized: 18.018885172798218
+Total time: 1204.988693 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24037;  load averages:  3.05,  3.05,  3.05    16:14:40
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 2-threading-SortSequences...
+Elapsed time: 1.0740012 sec
+Total border length: 4282774 -> normalized: 23.872764771460425
+Running RowEpitaxial-BL-5000...
+Elapsed time: 318.0154564 sec
+Total border length: 3282576 -> normalized: 18.29752508361204
+Total time: 319.0894576 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24044;  load averages:  3.05,  3.05,  3.05    16:20:07
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 2-threading-SortSequences...
+Elapsed time: 1.0474498 sec
+Total border length: 4282774 -> normalized: 23.872764771460425
+Running RowEpitaxial-BL-10000...
+Elapsed time: 624.3687418 sec
+Total border length: 3255662 -> normalized: 18.147502787068003
+Total time: 625.4161916 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24068;  load averages:  3.05,  3.05,  3.05    16:30:42
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 2-threading-SortSequences...
+Elapsed time: 1.0900174 sec
+Total border length: 4282774 -> normalized: 23.872764771460425
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1181.8963076 sec
+Total border length: 3234058 -> normalized: 18.027079152731325
+Total time: 1182.986325 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24104;  load averages:  3.05,  3.05,  3.05    16:50:33
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 3-threading-SortSequences...
+Elapsed time: 1.0424188 sec
+Total border length: 4266278 -> normalized: 23.7808138238573
+Running RowEpitaxial-BL-5000...
+Elapsed time: 314.2719384 sec
+Total border length: 3286518 -> normalized: 18.3194983277592
+Total time: 315.3143572 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24112;  load averages:  3.05,  3.05,  3.05    16:55:56
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 3-threading-SortSequences...
+Elapsed time: 1.100772 sec
+Total border length: 4266278 -> normalized: 23.7808138238573
+Running RowEpitaxial-BL-10000...
+Elapsed time: 626.1671364 sec
+Total border length: 3257376 -> normalized: 18.157056856187292
+Total time: 627.2679084 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24139;  load averages:  3.05,  3.06,  3.05    17:06:31
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 3-threading-SortSequences...
+Elapsed time: 1.0754646 sec
+Total border length: 4266278 -> normalized: 23.7808138238573
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1196.5038586 sec
+Total border length: 3233580 -> normalized: 18.024414715719065
+Total time: 1197.5793232 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24173;  load averages:  3.06,  3.06,  3.05    17:26:36
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 4-threading-SortSequences...
+Elapsed time: 1.016223 sec
+Total border length: 4262764 -> normalized: 23.761226309921962
+Running RowEpitaxial-BL-5000...
+Elapsed time: 318.893918 sec
+Total border length: 3287900 -> normalized: 18.327201783723524
+Total time: 319.910141 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24180;  load averages:  3.05,  3.05,  3.05    17:32:04
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 4-threading-SortSequences...
+Elapsed time: 0.9873822 sec
+Total border length: 4262764 -> normalized: 23.761226309921962
+Running RowEpitaxial-BL-10000...
+Elapsed time: 635.4516672 sec
+Total border length: 3257650 -> normalized: 18.158584169453736
+Total time: 636.4390494 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24207;  load averages:  3.05,  3.06,  3.05    17:42:49
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running 4-threading-SortSequences...
+Elapsed time: 1.3318362 sec
+Total border length: 4262764 -> normalized: 23.761226309921962
+Running RowEpitaxial-BL-20000...
+Elapsed time: 1207.7642248 sec
+Total border length: 3233584 -> normalized: 18.0244370122631
+Total time: 1209.096061 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24240;  load averages:  3.05,  3.05,  3.05    18:03:06
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 0-threading-SortSequences...
+Elapsed time: 3.9723132 sec
+Total border length: 12108496 -> normalized: 24.265523046092184
+Running RowEpitaxial-BL-5000...
+Elapsed time: 950.339318 sec
+Total border length: 8778776 -> normalized: 17.5927374749499
+Total time: 954.3116312 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24270;  load averages:  3.05,  3.05,  3.05    18:19:16
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 0-threading-SortSequences...
+Elapsed time: 4.0098714 sec
+Total border length: 12108496 -> normalized: 24.265523046092184
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1882.4665792 sec
+Total border length: 8708742 -> normalized: 17.45238877755511
+Total time: 1886.4764506 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24314;  load averages:  3.05,  3.05,  3.05    18:50:58
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 0-threading-SortSequences...
+Elapsed time: 4.0807416 sec
+Total border length: 12108496 -> normalized: 24.265523046092184
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3821.037093 sec
+Total border length: 8649948 -> normalized: 17.334565130260522
+Total time: 3825.1178346 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24402;  load averages:  3.05,  3.05,  3.05    19:54:58
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 1-threading-SortSequences...
+Elapsed time: 3.4669684 sec
+Total border length: 11646812 -> normalized: 23.340304609218435
+Running RowEpitaxial-BL-5000...
+Elapsed time: 925.7546562 sec
+Total border length: 8783690 -> normalized: 17.60258517034068
+Total time: 929.2216246 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24435;  load averages:  3.05,  3.06,  3.05    20:10:43
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 1-threading-SortSequences...
+Elapsed time: 3.4500744 sec
+Total border length: 11646812 -> normalized: 23.340304609218435
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1938.86586 sec
+Total border length: 8707046 -> normalized: 17.44898997995992
+Total time: 1942.3159344 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24478;  load averages:  3.05,  3.05,  3.05    20:43:20
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 1-threading-SortSequences...
+Elapsed time: 3.975769 sec
+Total border length: 11646812 -> normalized: 23.340304609218435
+Running RowEpitaxial-BL-20000...
+Elapsed time: 4043.3342598 sec
+Total border length: 8649738 -> normalized: 17.334144288577154
+Total time: 4047.3100288 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24556;  load averages:  3.06,  3.05,  3.05    21:51:02
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 2-threading-SortSequences...
+Elapsed time: 4.4265426 sec
+Total border length: 11515206 -> normalized: 23.076565130260523
+Running RowEpitaxial-BL-5000...
+Elapsed time: 927.688458 sec
+Total border length: 8791780 -> normalized: 17.61879759519038
+Total time: 932.1150006 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24586;  load averages:  3.06,  3.06,  3.05    22:06:49
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 2-threading-SortSequences...
+Elapsed time: 3.610009 sec
+Total border length: 11515206 -> normalized: 23.076565130260523
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1899.5623122 sec
+Total border length: 8709886 -> normalized: 17.454681362725452
+Total time: 1903.1723212 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24626;  load averages:  3.05,  3.05,  3.05    22:38:47
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 2-threading-SortSequences...
+Elapsed time: 3.4970946 sec
+Total border length: 11515206 -> normalized: 23.076565130260523
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3987.2214346 sec
+Total border length: 8647176 -> normalized: 17.32901002004008
+Total time: 3990.7185292 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24711;  load averages:  3.05,  3.06,  3.05    23:45:32
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 3-threading-SortSequences...
+Elapsed time: 3.25846 sec
+Total border length: 11456402 -> normalized: 22.95872144288577
+Running RowEpitaxial-BL-5000...
+Elapsed time: 919.0917578 sec
+Total border length: 8806418 -> normalized: 17.648132264529057
+Total time: 922.3502178 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24739;  load averages:  3.05,  3.05,  3.05    00:01:09
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 3-threading-SortSequences...
+Elapsed time: 3.5062232 sec
+Total border length: 11456402 -> normalized: 22.95872144288577
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1922.026929 sec
+Total border length: 8716834 -> normalized: 17.46860521042084
+Total time: 1925.5331522 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24781;  load averages:  3.05,  3.05,  3.05    00:33:29
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 3-threading-SortSequences...
+Elapsed time: 3.5868144 sec
+Total border length: 11456402 -> normalized: 22.95872144288577
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3960.0533908 sec
+Total border length: 8649016 -> normalized: 17.33269739478958
+Total time: 3963.6402052 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24857;  load averages:  3.05,  3.05,  3.05    01:39:49
+148 processes: 145 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 4-threading-SortSequences...
+Elapsed time: 3.8919434 sec
+Total border length: 11437356 -> normalized: 22.920553106212424
+Running RowEpitaxial-BL-5000...
+Elapsed time: 929.9298742 sec
+Total border length: 8815714 -> normalized: 17.66676152304609
+Total time: 933.8218176 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24884;  load averages:  3.05,  3.05,  3.05    01:55:38
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 4-threading-SortSequences...
+Elapsed time: 3.9948002 sec
+Total border length: 11437356 -> normalized: 22.920553106212424
+Running RowEpitaxial-BL-10000...
+Elapsed time: 1905.9631808 sec
+Total border length: 8718148 -> normalized: 17.471238476953907
+Total time: 1909.957981 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24928;  load averages:  3.05,  3.05,  3.05    02:27:43
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running 4-threading-SortSequences...
+Elapsed time: 3.9599236 sec
+Total border length: 11437356 -> normalized: 22.920553106212424
+Running RowEpitaxial-BL-20000...
+Elapsed time: 3783.4485278 sec
+Total border length: 8654096 -> normalized: 17.342877755511022
+Total time: 3787.4084514 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25014;  load averages:  3.05,  3.05,  3.05    03:31:05
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 0-threading-SortSequences...
+Elapsed time: 11.9030748 sec
+Total border length: 30270960 -> normalized: 23.678785982478097
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2556.7117232 sec
+Total border length: 21702822 -> normalized: 16.976550375469337
+Total time: 2568.614798 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25067;  load averages:  3.06,  3.05,  3.05    04:14:25
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 0-threading-SortSequences...
+Elapsed time: 11.8796356 sec
+Total border length: 30270960 -> normalized: 23.678785982478097
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5721.740282 sec
+Total border length: 21483642 -> normalized: 16.805101689612016
+Total time: 5733.6199176 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25186;  load averages:  3.06,  3.05,  3.05    05:50:30
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-0-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 0-threading-SortSequences...
+Elapsed time: 10.1685892 sec
+Total border length: 30270960 -> normalized: 23.678785982478097
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13227.3503976 sec
+Total border length: 21317150 -> normalized: 16.674867021276597
+Total time: 13237.5189868 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25401;  load averages:  3.06,  3.05,  3.05    09:31:40
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 1-threading-SortSequences...
+Elapsed time: 12.3379554 sec
+Total border length: 28906270 -> normalized: 22.611287546933667
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2569.008206 sec
+Total border length: 21726424 -> normalized: 16.995012515644557
+Total time: 2581.3461614 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25463;  load averages:  3.05,  3.05,  3.05    10:15:14
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 1-threading-SortSequences...
+Elapsed time: 12.058985 sec
+Total border length: 28906270 -> normalized: 22.611287546933667
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5764.5433626 sec
+Total border length: 21490116 -> normalized: 16.810165832290362
+Total time: 5776.6023476 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25575;  load averages:  3.05,  3.05,  3.05    11:52:03
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-1-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 1-threading-SortSequences...
+Elapsed time: 12.8645294 sec
+Total border length: 28906270 -> normalized: 22.611287546933667
+Running RowEpitaxial-BL-20000...
+Elapsed time: 13144.8798432 sec
+Total border length: 21322784 -> normalized: 16.67927409261577
+Total time: 13157.7443726 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25802;  load averages:  3.05,  3.05,  3.05    15:31:52
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 2-threading-SortSequences...
+Elapsed time: 12.0669258 sec
+Total border length: 28539626 -> normalized: 22.324488423028786
+Running RowEpitaxial-BL-5000...
+Elapsed time: 2534.3737012 sec
+Total border length: 21759414 -> normalized: 17.020818210262828
+Total time: 2546.440627 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25858;  load averages:  3.06,  3.05,  3.05    16:14:51
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 2-threading-SortSequences...
+Elapsed time: 11.3583934 sec
+Total border length: 28539626 -> normalized: 22.324488423028786
+Running RowEpitaxial-BL-10000...
+Elapsed time: 5579.1876096 sec
+Total border length: 21505636 -> normalized: 16.822306007509386
+Total time: 5590.546003 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25972;  load averages:  3.05,  3.05,  3.05    17:48:33
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-2-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 2-threading-SortSequences...
+Elapsed time: 11.0252226 sec
+Total border length: 28539626 -> normalized: 22.324488423028786
+Running RowEpitaxial-BL-20000...
+Elapsed time: 10040.9807876 sec
+Total border length: 21329088 -> normalized: 16.684205256570714
+Total time: 10052.0060102 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26171;  load averages:  2.05,  2.05,  2.04    20:36:35
+147 processes: 145 sleeping, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 3-threading-SortSequences...
+Elapsed time: 7.6849176 sec
+Total border length: 28383186 -> normalized: 22.202116708385482
+Running RowEpitaxial-BL-5000...
+Elapsed time: 1692.2392878 sec
+Total border length: 21800888 -> normalized: 17.053260325406757
+Total time: 1699.9242054 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26212;  load averages:  2.05,  2.04,  2.04    21:05:16
+147 processes: 145 sleeping, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 3-threading-SortSequences...
+Elapsed time: 7.6255152 sec
+Total border length: 28383186 -> normalized: 22.202116708385482
+Running RowEpitaxial-BL-10000...
+Elapsed time: 3760.4793516 sec
+Total border length: 21521820 -> normalized: 16.83496558197747
+Total time: 3768.1048668 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26275;  load averages:  2.04,  2.04,  2.04    22:08:24
+147 processes: 145 sleeping, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-3-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 3-threading-SortSequences...
+Elapsed time: 8.0342482 sec
+Total border length: 28383186 -> normalized: 22.202116708385482
+Running RowEpitaxial-BL-20000...
+Elapsed time: 8462.6759022 sec
+Total border length: 21339548 -> normalized: 16.692387359199
+Total time: 8470.7101504 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26443;  load averages:  2.05,  2.05,  2.04    00:29:55
+147 processes: 145 sleeping, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-5K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 4-threading-SortSequences...
+Elapsed time: 7.9975 sec
+Total border length: 28294168 -> normalized: 22.132484355444305
+Running RowEpitaxial-BL-5000...
+Elapsed time: 1730.4268556 sec
+Total border length: 21878716 -> normalized: 17.114139549436796
+Total time: 1738.4243556 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26500;  load averages:  2.04,  2.04,  2.04    00:59:14
+147 processes: 145 sleeping, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-10K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 4-threading-SortSequences...
+Elapsed time: 7.603493 sec
+Total border length: 28294168 -> normalized: 22.132484355444305
+Running RowEpitaxial-BL-10000...
+Elapsed time: 3677.7162074 sec
+Total border length: 21559784 -> normalized: 16.864662077596996
+Total time: 3685.3197004 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26570;  load averages:  2.05,  2.05,  2.04    02:01:01
+147 processes: 145 sleeping, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost KTHREAD-4-SORTSEQ REPTX-BL-20K
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running 4-threading-SortSequences...
+Elapsed time: 7.520738 sec
+Total border length: 28294168 -> normalized: 22.132484355444305
+Running RowEpitaxial-BL-20000...
+Elapsed time: 8702.0046176 sec
+Total border length: 21349208 -> normalized: 16.6999436795995
+Total time: 8709.5253556 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.

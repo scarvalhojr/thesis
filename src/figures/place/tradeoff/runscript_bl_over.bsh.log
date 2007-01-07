@@ -1,0 +1,405 @@
+Start: Fri Dec 22 19:38:19 CET 2006
+Host: gimli
+---------------------------
+last pid: 14344;  load averages:  0.10,  0.87,  1.12    19:38:20
+156 processes: 153 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 2376.1759672 sec
+Total border length: 3262746 -> normalized: 18.186989966555185
+Total time: 2376.1759672 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14428;  load averages:  3.10,  3.11,  2.96    20:18:04
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 3411.0202302 sec
+Total border length: 3249806 -> normalized: 18.114860646599777
+Total time: 3411.0202302 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14547;  load averages:  3.12,  3.11,  3.11    21:15:02
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 10228.8035832 sec
+Total border length: 8729826 -> normalized: 17.49464128256513
+Total time: 10228.8035832 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14863;  load averages:  3.13,  3.14,  3.13    00:05:45
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 20146.5395588 sec
+Total border length: 8685866 -> normalized: 17.406545090180362
+Total time: 20146.5395588 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15374;  load averages:  3.12,  3.12,  3.12    05:41:46
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 35734.1200516 sec
+Total border length: 21532318 -> normalized: 16.84317740926158
+Total time: 35734.1200516 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 16160;  load averages:  3.12,  3.12,  3.12    15:37:52
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 78453.1336338 sec
+Total border length: 21442796 -> normalized: 16.773150813516896
+Total time: 78453.1336338 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23795;  load averages:  3.85,  4.00,  4.07    13:25:55
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 3062.1948776 sec
+Total border length: 3263510 -> normalized: 18.191248606465997
+Total time: 3062.1948776 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24282;  load averages:  3.39,  3.66,  3.67    14:17:07
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 4601.3276854 sec
+Total border length: 3249324 -> normalized: 18.112173913043478
+Total time: 4601.3276854 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25216;  load averages:  4.96,  4.60,  4.30    15:33:58
+159 processes: 155 sleeping, 3 running, 1 on cpu
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 13882.405609 sec
+Total border length: 8729328 -> normalized: 17.493643286573146
+Total time: 13882.405609 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 27965;  load averages:  3.46,  3.96,  4.12    19:25:44
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 25751.6989082 sec
+Total border length: 8688050 -> normalized: 17.410921843687376
+Total time: 25751.6989082 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  1184;  load averages:  3.57,  3.31,  3.53    02:35:12
+159 processes: 155 sleeping, 2 running, 2 on cpu
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 46651.1988538 sec
+Total border length: 21539328 -> normalized: 16.84866082603254
+Total time: 46651.1988538 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 12520;  load averages:  6.31,  6.20,  5.27    15:33:20
+160 processes: 156 sleeping, 2 running, 2 on cpu
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 104188.0717504 sec
+Total border length: 21443262 -> normalized: 16.77351533166458
+Total time: 104188.0717504 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 14097;  load averages:  5.23,  5.52,  5.72    20:30:53
+159 processes: 154 sleeping, 3 running, 2 on cpu
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 4113.613599 sec
+Total border length: 3263134 -> normalized: 18.189152731326644
+Total time: 4113.613599 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15057;  load averages:  3.78,  4.70,  5.29    21:39:41
+159 processes: 156 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 8326.7333024 sec
+Total border length: 3249538 -> normalized: 18.113366778149388
+Total time: 8326.7333024 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 18490;  load averages:  7.14,  7.48,  7.30    23:58:39
+158 processes: 152 sleeping, 4 running, 2 on cpu
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 24151.7523668 sec
+Total border length: 8728614 -> normalized: 17.4922124248497
+Total time: 24151.7523668 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 28437;  load averages:  6.88,  6.72,  6.92    06:41:39
+159 processes: 153 sleeping, 5 running, 1 on cpu
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-80000-SortSequences...
+Elapsed time: 30976.1004572 sec
+Total border length: 8688356 -> normalized: 17.411535070140282
+Total time: 30976.1004572 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  7083;  load averages:  4.32,  4.70,  5.02    15:18:30
+159 processes: 155 sleeping, 3 running, 1 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-40000-SortSequences...
+Elapsed time: 57085.7788014 sec
+Total border length: 21537192 -> normalized: 16.846989987484356
+Total time: 57085.7788014 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24059;  load averages:  3.96,  4.57,  4.86    07:10:32
+159 processes: 155 sleeping, 3 running, 1 on cpu
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 103627.360266 sec
+Total border length: 21442386 -> normalized: 16.772830100125155
+Total time: 103627.360266 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 19913;  load averages:  3.07,  3.05,  3.05    11:58:15
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-40000-1-SortSequences...
+Elapsed time: 2381.8938814 sec
+Total border length: 3262526 -> normalized: 18.18576365663322
+Total time: 2381.8938814 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 19982;  load averages:  3.07,  3.06,  3.05    12:38:06
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 3525.8379948 sec
+Total border length: 3250046 -> normalized: 18.116198439241916
+Total time: 3525.8379948 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20066;  load averages:  3.06,  3.05,  3.05    13:37:01
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-40000-1-SortSequences...
+Elapsed time: 10686.3011932 sec
+Total border length: 8727756 -> normalized: 17.490492985971944
+Total time: 10686.3011932 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20300;  load averages:  3.06,  3.05,  3.05    16:35:22
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 20135.1753674 sec
+Total border length: 8689770 -> normalized: 17.41436873747495
+Total time: 20135.1753674 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20732;  load averages:  3.05,  3.05,  3.05    22:11:11
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-40000-1-SortSequences...
+Elapsed time: 35129.7861998 sec
+Total border length: 21540670 -> normalized: 16.849710575719648
+Total time: 35129.7861998 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21575;  load averages:  3.05,  3.05,  3.05    07:57:11
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 70051.4138718 sec
+Total border length: 21447268 -> normalized: 16.77664893617021
+Total time: 70051.4138718 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22848;  load averages:  3.05,  3.05,  3.05    03:25:10
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-40000-1-SortSequences...
+Elapsed time: 2245.308608 sec
+Total border length: 3264544 -> normalized: 18.197012263099218
+Total time: 2245.308608 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 22923;  load averages:  3.05,  3.05,  3.05    04:02:44
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 3362.1825534 sec
+Total border length: 3250758 -> normalized: 18.120167224080266
+Total time: 3362.1825534 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23021;  load averages:  3.06,  3.06,  3.05    04:58:55
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-40000-1-SortSequences...
+Elapsed time: 10099.4877868 sec
+Total border length: 8729820 -> normalized: 17.494629258517033
+Total time: 10099.4877868 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23321;  load averages:  3.05,  3.05,  3.05    07:47:30
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 19974.9711806 sec
+Total border length: 8684868 -> normalized: 17.40454509018036
+Total time: 19974.9711806 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23766;  load averages:  3.05,  3.05,  3.05    13:20:39
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-40K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-40000-1-SortSequences...
+Elapsed time: 36517.4181914 sec
+Total border length: 21537498 -> normalized: 16.847229349186485
+Total time: 36517.4181914 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 24685;  load averages:  3.06,  3.05,  3.05    23:29:47
+149 processes: 146 sleeping, 1 running, 2 on cpu
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-80K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-80000-1-SortSequences...
+Elapsed time: 70339.876368 sec
+Total border length: 21444560 -> normalized: 16.774530663329163
+Total time: 70339.876368 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.

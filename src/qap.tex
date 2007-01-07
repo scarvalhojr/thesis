@@ -288,7 +288,7 @@ is a solution $r$ that is at least as good as the better of $p$ and $q$.
 
 We present experimental results of using GRASP with path-relinking (GRASP-PR)
 for designing the layout of small artificial chips, and compare them with the
-layouts produced by Row-epitaxial (described in Chapter \ref{ch:placement}).
+layouts produced by Row-Epitaxial (described in Chapter \ref{ch:placement}).
 
 We used a C implementation of GRASP-PR provided by \citet{Oliveira2004} with
 default parameters (32 iterations, $\alpha=0.1$, $\beta=0.5$, and elite set of
@@ -303,42 +303,42 @@ and the border lengths of the resulting layouts are shown in
 Table~\ref{tab:graspr_reptx_bl} (all results are averages over a set of ten
 chips).
 
-\begin{table}[t]
+\begin{table}[t]\centering
 \caption{\label{tab:graspr_reptx_bl}
   Border length of random chips compared with the layouts produced by
-  Row-epitaxial and GRASP with path-relinking. Reductions in border length are
+  Row-Epitaxial and GRASP with path-relinking. Reductions in border length are
   reported in percentages compared to the random layout.}
-\scriptsize{
-\begin{tabular}{crrcrrrcrrr}
-          &            & Random & & \multicolumn{3}{c}{Row-epitaxial}  & & \multicolumn{3}{c}{GRASP with path-relinking}  \\ \cline{3-3} \cline{5-7} \cline{9-11}
-Chip      & Number of  & Border & & Border & Reduction & Time          & & Border & Reduction & Time   \\
-dimension & probes     & length & & length & (\%)      & (sec.)        & & length & (\%)      & (sec.) \\
+\small{
+\begin{tabular*}{\hsize}{crcrrrcrrr}
+          & Random & & \multicolumn{3}{c}{Row-Epitaxial}  & & \multicolumn{3}{c}{GRASP with path-relinking}  \\ \cline{2-2} \cline{4-6} \cline{8-10}
+Chip      & Border & & Border & Reduction & Time          & & Border & Reduction & Time   \\
+dimension & length & & length & (\%)      & (sec.)        & & length & (\%)      & (sec.) \\
 \hline
-$6\times 6$   &  36 & 1\,989.20 & & 1\,714.60 & 13.80 & 0.01 & & 1\,672.20 & 15.94 &   2.73 \\
-$7\times 7$   &  49 & 2\,783.20 & & 2\,354.60 & 15.40 & 0.02 & & 2\,332.60 & 16.19 &   6.43 \\
-$8\times 8$   &  64 & 3\,721.20 & & 3\,123.80 & 16.05 & 0.03 & & 3\,099.13 & 16.72 &  12.49 \\
-$9\times 9$   &  81 & 4\,762.00 & & 3\,974.80 & 16.53 & 0.05 & & 3\,967.20 & 16.69 &  25.96 \\
-$10\times 10$ & 100 & 5\,985.20 & & 4\,895.60 & 18.20 & 0.06 & & 4\,911.40 & 17.94 &  47.57 \\
-$11\times 11$ & 121 & 7\,288.40 & & 5\,954.40 & 18.30 & 0.10 & & 5\,990.73 & 17.80 &  87.48 \\
-$12\times 12$ & 144 & 8\,714.00 & & 7\,086.20 & 18.68 & 0.11 & & 7\,159.80 & 17.84 & 152.42 \\
+$6\times 6$   & 1\,989.20 & & 1\,714.60 & 13.80 & 0.01 & & 1\,672.20 & 15.94 &   2.73 \\
+$7\times 7$   & 2\,783.20 & & 2\,354.60 & 15.40 & 0.02 & & 2\,332.60 & 16.19 &   6.43 \\
+$8\times 8$   & 3\,721.20 & & 3\,123.80 & 16.05 & 0.03 & & 3\,099.13 & 16.72 &  12.49 \\
+$9\times 9$   & 4\,762.00 & & 3\,974.80 & 16.53 & 0.05 & & 3\,967.20 & 16.69 &  25.96 \\
+$10\times 10$ & 5\,985.20 & & 4\,895.60 & 18.20 & 0.06 & & 4\,911.40 & 17.94 &  47.57 \\
+$11\times 11$ & 7\,288.40 & & 5\,954.40 & 18.30 & 0.10 & & 5\,990.73 & 17.80 &  87.48 \\
+$12\times 12$ & 8\,714.00 & & 7\,086.20 & 18.68 & 0.11 & & 7\,159.80 & 17.84 & 152.42 \\
 \hline
-\end{tabular}}
+\end{tabular*}}
 \end{table}
 
 Our results show that GRASP-PR produces layouts with lower border lengths than
-Row-epitaxial on the smaller chips. On 6\,x\,6 chips, GRASP-PR outperforms Row-
-epitaxial by $2.14$ percentage points on average ($15.94\% - 13.80\%$), when
+Row-Epitaxial on the smaller chips. On 6\,x\,6 chips, GRASP-PR outperforms
+Row-Epitaxial by $2.14$ percentage points on average ($15.94\% - 13.80\%$), when
 compared to the initial random layout. On 9\,x\,9 chips, however, this
-difference drops to $0.16$ percentage points, while Row-epitaxial generates
+difference drops to $0.16$ percentage points, while Row-Epitaxial generates
 better layouts on 11\,x\,11 or larger chips. In terms of running time,
-Row-epitaxial is faster and shows little variation as the number of probes
+Row-Epitaxial is faster and shows little variation as the number of probes
 grows. In contrast, the time required to compute a layout with GRASP-PR
 increases at a fast rate.
 
 Table~\ref{tab:graspr_reptx_ci} shows better results in terms of conflict
 indices. GRASP-PR consistently produces better layouts on all chip dimensions,
 achieving up to $6.38$\% less conflicts on 10\,x\,10 chips, for example, when
-compared to Row-epitaxial. In terms of running times, GRASP-PR is even slower
+compared to Row-Epitaxial. In terms of running times, GRASP-PR is even slower
 than in the border length case. The reason is not clear, but it could be related
 to the fact that the distance matrix contains fewer zero entries with the
 conflict index formulation.
@@ -352,22 +352,22 @@ accounts for one part of the conflict index model.
 \begin{table}[t]
 \caption{\label{tab:graspr_reptx_ci}
   Average conflict indices of random chips compared with the layouts produced by
-  Row-epitaxial and GRASP with path-relinking.}
-\scriptsize{
-\begin{tabular}{crrcrrrcrrr}
-          &            & Random & & \multicolumn{3}{c}{Row-epitaxial}  & & \multicolumn{3}{c}{GRASP with path-relinking}  \\ \cline{3-3} \cline{5-7} \cline{9-11}
-Chip      & Number of  & Avg. C.& & Avg. C.& Reduction & Time          & & Avg. C.& Reduction & Time   \\
-dimension & probes     & Index  & & Index  & (\%)      & (sec.)        & & Index  & (\%)      & (sec.) \\
+  Row-Epitaxial and GRASP with path-relinking.}
+\small{
+\begin{tabular*}{\hsize}{crcrrrcrrr}
+          & Random & & \multicolumn{3}{c}{Row-Epitaxial}  & & \multicolumn{3}{c}{GRASP with path-relinking}  \\ \cline{2-2} \cline{4-6} \cline{8-10}
+Chip      & Avg. C.& & Avg. C.& Reduction & Time          & & Avg. C.& Reduction & Time   \\
+dimension & Index  & & Index  & (\%)      & (sec.)        & & Index  & (\%)      & (sec.) \\
 \hline
-$6\times 6$   &  36 & 524.28 & & 495.15 & 5.56 & 0.05 & & 467.08 & 10.91 &   3.68 \\
-$7\times 7$   &  49 & 558.25 & & 521.90 & 6.51 & 0.07 & & 489.32 & 12.35 &   8.84 \\
-$8\times 8$   &  64 & 590.51 & & 551.84 & 6.55 & 0.09 & & 515.69 & 12.67 &  19.48 \\
-$9\times 9$   &  81 & 613.25 & & 568.62 & 7.28 & 0.11 & & 533.79 & 12.96 &  38.83 \\
-$10\times 10$ & 100 & 628.50 & & 576.49 & 8.28 & 0.11 & & 539.69 & 14.13 &  73.09 \\
-$11\times 11$ & 121 & 642.72 & & 588.91 & 8.37 & 0.12 & & 551.41 & 14.21 & 145.67 \\
-$12\times 12$ & 144 & 656.86 & & 598.21 & 8.93 & 0.12 & & 561.21 & 14.56 & 249.19 \\
+$6\times 6$   & 524.28 & & 495.15 & 5.56 & 0.05 & & 467.08 & 10.91 &   3.68 \\
+$7\times 7$   & 558.25 & & 521.90 & 6.51 & 0.07 & & 489.32 & 12.35 &   8.84 \\
+$8\times 8$   & 590.51 & & 551.84 & 6.55 & 0.09 & & 515.69 & 12.67 &  19.48 \\
+$9\times 9$   & 613.25 & & 568.62 & 7.28 & 0.11 & & 533.79 & 12.96 &  38.83 \\
+$10\times 10$ & 628.50 & & 576.49 & 8.28 & 0.11 & & 539.69 & 14.13 &  73.09 \\
+$11\times 11$ & 642.72 & & 588.91 & 8.37 & 0.12 & & 551.41 & 14.21 & 145.67 \\
+$12\times 12$ & 656.86 & & 598.21 & 8.93 & 0.12 & & 561.21 & 14.56 & 249.19 \\
 \hline
-\end{tabular}}
+\end{tabular*}}
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

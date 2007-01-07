@@ -1,0 +1,754 @@
+Start: Wed Dec 20 20:57:21 CET 2006
+Host: trillian
+---------------------------
+last pid: 25608;  load averages:  3.98,  3.75,  3.74    20:57:22
+159 processes: 153 sleeping, 6 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 0-threading-SortSequences...
+Elapsed time: 0.973586 sec
+Average conflict index: 702.1495521594612
+Running RowEpitaxial-CI-5000...
+Elapsed time: 884.8765552 sec
+Average conflict index: 462.10488790919305
+Total time: 885.8501412 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25930;  load averages:  5.43,  5.55,  4.93    21:13:25
+161 processes: 157 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 0-threading-SortEmbeddings...
+Elapsed time: 0.544058 sec
+Average conflict index: 702.3939990488822
+Running RowEpitaxial-CI-5000...
+Elapsed time: 870.7182964 sec
+Average conflict index: 462.83152701537364
+Total time: 871.2623544 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26145;  load averages:  5.71,  5.46,  5.23    21:29:14
+161 processes: 156 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 0-threading-SortSequences...
+Elapsed time: 0.9770963 sec
+Average conflict index: 702.1495521594612
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1660.5491766 sec
+Average conflict index: 444.12506514560226
+Total time: 1661.5262729 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 26584;  load averages:  3.33,  4.18,  4.80    21:58:13
+160 processes: 157 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 0-threading-SortEmbeddings...
+Elapsed time: 0.5652361 sec
+Average conflict index: 702.3939990488822
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1640.6213886 sec
+Average conflict index: 444.78965743510895
+Total time: 1641.1866247 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 27015;  load averages:  4.23,  4.44,  4.39    22:26:51
+160 processes: 155 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 0-threading-SortSequences...
+Elapsed time: 0.8708177 sec
+Average conflict index: 702.1495521594612
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3021.5270143 sec
+Average conflict index: 426.8919256275077
+Total time: 3022.397832 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 27761;  load averages:  3.91,  4.07,  4.15    23:18:30
+160 processes: 156 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-0-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 0-threading-SortEmbeddings...
+Elapsed time: 0.5792868 sec
+Average conflict index: 702.3939990488822
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3034.5961929 sec
+Average conflict index: 427.4511496220524
+Total time: 3035.1754797 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 28526;  load averages:  3.35,  3.75,  4.09    00:10:23
+160 processes: 157 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 1-threading-SortSequences...
+Elapsed time: 0.959854 sec
+Average conflict index: 691.0484110392892
+Running RowEpitaxial-CI-5000...
+Elapsed time: 864.5344297 sec
+Average conflict index: 462.0621777177359
+Total time: 865.4942837 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 28848;  load averages:  3.82,  3.95,  4.11    00:26:06
+161 processes: 158 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 1-threading-SortEmbeddings...
+Elapsed time: 0.5832759 sec
+Average conflict index: 692.0925052559858
+Running RowEpitaxial-CI-5000...
+Elapsed time: 861.4344129 sec
+Average conflict index: 463.01458113479134
+Total time: 862.0176888 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 29114;  load averages:  3.31,  3.86,  4.13    00:41:45
+160 processes: 157 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 1-threading-SortSequences...
+Elapsed time: 0.9445746 sec
+Average conflict index: 691.0484110392892
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1639.1387953 sec
+Average conflict index: 444.0641020699583
+Total time: 1640.0833699 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 29536;  load averages:  3.16,  3.57,  3.93    01:10:22
+160 processes: 157 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 1-threading-SortEmbeddings...
+Elapsed time: 0.567761 sec
+Average conflict index: 692.0925052559858
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1648.702871 sec
+Average conflict index: 444.5235746007845
+Total time: 1649.270632 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:    17;  load averages:  5.33,  4.66,  4.37    01:39:08
+161 processes: 155 sleeping, 6 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 1-threading-SortSequences...
+Elapsed time: 1.0168925 sec
+Average conflict index: 691.0484110392892
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3057.346242 sec
+Average conflict index: 426.25960532873677
+Total time: 3058.3631345 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:   817;  load averages:  4.04,  4.14,  4.09    02:31:24
+160 processes: 156 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-1-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 1-threading-SortEmbeddings...
+Elapsed time: 0.552419 sec
+Average conflict index: 692.0925052559858
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3026.9900524 sec
+Average conflict index: 427.18043637007827
+Total time: 3027.5424714 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  1620;  load averages:  4.59,  4.60,  4.38    03:23:09
+161 processes: 158 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 2-threading-SortSequences...
+Elapsed time: 0.9378186 sec
+Average conflict index: 686.076367664195
+Running RowEpitaxial-CI-5000...
+Elapsed time: 863.7398604 sec
+Average conflict index: 462.3039778784697
+Total time: 864.677679 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  1811;  load averages:  4.15,  3.90,  4.10    03:38:51
+161 processes: 156 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 2-threading-SortEmbeddings...
+Elapsed time: 0.5621698 sec
+Average conflict index: 687.7263785270889
+Running RowEpitaxial-CI-5000...
+Elapsed time: 868.2148757 sec
+Average conflict index: 463.08048993751544
+Total time: 868.7770455 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  2060;  load averages:  4.94,  4.73,  4.36    03:54:37
+161 processes: 156 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 2-threading-SortSequences...
+Elapsed time: 0.8874559 sec
+Average conflict index: 686.076367664195
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1667.9350027 sec
+Average conflict index: 444.0644563022344
+Total time: 1668.8224586 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  2613;  load averages:  4.68,  4.84,  4.77    04:23:44
+161 processes: 156 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 2-threading-SortEmbeddings...
+Elapsed time: 0.5502566 sec
+Average conflict index: 687.7263785270889
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1637.0856293 sec
+Average conflict index: 444.31504536354646
+Total time: 1637.6358859 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  2983;  load averages:  5.13,  4.43,  4.23    04:52:20
+162 processes: 158 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 2-threading-SortSequences...
+Elapsed time: 0.8720271 sec
+Average conflict index: 686.076367664195
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3035.2592514 sec
+Average conflict index: 427.18964519130554
+Total time: 3036.1312785 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  3782;  load averages:  3.59,  3.78,  4.06    05:44:13
+160 processes: 156 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-2-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 2-threading-SortEmbeddings...
+Elapsed time: 0.5572226 sec
+Average conflict index: 687.7263785270889
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3030.6284908 sec
+Average conflict index: 427.2905552613523
+Total time: 3031.1857134 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  4630;  load averages:  4.60,  4.12,  4.19    06:36:02
+164 processes: 160 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 3-threading-SortSequences...
+Elapsed time: 0.8609985 sec
+Average conflict index: 683.854043467393
+Running RowEpitaxial-CI-5000...
+Elapsed time: 866.25315 sec
+Average conflict index: 462.11218968529516
+Total time: 867.1141485 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  4870;  load averages:  4.31,  4.19,  4.19    06:51:48
+164 processes: 161 sleeping, 3 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 3-threading-SortEmbeddings...
+Elapsed time: 0.5915672 sec
+Average conflict index: 685.0239677411772
+Running RowEpitaxial-CI-5000...
+Elapsed time: 867.2758144 sec
+Average conflict index: 463.5206315955961
+Total time: 867.8673816 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  5109;  load averages:  3.80,  4.00,  4.03    07:07:33
+165 processes: 160 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 3-threading-SortSequences...
+Elapsed time: 0.9470042 sec
+Average conflict index: 683.854043467393
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1645.9149239 sec
+Average conflict index: 444.295139275699
+Total time: 1646.8619281 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  5621;  load averages:  4.72,  5.36,  5.08    07:36:17
+166 processes: 161 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 3-threading-SortEmbeddings...
+Elapsed time: 0.5824229 sec
+Average conflict index: 685.0239677411772
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1650.0928918 sec
+Average conflict index: 444.82736779681784
+Total time: 1650.6753147 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  6018;  load averages:  5.39,  4.84,  4.93    08:05:05
+165 processes: 160 sleeping, 5 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 3-threading-SortSequences...
+Elapsed time: 0.9517151 sec
+Average conflict index: 683.854043467393
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3084.6378857 sec
+Average conflict index: 426.7072736045837
+Total time: 3085.5896008 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  6902;  load averages:  5.93,  5.71,  5.53    08:57:48
+166 processes: 159 sleeping, 7 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-3-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 3-threading-SortEmbeddings...
+Elapsed time: 0.5759856 sec
+Average conflict index: 685.0239677411772
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3064.5232741 sec
+Average conflict index: 427.63644599187836
+Total time: 3065.0992597 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  7668;  load averages:  5.11,  5.39,  5.38    09:50:11
+166 processes: 162 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 4-threading-SortSequences...
+Elapsed time: 0.9155287 sec
+Average conflict index: 682.6470522163705
+Running RowEpitaxial-CI-5000...
+Elapsed time: 879.290624 sec
+Average conflict index: 463.0529732817229
+Total time: 880.2061527 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  7960;  load averages:  6.26,  6.09,  5.69    10:06:09
+166 processes: 160 sleeping, 6 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 4-threading-SortEmbeddings...
+Elapsed time: 0.5768426 sec
+Average conflict index: 683.9787803523191
+Running RowEpitaxial-CI-5000...
+Elapsed time: 898.7577435 sec
+Average conflict index: 462.84970480753486
+Total time: 899.3345861 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  8157;  load averages:  5.09,  5.04,  5.20    10:22:25
+165 processes: 161 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 4-threading-SortSequences...
+Elapsed time: 0.9050543 sec
+Average conflict index: 682.6470522163705
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1643.826291 sec
+Average conflict index: 444.1456750749474
+Total time: 1644.7313453 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  8567;  load averages:  5.81,  5.63,  5.32    10:51:07
+165 processes: 161 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 4-threading-SortEmbeddings...
+Elapsed time: 0.5529511 sec
+Average conflict index: 683.9787803523191
+Running RowEpitaxial-CI-10000...
+Elapsed time: 1665.8258259 sec
+Average conflict index: 444.344901674627
+Total time: 1666.378777 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  9012;  load averages:  5.19,  5.23,  5.18    11:20:11
+165 processes: 161 sleeping, 4 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 4-threading-SortSequences...
+Elapsed time: 0.9653099 sec
+Average conflict index: 682.6470522163705
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3050.5187191 sec
+Average conflict index: 426.6125656904122
+Total time: 3051.484029 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:  9715;  load averages:  5.39,  5.29,  5.30    12:12:19
+167 processes: 161 sleeping, 6 on cpu
+
+SRA_300x300-90000-25-01_random_leftmost KTHREAD-4-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running 4-threading-SortEmbeddings...
+Elapsed time: 0.5969815 sec
+Average conflict index: 683.9787803523191
+Running RowEpitaxial-CI-20000...
+Elapsed time: 3046.4774106 sec
+Average conflict index: 427.0788279150302
+Total time: 3047.0743921 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 10624;  load averages:  5.29,  5.07,  5.21    13:04:24
+167 processes: 157 sleeping, 1 zombie, 9 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 0-threading-SortSequences...
+Elapsed time: 3.458174 sec
+Average conflict index: 693.5882157647025
+Running RowEpitaxial-CI-5000...
+Elapsed time: 2624.8961981 sec
+Average conflict index: 456.2388687387277
+Total time: 2628.3543721 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 11603;  load averages:  4.86,  5.05,  5.28    13:51:43
+167 processes: 162 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 0-threading-SortEmbeddings...
+Elapsed time: 1.3595261 sec
+Average conflict index: 698.1382789802002
+Running RowEpitaxial-CI-5000...
+Elapsed time: 2639.3321172 sec
+Average conflict index: 456.9850223834951
+Total time: 2640.6916433 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 12413;  load averages:  4.75,  4.85,  5.08    14:39:13
+171 processes: 167 sleeping, 4 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 0-threading-SortSequences...
+Elapsed time: 3.6666779 sec
+Average conflict index: 693.5882157647025
+Running RowEpitaxial-CI-10000...
+Elapsed time: 5283.655097 sec
+Average conflict index: 438.35366149595103
+Total time: 5287.3217749 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 13962;  load averages:  6.08,  6.70,  6.21    16:10:50
+175 processes: 170 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 0-threading-SortEmbeddings...
+Elapsed time: 1.3986717 sec
+Average conflict index: 698.1382789802002
+Running RowEpitaxial-CI-10000...
+Elapsed time: 5300.1307473 sec
+Average conflict index: 439.83612170373164
+Total time: 5301.529419 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 15379;  load averages:  5.31,  5.35,  5.13    17:42:41
+176 processes: 171 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 0-threading-SortSequences...
+Elapsed time: 3.7771908 sec
+Average conflict index: 693.5882157647025
+Running RowEpitaxial-CI-20000...
+Elapsed time: 10535.11437 sec
+Average conflict index: 421.0510076177928
+Total time: 10538.8915608 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 17576;  load averages:  5.36,  5.73,  5.78    20:41:51
+175 processes: 170 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-0-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 0-threading-SortEmbeddings...
+Elapsed time: 1.4110072 sec
+Average conflict index: 698.1382789802002
+Running RowEpitaxial-CI-20000...
+Elapsed time: 10445.3287368 sec
+Average conflict index: 421.8250007338315
+Total time: 10446.739744 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 19682;  load averages:  4.46,  4.71,  4.80    23:39:27
+174 processes: 170 sleeping, 4 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 1-threading-SortSequences...
+Elapsed time: 3.9548981 sec
+Average conflict index: 682.4149133221559
+Running RowEpitaxial-CI-5000...
+Elapsed time: 2644.0447455 sec
+Average conflict index: 456.0463809182349
+Total time: 2647.9996436 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20257;  load averages:  4.54,  4.59,  4.68    00:27:08
+175 processes: 169 sleeping, 6 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 1-threading-SortEmbeddings...
+Elapsed time: 1.1329531 sec
+Average conflict index: 684.454687764378
+Running RowEpitaxial-CI-5000...
+Elapsed time: 2500.2789912 sec
+Average conflict index: 456.8981557413139
+Total time: 2501.4119443 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 20825;  load averages:  5.03,  5.27,  5.15    01:12:19
+174 processes: 169 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 1-threading-SortSequences...
+Elapsed time: 3.7213124 sec
+Average conflict index: 682.4149133221559
+Running RowEpitaxial-CI-10000...
+Elapsed time: 5303.7309673 sec
+Average conflict index: 438.5585972776785
+Total time: 5307.4522797 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 21997;  load averages:  4.52,  4.59,  4.79    02:44:16
+175 processes: 168 sleeping, 7 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 1-threading-SortEmbeddings...
+Elapsed time: 1.3670819 sec
+Average conflict index: 684.454687764378
+Running RowEpitaxial-CI-10000...
+Elapsed time: 5325.8830411 sec
+Average conflict index: 439.59832165514615
+Total time: 5327.250123 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 23240;  load averages:  6.08,  5.86,  5.88    04:16:35
+175 processes: 168 sleeping, 7 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 1-threading-SortSequences...
+Elapsed time: 3.6617114 sec
+Average conflict index: 682.4149133221559
+Running RowEpitaxial-CI-20000...
+Elapsed time: 10407.2273458 sec
+Average conflict index: 421.1840926242149
+Total time: 10410.8890572 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 25578;  load averages:  5.35,  5.54,  5.64    07:13:36
+173 processes: 168 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-1-SORTEMBED REPTX-CI-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 1-threading-SortEmbeddings...
+Elapsed time: 1.4139499 sec
+Average conflict index: 684.454687764378
+Running RowEpitaxial-CI-20000...
+Elapsed time: 10496.0753763 sec
+Average conflict index: 421.6106209864631
+Total time: 10497.4893262 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 28469;  load averages:  6.89,  6.93,  7.01    10:12:03
+177 processes: 170 sleeping, 7 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-CI-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 2-threading-SortSequences...
+Elapsed time: 4.0347831 sec
+Average conflict index: 676.6359331011115
+Running RowEpitaxial-CI-5000...
+Elapsed time: 2729.1674936 sec
+Average conflict index: 456.5013618758844
+Total time: 2733.2022767 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 29006;  load averages:  6.48,  6.48,  6.75    11:01:09
+176 processes: 170 sleeping, 6 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTEMBED REPTX-CI-5K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 2-threading-SortEmbeddings...
+Elapsed time: 1.1484947 sec
+Average conflict index: 677.6919995424325
+Running RowEpitaxial-CI-5000...
+Elapsed time: 2493.1948616 sec
+Average conflict index: 457.04565715580264
+Total time: 2494.3433563 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid: 29413;  load averages:  5.36,  5.55,  6.12    11:46:14
+177 processes: 172 sleeping, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-CI-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 2-threading-SortSequences...
+Elapsed time: 3.4441666 sec
+Average conflict index: 676.6359331011115
+Running RowEpitaxial-CI-10000...
+Elapsed time: 4897.8197075 sec
+Average conflict index: 438.60538588800307
+Total time: 4901.2638741 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:    87;  load averages:  5.48,  5.46,  5.57    13:11:24
+176 processes: 169 sleeping, 7 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTEMBED REPTX-CI-10K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 2-threading-SortEmbeddings...
+Elapsed time: 1.3802823 sec
+Average conflict index: 677.6919995424325
+Running RowEpitaxial-CI-10000...
+Elapsed time: 5315.4020544 sec
+Average conflict index: 439.1086719998322
+Total time: 5316.7823367 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+last pid:   864;  load averages:  5.31,  5.55,  5.70    14:43:30
+171 processes: 165 sleeping, 1 running, 5 on cpu
+
+SRA_500x500-250000-25-01_random_leftmost KTHREAD-2-SORTSEQ REPTX-CI-20K
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running 2-threading-SortSequences...
+Elapsed time: 3.8078176 sec
+Average conflict index: 676.6359331011115
+Running RowEpitaxial-CI-20000...
+Elapsed time: 10433.374919 sec
+Average conflict index: 421.31646395430994
+Total time: 10437.1827366 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.

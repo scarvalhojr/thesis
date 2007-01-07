@@ -1,0 +1,43 @@
+LOGFILE="`basename $0`.log"
+ARRAYOPT="java -cp $ARRAYOPT_HOME/bin arrayopt.textui.ArrayOpt"
+
+probelen="25"
+
+echo "Start: `date`" >> ${LOGFILE}
+echo "Host: `hostname`" >> ${LOGFILE}
+
+for (( filenum = 1; filenum <= 5; filenum++))
+do
+	for dim in 300 500 800
+	do
+		let "nprobes = dim * dim"
+
+		for (( kvalue = 0; kvalue <= 4; kvalue++))
+		do
+		
+		for window in "5K" "10K" "20K"
+		do
+		
+		# for order in "SORTSEQ" "SORTEMBED"
+		for order in "SORTSEQ"
+		do
+			alg="GREEDYPLACER-CI-${window}-${kvalue}-${order}"
+		
+			basename="SRA_${dim}x${dim}-${nprobes}-25-0${filenum}"
+			input="${basename}_random_leftmost"
+			output="${basename}_${alg}_leftmost"
+			options="AFFY check calc-ci no-print"
+			param="simple nofix ${input} ${dim} ${dim} ${nprobes} ${probelen} ${options} ${alg}"
+			
+			echo "---------------------------" >> ${LOGFILE}
+			top -b -d1 | head -2 >> ${LOGFILE}
+			echo >> ${LOGFILE}
+			echo ${input} ${alg} ${optimiz} >> ${LOGFILE}
+			
+			#${ARRAYOPT} ${param} > ${output} 2>> ${LOGFILE}
+			${ARRAYOPT} ${param} 2>> ${LOGFILE}
+		done
+		done
+		done
+	done
+done
