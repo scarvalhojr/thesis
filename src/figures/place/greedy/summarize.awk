@@ -12,7 +12,9 @@ BEGIN {
 	
 		if (dim != "") {
 			# print previous record
-			printf ("%s\t%d\t%d\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, before/c, after/c, time/c, c)
+			total_time = total_time - best_time - worse_time
+			avg_time = total_time / (c - 2)
+			printf ("%s\t%d\t%d\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, before/c, after/c, avg_time, c)
 		}
 		
 		# start new record
@@ -22,6 +24,9 @@ BEGIN {
 		
 		after = $5
 		time = $6 / 60
+		best_time = time
+		worse_time = time
+		total_time = time
 		before = $7
 		c = 1
 		
@@ -29,12 +34,20 @@ BEGIN {
 	}
 	
 	after = after + $5
-	time = time + ($6 / 60)
+	time = $6 / 60
+	if (time > worse_time) {
+		worse_time = time
+	} else if (time < best_time) {
+		best_time = time
+	}
+	total_time = total_time + time
 	before = before + $7
 	c = c + 1
 }
 
 END {
 	# print last record
-	printf ("%s\t%d\t%d\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, before/c, after/c, time/c, c)
+	total_time = total_time - best_time - worse_time
+	avg_time = total_time / (c - 2)
+	printf ("%s\t%d\t%d\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, before/c, after/c, avg_time, c)
 }

@@ -52,7 +52,7 @@ quadrant of the $(\ell + 1)$-mer array. The probes of the other three quadrants
 are extended in the same way.
 
 It can be shown that such placement generates masks with a minimum number of
-border conflicts if the probes are synchronously embedded (see
+border conflicts if probes are synchronously embedded (see
 Fig.~\ref{fig:uniform_masks}). However, because this construction is restricted
 to uniform arrays and synchronous embeddings, it is of limited practical
 importance for current microarrays.
@@ -83,11 +83,12 @@ Eq.\ref{eq:hamming}). A TSP tour on this graph is heuristically constructed and
 
 For uniform arrays, every solution of the TSP corresponds to a (one-dimensional)
 Gray code since consecutive elements in the tour differ in only one position,
-thus minimizing border conflicts between consecutive probes. For general arrays,
+thus minimizing border conflicts between neighboring probes. For general arrays,
 a TSP solution also reduces border conflicts as consecutive probes in the tour
-are likely to be similar. Threading the tour row-by-row leads to an arrangement
-where consecutive probes in the same row have few border conflicts, but probes
-in the same column may have very different embeddings.
+are likely to be similar. Threading the (one-dimensional) tour on a
+two-dimensional chip, row-by-row, on a leads to an arrangement where consecutive
+probes in the same row have few border conflicts, but probes in the same column
+may have very different embeddings.
 
 Another problem of this approach is that the TSP is known to be NP-hard
 \citep{Gross2004}, so computing an optimal TSP tour even for a small
@@ -114,9 +115,9 @@ initially used at Affymetrix.
 \end{figure}
 
 Since improvements in the cost of the TSP tour seemed unlikely, Hannenhalli and
-co-workers turned their attention to the threading of the tour on the chip. They
-studied several threading alternatives, which they collectively called
-\emph{$k$-threading} (Fig.~\ref{fig:threading}b,c).
+co-workers turned their attention to the problem of threading the tour on the
+chip. They studied several threading alternatives, which they collectively
+called \emph{$k$-threading} (Fig.~\ref{fig:threading}).
 
 A $k$-threading is a variation of the standard row-by-row threading, in which
 the right-to-left and left-to-right paths are interspaced with alternating
@@ -138,21 +139,21 @@ can be trivially implemented for asynchronous embeddings as well.
 
 The algorithm starts by placing a random probe in the center of the array and
 continues to insert probes in spots adjacent to already-filled spots. Priority
-is given to spots whose all four neighbors are full, in which case a probe with
-the minimum number of border conflicts with the neighbors is placed. Otherwise,
-all spots with $i \geq 1$ filled neighbors are examined. For each spot $s$, the
-algorithm finds a non-assigned probe~$p$ whose number of border conflicts with
-the filled neighbors of $s$, $c(s,p)$, is minimal, and assigns a normalized cost
-$\bar{c}(s,p) := \sigma_i \cdot c(s,p) / i$ for this assignment, where
-$0 < \sigma_i \leq 1$ are scaling coefficients (the authors propose
+is given to spots whose all four neighbors are filled, in which case a probe
+with the minimum number of border conflicts with the neighbors is placed.
+Otherwise, all spots with $i \geq 1$ filled neighbors are examined. For each
+spot $s$, the algorithm finds a non-assigned probe~$p$ whose number of border
+conflicts with the filled neighbors of $s$, $c(s,p)$, is minimal, and assigns a
+normalized cost $\bar{c}(s,p) := \sigma_i \cdot c(s,p) / i$ for this assignment,
+where $0 < \sigma_i \leq 1$ are scaling coefficients (the authors propose
 $\sigma_1 = 1$, $\sigma_2 = 0.8$, and $\sigma_3 = 0.6$). The assignment with
 minimum $\bar{c}(s,p)$ is made and the procedure is repeated until all probes
 have been placed.
 
 In order to avoid repeated cost computations, the authors propose keeping a list
 of probes candidates, for each spot, sorted by their normalized costs. This list
-must be compiled at most four times, but on the average it is only computer two
-times.
+must be updated whenever one of its neighbors is filled, thus it is compiled at
+most four times (but only two times on average).
 
 With this algorithm, Kahng and co-workers claim a further 10\% reduction in
 border conflicts over TSP\,+\,1-threading. However, the Epitaxial algorithm have
@@ -178,10 +179,11 @@ prohibitively large running time and memory requirements.
 \end{picture}
 \caption{\label{fig:swm}%
   Sliding-Window Matching algorithm. a) Initial arrangement of probes
-  $p_1 \dots p_{16}$ inside a $4 \times 4$ window and the selected independent
-  set of spots (shaded). b) Bipartite graph and a minimum weight perfect
-  matching (dark edges). c) New arrangement inside the window according to the
-  perfect matching.}%
+  $p_1 \dots p_{16}$ inside a $4 \times 4$ window (with spots $s_1 \dots s_{16}$
+  and a selected maximal independent set of spots (shaded). b) Bipartite graph
+  with selected probes and spots, and a minimum weight perfect matching (dark
+  edges) resulting in a minimum cost re-assignment of probes to spots. c) New
+  arrangement inside the window according to the perfect matching.}%
 \end{figure}
 
 The Sliding-Window Matching algorithm \citep{Kahng2003}, SWM for short, is not
@@ -217,21 +219,21 @@ perfect matching on this graph is computed, and the indicated assignments are
 made (Fig.~\ref{fig:swm}c).
 
 A minimum weight perfect matching requires polynomial time \citep{Gross2004},
-but for the small graphs generated by SWM, it can be computed rather quickly.
-The authors experimentally observed that the best results are obtained with
-small window sizes (e.g. $6\times 6$) and an overlap of half the window size.
-More over, employing less effort in each window and executing more cycles of
-optimization is better than employing more effort in each window and executing
-less cycles.
+but the small graphs generated by SWM can be computed rather quickly. The
+authors experimentally observed that the best results are obtained with small
+window sizes (e.g. $6\times 6$) and an overlap of half the window size. More
+over, employing less effort in each window and executing more cycles of
+optimization gives better results than more effort in each window and less
+cycles.
 
 Selecting an independent set of spots ensures that the cost of each new
 assignment can be computed independently of the other assignments. The SWM was
 designed for border length minimization and it takes advantage of the fact that,
 in this model, an independent set of spots can be constructed by selecting sites
 that are not immediate neighbors (spots that do not share a common border). SWM
-can be adapted for conflict index minimization (to our knowledge, this has not
-been implemented yet) by using larger windows containing relatively sparse
-independent sets. Therefore several random independent sets should be
+can be adapted for conflict index minimization by using larger windows
+containing relatively sparse independent sets (to our knowledge, this has not
+been implemented yet). Therefore several random independent sets should be
 constructed before moving the window.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -263,14 +265,26 @@ Table~\ref{tab:reptx} shows the results of using Row-Epitaxial for both border
 length and conflict index minimization on chips with random probe sequences
 (uniformly generated). Probes were lexicographically sorted and left-most
 embedded into the standard 74-step Affymetrix deposition sequence and threaded
-on the array with $k$-threading. The resulting layout was then used as a
+on the array with $k$-threading. The resulting layouts were then used as a
 starting point for Row-Epitaxial.
 
-Although \citet{Hannenhalli2002} suggested that 1-threading is the best option
-for laying out a TSP tour on the chip, our results show that increasing $k$
-improves the initial layout produced by sorting\,+\,$k$-threading in terms of
-border length and conflict index as well. However, the best initial layout does
-not necessarily lead to the best final layout produced by Row-Epitaxial.
+Although \citet{Hannenhalli2002} suggested 1-threading for laying out a TSP tour
+on the chip, our results show that increasing the threading's amplitude from
+$k=0$ to $k=4$ usually improves the initial layout produced by
+sorting\,+\,$k$-threading, both in terms of border length and conflict index
+minimization. For example, increasing the amplitude from $k=0$ to $k=4$ reduced
+the normalized border length of the initial layout in up to $6.56\%$ (from
+$23.6828$ to $22.1279$) and the average conflict index in up to $4.51\%$ (from
+$689.6109$ to $658.5097$) on $800\times 800$ chips.
+
+However, the best initial layouts rarely led to the best final layout produced
+by Row-Epitaxial. With border length minimization the best results were usually
+achieved with $k=0$, whereas with conflict index minimization there was no clear
+best value for $k$. In any case, the difference due to varying $k$ for the
+threading were rather small for Row-Epitaxial --- at most $0.78\%$ in normalized
+border length (from $16.9760$ with $k=0$ to $17.1085$ with $k=4$) and $0.26\%$
+in average conflict index (from $448.0140$ with $k=0$ to $449.1653$ with $k=4$),
+both on a $800\times 800$ chip with $Q=5$K.
 
 \begin{table}[p!]\centering
 \caption{\label{tab:reptx}
@@ -286,193 +300,120 @@ not necessarily lead to the best final layout produced by Row-Epitaxial.
 \vspace{1pt}
 Dim. & $Q$ & $k$ & & $k$-threading & Row-Eptx & Time                & & $k$-threading & Row-Eptx & Time \\
 \hline
-$300\times 300$ &  5K & 0 &  &      24.9649  & {\bf 18.2935} &   5.3 &  &      701.8698  &      462.5194  &  11.8 \\
-                &     & 1 &  &      24.1235  &      18.2999  &   5.4 &  &      690.8091  & {\bf 462.4656} &  11.8 \\
-                &     & 2 &  &      23.8695  &      18.3072  &   5.3 &  &      685.5916  &      462.6394  &  11.8 \\
-                &     & 3 &  &      23.7993  &      18.3226  &   5.4 &  &      683.5980  &      462.5885  &  11.8 \\
-                &     & 4 &  & {\bf 23.7588} &      18.3279  &   5.4 &  & {\bf 682.3542} &      462.7775  &  11.8 \\
+$300\times 300$ &  5K & 0 &   &      24.9649  & {\bf 18.2935} &  1.1 &  &      701.8698  &      462.5194  &   4.9 \\
+                &     & 1 &   &      24.1235  &      18.2999  &  1.3 &  &      690.8091  & {\bf 462.4656} &   5.1 \\
+                &     & 2 &   &      23.8695  &      18.3072  &  1.2 &  &      685.5916  &      462.6394  &   4.6 \\
+                &     & 3 &   &      23.7993  &      18.3226  &  1.2 &  &      683.5980  &      462.5885  &   5.1 \\
+                &     & 4 &   & {\bf 23.7588} &      18.3279  &  1.3 &  & {\bf 682.3542} &      462.7775  &   5.1 \\
 \cline{2-11}
-                & 10K & 0 &  &      24.9649  & {\bf 18.1477} &  10.5 &  &      701.8698  &      444.0354  &  22.2 \\
-                &     & 1 &  &      24.1235  &      18.1529  &  10.5 &  &      690.8091  &      444.0904  &  22.4 \\
-                &     & 2 &  &      23.8695  &      18.1519  &  10.5 &  &      685.5916  &      444.1960  &  22.2 \\
-                &     & 3 &  &      23.7993  &      18.1591  &  10.5 &  &      683.5980  & {\bf 443.9850} &  22.3 \\
-                &     & 4 &  & {\bf 23.7588} &      18.1603  &  10.5 &  & {\bf 682.3542} &      444.1745  &  22.2 \\
+                & 10K & 0 &   &      24.9649  & {\bf 18.1477} &  2.8 &  &      701.8698  &      444.0354  &   9.7 \\
+                &     & 1 &   &      24.1235  &      18.1529  &  2.8 &  &      690.8091  &      444.0904  &   9.3 \\
+                &     & 2 &   &      23.8695  &      18.1519  &  2.9 &  &      685.5916  &      444.1960  &  10.0 \\
+                &     & 3 &   &      23.7993  &      18.1591  &  2.8 &  &      683.5980  & {\bf 443.9850} &  10.6 \\
+                &     & 4 &   & {\bf 23.7588} &      18.1603  &  2.9 &  & {\bf 682.3542} &      444.1745  &   9.8 \\
 \cline{2-11}
-                & 20K & 0 &  &      24.9649  &      18.0274  &  20.0 &  &      701.8698  &      426.7824  &  40.9 \\
-                &     & 1 &  &      24.1235  &      18.0325  &  20.0 &  &      690.8091  &      426.8863  &  40.8 \\
-                &     & 2 &  &      23.8695  &      18.0277  &  19.8 &  &      685.5916  &      426.8832  &  40.8 \\
-                &     & 3 &  &      23.7993  & {\bf 18.0272} &  20.0 &  &      683.5980  &      426.8694  &  41.6 \\
-                &     & 4 &  & {\bf 23.7588} &      18.0321  &  19.9 &  & {\bf 682.3542} & {\bf 426.6600} &  40.9 \\
+                & 20K & 0 &   &      24.9649  &      18.0274  &  7.2 &  &      701.8698  &      426.7824  &  18.9 \\
+                &     & 1 &   &      24.1235  &      18.0325  &  6.9 &  &      690.8091  &      426.8863  &  18.5 \\
+                &     & 2 &   &      23.8695  &      18.0277  &  6.6 &  &      685.5916  &      426.8832  &  19.3 \\
+                &     & 3 &   &      23.7993  & {\bf 18.0272} &  6.6 &  &      683.5980  &      426.8694  &  19.6 \\
+                &     & 4 &   & {\bf 23.7588} &      18.0321  &  7.5 &  & {\bf 682.3542} & {\bf 426.6600} &  20.2 \\
 \hline
-$500\times 500$ &  5K & 0 &  &      24.2693  & {\bf 17.6000} &  15.6 &  &      693.5428  &      456.2042  &  33.5 \\
-                &     & 1 &  &      23.3454  &      17.6095  &  15.4 &  &      682.2197  & {\bf 456.1167} &  33.5 \\
-                &     & 2 &  &      23.0797  &      17.6246  &  15.5 &  &      676.4831  &      456.4575  &  33.5 \\
-                &     & 3 &  &      22.9632  &      17.6474  &  15.3 &  &      672.8211  &      456.4878  &  33.7 \\
-                &     & 4 &  & {\bf 22.9162} &      17.6670  &  15.5 &  & {\bf 671.2458} &      456.7849  &  33.4 \\
+$500\times 500$ &  5K & 0 &   &      24.2693  & {\bf 17.6000} &  4.3 &  &      693.5428  &      456.2042  &  15.2 \\
+                &     & 1 &   &      23.3454  &      17.6095  &  4.1 &  &      682.2097  & {\bf 456.1341} &  15.2 \\
+                &     & 2 &   &      23.0797  &      17.6246  &  4.3 &  &      676.4884  &      456.5261  &  14.1 \\
+                &     & 3 &   &      22.9632  &      17.6474  &  3.8 &  &      672.8160  &      456.5337  &  14.1 \\
+                &     & 4 &   & {\bf 22.9162} &      17.6670  &  3.7 &  & {\bf 671.2636} &      456.8203  &  15.3 \\
 \cline{2-11}
-                & 10K & 0 &  &      24.2693  & {\bf 17.4503} &  31.4 &  &      693.5286  &      438.6516  &  64.8 \\
-                &     & 1 &  &      23.3454  &      17.4523  &  32.6 &  &      682.2197  &      438.6618  &  64.7 \\
-                &     & 2 &  &      23.0797  &      17.4582  &  32.2 &  &      676.4831  & {\bf 438.5759} &  64.7 \\
-                &     & 3 &  &      22.9632  &      17.4685  &  32.0 &  &      672.8211  &      438.7841  &  65.8 \\
-                &     & 4 &  & {\bf 22.9162} &      17.4755  &  31.8 &  & {\bf 671.2458} &      438.9227  &  64.6 \\
+                & 10K & 0 &   &      24.2693  & {\bf 17.4503} & 13.1 &  &      693.5428  &      438.7075  &  33.9 \\
+                &     & 1 &   &      23.3454  &      17.4523  & 12.8 &  &      682.2097  &      438.7379  &  33.6 \\
+                &     & 2 &   &      23.0797  &      17.4582  & 12.7 &  &      676.4884  & {\bf 438.6477} &  30.4 \\
+                &     & 3 &   &      22.9632  &      17.4685  & 12.5 &  &      672.8160  &      438.8183  &  30.8 \\
+                &     & 4 &   & {\bf 22.9162} &      17.4755  & 12.5 &  & {\bf 671.2636} &      438.9280  &  32.8 \\
 \cline{2-11}
-                & 20K & 0 &  &      24.2693  &      17.3303  &  63.7 &  &      693.5286  &      421.1773  & 125.1 \\
-                &     & 1 &  &      23.3454  & {\bf 17.3297} &  65.5 &  &      682.2197  &      421.0770  & 125.5 \\
-                &     & 2 &  &      23.0797  &      17.3308  &  66.6 &  &      676.4831  &      421.0952  & 126.0 \\
-                &     & 3 &  &      22.9632  &      17.3344  &  66.1 &  &      672.8211  & {\bf 420.9112} & 123.7 \\
-                &     & 4 &  & {\bf 22.9162} &      17.3376  &  64.8 &  & {\bf 671.2458} &      420.9534  & 124.4 \\
+                & 20K & 0 &   &      24.2693  &      17.3303  & 28.2 &  &      693.5428  &      421.1358  &  66.7 \\
+                &     & 1 &   &      23.3454  & {\bf 17.3297} & 29.0 &  &      682.2097  &      421.1580  &  63.6 \\
+                &     & 2 &   &      23.0797  &      17.3308  & 27.4 &  &      676.4884  &      421.1087  &  67.7 \\
+                &     & 3 &   &      22.9632  &      17.3344  & 27.4 &  &      672.8160  & {\bf 420.9758} &  65.1 \\
+                &     & 4 &   & {\bf 22.9162} &      17.3376  & 27.7 &  & {\bf 671.2636} &      421.0436  &  64.2 \\
 \hline
-$800\times 800$ &  5K & 0 &  &      23.6818  & {\bf 16.9760} &  43.0 &  &      689.5915  & {\bf 447.9877} &  88.2 \\
-                &     & 1 &  &      22.6092  &      16.9927  &  43.1 &  &      672.2191  &      448.0745  &  88.9 \\
-                &     & 2 &  &      22.3205  &      17.0187  &  43.3 &  &      664.9477  &      448.6071  &  89.0 \\
-                &     & 3 &  &      22.1958  &      17.0589  &  37.7 &  &      660.5476  &      448.9202  &  88.3 \\
-                &     & 4 &  & {\bf 22.1279} &      17.1085  &  37.9 &  & {\bf 658.4852} &      449.1434  &  88.3 \\
+$800\times 800$ &  5K & 0 &   &      23.6818  & {\bf 16.9760} & 12.2 &  &      689.6109  & {\bf 448.0140} &  36.9 \\
+                &     & 1 &   &      22.6092  &      16.9927  & 12.2 &  &      672.2254  &      448.1474  &  40.3 \\
+                &     & 2 &   &      22.3205  &      17.0187  & 11.7 &  &      664.9753  &      448.6130  &  38.6 \\
+                &     & 3 &   &      22.1958  &      17.0589  & 11.7 &  &      660.5923  &      448.9159  &  40.2 \\
+                &     & 4 &   & {\bf 22.1279} &      17.1085  & 12.0 &  & {\bf 658.5097} &      449.1653  &  40.0 \\
 \cline{2-11}
-                & 10K & 0 &  &      23.6818  & {\bf 16.8032} &  95.0 &  &      689.5915  & {\bf 432.2326} & 179.6 \\
-                &     & 1 &  &      22.6092  &      16.8111  &  95.7 &  &      672.2191  &      432.5542  & 179.3 \\
-                &     & 2 &  &      22.3205  &      16.8235  &  95.2 &  &      664.9477  &      432.4991  & 178.1 \\
-                &     & 3 &  &      22.1958  &      16.8353  &  84.6 &  &      660.5476  &      432.6598  & 179.2 \\
-                &     & 4 &  & {\bf 22.1279} &      16.8622  &  83.7 &  & {\bf 658.4852} &      432.6423  & 178.9 \\
+                & 10K & 0 &   &      23.6818  & {\bf 16.8032} & 37.0 &  &      689.6109  & {\bf 432.2283} &  88.2 \\
+                &     & 1 &   &      22.6092  &      16.8111  & 39.1 &  &      672.2254  &      432.5153  &  91.4 \\
+                &     & 2 &   &      22.3205  &      16.8235  & 37.7 &  &      664.9753  &      432.5031  &  85.8 \\
+                &     & 3 &   &      22.1958  &      16.8353  & 37.7 &  &      660.5923  &      432.6652  &  90.1 \\
+                &     & 4 &   & {\bf 22.1279} &      16.8622  & 39.0 &  & {\bf 658.5097} &      432.6980  &  91.9 \\
 \cline{2-11}
-                & 20K & 0 &  &      23.6818  & {\bf 16.6771} & 219.1 &  &      689.5915  & {\bf 415.6571} & 365.9 \\
-                &     & 1 &  &      22.6092  &      16.6803  & 220.1 &  &      672.2191  &      415.7411  & 367.4 \\
-                &     & 2 &  &      22.3205  &      16.6851  & 193.0 &  &      664.9477  &      415.6809  & 366.9 \\
-                &     & 3 &  &      22.1958  &      16.6915  & 191.3 &  &      660.5476  &      415.7138  & 375.6 \\
-                &     & 4 &  & {\bf 22.1279} &      16.7007  & 194.0 &  & {\bf 658.4852} &      415.7714  & 368.2 \\
+                & 20K & 0 &   &      23.6818  & {\bf 16.6771} & 83.1 &  &      689.6109  & {\bf 415.6470} & 174.2 \\
+                &     & 1 &   &      22.6092  &      16.6803  & 83.2 &  &      672.2254  &      415.7402  & 181.1 \\
+                &     & 2 &   &      22.3205  &      16.6851  & 83.4 &  &      664.9753  &      415.6622  & 179.7 \\
+                &     & 3 &   &      22.1958  &      16.6915  & 86.5 &  &      660.5923  &      415.7609  & 172.3 \\
+                &     & 4 &   & {\bf 22.1279} &      16.7007  & 80.3 &  & {\bf 658.5097} &      415.7951  & 190.9 \\
 \hline
 \end{tabular*}}
 \end{table}
 
-Our results also confirm that the running time of Row-Epitaxial is $O(Qn)$,
-i.e., linear in the chip size, where $Q$ is a user-defined parameter that
-controls the number of probe candidades examined for each spot. In this way,
-solution quality can be traded for running time: More candidates yield better
-layouts but also demand more time.
+Our results also confirm that the running time of Row-Epitaxial is approximately
+$O(Qn)$, i.e., linear in the chip size, where $Q$ is a user-defined parameter
+that controls the number of probe candidades examined for each spot. In this
+way, solution quality can be traded for running time: More candidates yield
+better layouts but also demand more time.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Greedy}
 \label{sec:placement_greedy}
 
 As discussed in the previous section, the best results obtained with
-Row-Epitaxial do necessarily come from the best initial layouts produced by
-$k$-threading. This is probably because Row-Epitaxial does not take advantage of
-the probe order used in $k$-threading when it looks for probe candidates for
-filling a certain spot (Row-Epitaxial simply looks in the next $Q$ probes,
-row-by-row, regardless of how the probes were threaded in the array).
+Row-Epitaxial rarely came from the best initial layouts (produced by
+$k$-threading). This is probably because Row-Epitaxial ignores the probe order
+used by $k$-threading when it looks for probe candidates to fill a certain spot
+(Row-Epitaxial always looks for candidates in the next $Q$ spots, row-by-row,
+regardless of how probes were threaded on the array). Another possible
+disadvantage of the $k$-threading\,+\,Row-Epitaxial approach is that each swap
+made by Row-Epitaxial shuffles the probes in the not-changed spots, destroying
+the lexicographical order used during the threading.
 
 In this section, we present a new placement algorithm, called Greedy, that
-incorporates the Row-Epitaxial approach with a $k$-threading filling strategy.
-Like Row-Epitaxial, spots are filled in a greedy fashion, i.e., for each spot
-$s$, the algorithm examines $Q$ probe candidates and chooses the one that can be
-placed at $s$ with minimum cost (Greedy can also be easily implemented for
-border length as well as conflict index minimization). There are two main
-differences, however. First, spots are filled with $k$-threading instead of
-simply row-by-row.
+merges the Row-Epitaxial greedy heuristic with a $k$-threading filling strategy
+in a single phase, using a linked list of probes to maintain the probe order
+during the whole placement.
 
-Perhaps more importantly, Greedy sorts the probes lexicographically and keeps
-them in a doubly-linked list, which is used to maintain the probe order during
-the whole placement. Once a probe $p$ is selected to fill a certain spot, it is
-removed from the list and the next search of candidades is performed around $p$
-'s former position, e.g., $Q/2$ probes to the left and to the right of $p$. In
-this way, the algorithm always examines the probes that are more likely to be
-similar to the last placed probe (which will be its neighbor on the chip).
+Like Row-Epitaxial, Greedy fills the spots in a greedy fashion, i.e., for each
+spot $s$, it examines $Q$ probe candidates and chooses the one that can be
+placed at $s$ with minimum cost (Greedy can also be easily implemented for
+border length as well as conflict index minimization).
+
+There are two main differences to Row-Epitaxial. First, instead of (re-)filling
+spots row-by-row, spots are filled with $k$-threading (there is no need for an
+initial layout). Perhaps more importantly, Greedy sorts the probes
+lexicographically and keeps them in a doubly-linked list. This list is used to
+maintain the lexicographical order during placement. Moreover, it is also used
+to improve the chances of finding a candidate with fewer conflicts with the last
+placed probe (which will be its neighbor on the chip): Once a probe $p$ is
+selected to fill a certain spot, it is removed from the list and the next search
+of candidades examines the probes around $p$'s former position in the list,
+e.g., $Q/2$ probes to the left and to the right of $p$.
 
 Table~\ref{tab:greedy} shows the results of using Greedy for both border length
 and conflict index minimization on the same set of (random) chips of
-Table~\ref{tab:reptx}. Our results show that Greedy is slightly slower than
-Row-Epitaxial (because it keeps the probe in a doubly-linked list) but
-marginally better in terms of border length minimization and significantly
-better in terms of conflict index minimization.
+Table~\ref{tab:reptx}. The best layouts were always achieved with $k=0$.
+Interestingly, increasing the amplitude of the threading from $k=1$ to $k=4$
+always improved the results in terms of border length. In term os conflict
+index, increasing $k$ from 1 to 3 worsened the results, although increasing it
+from 3 to 4, most of the times, improved the layouts.
 
-\begin{table}[p!]\centering
-\caption{\label{tab:greedy}
-  Normalized border length (NBL) and average conflict index (ACI) of layouts
-  produced by Greedy on random chips of various dimensions. The results of
-  Row-Epitaxial on the same set of chips (Table~\ref{tab:reptx}) is shown for
-  comparison. Running times in minutes.}
-\footnotesize{
-\begin{tabular*}{\hsize}{crrrrrlrrrr}
-\vspace{1pt}
-     &         & \multicolumn{4}{c}{Border length minimization} & & \multicolumn{4}{c}{Conflict index minimization} \\ \cline{3-6} \cline{8-11}
-\vspace{1pt}
-     &         & \multicolumn{2}{c}{Row-Epitaxial} & \multicolumn{2}{c}{Greedy} & & \multicolumn{2}{c}{Row-Epitaxial} & \multicolumn{2}{c}{Greedy} \\
-\vspace{1pt}
-Dim. & $Q$ $k$ & NBL & Time & NBL & Time & & ACI & Time & ACI & Time \\
-\hline
-$300^2$         &  5K 0   &      24.9649  & 60.0 & {\bf 18.2935} &   5.3 &  &      701.8698  & 60.0 &      462.5194  &  11.8 \\
-                &     1   &      24.1235  &      &      18.2999  &   5.4 &  &      690.8091  &      & {\bf 462.4656} &  11.8 \\
-                &     2   &      23.8695  &      &      18.3072  &   5.3 &  &      685.5916  &      &      462.6394  &  11.8 \\
-                &     3   &      23.7993  &      &      18.3226  &   5.4 &  &      683.5980  &      &      462.5885  &  11.8 \\
-                &     4   & {\bf 23.7588} &      &      18.3279  &   5.4 &  & {\bf 682.3542} &      &      462.7775  &  11.8 \\
-\cline{2-11}
-                & 10K 0   &      24.9649  &      & {\bf 18.1477} &  10.5 &  &      701.8698  &      &      444.0354  &  22.2 \\
-                &     1   &      24.1235  &      &      18.1529  &  10.5 &  &      690.8091  &      &      444.0904  &  22.4 \\
-                &     2   &      23.8695  &      &      18.1519  &  10.5 &  &      685.5916  &      &      444.1960  &  22.2 \\
-                &     3   &      23.7993  &      &      18.1591  &  10.5 &  &      683.5980  &      & {\bf 443.9850} &  22.3 \\
-                &     4   & {\bf 23.7588} &      &      18.1603  &  10.5 &  & {\bf 682.3542} &      &      444.1745  &  22.2 \\
-\cline{2-11}
-                & 20K 0   &      24.9649  &      &      18.0274  &  20.0 &  &      701.8698  &      &      426.7824  &  40.9 \\
-                &     1   &      24.1235  &      &      18.0325  &  20.0 &  &      690.8091  &      &      426.8863  &  40.8 \\
-                &     2   &      23.8695  &      &      18.0277  &  19.8 &  &      685.5916  &      &      426.8832  &  40.8 \\
-                &     3   &      23.7993  &      & {\bf 18.0272} &  20.0 &  &      683.5980  &      &      426.8694  &  41.6 \\
-                &     4   & {\bf 23.7588} &      &      18.0321  &  19.9 &  & {\bf 682.3542} &      & {\bf 426.6600} &  40.9 \\
-\hline
-$500^2$         &  5K 0   &      24.2693  &      & {\bf 17.6000} &  15.6 &  &      693.5428  &      &      456.2042  &  33.5 \\
-                &     1   &      23.3454  &      &      17.6095  &  15.4 &  &      682.2197  &      & {\bf 456.1167} &  33.5 \\
-                &     2   &      23.0797  &      &      17.6246  &  15.5 &  &      676.4831  &      &      456.4575  &  33.5 \\
-                &     3   &      22.9632  &      &      17.6474  &  15.3 &  &      672.8211  &      &      456.4878  &  33.7 \\
-                &     4   & {\bf 22.9162} &      &      17.6670  &  15.5 &  & {\bf 671.2458} &      &      456.7849  &  33.4 \\
-\cline{2-11}
-                & 10K 0   &      24.2693  &      & {\bf 17.4503} &  31.4 &  &      693.5286  &      &      438.6516  &  64.8 \\
-                &     1   &      23.3454  &      &      17.4523  &  32.6 &  &      682.2197  &      &      438.6618  &  64.7 \\
-                &     2   &      23.0797  &      &      17.4582  &  32.2 &  &      676.4831  &      & {\bf 438.5759} &  64.7 \\
-                &     3   &      22.9632  &      &      17.4685  &  32.0 &  &      672.8211  &      &      438.7841  &  65.8 \\
-                &     4   & {\bf 22.9162} &      &      17.4755  &  31.8 &  & {\bf 671.2458} &      &      438.9227  &  64.6 \\
-\cline{2-11}
-                & 20K 0   &      24.2693  &      &      17.3303  &  63.7 &  &      693.5286  &      &      421.1773  & 125.1 \\
-                &     1   &      23.3454  &      & {\bf 17.3297} &  65.5 &  &      682.2197  &      &      421.0770  & 125.5 \\
-                &     2   &      23.0797  &      &      17.3308  &  66.6 &  &      676.4831  &      &      421.0952  & 126.0 \\
-                &     3   &      22.9632  &      &      17.3344  &  66.1 &  &      672.8211  &      & {\bf 420.9112} & 123.7 \\
-                &     4   & {\bf 22.9162} &      &      17.3376  &  64.8 &  & {\bf 671.2458} &      &      420.9534  & 124.4 \\
-\hline
-$800^2$         &  5K 0   &      23.6818  &      & {\bf 16.9760} &  43.0 &  &      689.5915  &      & {\bf 447.9877} &  88.2 \\
-                &     1   &      22.6092  &      &      16.9927  &  43.1 &  &      672.2191  &      &      448.0745  &  88.9 \\
-                &     2   &      22.3205  &      &      17.0187  &  43.3 &  &      664.9477  &      &      448.6071  &  89.0 \\
-                &     3   &      22.1958  &      &      17.0589  &  37.7 &  &      660.5476  &      &      448.9202  &  88.3 \\
-                &     4   & {\bf 22.1279} &      &      17.1085  &  37.9 &  & {\bf 658.4852} &      &      449.1434  &  88.3 \\
-\cline{2-11}
-                & 10K 0   &      23.6818  &      & {\bf 16.8032} &  95.0 &  &      689.5915  &      & {\bf 432.2326} & 179.6 \\
-                &     1   &      22.6092  &      &      16.8111  &  95.7 &  &      672.2191  &      &      432.5542  & 179.3 \\
-                &     2   &      22.3205  &      &      16.8235  &  95.2 &  &      664.9477  &      &      432.4991  & 178.1 \\
-                &     3   &      22.1958  &      &      16.8353  &  84.6 &  &      660.5476  &      &      432.6598  & 179.2 \\
-                &     4   & {\bf 22.1279} &      &      16.8622  &  83.7 &  & {\bf 658.4852} &      &      432.6423  & 178.9 \\
-\cline{2-11}
-                & 20K 0   &      23.6818  &      & {\bf 16.6771} & 219.1 &  &      689.5915  &      & {\bf 415.6571} & 365.9 \\
-                &     1   &      22.6092  &      &      16.6803  & 220.1 &  &      672.2191  &      &      415.7411  & 367.4 \\
-                &     2   &      22.3205  &      &      16.6851  & 193.0 &  &      664.9477  &      &      415.6809  & 366.9 \\
-                &     3   &      22.1958  &      &      16.6915  & 191.3 &  &      660.5476  &      &      415.7138  & 375.6 \\
-                &     4   & {\bf 22.1279} &      &      16.7007  & 194.0 &  & {\bf 658.4852} &      &      415.7714  & 368.2 \\
-\hline
-\end{tabular*}}
-\end{table}
-
-Talk about $k$-threading.
-
-In terms of border length, we observed that increasing $Q$ above 5K has little
-positive effect (see Fig.~\ref{fig:greedy_tradeoff}). For instance, on
-$800\times 800$ chips, increasing $Q$ from 5K to 10K reduced the normalized
-border length, on average, by only $0.66\%$ (from $17.1259$ to $17.0122$). In
-terms of conflict index, increasing $Q$ even above 40K may result in significant
-improvements for large chips. For instance, on $800\times 800$ chips, increasing
-$Q$ from 40K to 80K reduced the average conflict index by $3.18\%$ (from
-$381.8034$ to $369.6583$).
-
-TODO: review figures above for border length.
-
-The fact that increasing $Q$ has more effect in terms of conflict index is
-probably because, in this measure, there is more room for optimization as the
-conflicts can be moved to the extremities of the probes (while retaining the
-same number of border conflicts) and a larger number of neighbors are involved.
+In terms of border length, Greedy and Row-Epitaxial produced similar results,
+with the best layout of Greedy being sometimes marginally better and sometimes
+marginally worse than the best layout of Row-Epitaxial. In terms of conflitct
+index minimization, however, Greedy was constantly and significantly better than
+Row-Epitaxial, achieving up to $5.65\%$ reduction in average conflic index (from
+$415.6470$ to $392.1786$) on a $800\times 800$ chip with $Q=20$K. Our results
+also show that Greedy is slightly slower than Row-Epitaxial (because of the
+doubly-linked list).
 
 \begin{figure}
 %%
@@ -552,3 +493,94 @@ same number of border conflicts) and a larger number of neighbors are involved.
   left to right. Layouts are measured by normalized border length (left) and
   average conflict index (right).}
 \end{figure}
+
+\begin{table}[p!]\centering
+\caption{\label{tab:greedy}
+  Normalized border length (NBL) and average conflict index (ACI) of layouts
+  produced by Greedy on random chips of various dimensions. The results of
+  Row-Epitaxial on the same set of chips (Table~\ref{tab:reptx}) is shown for
+  comparison. Running times in minutes.}
+\footnotesize{
+\begin{tabular*}{\hsize}{crrrrrlrrrr}
+\vspace{1pt}
+     &         & \multicolumn{4}{c}{Border length minimization} & & \multicolumn{4}{c}{Conflict index minimization} \\ \cline{3-6} \cline{8-11}
+\vspace{1pt}
+     &         & \multicolumn{2}{c}{Row-Epitaxial} & \multicolumn{2}{c}{Greedy} & & \multicolumn{2}{c}{Row-Epitaxial} & \multicolumn{2}{c}{Greedy} \\
+\vspace{1pt}
+Dim. & $Q$ $k$ & NBL & Time & NBL & Time & & ACI & Time & ACI & Time \\
+\hline
+$300^2$ &  5K 0 & {\bf 18.2935} &  1.1 & {\bf 18.3182} &  1.6 &  &      462.5194  &   4.9 & {\bf 440.5166} &   5.4 \\
+        &     1 &      18.2999  &  1.3 &      18.5037  &  1.6 &  & {\bf 462.4656} &   5.1 &      444.7837  &   5.3 \\
+        &     2 &      18.3072  &  1.2 &      18.4222  &  1.6 &  &      462.6394  &   4.6 &      446.8662  &   5.3 \\
+        &     3 &      18.3226  &  1.2 &      18.3863  &  1.6 &  &      462.5885  &   5.1 &      447.7464  &   5.0 \\
+        &     4 &      18.3279  &  1.3 &      18.3728  &  1.5 &  &      462.7775  &   5.1 &      447.6559  &   5.3 \\
+\cline{2-11}
+        & 10K 0 & {\bf 18.1477} &  2.8 & {\bf 18.1830} &  4.3 &  &      444.0354  &   9.7 & {\bf 426.3480} &  10.9 \\
+        &     1 &      18.1529  &  2.8 &      18.3912  &  4.7 &  &      444.0904  &   9.3 &      429.5617  &  11.3 \\
+        &     2 &      18.1519  &  2.9 &      18.3058  &  4.5 &  &      444.1960  &  10.0 &      431.7555  &  11.1 \\
+        &     3 &      18.1591  &  2.8 &      18.2732  &  4.6 &  & {\bf 443.9850} &  10.6 &      432.6821  &  11.3 \\
+        &     4 &      18.1603  &  2.9 &      18.2415  &  4.6 &  &      444.1745  &   9.8 &      432.3800  &  11.0 \\
+\cline{2-11}
+        & 20K 0 &      18.0274  &  7.2 & {\bf 18.0576} &  9.6 &  &      426.7824  &  18.9 & {\bf 415.5003} &  30.3 \\
+        &     1 &      18.0325  &  6.9 &      18.2813  &  9.2 &  &      426.8863  &  18.5 &      418.2357  &  21.3 \\
+        &     2 &      18.0277  &  6.6 &      18.1985  &  9.2 &  &      426.8832  &  19.3 &      419.4866  &  21.1 \\
+        &     3 & {\bf 18.0272} &  6.6 &      18.1617  &  9.5 &  &      426.8694  &  19.6 &      420.7345  &  20.1 \\
+        &     4 &      18.0321  &  7.5 &      18.1328  &  8.8 &  & {\bf 426.6600} &  20.2 &      420.7332  &  21.0 \\
+\hline
+$500^2$ &  5K 0 & {\bf 17.6000} &  4.3 & {\bf 17.5830} &  5.8 &  &      456.2042  &  15.2 & {\bf 432.3023} &  15.9 \\
+        &     1 &      17.6095  &  4.1 &      17.7842  &  5.3 &  & {\bf 456.1341} &  15.2 &      437.2417  &  16.2 \\
+        &     2 &      17.6246  &  4.3 &      17.7087  &  5.3 &  &      456.5261  &  14.1 &      439.7432  &  15.6 \\
+        &     3 &      17.6474  &  3.8 &      17.6759  &  5.4 &  &      456.5337  &  14.1 &      441.3441  &  16.2 \\
+        &     4 &      17.6670  &  3.7 &      17.6561  &  5.4 &  &      456.8203  &  15.3 &      441.0668  &  16.1 \\
+\cline{2-11}
+        & 10K 0 & {\bf 17.4503} & 13.1 & {\bf 17.4673} & 15.8 &  &      438.7075  &  33.9 & {\bf 415.6951} &  35.4 \\
+        &     1 &      17.4523  & 12.8 &      17.6765  & 16.0 &  &      438.7379  &  33.6 &      419.7788  &  33.4 \\
+        &     2 &      17.4582  & 12.7 &      17.5936  & 16.8 &  & {\bf 438.6477} &  30.4 &      422.1943  &  36.3 \\
+        &     3 &      17.4685  & 12.5 &      17.5550  & 16.2 &  &      438.8183  &  30.8 &      424.0554  &  34.6 \\
+        &     4 &      17.4755  & 12.5 &      17.5324  & 15.7 &  &      438.9280  &  32.8 &      423.7936  &  35.2 \\
+\cline{2-11}
+        & 20K 0 &      17.3303  & 28.2 & {\bf 17.3554} & 33.3 &  &      421.1358  &  66.7 & {\bf 401.4609} &  67.1 \\
+        &     1 & {\bf 17.3297} & 29.0 &      17.5829  & 34.0 &  &      421.1580  &  63.6 &      404.9949  &  69.8 \\
+        &     2 &      17.3308  & 27.4 &      17.4939  & 34.1 &  &      421.1087  &  67.7 &      406.9576  &  67.8 \\
+        &     3 &      17.3344  & 27.4 &      17.4519  & 34.7 &  & {\bf 420.9758} &  65.1 &      408.5048  &  69.4 \\
+        &     4 &      17.3376  & 27.7 &      17.4273  & 33.7 &  &      421.0436  &  64.2 &      408.4556  &  68.4 \\
+\hline
+$800^2$ &  5K 0 & {\bf 16.9760} & 12.2 & {\bf 16.9124} & 15.3 &  & {\bf 448.0140} &  36.9 & {\bf 426.0757} &  41.9 \\
+        &     1 &      16.9927  & 12.2 &      17.1259  & 15.5 &  &      448.1474  &  40.3 &      430.9759  &  42.7 \\
+        &     2 &      17.0187  & 11.7 &      17.0551  & 15.1 &  &      448.6130  &  38.6 &      433.8504  &  42.9 \\
+        &     3 &      17.0589  & 11.7 &      17.0214  & 15.4 &  &      448.9159  &  40.2 &      435.4797  &  43.3 \\
+        &     4 &      17.1085  & 12.0 &      17.0009  & 15.4 &  &      449.1653  &  40.0 &      435.2589  &  43.2 \\
+\cline{2-11}
+        & 10K 0 & {\bf 16.8032} & 37.0 & {\bf 16.7951} & 45.5 &  & {\bf 432.2283} &  88.2 & {\bf 408.3982} &  91.4 \\
+        &     1 &      16.8111  & 39.1 &      17.0122  & 43.2 &  &      432.5153  &  91.4 &      412.9971  &  95.1 \\
+        &     2 &      16.8235  & 37.7 &      16.9333  & 45.1 &  &      432.5031  &  85.8 &      415.7934  &  91.7 \\
+        &     3 &      16.8353  & 37.7 &      16.8935  & 45.9 &  &      432.6652  &  90.1 &      417.5229  &  95.2 \\
+        &     4 &      16.8622  & 39.0 &      16.8748  & 45.6 &  &      432.6980  &  91.9 &      417.5098  &  91.3 \\
+\cline{2-11}
+        & 20K 0 & {\bf 16.6771} & 83.1 & {\bf 16.6980} & 95.8 &  & {\bf 415.6470} & 174.2 & {\bf 392.1786} & 186.4 \\
+        &     1 &      16.6803  & 83.2 &      16.9263  & 93.2 &  &      415.7402  & 181.1 &      396.3923  & 185.9 \\
+        &     2 &      16.6851  & 83.4 &      16.8376  & 93.8 &  &      415.6622  & 179.7 &      399.0043  & 186.9 \\
+        &     3 &      16.6915  & 86.5 &      16.7947  & 94.4 &  &      415.7609  & 172.3 &      400.7189  & 183.3 \\
+        &     4 &      16.7007  & 80.3 &      16.7727  & 97.2 &  &      415.7951  & 190.9 &      400.7257  & 189.3 \\
+\hline
+\end{tabular*}}
+\end{table}
+
+We also observed that, in terms of border length, increasing $Q$ above 5K has
+little positive effect (see Fig.~\ref{fig:greedy_tradeoff}). For instance, on
+$800\times 800$ chips, increasing $Q$ from 5K to 20K reduced the normalized
+border length by only $1.27\%$ (from $16.9124$ to $16.6980$), while requiring
+approximately six times more time. In terms of conflict index, however,
+increasing $Q$ even above 40K results in significant improvements for large
+chips. For instance, on $800\times 800$ chips, increasing $Q$ from 40K to 80K
+reduced the average conflict index by $3.18\%$ (from $381.8034$ to $369.6583$).
+Fig.~\ref{fig:greedy_tradeoff} also confirms that, like Row-Epitaxial, Greedy
+has a $O(Qn)$ time complexity.
+
+TODO: update Figure~\ref{fig:greedy_tradeoff} with new results (that compare
+with Table~\ref{tab:greedy}) and review the examples of the previous paragraph.
+
+The fact that increasing $Q$ has more effect in terms of conflict index is
+probably because, in this measure, there is more room for optimization as the
+conflicts can be moved to the extremities of the probes (while retaining the
+same number of border conflicts) and a larger number of neighbors are involved.

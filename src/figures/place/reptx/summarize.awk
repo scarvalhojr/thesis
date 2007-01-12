@@ -12,7 +12,9 @@ BEGIN {
 	
 		if (dim != "") {
 			# print previous record
-			printf ("%s\t%d\t%d\t%f\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, cost_before/c, kthread_cost/c, reptx_cost/c, time/c, c)
+			total_time = total_time - best_time - worse_time
+			avg_time = total_time / (c - 2)
+			printf ("%s\t%d\t%d\t%f\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, cost_before/c, kthread_cost/c, reptx_cost/c, avg_time, c)
 		}
 		
 		# start new record
@@ -24,6 +26,9 @@ BEGIN {
 		kthread_cost = $6
 		reptx_cost = $7
 		time = $8 / 60
+		best_time = time
+		worse_time = time
+		total_time = time
 		c = 1
 		
 		next;
@@ -32,11 +37,19 @@ BEGIN {
 	cost_before = cost_before + $5
 	kthread_cost = kthread_cost + $6
 	reptx_cost = reptx_cost + $7
-	time = time + ($8 / 60)
+	time = $8 / 60
+	if (time > worse_time) {
+		worse_time = time
+	} else if (time < best_time) {
+		best_time = time
+	}
+	total_time = total_time + time
 	c = c + 1
 }
 
 END {
 	# print last record
-	printf ("%s\t%d\t%d\t%f\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, cost_before/c, kthread_cost/c, reptx_cost/c, time/c, c)
+	total_time = total_time - best_time - worse_time
+	avg_time = total_time / (c - 2)
+	printf ("%s\t%d\t%d\t%f\t%f\t%f\t%f\tx%d\n", dim, window, kvalue, cost_before/c, kthread_cost/c, reptx_cost/c, avg_time, c)
 }

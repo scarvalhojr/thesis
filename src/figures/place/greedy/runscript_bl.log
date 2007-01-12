@@ -1,0 +1,3160 @@
+Host: doc021
+Timestamp: Thu Jan 11 00:12:57 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 92.287472397 sec
+Total border length: 3285392 -> normalized: 18.313221850613154
+Total time: 92.287472397 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:14:31 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 250.829340477 sec
+Total border length: 3262074 -> normalized: 18.18324414715719
+Total time: 250.829340477 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:18:44 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 595.224983683 sec
+Total border length: 3239396 -> normalized: 18.056833890746933
+Total time: 595.224983683 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:28:42 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 86.726625094 sec
+Total border length: 3320078 -> normalized: 18.506566332218505
+Total time: 86.726625094 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:30:11 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 311.26442768 sec
+Total border length: 3299434 -> normalized: 18.39149386845039
+Total time: 311.26442768 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:35:25 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 607.170807788 sec
+Total border length: 3282182 -> normalized: 18.295328874024527
+Total time: 607.170807788 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:45:34 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 93.556915275 sec
+Total border length: 3306048 -> normalized: 18.428361204013378
+Total time: 93.556915275 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:47:10 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 280.59153835 sec
+Total border length: 3284646 -> normalized: 18.3090635451505
+Total time: 280.59153835 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:51:52 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 520.461414118 sec
+Total border length: 3264618 -> normalized: 18.19742474916388
+Total time: 520.461414118 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:00:35 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 95.470574016 sec
+Total border length: 3298176 -> normalized: 18.38448160535117
+Total time: 95.470574016 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:02:13 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 265.614724377 sec
+Total border length: 3278384 -> normalized: 18.274158305462652
+Total time: 265.614724377 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:06:40 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 587.343675377 sec
+Total border length: 3258824 -> normalized: 18.165128205128205
+Total time: 587.343675377 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:16:30 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 105.59232524 sec
+Total border length: 3295530 -> normalized: 18.369732441471573
+Total time: 105.59232524 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:18:18 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 284.59597058 sec
+Total border length: 3273166 -> normalized: 18.245072463768118
+Total time: 284.59597058 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:23:04 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545332 -> normalized: 30.910434782608696
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 533.403452713 sec
+Total border length: 3254082 -> normalized: 18.13869565217391
+Total time: 533.403452713 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:32:00 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 373.432774066 sec
+Total border length: 8774338 -> normalized: 17.58384368737475
+Total time: 373.432774066 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:38:18 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 872.207406601 sec
+Total border length: 8713954 -> normalized: 17.46283366733467
+Total time: 872.207406601 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:52:54 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 2021.134003055 sec
+Total border length: 8658300 -> normalized: 17.35130260521042
+Total time: 2021.134003055 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 02:26:39 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 301.297087641 sec
+Total border length: 8872950 -> normalized: 17.781462925851702
+Total time: 301.297087641 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 02:31:45 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 1062.011888409 sec
+Total border length: 8820428 -> normalized: 17.676208416833667
+Total time: 1062.011888409 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 02:49:31 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 1979.070794692 sec
+Total border length: 8772770 -> normalized: 17.580701402805612
+Total time: 1979.070794692 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 03:22:34 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 352.688718859 sec
+Total border length: 8834608 -> normalized: 17.704625250501003
+Total time: 352.688718859 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 03:28:30 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 1011.809053366 sec
+Total border length: 8777480 -> normalized: 17.590140280561123
+Total time: 1011.809053366 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 03:45:26 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 2078.180258253 sec
+Total border length: 8728692 -> normalized: 17.49236873747495
+Total time: 2078.180258253 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 04:20:08 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 327.839316161 sec
+Total border length: 8821070 -> normalized: 17.67749498997996
+Total time: 327.839316161 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 04:25:40 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 981.374143904 sec
+Total border length: 8760596 -> normalized: 17.556304609218436
+Total time: 981.374143904 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 04:42:05 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 1851.32401092 sec
+Total border length: 8706098 -> normalized: 17.44709018036072
+Total time: 1851.32401092 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 05:13:00 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 338.232943033 sec
+Total border length: 8807578 -> normalized: 17.650456913827654
+Total time: 338.232943033 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 05:18:43 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 885.630803721 sec
+Total border length: 8748548 -> normalized: 17.53216032064128
+Total time: 885.630803721 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 05:33:32 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 1914.872274303 sec
+Total border length: 8696622 -> normalized: 17.428100200400802
+Total time: 1914.872274303 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 06:05:31 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 907.020913317 sec
+Total border length: 21619996 -> normalized: 16.911761576971212
+Total time: 907.020913317 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 06:20:46 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 2773.010036244 sec
+Total border length: 21476306 -> normalized: 16.799363266583228
+Total time: 2773.010036244 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 07:07:08 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 5668.129672573 sec
+Total border length: 21350028 -> normalized: 16.700585106382977
+Total time: 5668.129672573 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 08:41:44 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 953.980584232 sec
+Total border length: 21893694 -> normalized: 17.125855757196497
+Total time: 953.980584232 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 08:57:46 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 2545.530669315 sec
+Total border length: 21749952 -> normalized: 17.013416770963705
+Total time: 2545.530669315 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 09:40:20 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 6372.172780402 sec
+Total border length: 21641592 -> normalized: 16.928654568210263
+Total time: 6372.172780402 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 11:26:40 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 906.488807086 sec
+Total border length: 21801774 -> normalized: 17.05395337922403
+Total time: 906.488807086 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 11:41:55 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 2884.677992705 sec
+Total border length: 21642726 -> normalized: 16.929541614518147
+Total time: 2884.677992705 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 12:30:08 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 5876.148663135 sec
+Total border length: 21523228 -> normalized: 16.836066958698375
+Total time: 5876.148663135 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 14:08:12 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 1080.608131893 sec
+Total border length: 21758372 -> normalized: 17.02000312891114
+Total time: 1080.608131893 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 14:26:20 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 2896.53955308 sec
+Total border length: 21595136 -> normalized: 16.892315394242804
+Total time: 2896.53955308 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 15:14:45 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 5667.537998575 sec
+Total border length: 21467098 -> normalized: 16.792160513141425
+Total time: 5667.537998575 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 16:49:21 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 916.083907981 sec
+Total border length: 21731318 -> normalized: 16.998840738423027
+Total time: 916.083907981 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 17:04:45 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 2392.504156708 sec
+Total border length: 21569960 -> normalized: 16.87262202753442
+Total time: 2392.504156708 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 17:44:46 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507888 -> normalized: 30.904167709637047
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 5666.291353907 sec
+Total border length: 21440932 -> normalized: 16.77169274092616
+Total time: 5666.291353907 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:13:05 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 101.638755826 sec
+Total border length: 3288116 -> normalized: 18.32840579710145
+Total time: 101.638755826 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:14:49 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 279.589727719 sec
+Total border length: 3263580 -> normalized: 18.191638795986623
+Total time: 279.589727719 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:19:31 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 537.78628273 sec
+Total border length: 3240608 -> normalized: 18.063589743589745
+Total time: 537.78628273 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:28:31 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 98.119102114 sec
+Total border length: 3319384 -> normalized: 18.50269788182832
+Total time: 98.119102114 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:30:11 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 328.497935355 sec
+Total border length: 3298580 -> normalized: 18.386733556298772
+Total time: 328.497935355 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:35:42 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 541.805257766 sec
+Total border length: 3278710 -> normalized: 18.275975473801562
+Total time: 541.805257766 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:44:46 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 95.571128054 sec
+Total border length: 3305436 -> normalized: 18.42494983277592
+Total time: 95.571128054 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:46:24 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 236.547897213 sec
+Total border length: 3284574 -> normalized: 18.30866220735786
+Total time: 236.547897213 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 00:50:23 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 584.150641458 sec
+Total border length: 3265152 -> normalized: 18.20040133779264
+Total time: 584.150641458 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:00:09 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 105.459112741 sec
+Total border length: 3298538 -> normalized: 18.3864994425864
+Total time: 105.459112741 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:01:57 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 274.457487901 sec
+Total border length: 3278616 -> normalized: 18.275451505016722
+Total time: 274.457487901 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:06:33 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 586.08956767 sec
+Total border length: 3260178 -> normalized: 18.17267558528428
+Total time: 586.08956767 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:16:21 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 85.465956553 sec
+Total border length: 3297702 -> normalized: 18.381839464882944
+Total time: 85.465956553 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:17:49 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 247.12730399 sec
+Total border length: 3273566 -> normalized: 18.24730211817168
+Total time: 247.12730399 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:21:58 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5543572 -> normalized: 30.900624303233
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 576.913158155 sec
+Total border length: 3252890 -> normalized: 18.132051282051282
+Total time: 576.913158155 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:31:37 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 380.96315974 sec
+Total border length: 8770744 -> normalized: 17.57664128256513
+Total time: 380.96315974 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:38:02 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 1043.024296191 sec
+Total border length: 8717814 -> normalized: 17.470569138276552
+Total time: 1043.024296191 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 01:55:29 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 1872.492535189 sec
+Total border length: 8660236 -> normalized: 17.35518236472946
+Total time: 1872.492535189 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 02:26:46 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 350.03431415 sec
+Total border length: 8876522 -> normalized: 17.78862124248497
+Total time: 350.03431415 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 02:32:40 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 994.562815415 sec
+Total border length: 8819778 -> normalized: 17.674905811623248
+Total time: 994.562815415 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 02:49:19 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 2095.183898003 sec
+Total border length: 8769780 -> normalized: 17.574709418837674
+Total time: 2095.183898003 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 03:24:18 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 315.565972562 sec
+Total border length: 8836982 -> normalized: 17.70938276553106
+Total time: 315.565972562 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 03:29:37 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 1007.995649014 sec
+Total border length: 8781100 -> normalized: 17.59739478957916
+Total time: 1007.995649014 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 03:46:29 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 1953.1532918 sec
+Total border length: 8730820 -> normalized: 17.496633266533067
+Total time: 1953.1532918 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 04:19:06 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 304.684059603 sec
+Total border length: 8820310 -> normalized: 17.675971943887774
+Total time: 304.684059603 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 04:24:15 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 933.326238767 sec
+Total border length: 8758156 -> normalized: 17.55141482965932
+Total time: 933.326238767 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 04:39:52 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 2169.660980296 sec
+Total border length: 8705872 -> normalized: 17.446637274549097
+Total time: 2169.660980296 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 05:16:06 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 302.294896154 sec
+Total border length: 8811026 -> normalized: 17.657366733466933
+Total time: 302.294896154 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 05:21:12 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 1013.968651693 sec
+Total border length: 8750244 -> normalized: 17.535559118236474
+Total time: 1013.968651693 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 05:38:10 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15422344 -> normalized: 30.906501002004006
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 2088.598515716 sec
+Total border length: 8695506 -> normalized: 17.42586372745491
+Total time: 2088.598515716 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 06:13:03 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 923.401778584 sec
+Total border length: 21618690 -> normalized: 16.910739987484355
+Total time: 923.401778584 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 06:28:35 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 2664.189894362 sec
+Total border length: 21471208 -> normalized: 16.795375469336673
+Total time: 2664.189894362 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 07:13:07 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 5912.413457265 sec
+Total border length: 21339628 -> normalized: 16.692449937421777
+Total time: 5912.413457265 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 08:51:48 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 910.596173596 sec
+Total border length: 21892024 -> normalized: 17.124549436795995
+Total time: 910.596173596 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 09:07:07 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 2714.871486738 sec
+Total border length: 21745540 -> normalized: 17.00996558197747
+Total time: 2714.871486738 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 09:52:29 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 5756.408560028 sec
+Total border length: 21635916 -> normalized: 16.92421464330413
+Total time: 5756.408560028 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 11:28:34 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 903.299835174 sec
+Total border length: 21802144 -> normalized: 17.05424280350438
+Total time: 903.299835174 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 11:43:46 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 2706.239414903 sec
+Total border length: 21647126 -> normalized: 16.932983416770963
+Total time: 2706.239414903 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 12:29:00 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 6781.63171906 sec
+Total border length: 21523470 -> normalized: 16.836256257822278
+Total time: 6781.63171906 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 14:22:10 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 930.415834643 sec
+Total border length: 21759836 -> normalized: 17.021148310387986
+Total time: 930.415834643 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 14:37:49 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 2916.572374821 sec
+Total border length: 21596946 -> normalized: 16.893731226533166
+Total time: 2916.572374821 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 15:26:33 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 5775.991402873 sec
+Total border length: 21467700 -> normalized: 16.792631414267834
+Total time: 5775.991402873 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 17:02:57 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 981.300019926 sec
+Total border length: 21737012 -> normalized: 17.003294743429286
+Total time: 981.300019926 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 17:19:27 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 2943.233285391 sec
+Total border length: 21572860 -> normalized: 16.874890488110136
+Total time: 2943.233285391 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Timestamp: Thu Jan 11 18:08:39 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507748 -> normalized: 30.904058197747183
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 5846.508594338 sec
+Total border length: 21440934 -> normalized: 16.77169430538173
+Total time: 5846.508594338 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:13:08 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 90.220082885 sec
+Total border length: 3286132 -> normalized: 18.317346711259756
+Total time: 90.220082885 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:14:41 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 259.304938214 sec
+Total border length: 3262308 -> normalized: 18.18454849498328
+Total time: 259.304938214 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:19:02 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 512.355790239 sec
+Total border length: 3240816 -> normalized: 18.064749163879597
+Total time: 512.355790239 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:27:37 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 106.404342286 sec
+Total border length: 3319760 -> normalized: 18.50479375696767
+Total time: 106.404342286 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:29:25 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 248.633199213 sec
+Total border length: 3299024 -> normalized: 18.389208472686732
+Total time: 248.633199213 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:33:36 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 528.818452123 sec
+Total border length: 3279506 -> normalized: 18.28041248606466
+Total time: 528.818452123 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:42:27 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 90.226022643 sec
+Total border length: 3304446 -> normalized: 18.41943143812709
+Total time: 90.226022643 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:44:00 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 259.616085697 sec
+Total border length: 3284734 -> normalized: 18.309554069119287
+Total time: 259.616085697 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:48:21 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 535.358736808 sec
+Total border length: 3265542 -> normalized: 18.20257525083612
+Total time: 535.358736808 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:57:19 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 90.658951162 sec
+Total border length: 3299446 -> normalized: 18.3915607580825
+Total time: 90.658951162 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 00:58:52 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 235.183224452 sec
+Total border length: 3279038 -> normalized: 18.277803790412484
+Total time: 235.183224452 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:02:49 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 534.301401186 sec
+Total border length: 3258106 -> normalized: 18.1611259754738
+Total time: 534.301401186 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:11:46 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 86.637993585 sec
+Total border length: 3297884 -> normalized: 18.382853957636566
+Total time: 86.637993585 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:13:15 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 278.788249935 sec
+Total border length: 3273724 -> normalized: 18.248182831661094
+Total time: 278.788249935 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:17:55 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5545568 -> normalized: 30.9117502787068
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 529.222087927 sec
+Total border length: 3252398 -> normalized: 18.129308807134894
+Total time: 529.222087927 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:26:47 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 320.984565073 sec
+Total border length: 8774728 -> normalized: 17.584625250501002
+Total time: 320.984565073 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:32:12 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 906.35273578 sec
+Total border length: 8716120 -> normalized: 17.467174348697394
+Total time: 906.35273578 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 01:47:22 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 2096.11093535 sec
+Total border length: 8659660 -> normalized: 17.354028056112224
+Total time: 2096.11093535 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 02:22:22 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 334.364415174 sec
+Total border length: 8874646 -> normalized: 17.784861723446895
+Total time: 334.364415174 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 02:28:01 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 895.414438585 sec
+Total border length: 8821956 -> normalized: 17.679270541082165
+Total time: 895.414438585 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 02:43:01 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 2045.689155664 sec
+Total border length: 8778078 -> normalized: 17.59133867735471
+Total time: 2045.689155664 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 03:17:10 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 324.570525553 sec
+Total border length: 8836662 -> normalized: 17.70874148296593
+Total time: 324.570525553 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 03:22:39 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 1000.839888605 sec
+Total border length: 8780212 -> normalized: 17.595615230460922
+Total time: 1000.839888605 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 03:39:24 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 2153.43144601 sec
+Total border length: 8729102 -> normalized: 17.493190380761522
+Total time: 2153.43144601 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 04:15:21 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 349.280505941 sec
+Total border length: 8819682 -> normalized: 17.674713426853707
+Total time: 349.280505941 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 04:21:15 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 997.029176968 sec
+Total border length: 8762390 -> normalized: 17.559899799599197
+Total time: 997.029176968 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 04:37:56 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 2011.18039526 sec
+Total border length: 8712360 -> normalized: 17.459639278557113
+Total time: 2011.18039526 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 05:11:31 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 343.804041091 sec
+Total border length: 8811082 -> normalized: 17.65747895791583
+Total time: 343.804041091 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 05:17:19 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 934.388825282 sec
+Total border length: 8748694 -> normalized: 17.532452905811624
+Total time: 934.388825282 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 05:32:57 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423802 -> normalized: 30.90942284569138
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 2115.549662596 sec
+Total border length: 8697718 -> normalized: 17.430296593186373
+Total time: 2115.549662596 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 06:08:17 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 919.904935439 sec
+Total border length: 21620332 -> normalized: 16.912024405506884
+Total time: 919.904935439 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 06:23:45 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 3044.241857287 sec
+Total border length: 21469998 -> normalized: 16.794428973717146
+Total time: 3044.241857287 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 07:14:38 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 5740.003466007 sec
+Total border length: 21347200 -> normalized: 16.69837296620776
+Total time: 5740.003466007 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 08:50:26 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 930.125433333 sec
+Total border length: 21895854 -> normalized: 17.127545369211514
+Total time: 930.125433333 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 09:06:04 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 2733.850228387 sec
+Total border length: 21743516 -> normalized: 17.008382352941176
+Total time: 2733.850228387 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 09:51:46 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 5582.395065959 sec
+Total border length: 21636220 -> normalized: 16.924452440550688
+Total time: 5582.395065959 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:24:57 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 863.88279722 sec
+Total border length: 21806944 -> normalized: 17.05799749687109
+Total time: 863.88279722 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:39:29 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 2601.373799532 sec
+Total border length: 21646852 -> normalized: 16.932769086357947
+Total time: 2601.373799532 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 12:22:58 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 5788.480161731 sec
+Total border length: 21523046 -> normalized: 16.83592459324155
+Total time: 5788.480161731 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 13:59:34 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 903.760739853 sec
+Total border length: 21762932 -> normalized: 17.02357008760951
+Total time: 903.760739853 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 14:14:46 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 2800.287924481 sec
+Total border length: 21593172 -> normalized: 16.89077909887359
+Total time: 2800.287924481 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 15:01:35 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 6184.972809148 sec
+Total border length: 21472542 -> normalized: 16.796418961201503
+Total time: 6184.972809148 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 16:44:48 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 937.317438846 sec
+Total border length: 21733046 -> normalized: 17.000192428035042
+Total time: 937.317438846 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 17:00:33 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 2700.567399213 sec
+Total border length: 21574024 -> normalized: 16.875801001251563
+Total time: 2700.567399213 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 17:45:42 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39518314 -> normalized: 30.91232321652065
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 6088.354005061 sec
+Total border length: 21441122 -> normalized: 16.771841364205258
+Total time: 6088.354005061 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:13:15 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 102.982790363 sec
+Total border length: 3285572 -> normalized: 18.31422519509476
+Total time: 102.982790363 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:15:00 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 250.478464039 sec
+Total border length: 3262810 -> normalized: 18.187346711259753
+Total time: 250.478464039 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:19:13 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 600.586664888 sec
+Total border length: 3237780 -> normalized: 18.047826086956523
+Total time: 600.586664888 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:29:16 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 95.766026341 sec
+Total border length: 3320428 -> normalized: 18.50851727982163
+Total time: 95.766026341 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:30:55 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 273.772559956 sec
+Total border length: 3299444 -> normalized: 18.39154960981048
+Total time: 273.772559956 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:35:31 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 484.699212476 sec
+Total border length: 3278390 -> normalized: 18.274191750278707
+Total time: 484.699212476 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:43:38 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 106.944659667 sec
+Total border length: 3304338 -> normalized: 18.418829431438127
+Total time: 106.944659667 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:45:28 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 277.957276041 sec
+Total border length: 3282734 -> normalized: 18.29840579710145
+Total time: 277.957276041 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:50:08 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 551.629061934 sec
+Total border length: 3264888 -> normalized: 18.198929765886287
+Total time: 551.629061934 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 00:59:22 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 85.420385763 sec
+Total border length: 3297220 -> normalized: 18.379152731326645
+Total time: 85.420385763 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:00:50 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 296.724699148 sec
+Total border length: 3275798 -> normalized: 18.25974358974359
+Total time: 296.724699148 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:05:50 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 561.840695429 sec
+Total border length: 3257424 -> normalized: 18.15732441471572
+Total time: 561.840695429 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:15:14 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 90.295875474 sec
+Total border length: 3294418 -> normalized: 18.363534002229656
+Total time: 90.295875474 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:16:47 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 282.002946139 sec
+Total border length: 3270224 -> normalized: 18.228673355629876
+Total time: 282.002946139 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:21:31 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542700 -> normalized: 30.89576365663322
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 491.046065771 sec
+Total border length: 3253592 -> normalized: 18.135964325529542
+Total time: 491.046065771 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:29:45 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 342.721295572 sec
+Total border length: 8774410 -> normalized: 17.583987975951903
+Total time: 342.721295572 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:35:33 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 920.785326777 sec
+Total border length: 8718438 -> normalized: 17.471819639278557
+Total time: 920.785326777 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 01:50:58 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 1994.736139324 sec
+Total border length: 8659944 -> normalized: 17.354597194388777
+Total time: 1994.736139324 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 02:24:17 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 314.78822296 sec
+Total border length: 8874670 -> normalized: 17.784909819639278
+Total time: 314.78822296 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 02:29:36 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 914.035026279 sec
+Total border length: 8820012 -> normalized: 17.675374749499
+Total time: 914.035026279 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 02:44:54 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 1704.499171515 sec
+Total border length: 8775108 -> normalized: 17.585386773547093
+Total time: 1704.499171515 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 03:13:23 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 307.86345909 sec
+Total border length: 8837464 -> normalized: 17.71034869739479
+Total time: 307.86345909 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 03:18:35 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 977.095086856 sec
+Total border length: 8777252 -> normalized: 17.589683366733468
+Total time: 977.095086856 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 03:34:56 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 1766.402959359 sec
+Total border length: 8730254 -> normalized: 17.49549899799599
+Total time: 1766.402959359 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 04:04:27 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 339.121055291 sec
+Total border length: 8819704 -> normalized: 17.67475751503006
+Total time: 339.121055291 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 04:10:10 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 828.741991785 sec
+Total border length: 8759028 -> normalized: 17.5531623246493
+Total time: 828.741991785 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 04:24:04 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 2073.278331881 sec
+Total border length: 8709784 -> normalized: 17.454476953907815
+Total time: 2073.278331881 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 04:58:41 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 328.211490432 sec
+Total border length: 8813330 -> normalized: 17.66198396793587
+Total time: 328.211490432 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 05:04:13 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 829.986885383 sec
+Total border length: 8749106 -> normalized: 17.53327855711423
+Total time: 829.986885383 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 05:18:08 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15421050 -> normalized: 30.903907815631264
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 1907.313180802 sec
+Total border length: 8694224 -> normalized: 17.423294589178358
+Total time: 1907.313180802 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 05:49:59 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 857.746093892 sec
+Total border length: 21621580 -> normalized: 16.913000625782228
+Total time: 857.746093892 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 06:04:28 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 2595.607511452 sec
+Total border length: 21474698 -> normalized: 16.79810544430538
+Total time: 2595.607511452 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 06:47:52 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 4914.716218431 sec
+Total border length: 21347140 -> normalized: 16.698326032540677
+Total time: 4914.716218431 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 08:09:57 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 898.798845551 sec
+Total border length: 21893954 -> normalized: 17.126059136420526
+Total time: 898.798845551 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 08:25:05 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 2396.484554652 sec
+Total border length: 21753692 -> normalized: 17.0163423028786
+Total time: 2396.484554652 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 09:05:11 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 5442.233777706 sec
+Total border length: 21641118 -> normalized: 16.9282837922403
+Total time: 5442.233777706 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 10:36:02 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 915.856666512 sec
+Total border length: 21802014 -> normalized: 17.054141113892367
+Total time: 915.856666512 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 10:51:27 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 2809.358199605 sec
+Total border length: 21651492 -> normalized: 16.9363986232791
+Total time: 2809.358199605 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 11:38:25 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 5201.403401497 sec
+Total border length: 21524168 -> normalized: 16.83680225281602
+Total time: 5201.403401497 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 13:05:16 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 911.727029426 sec
+Total border length: 21761288 -> normalized: 17.022284105131416
+Total time: 911.727029426 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 13:20:37 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 2412.440687401 sec
+Total border length: 21599466 -> normalized: 16.89570244055069
+Total time: 2412.440687401 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 14:00:58 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 5549.27241666 sec
+Total border length: 21477092 -> normalized: 16.799978097622027
+Total time: 5549.27241666 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 15:33:36 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 902.704713224 sec
+Total border length: 21732566 -> normalized: 16.99981695869837
+Total time: 902.704713224 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 15:48:47 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 2629.432391134 sec
+Total border length: 21575376 -> normalized: 16.87685857321652
+Total time: 2629.432391134 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 16:32:44 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39507442 -> normalized: 30.903818836045055
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 5562.721544563 sec
+Total border length: 21447554 -> normalized: 16.776872653316644
+Total time: 5562.721544563 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:01:30 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 101.634807979 sec
+Total border length: 3286234 -> normalized: 18.317915273132666
+Total time: 101.634807979 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:03:14 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 265.593015826 sec
+Total border length: 3259366 -> normalized: 18.168149386845037
+Total time: 265.593015826 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:07:42 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 604.942414133 sec
+Total border length: 3239106 -> normalized: 18.055217391304346
+Total time: 604.942414133 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:17:49 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 85.605324649 sec
+Total border length: 3318146 -> normalized: 18.495797101449277
+Total time: 85.605324649 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:19:17 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 260.281988659 sec
+Total border length: 3300404 -> normalized: 18.396900780379042
+Total time: 260.281988659 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:23:39 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 581.661457747 sec
+Total border length: 3279510 -> normalized: 18.280434782608694
+Total time: 581.661457747 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:33:23 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 87.050531124 sec
+Total border length: 3304470 -> normalized: 18.419565217391305
+Total time: 87.050531124 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:34:52 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 292.313271123 sec
+Total border length: 3283620 -> normalized: 18.30334448160535
+Total time: 292.313271123 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:39:47 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 571.803580295 sec
+Total border length: 3263830 -> normalized: 18.193032329988853
+Total time: 571.803580295 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:49:20 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 96.277346924 sec
+Total border length: 3299170 -> normalized: 18.390022296544036
+Total time: 96.277346924 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:50:59 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 286.037013832 sec
+Total border length: 3279256 -> normalized: 18.27901895206243
+Total time: 286.037013832 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 10:55:47 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 570.057305412 sec
+Total border length: 3256542 -> normalized: 18.152408026755854
+Total time: 570.057305412 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:05:20 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 88.192751786 sec
+Total border length: 3294864 -> normalized: 18.366020066889632
+Total time: 88.192751786 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:06:50 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 264.976196595 sec
+Total border length: 3271926 -> normalized: 18.238160535117057
+Total time: 264.976196595 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:11:17 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 5542496 -> normalized: 30.894626532887404
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 529.008182224 sec
+Total border length: 3252132 -> normalized: 18.12782608695652
+Total time: 529.008182224 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:20:09 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 316.579168434 sec
+Total border length: 8775442 -> normalized: 17.586056112224448
+Total time: 316.579168434 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:25:30 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 1025.116017268 sec
+Total border length: 8714534 -> normalized: 17.463995991983968
+Total time: 1025.116017268 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 11:42:39 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 1983.488522861 sec
+Total border length: 8663470 -> normalized: 17.361663326653307
+Total time: 1983.488522861 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 12:15:46 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 308.672259848 sec
+Total border length: 8872766 -> normalized: 17.781094188376752
+Total time: 308.672259848 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 12:20:59 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 978.324659708 sec
+Total border length: 8820776 -> normalized: 17.676905811623246
+Total time: 978.324659708 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 12:37:22 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 2180.344257066 sec
+Total border length: 8773668 -> normalized: 17.58250100200401
+Total time: 2180.344257066 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 13:13:46 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 308.886996675 sec
+Total border length: 8837430 -> normalized: 17.710280561122243
+Total time: 308.886996675 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 13:18:59 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 1035.725751219 sec
+Total border length: 8780078 -> normalized: 17.595346693386773
+Total time: 1035.725751219 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 13:36:19 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 2114.628396625 sec
+Total border length: 8728366 -> normalized: 17.491715430861724
+Total time: 2114.628396625 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 14:11:37 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 312.631868001 sec
+Total border length: 8820494 -> normalized: 17.676340681362724
+Total time: 312.631868001 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 14:16:54 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 1080.31165466 sec
+Total border length: 8759554 -> normalized: 17.554216432865733
+Total time: 1080.31165466 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 14:34:58 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 2277.850302519 sec
+Total border length: 8708404 -> normalized: 17.45171142284569
+Total time: 2277.850302519 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 15:13:00 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 305.280891472 sec
+Total border length: 8809044 -> normalized: 17.65339478957916
+Total time: 305.280891472 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 15:18:10 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 1068.640181613 sec
+Total border length: 8746734 -> normalized: 17.5285250501002
+Total time: 1068.640181613 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 15:36:03 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15423180 -> normalized: 30.90817635270541
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 2053.840481709 sec
+Total border length: 8697044 -> normalized: 17.428945891783567
+Total time: 2053.840481709 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 16:10:20 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-5000-0-SortSequences...
+Elapsed time: 1120.230819753 sec
+Total border length: 21623238 -> normalized: 16.914297559449313
+Total time: 1120.230819753 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 16:29:09 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-10000-0-SortSequences...
+Elapsed time: 2753.461613238 sec
+Total border length: 21462056 -> normalized: 16.788216520650813
+Total time: 2753.461613238 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 17:15:11 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-20000-0-SortSequences...
+Elapsed time: 5841.075409492 sec
+Total border length: 21349404 -> normalized: 16.700096996245307
+Total time: 5841.075409492 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 18:52:40 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-5000-1-SortSequences...
+Elapsed time: 1073.005782241 sec
+Total border length: 21893166 -> normalized: 17.125442740926157
+Total time: 1073.005782241 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 19:10:41 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-10000-1-SortSequences...
+Elapsed time: 2524.293095315 sec
+Total border length: 21749098 -> normalized: 17.012748748435545
+Total time: 2524.293095315 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 19:52:54 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-20000-1-SortSequences...
+Elapsed time: 5286.724125637 sec
+Total border length: 21637962 -> normalized: 16.92581508135169
+Total time: 5286.724125637 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 21:21:08 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-5000-2-SortSequences...
+Elapsed time: 1011.333582639 sec
+Total border length: 21803574 -> normalized: 17.055361389236545
+Total time: 1011.333582639 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 21:38:08 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-10000-2-SortSequences...
+Elapsed time: 2542.338942501 sec
+Total border length: 21649752 -> normalized: 16.935037546933668
+Total time: 2542.338942501 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 22:20:38 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-20000-2-SortSequences...
+Elapsed time: 5227.809652827 sec
+Total border length: 21532342 -> normalized: 16.84319618272841
+Total time: 5227.809652827 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Thu Jan 11 23:47:54 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-5000-3-SortSequences...
+Elapsed time: 923.979768085 sec
+Total border length: 21758406 -> normalized: 17.02002972465582
+Total time: 923.979768085 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Fri Jan 12 00:03:26 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-10000-3-SortSequences...
+Elapsed time: 2572.928847708 sec
+Total border length: 21598446 -> normalized: 16.89490456821026
+Total time: 2572.928847708 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Fri Jan 12 00:46:27 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-20000-3-SortSequences...
+Elapsed time: 5400.909001776 sec
+Total border length: 21467440 -> normalized: 16.792428035043805
+Total time: 5400.909001776 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Fri Jan 12 02:16:36 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-5000-4-SortSequences...
+Elapsed time: 920.281103888 sec
+Total border length: 21735608 -> normalized: 17.002196495619526
+Total time: 920.281103888 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Fri Jan 12 02:32:04 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-10000-4-SortSequences...
+Elapsed time: 2877.234109392 sec
+Total border length: 21571254 -> normalized: 16.87363423028786
+Total time: 2877.234109392 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Timestamp: Fri Jan 12 03:20:10 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-BL-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 39515140 -> normalized: 30.909840425531915
+Running GreedyPlacer-BL-20000-4-SortSequences...
+Elapsed time: 5982.519394803 sec
+Total border length: 21440418 -> normalized: 16.771290675844806
+Total time: 5982.519394803 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
