@@ -1,0 +1,3160 @@
+Host: doc024
+Timestamp: Wed Jan 10 18:46:28 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 318.874855073 sec
+Average conflict index: 440.5386079325389
+Total time: 318.874855073 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 18:52:06 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 703.729318901 sec
+Average conflict index: 426.0865364529066
+Total time: 703.729318901 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 19:04:08 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 1215.287849435 sec
+Average conflict index: 415.7156627087564
+Total time: 1215.287849435 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 19:24:42 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 320.612460762 sec
+Average conflict index: 444.678517914613
+Total time: 320.612460762 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 19:30:21 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 691.625460235 sec
+Average conflict index: 429.61009881409507
+Total time: 691.625460235 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 19:42:11 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 1305.237755776 sec
+Average conflict index: 417.7547504687344
+Total time: 1305.237755776 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 20:04:14 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 317.06851373 sec
+Average conflict index: 447.02916235749205
+Total time: 317.06851373 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 20:09:51 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 608.501644842 sec
+Average conflict index: 431.8944665629174
+Total time: 608.501644842 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 20:20:18 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 1263.895526193 sec
+Average conflict index: 419.4268646020868
+Total time: 1263.895526193 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 20:41:41 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 282.132075759 sec
+Average conflict index: 447.65260821593307
+Total time: 282.132075759 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 20:46:42 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 680.257600576 sec
+Average conflict index: 432.7245631201095
+Total time: 680.257600576 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 20:58:20 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 1152.152011325 sec
+Average conflict index: 420.12620682652715
+Total time: 1152.152011325 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 21:17:51 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 315.636660472 sec
+Average conflict index: 448.05306329043293
+Total time: 315.636660472 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 21:23:25 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 622.437451213 sec
+Average conflict index: 432.14081190815335
+Total time: 622.437451213 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 21:34:06 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 1304.975044802 sec
+Average conflict index: 421.1730296124233
+Total time: 1304.975044802 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 21:56:10 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 952.431156319 sec
+Average conflict index: 432.353796213261
+Total time: 952.431156319 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 22:12:52 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 2105.115062794 sec
+Average conflict index: 415.6842533046337
+Total time: 2105.115062794 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 22:48:47 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 4056.607225816 sec
+Average conflict index: 401.7196067940543
+Total time: 4056.607225816 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Wed Jan 10 23:57:16 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 962.219115712 sec
+Average conflict index: 437.2338378568484
+Total time: 962.219115712 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 00:14:08 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 1902.53656031 sec
+Average conflict index: 419.5507389129766
+Total time: 1902.53656031 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 00:46:40 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 4185.786725974 sec
+Average conflict index: 405.1001702751651
+Total time: 4185.786725974 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 01:57:15 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 968.951448897 sec
+Average conflict index: 439.6189612705458
+Total time: 968.951448897 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 02:14:14 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 2192.930227729 sec
+Average conflict index: 422.1250570319252
+Total time: 2192.930227729 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 02:51:37 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 3859.353693297 sec
+Average conflict index: 406.89823705004
+Total time: 3859.353693297 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 03:56:46 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 985.386931739 sec
+Average conflict index: 441.50073265428546
+Total time: 985.386931739 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 04:14:01 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 2148.384394756 sec
+Average conflict index: 423.9027197255758
+Total time: 2148.384394756 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 04:50:39 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 4173.334177234 sec
+Average conflict index: 408.2022005071812
+Total time: 4173.334177234 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 06:01:03 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 972.740483563 sec
+Average conflict index: 441.17035062831235
+Total time: 972.740483563 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 06:18:06 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 2101.757827274 sec
+Average conflict index: 423.8224499143063
+Total time: 2101.757827274 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 06:53:58 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 4233.517278658 sec
+Average conflict index: 408.5340113856976
+Total time: 4233.517278658 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 08:05:21 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 2327.153730318 sec
+Average conflict index: 426.3133095512059
+Total time: 2327.153730318 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 08:46:16 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 5044.082516054 sec
+Average conflict index: 408.45234586507655
+Total time: 5044.082516054 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 10:12:27 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 11094.314493016 sec
+Average conflict index: 392.2523012370322
+Total time: 11094.314493016 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 13:19:26 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 2602.306480178 sec
+Average conflict index: 431.1506771003785
+Total time: 2602.306480178 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 14:04:56 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 5687.472150136 sec
+Average conflict index: 413.06938715234065
+Total time: 5687.472150136 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 15:41:51 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 10876.535428659 sec
+Average conflict index: 396.08607176675815
+Total time: 10876.535428659 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 18:45:14 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 2597.56218573 sec
+Average conflict index: 434.0125349056848
+Total time: 2597.56218573 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 19:30:39 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 5635.409191324 sec
+Average conflict index: 415.87028716965654
+Total time: 5635.409191324 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Thu Jan 11 21:06:42 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 11521.20275872 sec
+Average conflict index: 399.0505116066131
+Total time: 11521.20275872 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Fri Jan 12 00:20:49 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 2549.437344289 sec
+Average conflict index: 435.5605630790234
+Total time: 2549.437344289 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Fri Jan 12 01:05:25 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 4973.076729207 sec
+Average conflict index: 417.6103475124181
+Total time: 4973.076729207 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Fri Jan 12 02:30:24 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 10163.948182699 sec
+Average conflict index: 400.4091453299643
+Total time: 10163.948182699 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Fri Jan 12 05:21:55 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 2545.201083002 sec
+Average conflict index: 435.11827825826
+Total time: 2545.201083002 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Fri Jan 12 06:06:25 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 5220.08331724 sec
+Average conflict index: 417.3221122992572
+Total time: 5220.08331724 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Timestamp: Fri Jan 12 07:35:32 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 11276.374347181 sec
+Average conflict index: 400.76185250942166
+Total time: 11276.374347181 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 18:46:31 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 321.867551738 sec
+Average conflict index: 440.64445672803083
+Total time: 321.867551738 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 18:52:12 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 619.255492088 sec
+Average conflict index: 426.28624170131707
+Total time: 619.255492088 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 19:02:50 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 1282.21954329 sec
+Average conflict index: 415.5736418744631
+Total time: 1282.21954329 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 19:24:31 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 316.530520448 sec
+Average conflict index: 444.79445938855866
+Total time: 316.530520448 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 19:30:06 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 668.350139551 sec
+Average conflict index: 429.08909596855193
+Total time: 668.350139551 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 19:41:34 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 1317.383760741 sec
+Average conflict index: 418.77134880388616
+Total time: 1317.383760741 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 20:03:49 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 317.853663711 sec
+Average conflict index: 446.99683559654704
+Total time: 317.853663711 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 20:09:26 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 667.607605854 sec
+Average conflict index: 431.9820351223268
+Total time: 667.607605854 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 20:20:52 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 1132.677022754 sec
+Average conflict index: 420.03865580455596
+Total time: 1132.677022754 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 20:40:04 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 313.8277133 sec
+Average conflict index: 447.89139959180756
+Total time: 313.8277133 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 20:45:37 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 616.500758334 sec
+Average conflict index: 432.5887407139755
+Total time: 616.500758334 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 20:56:11 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 1120.291804539 sec
+Average conflict index: 420.3632952818825
+Total time: 1120.291804539 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 21:15:10 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 315.76247848 sec
+Average conflict index: 447.1280465684718
+Total time: 315.76247848 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 21:20:45 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 668.354896083 sec
+Average conflict index: 432.28369830751143
+Total time: 668.354896083 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 21:32:12 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 1308.725571147 sec
+Average conflict index: 421.0445887156473
+Total time: 1308.725571147 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 21:54:19 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 970.925080037 sec
+Average conflict index: 432.4268224725073
+Total time: 970.925080037 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 22:11:19 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 2147.34165789 sec
+Average conflict index: 415.61726407392246
+Total time: 2147.34165789 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 22:47:56 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 4198.367012884 sec
+Average conflict index: 401.4465397053279
+Total time: 4198.367012884 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Wed Jan 10 23:58:44 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 881.896684072 sec
+Average conflict index: 437.4200729796457
+Total time: 881.896684072 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 00:14:16 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 1913.683259281 sec
+Average conflict index: 419.6354116757394
+Total time: 1913.683259281 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 00:46:59 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 4207.021601297 sec
+Average conflict index: 405.0853951983505
+Total time: 4207.021601297 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 01:57:56 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 871.811073146 sec
+Average conflict index: 439.56034558588937
+Total time: 871.811073146 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 02:13:18 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 2203.94409136 sec
+Average conflict index: 422.1969496993497
+Total time: 2203.94409136 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 02:50:52 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 4210.574442901 sec
+Average conflict index: 407.1346838284571
+Total time: 4210.574442901 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 04:01:53 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 982.095539266 sec
+Average conflict index: 441.3495781576287
+Total time: 982.095539266 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 04:19:05 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 2047.72243261 sec
+Average conflict index: 423.80047925932604
+Total time: 2047.72243261 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 04:54:02 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 4182.420490424 sec
+Average conflict index: 408.6676750482225
+Total time: 4182.420490424 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 06:04:35 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 951.899199175 sec
+Average conflict index: 441.0243618016423
+Total time: 951.899199175 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 06:21:16 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 1991.456397712 sec
+Average conflict index: 423.7422857494232
+Total time: 1991.456397712 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 06:55:21 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 4071.304065027 sec
+Average conflict index: 408.13357733809966
+Total time: 4071.304065027 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 08:04:02 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 2581.859479437 sec
+Average conflict index: 425.56510240858944
+Total time: 2581.859479437 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 08:49:10 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 5663.894974912 sec
+Average conflict index: 408.12881533246593
+Total time: 5663.894974912 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 10:25:44 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 11193.081795544 sec
+Average conflict index: 392.2217322530138
+Total time: 11193.081795544 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 13:35:05 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 2542.834168031 sec
+Average conflict index: 430.7589001587981
+Total time: 2542.834168031 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 14:19:42 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 5655.934562246 sec
+Average conflict index: 412.8145587960414
+Total time: 5655.934562246 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 15:56:05 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 11221.53940972 sec
+Average conflict index: 396.4120303011329
+Total time: 11221.53940972 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 19:05:11 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 2569.75903553 sec
+Average conflict index: 433.7370677088751
+Total time: 2569.75903553 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 19:50:07 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 5608.502621072 sec
+Average conflict index: 415.73050455290115
+Total time: 5608.502621072 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Thu Jan 11 21:25:38 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 11589.792903791 sec
+Average conflict index: 399.1674567266098
+Total time: 11589.792903791 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Fri Jan 12 00:40:53 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 2566.85537074 sec
+Average conflict index: 435.7020137326143
+Total time: 2566.85537074 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Fri Jan 12 01:25:46 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 5672.750779038 sec
+Average conflict index: 417.5001206232508
+Total time: 5672.750779038 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Fri Jan 12 03:02:24 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 11294.165751084 sec
+Average conflict index: 400.6650614895809
+Total time: 11294.165751084 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Fri Jan 12 06:12:43 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 2516.763519633 sec
+Average conflict index: 435.3428004993601
+Total time: 2516.763519633 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Fri Jan 12 06:56:46 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 5728.631976974 sec
+Average conflict index: 417.60680461438244
+Total time: 5728.631976974 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Timestamp: Fri Jan 12 08:34:20 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 11112.341934292 sec
+Average conflict index: 400.6615163190115
+Total time: 11112.341934292 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 18:46:37 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 321.900441559 sec
+Average conflict index: 440.78633006013297
+Total time: 321.900441559 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 18:52:17 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 676.945540501 sec
+Average conflict index: 426.30219552552967
+Total time: 676.945540501 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 19:03:52 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 1317.857462918 sec
+Average conflict index: 415.8015022272797
+Total time: 1317.857462918 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 19:26:08 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 315.048110401 sec
+Average conflict index: 445.04474197703576
+Total time: 315.048110401 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 19:31:42 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 697.312569898 sec
+Average conflict index: 429.5392022674828
+Total time: 697.312569898 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 19:43:38 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 1260.576400415 sec
+Average conflict index: 418.17023394281375
+Total time: 1260.576400415 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 20:04:57 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 323.946761002 sec
+Average conflict index: 446.61441227769313
+Total time: 323.946761002 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 20:10:40 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 665.268821253 sec
+Average conflict index: 431.72173796562527
+Total time: 665.268821253 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 20:22:05 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 1300.128698996 sec
+Average conflict index: 419.21983891170913
+Total time: 1300.128698996 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 20:44:04 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 315.619782102 sec
+Average conflict index: 447.7798991934747
+Total time: 315.619782102 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 20:49:39 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 686.330519968 sec
+Average conflict index: 432.976939728404
+Total time: 686.330519968 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 21:01:23 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 1324.528440507 sec
+Average conflict index: 420.34845648613464
+Total time: 1324.528440507 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 21:23:46 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 326.54458364 sec
+Average conflict index: 447.8041226048032
+Total time: 326.54458364 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 21:29:31 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 665.23728353 sec
+Average conflict index: 432.8963801413402
+Total time: 665.23728353 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 21:40:55 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 1202.366984232 sec
+Average conflict index: 420.88476732157636
+Total time: 1202.366984232 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 22:01:16 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 945.618243167 sec
+Average conflict index: 432.31941310473246
+Total time: 945.618243167 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 22:17:52 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 2152.22407224 sec
+Average conflict index: 416.0640288556467
+Total time: 2152.22407224 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Wed Jan 10 22:54:36 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 4185.216834728 sec
+Average conflict index: 401.5231665018486
+Total time: 4185.216834728 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 00:05:11 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 964.969695469 sec
+Average conflict index: 437.2284117677336
+Total time: 964.969695469 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 00:22:06 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 1946.280062527 sec
+Average conflict index: 420.352505803388
+Total time: 1946.280062527 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 00:55:23 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 4200.615040295 sec
+Average conflict index: 404.9041177640391
+Total time: 4200.615040295 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 02:06:14 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 866.136760478 sec
+Average conflict index: 439.6969846697018
+Total time: 866.136760478 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 02:21:29 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 1957.986421213 sec
+Average conflict index: 422.27930804290685
+Total time: 1957.986421213 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 02:54:57 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 4139.028002706 sec
+Average conflict index: 406.9220494060566
+Total time: 4139.028002706 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 04:04:46 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 953.410069522 sec
+Average conflict index: 441.26523995447116
+Total time: 953.410069522 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 04:21:28 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 2066.938507778 sec
+Average conflict index: 424.41792213993375
+Total time: 2066.938507778 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 04:56:45 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 4160.656647961 sec
+Average conflict index: 408.5374308565723
+Total time: 4160.656647961 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 06:06:55 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 970.535101041 sec
+Average conflict index: 441.42282357883425
+Total time: 970.535101041 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 06:23:56 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 2190.312811845 sec
+Average conflict index: 423.78313415833566
+Total time: 2190.312811845 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 07:01:16 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 4326.490806613 sec
+Average conflict index: 408.42137816965004
+Total time: 4326.490806613 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 08:14:13 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 2339.925577955 sec
+Average conflict index: 426.22660727823325
+Total time: 2339.925577955 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 08:55:20 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 5637.938286711 sec
+Average conflict index: 408.57987401298965
+Total time: 5637.938286711 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 10:31:24 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 11168.991784027 sec
+Average conflict index: 392.15967115848656
+Total time: 11168.991784027 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 13:40:18 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 2546.868377316 sec
+Average conflict index: 430.99168510842344
+Total time: 2546.868377316 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 14:25:03 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 5805.168423129 sec
+Average conflict index: 413.0595315680007
+Total time: 5805.168423129 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 16:03:54 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 11362.531336075 sec
+Average conflict index: 396.3896856268928
+Total time: 11362.531336075 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 19:15:23 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 2560.742971418 sec
+Average conflict index: 433.7745271311986
+Total time: 2560.742971418 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 20:00:10 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 5677.299176933 sec
+Average conflict index: 415.8101239887901
+Total time: 5677.299176933 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Thu Jan 11 21:36:56 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 10525.541656569 sec
+Average conflict index: 399.00462637745727
+Total time: 10525.541656569 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Fri Jan 12 00:34:31 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 2586.706119396 sec
+Average conflict index: 435.2647744756999
+Total time: 2586.706119396 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Fri Jan 12 01:19:46 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 5828.955419959 sec
+Average conflict index: 417.57033246877506
+Total time: 5828.955419959 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Fri Jan 12 02:59:02 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 10933.083782726 sec
+Average conflict index: 400.8370339592734
+Total time: 10933.083782726 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Fri Jan 12 06:03:22 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 2606.11126174 sec
+Average conflict index: 435.2174349489757
+Total time: 2606.11126174 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Fri Jan 12 06:48:54 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 5741.521269651 sec
+Average conflict index: 417.5392771796503
+Total time: 5741.521269651 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Timestamp: Fri Jan 12 08:26:43 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 11384.208936181 sec
+Average conflict index: 400.83376684269865
+Total time: 11384.208936181 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 18:46:43 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 1250.189456106 sec
+Average conflict index: 440.12441906201735
+Total time: 1250.189456106 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 19:08:32 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 601.476101955 sec
+Average conflict index: 426.6748519664118
+Total time: 601.476101955 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 19:18:52 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 2855.7090142 sec
+Average conflict index: 415.0372299099359
+Total time: 2855.7090142 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:06:55 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 290.298454941 sec
+Average conflict index: 444.392737192385
+Total time: 290.298454941 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:12:04 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 654.140164916 sec
+Average conflict index: 430.10235869943864
+Total time: 654.140164916 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:23:18 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 1252.895867437 sec
+Average conflict index: 418.13746808228854
+Total time: 1252.895867437 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:44:29 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 280.142244022 sec
+Average conflict index: 447.04927046734065
+Total time: 280.142244022 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:49:27 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 686.07540382 sec
+Average conflict index: 431.5884184354617
+Total time: 686.07540382 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:01:11 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 1252.846975577 sec
+Average conflict index: 419.8925653092635
+Total time: 1252.846975577 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:22:23 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 288.89489845 sec
+Average conflict index: 447.56569208160084
+Total time: 288.89489845 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:27:30 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 707.176688703 sec
+Average conflict index: 432.63478543720544
+Total time: 707.176688703 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:39:36 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 1285.708535204 sec
+Average conflict index: 421.56303894130923
+Total time: 1285.708535204 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:01:20 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 316.821790041 sec
+Average conflict index: 447.86979165384264
+Total time: 316.821790041 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:06:57 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 695.856407885 sec
+Average conflict index: 432.12668571932215
+Total time: 695.856407885 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:18:52 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 1270.708770665 sec
+Average conflict index: 419.99408255564737
+Total time: 1270.708770665 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:40:22 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 859.552180309 sec
+Average conflict index: 432.68492283685686
+Total time: 859.552180309 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:55:34 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 2112.277776051 sec
+Average conflict index: 415.26099483999326
+Total time: 2112.277776051 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 23:31:36 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 3816.807097734 sec
+Average conflict index: 401.3651276420493
+Total time: 3816.807097734 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 00:36:02 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 984.141731616 sec
+Average conflict index: 437.3442605590016
+Total time: 984.141731616 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 00:53:17 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 2173.744405875 sec
+Average conflict index: 419.54913199621774
+Total time: 2173.744405875 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 01:30:20 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 4153.480864736 sec
+Average conflict index: 404.99796674619853
+Total time: 4153.480864736 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 02:40:24 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 981.148422404 sec
+Average conflict index: 439.69129722498974
+Total time: 981.148422404 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 02:57:35 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 2172.298167878 sec
+Average conflict index: 422.3081728726224
+Total time: 2172.298167878 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 03:34:40 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 3808.650723391 sec
+Average conflict index: 406.9340089542564
+Total time: 3808.650723391 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 04:38:58 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 873.822420918 sec
+Average conflict index: 441.2590637452962
+Total time: 873.822420918 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 04:54:22 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 2109.490182036 sec
+Average conflict index: 424.08032928028996
+Total time: 2109.490182036 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 05:30:21 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 4164.871577603 sec
+Average conflict index: 408.36749327542634
+Total time: 4164.871577603 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 06:40:35 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 868.586804442 sec
+Average conflict index: 441.09288314710926
+Total time: 868.586804442 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 06:55:53 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 2120.802798998 sec
+Average conflict index: 423.8071808094874
+Total time: 2120.802798998 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 07:32:03 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 3672.429462044 sec
+Average conflict index: 408.4997073014199
+Total time: 3672.429462044 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 08:34:06 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 2673.93708771 sec
+Average conflict index: 426.16840923013655
+Total time: 2673.93708771 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 09:20:50 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 5357.538361477 sec
+Average conflict index: 408.43458768786815
+Total time: 5357.538361477 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 10:52:15 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 11634.256684924 sec
+Average conflict index: 392.1581190335521
+Total time: 11634.256684924 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 14:08:15 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 2385.365651456 sec
+Average conflict index: 430.99347585306197
+Total time: 2385.365651456 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 14:50:07 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 5722.304448012 sec
+Average conflict index: 412.7048836939659
+Total time: 5722.304448012 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 16:27:33 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 10476.472750186 sec
+Average conflict index: 396.58364660878334
+Total time: 10476.472750186 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 19:24:17 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 2528.009836657 sec
+Average conflict index: 433.86406603270245
+Total time: 2528.009836657 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 20:08:29 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 5244.750376569 sec
+Average conflict index: 415.81687725431976
+Total time: 5244.750376569 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 21:38:01 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 11926.123065097 sec
+Average conflict index: 398.96981735016004
+Total time: 11926.123065097 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 00:58:53 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 2642.743854293 sec
+Average conflict index: 435.5403815724297
+Total time: 2642.743854293 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 01:45:03 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 5704.474373702 sec
+Average conflict index: 417.4121770065185
+Total time: 5704.474373702 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 03:22:14 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 10775.293138663 sec
+Average conflict index: 400.7261837282123
+Total time: 10775.293138663 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 06:23:55 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 2615.881150418 sec
+Average conflict index: 435.3617355644081
+Total time: 2615.881150418 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 07:09:38 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 5321.970136587 sec
+Average conflict index: 417.5574290428707
+Total time: 5321.970136587 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 08:40:26 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 11797.166580388 sec
+Average conflict index: 400.61893082004855
+Total time: 11797.166580388 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 18:46:47 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 323.49908671 sec
+Average conflict index: 440.48927691148805
+Total time: 323.49908671 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 18:52:29 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 670.517694722 sec
+Average conflict index: 426.3900172830948
+Total time: 670.517694722 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 19:03:59 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 3137.405229495 sec
+Average conflict index: 415.37362845997126
+Total time: 3137.405229495 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 19:56:52 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 317.771903621 sec
+Average conflict index: 445.0078566232922
+Total time: 317.771903621 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:02:29 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 677.418713911 sec
+Average conflict index: 429.46791386517845
+Total time: 677.418713911 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:14:06 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 1264.185826393 sec
+Average conflict index: 418.34487758478986
+Total time: 1264.185826393 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:35:29 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 328.059289158 sec
+Average conflict index: 446.6413573020642
+Total time: 328.059289158 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:41:15 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 666.079774399 sec
+Average conflict index: 431.5907403350502
+Total time: 666.079774399 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 20:52:39 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 1279.66184769 sec
+Average conflict index: 418.8549163926285
+Total time: 1279.66184769 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:14:17 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 294.714622707 sec
+Average conflict index: 447.8421903136413
+Total time: 294.714622707 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:19:32 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 666.432128014 sec
+Average conflict index: 432.48543895599886
+Total time: 666.432128014 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:30:56 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 1176.563635909 sec
+Average conflict index: 421.27130771085615
+Total time: 1176.563635909 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:50:52 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 292.725431296 sec
+Average conflict index: 447.424372462378
+Total time: 292.725431296 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 21:56:03 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 654.522072774 sec
+Average conflict index: 432.4522073470532
+Total time: 654.522072774 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:07:16 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 1152.842420797 sec
+Average conflict index: 420.5695082967285
+Total time: 1152.842420797 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:26:48 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 959.490326087 sec
+Average conflict index: 431.72671183026944
+Total time: 959.490326087 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 22:43:39 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 1952.935733043 sec
+Average conflict index: 415.84889579608085
+Total time: 1952.935733043 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Wed Jan 10 23:17:02 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 3839.87315199 sec
+Average conflict index: 401.2501923574067
+Total time: 3839.87315199 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 00:21:52 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 983.557276657 sec
+Average conflict index: 436.9821332237801
+Total time: 983.557276657 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 00:39:06 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 2150.208623328 sec
+Average conflict index: 419.806083510745
+Total time: 2150.208623328 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 01:15:46 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 4183.86100016 sec
+Average conflict index: 404.88673530148185
+Total time: 4183.86100016 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 02:26:20 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 969.610932066 sec
+Average conflict index: 440.14834355267936
+Total time: 969.610932066 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 02:43:19 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 2160.439340373 sec
+Average conflict index: 422.0617621783941
+Total time: 2160.439340373 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 03:20:09 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 4349.201687446 sec
+Average conflict index: 406.8990157233293
+Total time: 4349.201687446 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 04:33:28 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 998.982034851 sec
+Average conflict index: 441.34569391365216
+Total time: 998.982034851 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 04:50:56 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 2002.20303989 sec
+Average conflict index: 424.07549750966643
+Total time: 2002.20303989 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 05:25:09 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 3868.478663895 sec
+Average conflict index: 408.7491693499163
+Total time: 3868.478663895 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 06:30:27 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 975.686255702 sec
+Average conflict index: 440.6236048994059
+Total time: 975.686255702 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 06:47:33 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 2113.402501148 sec
+Average conflict index: 423.81311741001537
+Total time: 2113.402501148 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 07:23:35 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 4014.238713853 sec
+Average conflict index: 408.6891657606731
+Total time: 4014.238713853 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 08:31:18 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-5K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-5000-0-SortSequences...
+Elapsed time: 2614.635464792 sec
+Average conflict index: 426.10527238397907
+Total time: 2614.635464792 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 09:17:02 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-10K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-10000-0-SortSequences...
+Elapsed time: 5449.563692326 sec
+Average conflict index: 408.39553220185167
+Total time: 5449.563692326 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 10:49:57 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-20K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-20000-0-SortSequences...
+Elapsed time: 11186.23731218 sec
+Average conflict index: 392.1011276620922
+Total time: 11186.23731218 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 13:58:30 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-5K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-5000-1-SortSequences...
+Elapsed time: 2602.83558629 sec
+Average conflict index: 430.98460099468446
+Total time: 2602.83558629 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 14:44:00 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-10K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-10000-1-SortSequences...
+Elapsed time: 5703.499791253 sec
+Average conflict index: 413.3373276436294
+Total time: 5703.499791253 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 16:21:11 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-20K-1-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-20000-1-SortSequences...
+Elapsed time: 11440.904313281 sec
+Average conflict index: 396.490113830219
+Total time: 11440.904313281 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 19:34:04 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-5K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-5000-2-SortSequences...
+Elapsed time: 2614.944053685 sec
+Average conflict index: 433.8638790516604
+Total time: 2614.944053685 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 20:19:46 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-10K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-10000-2-SortSequences...
+Elapsed time: 5256.709161287 sec
+Average conflict index: 415.7393645459113
+Total time: 5256.709161287 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Thu Jan 11 21:49:29 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-20K-2-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-20000-2-SortSequences...
+Elapsed time: 10367.878013833 sec
+Average conflict index: 398.82884565505157
+Total time: 10367.878013833 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 00:44:24 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-5K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-5000-3-SortSequences...
+Elapsed time: 2707.051381064 sec
+Average conflict index: 435.3306603697722
+Total time: 2707.051381064 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 01:31:38 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-10K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-10000-3-SortSequences...
+Elapsed time: 5750.409278977 sec
+Average conflict index: 417.52128015997926
+Total time: 5750.409278977 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 03:09:40 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-20K-3-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-20000-3-SortSequences...
+Elapsed time: 11641.602117569 sec
+Average conflict index: 400.95705606664575
+Total time: 11641.602117569 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 06:25:48 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-5K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-5000-4-SortSequences...
+Elapsed time: 2616.032201497 sec
+Average conflict index: 435.2542442235778
+Total time: 2616.032201497 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 07:11:33 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-10K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-10000-4-SortSequences...
+Elapsed time: 5375.281930425 sec
+Average conflict index: 417.52337117796196
+Total time: 5375.281930425 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Timestamp: Fri Jan 12 08:43:11 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-20K-4-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-20000-4-SortSequences...
+Elapsed time: 11406.112619746 sec
+Average conflict index: 400.75233319461717
+Total time: 11406.112619746 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+End of script
+---------------------------

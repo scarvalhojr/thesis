@@ -8,8 +8,8 @@ set size .66,.93
 # enable minor tics on both axes
 set xtics nomirror
 set ytics mirror
-# set mxtics
-# set mytics
+set mxtics
+set mytics
 
 # display grid
 # set grid
@@ -22,8 +22,7 @@ set xlabel "Time (min)"
 
 set logscale x 2
 
-# plot	[10:500]
-plot [4:2000] \
+plot [1.1:1000] \
 	"300-aci.dat" with points pt 5 title "200 x 200", \
 	"500-aci.dat" with points pt 4 title "500 x 500", \
 	"800-aci.dat" with points pt 7 title "800 x 800"

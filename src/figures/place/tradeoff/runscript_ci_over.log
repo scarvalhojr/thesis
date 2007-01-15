@@ -1,0 +1,754 @@
+Host: doc022
+Timestamp: Thu Jan 11 20:08:26 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 2947.909101142 sec
+Average conflict index: 405.0831738443677
+Total time: 2947.909101142 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 20:57:52 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 2205.31563618 sec
+Average conflict index: 408.0575204570599
+Total time: 2205.31563618 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 21:34:56 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 158.124375114 sec
+Average conflict index: 457.92728967614397
+Total time: 158.124375114 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 21:37:52 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 82.360232059 sec
+Average conflict index: 477.2216642912282
+Total time: 82.360232059 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Thu Jan 11 21:39:33 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 13982.562483778 sec
+Average conflict index: 382.4294769175647
+Total time: 13982.562483778 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 01:33:24 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 7854.313795355 sec
+Average conflict index: 390.11444633366233
+Total time: 7854.313795355 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 03:45:07 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 407.547404403 sec
+Average conflict index: 451.43636730741
+Total time: 407.547404403 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 03:52:44 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 233.874272142 sec
+Average conflict index: 471.6848714208395
+Total time: 233.874272142 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 03:57:28 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 41712.40860039 sec
+Average conflict index: 366.98952122917615
+Total time: 41712.40860039 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 15:34:43 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 21354.173996415 sec
+Average conflict index: 378.34082345220935
+Total time: 21354.173996415 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 21:32:42 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 1196.33147639 sec
+Average conflict index: 445.64344436510004
+Total time: 1196.33147639 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Timestamp: Fri Jan 12 21:54:44 MET 2007
+
+SRA_800x800-640000-25-01_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 743.0969356120632
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 605.685829104 sec
+Average conflict index: 465.2839052904636
+Total time: 605.685829104 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Fri Jan 12 22:34:15 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3150.162101474 sec
+Average conflict index: 405.0289928162363
+Total time: 3150.162101474 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Fri Jan 12 23:27:05 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 2170.097260142 sec
+Average conflict index: 408.2165261695377
+Total time: 2170.097260142 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 00:03:33 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 157.719112643 sec
+Average conflict index: 458.40180050196653
+Total time: 157.719112643 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 00:06:29 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 83.52240502 sec
+Average conflict index: 477.70156258068397
+Total time: 83.52240502 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 00:08:10 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 14000.66071688 sec
+Average conflict index: 382.33150548481785
+Total time: 14000.66071688 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 04:02:19 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 7298.308750754 sec
+Average conflict index: 390.14448338674794
+Total time: 7298.308750754 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 06:04:46 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 478.139305076 sec
+Average conflict index: 451.2298094459984
+Total time: 478.139305076 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 06:13:33 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 245.307991577 sec
+Average conflict index: 471.2875695501628
+Total time: 245.307991577 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 06:18:28 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 41706.633825798 sec
+Average conflict index: 366.7428096315126
+Total time: 41706.633825798 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 17:55:39 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 20254.121528168 sec
+Average conflict index: 378.30364957301197
+Total time: 20254.121528168 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 23:35:17 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 1199.634048155 sec
+Average conflict index: 445.3467754229597
+Total time: 1199.634048155 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sat Jan 13 23:57:21 MET 2007
+
+SRA_800x800-640000-25-02_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-02_random_leftmost'...
+Average conflict index: 743.1910655854992
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 610.064247936 sec
+Average conflict index: 465.8320038777437
+Total time: 610.064247936 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 00:09:33 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3163.349756107 sec
+Average conflict index: 404.7238971342034
+Total time: 3163.349756107 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 01:02:35 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 1965.932515722 sec
+Average conflict index: 407.963491947536
+Total time: 1965.932515722 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 01:35:39 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 160.634725598 sec
+Average conflict index: 456.8806657852646
+Total time: 160.634725598 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 01:38:37 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 83.86023127 sec
+Average conflict index: 477.2211544239556
+Total time: 83.86023127 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 01:40:19 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 13981.847401147 sec
+Average conflict index: 382.17646117010315
+Total time: 13981.847401147 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 05:34:10 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 7863.899626732 sec
+Average conflict index: 390.2044647264392
+Total time: 7863.899626732 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 07:46:03 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 405.138416074 sec
+Average conflict index: 451.1173844536537
+Total time: 405.138416074 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 07:53:37 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 209.03591676 sec
+Average conflict index: 471.16737097878274
+Total time: 209.03591676 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 07:57:57 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 38288.290561533 sec
+Average conflict index: 366.7716562126308
+Total time: 38288.290561533 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Sun Jan 14 18:38:12 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 22166.681860089 sec
+Average conflict index: 378.25328375810113
+Total time: 22166.681860089 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Mon Jan 15 00:49:42 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 1196.868773054 sec
+Average conflict index: 445.5548059305484
+Total time: 1196.868773054 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Mon Jan 15 01:11:43 MET 2007
+
+SRA_800x800-640000-25-03_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-03_random_leftmost'...
+Average conflict index: 743.2430975182585
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 544.392607226 sec
+Average conflict index: 465.4903304594188
+Total time: 544.392607226 sec
+---------------------------
+Host: doc029
+Job: 458431
+Timestamp: Mon Jan 15 01:22:53 MET 2007
+End of script
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Fri Jan 12 22:34:16 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3022.497122864 sec
+Average conflict index: 405.52629516827295
+Total time: 3022.497122864 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Fri Jan 12 23:24:53 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 2285.202733011 sec
+Average conflict index: 408.1091745370993
+Total time: 2285.202733011 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 00:03:16 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 158.492587084 sec
+Average conflict index: 457.6535081169045
+Total time: 158.492587084 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 00:06:13 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 84.337550143 sec
+Average conflict index: 477.35098199646126
+Total time: 84.337550143 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 00:07:55 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 13492.439183059 sec
+Average conflict index: 382.03282801957715
+Total time: 13492.439183059 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 03:53:36 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 7859.353189927 sec
+Average conflict index: 390.12850290889884
+Total time: 7859.353189927 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 06:05:25 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 465.043216447 sec
+Average conflict index: 450.9596831990843
+Total time: 465.043216447 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 06:13:59 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 237.939444908 sec
+Average conflict index: 471.592082513518
+Total time: 237.939444908 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 06:18:47 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 41703.31464351 sec
+Average conflict index: 366.6541903179693
+Total time: 41703.31464351 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sat Jan 13 17:55:56 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 22930.146970261 sec
+Average conflict index: 378.43110162128664
+Total time: 22930.146970261 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 00:20:11 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 1226.067750771 sec
+Average conflict index: 445.7843352457262
+Total time: 1226.067750771 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 00:42:43 MET 2007
+
+SRA_800x800-640000-25-04_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-04_random_leftmost'...
+Average conflict index: 743.227178962879
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 549.207963466 sec
+Average conflict index: 465.7365550645811
+Total time: 549.207963466 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 00:53:57 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3061.794723008 sec
+Average conflict index: 405.05675498892697
+Total time: 3061.794723008 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 01:45:17 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 2242.23082373 sec
+Average conflict index: 408.22585970285013
+Total time: 2242.23082373 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 02:22:57 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 157.955410261 sec
+Average conflict index: 457.38136935889077
+Total time: 157.955410261 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 02:25:53 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 82.36967418 sec
+Average conflict index: 477.60272741668155
+Total time: 82.36967418 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 02:27:33 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 13924.079654717 sec
+Average conflict index: 381.82039789257755
+Total time: 13924.079654717 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 06:20:26 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 7874.420167394 sec
+Average conflict index: 389.7369260288112
+Total time: 7874.420167394 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 08:32:28 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 451.987234756 sec
+Average conflict index: 450.6067915108429
+Total time: 451.987234756 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 08:40:50 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 237.336825487 sec
+Average conflict index: 471.36636418267875
+Total time: 237.336825487 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 08:45:37 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 41840.302976843 sec
+Average conflict index: 367.06499212300616
+Total time: 41840.302976843 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Sun Jan 14 20:25:00 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-40K-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-40000-0-SortSequences...
+Elapsed time: 21907.565875281 sec
+Average conflict index: 378.2262860272638
+Total time: 21907.565875281 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Mon Jan 15 02:32:17 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-2500-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-2500-0-SortSequences...
+Elapsed time: 1196.318814993 sec
+Average conflict index: 445.35169290567205
+Total time: 1196.318814993 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Mon Jan 15 02:54:18 MET 2007
+
+SRA_800x800-640000-25-05_random_leftmost GREEDYPLACER-CI-1250-0-SORTSEQ
+Reading input file 'SRA_800x800-640000-25-05_random_leftmost'...
+Average conflict index: 743.3439759601235
+Running GreedyPlacer-CI-1250-0-SortSequences...
+Elapsed time: 607.189809075 sec
+Average conflict index: 465.6943703209881
+Total time: 607.189809075 sec
+---------------------------
+Host: doc029
+Job: 458432
+Timestamp: Mon Jan 15 03:06:30 MET 2007
+End of script
+---------------------------

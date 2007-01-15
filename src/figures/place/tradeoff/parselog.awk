@@ -9,7 +9,7 @@ match($0,/^SRA/) {
 
 	# print last record
 	if (dim != "") {
-		if (before == "-" || after == "-" || time == "-") {
+		if (window == "" || kvalue == "" || before == "-" || after == "-" || time == "-") {
 			exit
 		}
 		print dim,window,kvalue,file,after,time,before
@@ -18,15 +18,21 @@ match($0,/^SRA/) {
 	# new record
 	dim = substr($1,5,7)
 	file = substr($1,index($1,"25-")+3,2)
-	window = substr($2,17,index($2,"K-")-17)
-	kvalue = substr($2,index($2,"K-")+2,1)
 	
 	# reset data
+	window = "-"
+	kvalue = "-"
 	before = "-"
 	after = "-"
 	time = "-"
 	
 	next;
+}
+
+match($0,/^Running/) {
+	match($2,/(BL|CI)\-[0-9]+/)
+	window = substr($2,RSTART+3,RLENGTH-3)
+	kvalue = substr($2,RSTART+RLENGTH+1,1)
 }
 
 match($0,/^Total border/) {
@@ -57,7 +63,7 @@ match($0,/^Total time/) {
 }
 
 END {
-	if (before == "-" || after == "-" || time == "-") {
+	if (window == "" || kvalue == "" || before == "-" || after == "-" || time == "-") {
 		printf ("Incomplete or inconsistent data for dimension %s, file %s, window %s, kvalue %s.\n",dim, file, window, kvalue)
 		exit
 	}

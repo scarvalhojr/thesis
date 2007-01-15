@@ -6,10 +6,10 @@ set size .66,.93
 #set output "bl.png"
 
 # enable minor tics on both axes
-set xtics nomirror
+set xtics nomirror 2
 set ytics mirror
-# set mxtics
-# set mytics
+unset mxtics
+set mytics
 
 # display grid
 # set grid
@@ -22,8 +22,7 @@ set xlabel "Time (min)"
 
 set logscale x 2
 
-#plot	[] [44:48.2]
-plot [4:2000]\
+plot [0.26:500] [16.4:18.7] \
 	"300-nbl.dat" with points pt 5 title "300 x 300", \
 	"500-nbl.dat" with points pt 4 title "500 x 500", \
 	"800-nbl.dat" with points pt 7 title "800 x 800"
