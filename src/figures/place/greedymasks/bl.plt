@@ -26,5 +26,5 @@ set y2range [0:26000]
 
 plot [0:75] \
 	"SRA_500x500-250000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost.blm" using 1:4 with points pt 4 notitle, \
-	"SRA_500x500-250000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost.blm" using 1:4 with points pt 7 notitle, \
+	"SRA_500x500-250000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost.blm" using 1:4 with points pt 5 notitle, \
 	"SRA_500x500-250000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost.blm" using 1:2 axes x1y2 with boxes notitle
