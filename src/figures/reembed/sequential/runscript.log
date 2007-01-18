@@ -1,0 +1,970 @@
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:12:21 MET 2007
+
+SRA_300x300-90000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3239396 -> normalized: 18.056833890746933
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.919980412 sec
+Total border length: 3224746 -> normalized: 17.975172798216278
+Total time: 4.919980412 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:12:29 MET 2007
+
+SRA_300x300-90000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 415.7156627087564
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 188.493220694 sec
+Average conflict index: 412.8009682224656
+Total time: 188.493220694 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:15:55 MET 2007
+
+SRA_500x500-250000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8658300 -> normalized: 17.35130260521042
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.45425767 sec
+Total border length: 8619500 -> normalized: 17.273547094188377
+Total time: 12.45425767 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:16:13 MET 2007
+
+SRA_500x500-250000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 401.7196067940543
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 531.214150447 sec
+Average conflict index: 398.87041658213536
+Total time: 531.214150447 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:25:52 MET 2007
+
+SRA_800x800-640000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-01_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21350028 -> normalized: 16.700585106382977
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 31.820694175 sec
+Total border length: 21258016 -> normalized: 16.62861076345432
+Total time: 31.820694175 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:26:33 MET 2007
+
+SRA_800x800-640000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-01_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 392.2523012370322
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1354.977545235 sec
+Average conflict index: 389.47660303289354
+Total time: 1354.977545235 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:51:19 MET 2007
+
+SRA_300x300-90000-25-02_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-02_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3240608 -> normalized: 18.063589743589745
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.688392565 sec
+Total border length: 3225380 -> normalized: 17.97870680044593
+Total time: 4.688392565 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:51:25 MET 2007
+
+SRA_300x300-90000-25-02_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-02_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 415.5736418744631
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 189.593066915 sec
+Average conflict index: 412.6303067558401
+Total time: 189.593066915 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:54:52 MET 2007
+
+SRA_500x500-250000-25-02_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-02_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8660236 -> normalized: 17.35518236472946
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.978883181 sec
+Total border length: 8621314 -> normalized: 17.27718236472946
+Total time: 12.978883181 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 20:55:10 MET 2007
+
+SRA_500x500-250000-25-02_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-02_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 401.4465397053279
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 525.146822984 sec
+Average conflict index: 398.62769236538117
+Total time: 525.146822984 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:04:41 MET 2007
+
+SRA_800x800-640000-25-02_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-02_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21339628 -> normalized: 16.692449937421777
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.728110889 sec
+Total border length: 21248146 -> normalized: 16.620890175219024
+Total time: 32.728110889 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:05:23 MET 2007
+
+SRA_800x800-640000-25-02_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-02_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 392.2217322530138
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1348.882928335 sec
+Average conflict index: 389.41766182149524
+Total time: 1348.882928335 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:29:49 MET 2007
+
+SRA_300x300-90000-25-03_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-03_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3240816 -> normalized: 18.064749163879597
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.34511401 sec
+Total border length: 3225486 -> normalized: 17.979297658862876
+Total time: 5.34511401 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:29:56 MET 2007
+
+SRA_300x300-90000-25-03_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-03_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 415.8015022272797
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 190.335221688 sec
+Average conflict index: 412.8306106946648
+Total time: 190.335221688 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:33:25 MET 2007
+
+SRA_500x500-250000-25-03_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-03_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8659660 -> normalized: 17.354028056112224
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 13.080350071 sec
+Total border length: 8621550 -> normalized: 17.277655310621242
+Total time: 13.080350071 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:33:42 MET 2007
+
+SRA_500x500-250000-25-03_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-03_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 401.5231665018486
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 528.484696889 sec
+Average conflict index: 398.66228924731877
+Total time: 528.484696889 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:43:18 MET 2007
+
+SRA_800x800-640000-25-03_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-03_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21347200 -> normalized: 16.69837296620776
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.172829674 sec
+Total border length: 21254794 -> normalized: 16.626090425531913
+Total time: 32.172829674 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 21:44:00 MET 2007
+
+SRA_800x800-640000-25-03_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-03_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 392.15967115848656
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1357.05369611 sec
+Average conflict index: 389.3694377042333
+Total time: 1357.05369611 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:08:49 MET 2007
+
+SRA_300x300-90000-25-04_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-04_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3237780 -> normalized: 18.047826086956523
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.844984277 sec
+Total border length: 3222032 -> normalized: 17.96004459308807
+Total time: 4.844984277 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:08:57 MET 2007
+
+SRA_300x300-90000-25-04_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-04_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 415.0372299099359
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 190.074228176 sec
+Average conflict index: 412.08143035986416
+Total time: 190.074228176 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:12:25 MET 2007
+
+SRA_500x500-250000-25-04_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-04_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8659944 -> normalized: 17.354597194388777
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.301852614 sec
+Total border length: 8620866 -> normalized: 17.276284569138276
+Total time: 12.301852614 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:12:41 MET 2007
+
+SRA_500x500-250000-25-04_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-04_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 401.3651276420493
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 524.581919028 sec
+Average conflict index: 398.49825220314716
+Total time: 524.581919028 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:22:13 MET 2007
+
+SRA_800x800-640000-25-04_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-04_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21347140 -> normalized: 16.698326032540677
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.500844492 sec
+Total border length: 21254134 -> normalized: 16.62557415519399
+Total time: 32.500844492 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:22:55 MET 2007
+
+SRA_800x800-640000-25-04_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-04_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 392.1581190335521
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1350.041732397 sec
+Average conflict index: 389.36485546558515
+Total time: 1350.041732397 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:47:29 MET 2007
+
+SRA_300x300-90000-25-05_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-05_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3239106 -> normalized: 18.055217391304346
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.748940515 sec
+Total border length: 3223742 -> normalized: 17.969576365663322
+Total time: 4.748940515 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:47:36 MET 2007
+
+SRA_300x300-90000-25-05_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-05_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 415.37362845997126
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 190.152821453 sec
+Average conflict index: 412.4244499516917
+Total time: 190.152821453 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:51:04 MET 2007
+
+SRA_500x500-250000-25-05_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-05_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8663470 -> normalized: 17.361663326653307
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.308503892 sec
+Total border length: 8625066 -> normalized: 17.284701402805613
+Total time: 12.308503892 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 22:51:21 MET 2007
+
+SRA_500x500-250000-25-05_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-05_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 401.2501923574067
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 531.829669986 sec
+Average conflict index: 398.3891930885973
+Total time: 531.829669986 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 23:00:59 MET 2007
+
+SRA_800x800-640000-25-05_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-05_GREEDYPLACER-BL-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21349404 -> normalized: 16.700096996245307
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.450119312 sec
+Total border length: 21256940 -> normalized: 16.627769086357947
+Total time: 32.450119312 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 23:01:41 MET 2007
+
+SRA_800x800-640000-25-05_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-05_GREEDYPLACER-CI-20K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 392.1011276620922
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1352.519497971 sec
+Average conflict index: 389.33614240817815
+Total time: 1352.519497971 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459013
+Timestamp: Sun Jan 14 23:26:10 MET 2007
+End of script
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:12:21 MET 2007
+
+SRA_300x300-90000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3285392 -> normalized: 18.313221850613154
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.890895977 sec
+Total border length: 3266640 -> normalized: 18.208695652173912
+Total time: 4.890895977 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:12:29 MET 2007
+
+SRA_300x300-90000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.5386079325389
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 188.62912626 sec
+Average conflict index: 436.86654069882997
+Total time: 188.62912626 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:15:55 MET 2007
+
+SRA_500x500-250000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8774338 -> normalized: 17.58384368737475
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.787255027 sec
+Total border length: 8725272 -> normalized: 17.48551503006012
+Total time: 12.787255027 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:16:14 MET 2007
+
+SRA_500x500-250000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.353796213261
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 523.209044718 sec
+Average conflict index: 428.8190976383301
+Total time: 523.209044718 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:25:42 MET 2007
+
+SRA_800x800-640000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21619996 -> normalized: 16.911761576971212
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.728540619 sec
+Total border length: 21503046 -> normalized: 16.820280037546933
+Total time: 32.728540619 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:26:24 MET 2007
+
+SRA_800x800-640000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.3133095512059
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1359.751250878 sec
+Average conflict index: 422.8925825502356
+Total time: 1359.751250878 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:51:03 MET 2007
+
+SRA_300x300-90000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3288116 -> normalized: 18.32840579710145
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.717546103 sec
+Total border length: 3269100 -> normalized: 18.222408026755854
+Total time: 4.717546103 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:51:10 MET 2007
+
+SRA_300x300-90000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.64445672803083
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 189.223417836 sec
+Average conflict index: 437.04700853797266
+Total time: 189.223417836 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:54:38 MET 2007
+
+SRA_500x500-250000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8770744 -> normalized: 17.57664128256513
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 13.148227199 sec
+Total border length: 8721960 -> normalized: 17.47887775551102
+Total time: 13.148227199 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 20:54:55 MET 2007
+
+SRA_500x500-250000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.4268224725073
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 524.772789513 sec
+Average conflict index: 428.82778036343143
+Total time: 524.772789513 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:04:27 MET 2007
+
+SRA_800x800-640000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21618690 -> normalized: 16.910739987484355
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 33.119243663 sec
+Total border length: 21500602 -> normalized: 16.818368272841052
+Total time: 33.119243663 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:05:10 MET 2007
+
+SRA_800x800-640000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 425.56510240858944
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1354.021092249 sec
+Average conflict index: 422.1121779381679
+Total time: 1354.021092249 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:29:43 MET 2007
+
+SRA_300x300-90000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3286132 -> normalized: 18.317346711259756
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.423309943 sec
+Total border length: 3267224 -> normalized: 18.21195094760312
+Total time: 5.423309943 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:29:51 MET 2007
+
+SRA_300x300-90000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.78633006013297
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 186.216424108 sec
+Average conflict index: 437.1450543762679
+Total time: 186.216424108 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:33:14 MET 2007
+
+SRA_500x500-250000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8774728 -> normalized: 17.584625250501002
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.860571492 sec
+Total border length: 8725314 -> normalized: 17.485599198396795
+Total time: 12.860571492 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:33:31 MET 2007
+
+SRA_500x500-250000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.31941310473246
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 527.54902698 sec
+Average conflict index: 428.70556900268014
+Total time: 527.54902698 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:43:06 MET 2007
+
+SRA_800x800-640000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21620332 -> normalized: 16.912024405506884
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.272864188 sec
+Total border length: 21502252 -> normalized: 16.819658948685856
+Total time: 32.272864188 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 21:43:48 MET 2007
+
+SRA_800x800-640000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.22660727823325
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1362.88822203 sec
+Average conflict index: 422.78365072651684
+Total time: 1362.88822203 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:08:29 MET 2007
+
+SRA_300x300-90000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3285572 -> normalized: 18.31422519509476
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.56958358 sec
+Total border length: 3266152 -> normalized: 18.205975473801562
+Total time: 4.56958358 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:08:36 MET 2007
+
+SRA_300x300-90000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.12441906201735
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 189.043006924 sec
+Average conflict index: 436.40114980949727
+Total time: 189.043006924 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:12:02 MET 2007
+
+SRA_500x500-250000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8774410 -> normalized: 17.583987975951903
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.397381385 sec
+Total border length: 8726342 -> normalized: 17.487659318637274
+Total time: 12.397381385 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:12:19 MET 2007
+
+SRA_500x500-250000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.68492283685686
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 530.708130538 sec
+Average conflict index: 429.12904778103365
+Total time: 530.708130538 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:21:58 MET 2007
+
+SRA_800x800-640000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21621580 -> normalized: 16.913000625782228
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.425185356 sec
+Total border length: 21503562 -> normalized: 16.820683667083856
+Total time: 32.425185356 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:22:40 MET 2007
+
+SRA_800x800-640000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.16840923013655
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1346.895883444 sec
+Average conflict index: 422.68032020123445
+Total time: 1346.895883444 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:47:06 MET 2007
+
+SRA_300x300-90000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3286234 -> normalized: 18.317915273132666
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 4.698176132 sec
+Total border length: 3267138 -> normalized: 18.211471571906355
+Total time: 4.698176132 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:47:13 MET 2007
+
+SRA_300x300-90000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.48927691148805
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 189.040413755 sec
+Average conflict index: 436.8554149737641
+Total time: 189.040413755 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:50:39 MET 2007
+
+SRA_500x500-250000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8775442 -> normalized: 17.586056112224448
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 12.30047452 sec
+Total border length: 8726556 -> normalized: 17.488088176352704
+Total time: 12.30047452 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 22:50:56 MET 2007
+
+SRA_500x500-250000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 431.72671183026944
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 529.533935387 sec
+Average conflict index: 428.2234035026006
+Total time: 529.533935387 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 23:00:32 MET 2007
+
+SRA_800x800-640000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost SEQREEMBED-BL-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21623238 -> normalized: 16.914297559449313
+Running SequentialReembedding-BL-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 32.731530827 sec
+Total border length: 21504412 -> normalized: 16.821348560700876
+Total time: 32.731530827 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 23:01:14 MET 2007
+
+SRA_800x800-640000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost SEQREEMBED-CI-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.10527238397907
+Running SequentialReembedding-CI-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1359.88641485 sec
+Average conflict index: 422.669864370345
+Total time: 1359.88641485 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 459012
+Timestamp: Sun Jan 14 23:25:53 MET 2007
+End of script
+---------------------------

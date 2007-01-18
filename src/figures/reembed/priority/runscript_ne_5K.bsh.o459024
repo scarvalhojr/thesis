@@ -1,0 +1,485 @@
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 20:26:57 MET 2007
+
+SRA_300x300-90000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3285392 -> normalized: 18.313221850613154
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.630061785 sec
+Total border length: 3266490 -> normalized: 18.207859531772574
+Total time: 5.630061785 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 20:27:06 MET 2007
+
+SRA_300x300-90000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.5386079325389
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 190.306966036 sec
+Average conflict index: 436.89429595057663
+Total time: 190.306966036 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 20:30:34 MET 2007
+
+SRA_500x500-250000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8774338 -> normalized: 17.58384368737475
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 13.554543371 sec
+Total border length: 8725098 -> normalized: 17.48516633266533
+Total time: 13.554543371 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 20:30:53 MET 2007
+
+SRA_500x500-250000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.353796213261
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 528.045543049 sec
+Average conflict index: 428.8343973978302
+Total time: 528.045543049 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 20:40:29 MET 2007
+
+SRA_800x800-640000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-01_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21619996 -> normalized: 16.911761576971212
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 36.707982419 sec
+Total border length: 21502824 -> normalized: 16.820106382978725
+Total time: 36.707982419 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 20:41:15 MET 2007
+
+SRA_800x800-640000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-01_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.3133095512059
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1365.687012271 sec
+Average conflict index: 422.90879415211595
+Total time: 1365.687012271 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:06:01 MET 2007
+
+SRA_300x300-90000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3288116 -> normalized: 18.32840579710145
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.322839056 sec
+Total border length: 3269068 -> normalized: 18.222229654403566
+Total time: 5.322839056 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:06:09 MET 2007
+
+SRA_300x300-90000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.64445672803083
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 189.576655969 sec
+Average conflict index: 437.0664667913765
+Total time: 189.576655969 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:09:36 MET 2007
+
+SRA_500x500-250000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8770744 -> normalized: 17.57664128256513
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 14.340544198 sec
+Total border length: 8721782 -> normalized: 17.478521042084168
+Total time: 14.340544198 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:09:54 MET 2007
+
+SRA_500x500-250000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.4268224725073
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 528.553047874 sec
+Average conflict index: 428.8514775559983
+Total time: 528.553047874 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:19:30 MET 2007
+
+SRA_800x800-640000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-02_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21618690 -> normalized: 16.910739987484355
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 36.017342145 sec
+Total border length: 21500244 -> normalized: 16.818088235294116
+Total time: 36.017342145 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:20:15 MET 2007
+
+SRA_800x800-640000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-02_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 425.56510240858944
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1358.126234467 sec
+Average conflict index: 422.1351805171989
+Total time: 1358.126234467 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:44:52 MET 2007
+
+SRA_300x300-90000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3286132 -> normalized: 18.317346711259756
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.052954922 sec
+Total border length: 3267116 -> normalized: 18.21134894091416
+Total time: 5.052954922 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:44:59 MET 2007
+
+SRA_300x300-90000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.78633006013297
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 191.092243069 sec
+Average conflict index: 437.16317055444824
+Total time: 191.092243069 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:48:28 MET 2007
+
+SRA_500x500-250000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8774728 -> normalized: 17.584625250501002
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 13.111772171 sec
+Total border length: 8725220 -> normalized: 17.485410821643285
+Total time: 13.111772171 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:48:46 MET 2007
+
+SRA_500x500-250000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.31941310473246
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 526.163655121 sec
+Average conflict index: 428.7396136884882
+Total time: 526.163655121 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:58:20 MET 2007
+
+SRA_800x800-640000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-03_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21620332 -> normalized: 16.912024405506884
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 36.135578458 sec
+Total border length: 21501720 -> normalized: 16.81924280350438
+Total time: 36.135578458 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 21:59:05 MET 2007
+
+SRA_800x800-640000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-03_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.22660727823325
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1351.337534363 sec
+Average conflict index: 422.80328969757215
+Total time: 1351.337534363 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 22:23:34 MET 2007
+
+SRA_300x300-90000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3285572 -> normalized: 18.31422519509476
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.547037504 sec
+Total border length: 3266034 -> normalized: 18.205317725752508
+Total time: 5.547037504 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 22:23:42 MET 2007
+
+SRA_300x300-90000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.12441906201735
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 190.62837438 sec
+Average conflict index: 436.43448633621966
+Total time: 190.62837438 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 22:27:10 MET 2007
+
+SRA_500x500-250000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8774410 -> normalized: 17.583987975951903
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 14.027240837 sec
+Total border length: 8726114 -> normalized: 17.48720240480962
+Total time: 14.027240837 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 22:27:30 MET 2007
+
+SRA_500x500-250000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 432.68492283685686
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 527.400504246 sec
+Average conflict index: 429.15127341732455
+Total time: 527.400504246 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 22:37:04 MET 2007
+
+SRA_800x800-640000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-04_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21621580 -> normalized: 16.913000625782228
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 35.109237009 sec
+Total border length: 21503198 -> normalized: 16.820398936170214
+Total time: 35.109237009 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 22:37:50 MET 2007
+
+SRA_800x800-640000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-04_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.16840923013655
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1346.439709319 sec
+Average conflict index: 422.70573106405527
+Total time: 1346.439709319 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:02:09 MET 2007
+
+SRA_300x300-90000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 3286234 -> normalized: 18.317915273132666
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 5.25048735 sec
+Total border length: 3267016 -> normalized: 18.210791527313265
+Total time: 5.25048735 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:02:17 MET 2007
+
+SRA_300x300-90000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_300x300-90000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 440.48927691148805
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 191.43539722 sec
+Average conflict index: 436.88200742582154
+Total time: 191.43539722 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:05:45 MET 2007
+
+SRA_500x500-250000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 8775442 -> normalized: 17.586056112224448
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 14.175057049 sec
+Total border length: 8726382 -> normalized: 17.487739478957916
+Total time: 14.175057049 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:06:04 MET 2007
+
+SRA_500x500-250000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_500x500-250000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 431.72671183026944
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 521.946881419 sec
+Average conflict index: 428.24307014166806
+Total time: 521.946881419 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:15:30 MET 2007
+
+SRA_800x800-640000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost PRIORITY-BL-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-05_GREEDYPLACER-BL-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Total border length: 21623238 -> normalized: 16.914297559449313
+Running PriorityReembedding-BL-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 36.055263513 sec
+Total border length: 21504116 -> normalized: 16.821117021276596
+Total time: 36.055263513 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:16:15 MET 2007
+
+SRA_800x800-640000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost PRIORITY-CI-NUMEMBED-NORESET-0.002
+Reading input file 'SRA_800x800-640000-25-05_GREEDYPLACER-CI-5K-0-SORTSEQ_leftmost'...
+Cloning chip for later checks...
+Average conflict index: 426.10527238397907
+Running PriorityReembedding-CI-NumOfEmbed-NoReset-0.0020...
+Number of passes: 2
+Elapsed time: 1364.385620997 sec
+Average conflict index: 422.6859294061198
+Total time: 1364.385620997 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc023
+Job: 459024
+Timestamp: Sun Jan 14 23:41:03 MET 2007
+End of script
+---------------------------
