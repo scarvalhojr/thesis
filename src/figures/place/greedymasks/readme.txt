@@ -1,0 +1,1 @@
+Used Photoshop to convert from BMP to EPS with 300 pixels/inch resolution, preserving the 500x500 dimension to produce images of 1.667 x 1.667 inches (4.23 x 4.23 cm).
