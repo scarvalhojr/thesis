@@ -132,10 +132,11 @@ may reduce total border length of layouts constructed with TSP tours in up to
 \label{sec:placement_epitaxial}
 
 A different strategy inspired by techniques used in the design of VLSI circuits,
-called Epitaxial placement, was proposed by \citet{Kahng2002}. It essentially
-grows a placement around a single starting ``seed'' using a greedy heuristic.
-Although it was originally designed for chips with synchronous embeddings, it
-can be trivially implemented for asynchronous embeddings as well.
+called Epitaxial placement, or \emph{seeded crystal growth}, was proposed by
+\citet{Kahng2002}. It essentially grows a placement around a single starting
+``seed'' using a greedy heuristic. Although it was originally designed for chips
+with synchronous embeddings, it can be trivially implemented for asynchronous
+embeddings as well.
 
 The algorithm starts by placing a random probe in the center of the array and
 continues to insert probes in spots adjacent to already-filled spots. Priority
@@ -228,13 +229,13 @@ cycles.
 
 Selecting an independent set of spots ensures that the cost of each new
 assignment can be computed independently of the other assignments. The SWM was
-designed for border length minimization and it takes advantage of the fact that,
-in this model, an independent set of spots can be constructed by selecting sites
-that are not immediate neighbors (spots that do not share a common border). SWM
-can be adapted for conflict index minimization by using larger windows
-containing relatively sparse independent sets (to our knowledge, this has not
-been implemented yet). Therefore several random independent sets should be
-constructed before moving the window.
+designed for border length minimization (BLM) and it takes advantage of the fact
+that, in this model, an independent set of spots can be constructed by selecting
+sites that are not immediate neighbors (spots that do not share a common
+border). SWM can be adapted for conflict index minimization (CIM) by using
+larger windows containing relatively sparse independent sets (to our knowledge,
+this has not been implemented yet). Therefore several random independent sets
+should be constructed before moving the window.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Row-Epitaxial}
@@ -252,14 +253,14 @@ below $s$), and swaps $p$ with the probe that generates the minimum number of
 border conflicts between $s$ and its left and top neighbors.
 
 In the experiments conducted by \citet{Kahng2003}, Row-Epitaxial was the best
-large-scale placement algorithm (for border length minimization), achieving up
-to 9\% reduction in border conflicts over the TSP\,+\,1-threading, whereas SWM
-achieved slightly worse results but required significantly less time.
+large-scale placement algorithm (for BLM), achieving up to 9\% reduction in
+border conflicts over the TSP\,+\,1-threading, whereas SWM achieved slightly
+worse results but required significantly less time.
 
-Row-Epitaxial can also be adapted to conflict index minimization by swapping a
-probe of a spot $s$ with the probe candidate that minimizes the sum of conflict
-indices in a region around $s$ restricted to those neighboring probes that are
-to the left or above $s$ (those which have already found their final positions).
+Row-Epitaxial can also be adapted to CIM by swapping a probe of a spot $s$ with
+the probe candidate that minimizes the sum of conflict indices in a region
+around $s$ restricted to those neighboring probes that are to the left or above
+$s$ (those which have already found their final positions).
 
 Table~\ref{tab:reptx} shows the results of using Row-Epitaxial for both border
 length and conflict index minimization on chips with random probe sequences
@@ -278,13 +279,13 @@ $23.6828$ to $22.1279$) and the average conflict index in up to $4.51\%$ (from
 $689.6109$ to $658.5097$) on $800\times 800$ chips.
 
 However, the best initial layouts rarely led to the best final layout produced
-by Row-Epitaxial. With border length minimization the best results were usually
-achieved with $k=0$, whereas with conflict index minimization there was no clear
-best value for $k$. In any case, the difference due to varying $k$ for the
-threading were rather small for Row-Epitaxial --- at most $0.78\%$ in normalized
-border length (from $16.9760$ with $k=0$ to $17.1085$ with $k=4$) and $0.26\%$
-in average conflict index (from $448.0140$ with $k=0$ to $449.1653$ with $k=4$),
-both on a $800\times 800$ chip with $Q=5$K.
+by Row-Epitaxial. With BLM the best results were usually achieved with $k=0$,
+whereas with CIM there was no clear best value for $k$. In any case, the
+difference due to varying $k$ for the threading were rather small for
+Row-Epitaxial --- at most $0.78\%$ in normalized border length (from $16.9760$
+with $k=0$ to $17.1085$ with $k=4$) and $0.26\%$ in average conflict index (from
+$448.0140$ with $k=0$ to $449.1653$ with $k=4$), both on a $800\times 800$ chip
+with $Q=5$K.
 
 \begin{table}[p!]\centering
 \caption{\label{tab:reptx}
@@ -406,14 +407,19 @@ always improved the results in terms of border length. In term os conflict
 index, increasing $k$ from 1 to 3 worsened the results, although increasing it
 from 3 to 4, most of the times, improved the layouts.
 
-In terms of border length, Greedy and Row-Epitaxial produced similar results,
-with the best layout of Greedy being sometimes marginally better and sometimes
-marginally worse than the best layout of Row-Epitaxial. In terms of conflitct
-index minimization, however, Greedy was constantly and significantly better than
-Row-Epitaxial, achieving up to $5.65\%$ reduction in average conflic index (from
-$415.6470$ to $392.1786$) on a $800\times 800$ chip with $Q=20$K. Our results
-also show that Greedy is slightly slower than Row-Epitaxial (because of the
-doubly-linked list).
+In terms of BLM, Greedy and Row-Epitaxial produced similar results, with the
+best layout of Greedy being sometimes marginally better and sometimes marginally
+worse than the best layout of Row-Epitaxial. In terms of CIM, however, Greedy
+was constantly and significantly better than Row-Epitaxial, achieving up to
+$5.65\%$ reduction in average conflic index (from $415.6470$ to $392.1786$) on a
+$800\times 800$ chip with $Q=20$K.
+
+In our results, Greedy was between $13.9\%$ and $59.9\%$ slower than
+Row-epitaxial in the BLM case ($19.7\%$ on average, overall), and between $3.7\%$
+and $18.1\%$ in the CIM case (only $5.6\%$ overall). The difference between
+Row-epitaxial and Greedy drops in the CIM case because the extra time spent in
+computing the cost of each candidate is higher than in the BLM case, which
+reduces the impact of the time required to keep the doubly-linked list.
 
 \begin{figure}
 %%
@@ -575,23 +581,31 @@ same number of border conflicts) and a larger number of neighbors are involved.
 
 Fig.~\ref{fig:greedy_blm} shows the normalized border length per masking step of
 layouts produced by Greedy for a $500\times 500$ chip with border length and
-conflict index minimization. With border length minimization, the generated
-layout has most border conflicts concentrated between steps 7 and 58. The last
-masks of this layout have low levels of border conflicts because the probes are
-left-most embedded, which leaves most embeddings in an unproductive state during
-the final synthesis steps. The first masks also have relatively few conflits,
-and this is due to the lexicographical sorting of probes. A representation of
-selected photolithographic masks resulting from this layout are shown in Fig.~
-\ref{fig:greedy-bl_masks}. In this figure, it is possible to see the layers of
-masked and unmasked spots in masks $M_1 \dots M_6$ that result from sorting
-probes lexicographically.
+conflict index minimization. With BLM, the generated layout has most border
+conflicts concentrated between steps 7 and 58. The last masks of this layout
+have low levels of border conflicts because the probes are left-most embedded,
+which leaves most embeddings in an unproductive state during the final synthesis
+steps. The first masks also have relatively few conflits, and this is a result
+of the lexicographical sorting of probes. A representation of selected
+photolithographic masks for this layout are shown in
+Fig.~\ref{fig:greedy-bl_masks}. In this figure, it is possible to see the layers
+of masked and unmasked spots in masks $M_1 \dots M_8$ that result from sorting
+probes lexicographically. Mask $M_9 \dots M_{62}$ are very ``noisy'' as there
+seems to be little regularity in their arrangement. From $M_{62}$ on, masks
+start to get ``darker'' as most probes have been already fully synthesized.
 
-With conflict index minimization, Greedy shifts border conflicts away from the
-steps that synthesize the probes' middle bases (between steps 18 and 46), which
-effectively reduces the average conflict index. Not surprinsingly, this
-reduction comes at the expense of an increase in border length --- the
-normalized border length of this particular chip rose from $17.3513$ with border
-length minimization to $19.8461$ with conflict index minimization.
+With CIM, Greedy shifts border conflicts away from the steps that synthesize the
+probes' middle bases (between steps 20 and 45; see Fig.~\ref{fig:greedy_blm}),
+which effectively reducing the average conflict index. Not surprinsingly, this
+reduction comes at the expense of an increase in total border length --- the
+normalized border length of this particular chip rose from $17.3513$ with BLM to
+$19.8461$ with CIM. Fig.~\ref{fig:greedy-ci_masks} shows a representation of
+selected masks for this layout. Note that the first masks ($M_1 \dots M_4$)
+still exhibit a ``layered'' structured, althought the layers are much narrower
+and the masks noisier than the first masks of Fig.~\ref{fig:greedy-bl_masks}. In
+the middle masks $M_{20} \dots M_{45}$, especially between $M_{25}$ and
+$M_{40}$, it is possible to see clusters of masked and unmasked spots that cause
+the reduction in average conflict index.
 
 \begin{figure}[t]\centering
 %%
@@ -723,3 +737,20 @@ length minimization to $19.8461$ with conflict index minimization.
   standard Affymetrix deposition sequence. Unmasked (masked) spots are
   represented by light (dark) dots.}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:placement_summary}
+
+In this chapter, we have surveyed placement algorithms for the Microarray Layout
+Problem, including an optimal placement strategy for uniform arrays based on a
+two-dimensional Gray code. For general arrays, we have presented more
+experimental results with Row-epitaxial, the best known placement algorithm to
+date, and studied the impact of the choice of threading for its initial layout.
+
+We have also introduced a new placement algorithm, called Greedy, which achieved
+similar results in terms of BLM and better results in terms of CIM when compared
+to Row-epitaxial. However, because Greedy is significantly slower in the BLM
+case, Row-epitaxial should still be the choice in this case. For CIM, however,
+we believe that the improvements achieved by Greedy over Row-epitaxial justify
+the small increase in running times.
