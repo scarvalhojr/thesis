@@ -47,7 +47,7 @@ $\eps_{k,t} = 1$, or \emph{unproductive} (masked) otherwise. The terms
 productive and unproductive can also be used to denote unmasked and masked
 spots, respectively.
 
-\begin{figure}
+\begin{figure}[t]\centering
 \centerline{\includegraphics[width=\textwidth]{figures/chip.eps}}
 \caption{Synthesis of a hypothetical 3$\times$3 chip with photolithographic
   masks. Left: chip layout and the 3-mer probe sequences. Center: deposition
@@ -239,41 +239,15 @@ does not matter if it accidentally receives light targeted at a neighbor, and
 when $s'$ is masked, there is no risk that it damages probes of $s$ since it is
 not receiving light.
 
-\begin{figure}
+\begin{figure}[t]\centering
 %%
-\begin{picture}(180,140)
-  \put(0,0){\makebox(180,140){
+\begin{picture}(435,150)
+  \put(0,0){\makebox(180,150){
     \includegraphics[width=0.4\textwidth]{distweights}
   }}
-\end{picture}
-%%
-\begin{picture}(255,140)
-  \footnotesize{
-    \put(0,0){\makebox(255,140){
-      %GNUPLOT: LaTeX picture with Postscript
-      \begin{picture}(0,0)%
-      \includegraphics{posweights}%
-      \end{picture}%
-      \begingroup
-      \setlength{\unitlength}{0.0200bp}%
-      \begin{picture}(13500,7019)(0,0)%
-      \put(1250,1000){\makebox(0,0)[r]{\strut{} 0}}%
-      \put(1250,1920){\makebox(0,0)[r]{\strut{} 2}}%
-      \put(1250,2840){\makebox(0,0)[r]{\strut{} 4}}%
-      \put(1250,3760){\makebox(0,0)[r]{\strut{} 6}}%
-      \put(1250,4680){\makebox(0,0)[r]{\strut{} 8}}%
-      \put(1250,5600){\makebox(0,0)[r]{\strut{} 10}}%
-      \put(1250,6520){\makebox(0,0)[r]{\strut{} 12}}%
-      \put(1716,500){\makebox(0,0){\strut{} 0}}%
-      \put(3880,500){\makebox(0,0){\strut{} 5}}%
-      \put(6043,500){\makebox(0,0){\strut{} 10}}%
-      \put(8207,500){\makebox(0,0){\strut{} 15}}%
-      \put(10370,500){\makebox(0,0){\strut{} 20}}%
-      \put(12534,500){\makebox(0,0){\strut{} 25}}%
-      \end{picture}%
-      \endgroup
-    }}
-  }
+  \put(180,5){\makebox(255,145){
+    \includegraphics{posweights}
+  }}
 \end{picture}
 %%
 \vspace*{-3ex}
