@@ -99,7 +99,7 @@ there are neither position-dependent ($\omega$) nor distance-dependent
 ($\gamma$) weights to compute. In practice, a simple optimization can
 significantly reduce running time: in each row, only the columns between the
 left-most and right-most embeddings of $p$ in $N$ need to be computed (see
-Fig.~\ref{fig:ospe}).
+Figure~\ref{fig:ospe}).
 
 \begin{figure}[t]\centering
 \includegraphics[width=\textwidth]{reembed/ospe}
@@ -138,7 +138,7 @@ The Chessboard re-embedding algorithm \citep{Kahng2002} was initially designed
 for border length minimization, and it takes advantage of the fact that, in this
 model, a chip can be bi-colored like a chessboard, in such a way that the
 embeddings of probes located on white spots are independent of those placed on
-black spots (Fig.~\ref{fig:chessboard}a).
+black spots (Figure~\ref{fig:chessboard}a).
 
 Chessboard uses this coloring to alternate the optimal re-embedding of probes
 located on black and white spots with respect to their neighbors: Each pass of
@@ -150,7 +150,8 @@ independent with respect to the border length model, i.e. they can be
 re-embedded without affecting the border conflicts of other spots with the same
 color. For conflict index minimization, the same principle can be applied by
 using $4\times 4=16$ colors instead of~$2$ as illustrated in
-Fig.~\ref{fig:chessboard} (to our knowledge this has not yet been implemented).
+Figure~\ref{fig:chessboard} (to the best of our knowledge this has not yet been
+implemented).
 
 \begin{figure}[t]\centering
 \includegraphics[width=\textwidth]{reembed/chessboard}
@@ -190,8 +191,8 @@ minimization. The main difference is that, once a probe is re-embedded, more
 neighbors need to be updated. For Batched Greedy, the selection of independent
 spots need to take into account the minimum distance of four cells (horizonally
 and vertically) between spots, in accordance with the conflict index model
-(Sect.~\ref{sec:mlp_conflict_index}). Hence fewer spots may be be re-embedded in
-the same iteration.
+(Section~\ref{sec:mlp_conflict_index}). Hence fewer spots may be be re-embedded
+in the same iteration.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sequential re-embedding}
@@ -211,9 +212,9 @@ always re-embed an independent set of spots at a time, and dropping this
 requirement should allow faster propagation of the effects of new embeddings and
 hence convergence to a better local optimum.
 
-Tables \ref{tab:sequential_bl} and ~\ref{tab:sequential_ci} show the results of
+Tables \ref{tab:sequential_bl} and \ref{tab:sequential_ci} show the results of
 using Sequential to re-embed the probes of chips produced by the Greedy
-placement algorithm (Sect.~\ref{sec:placement_greedy}). The chips initially
+placement algorithm (Section~\ref{sec:placement_greedy}). The chips initially
 contained random probes of length 25, uniformly generated, and left-most
 embedded in the standard Affymetrix deposition sequence.
 The threshold $W$ was set to $0.2\%$ (Sequential stopped as soon as the total
@@ -224,7 +225,7 @@ threshold was reached after two passes.
 \caption{\label{tab:sequential_bl}
   Normalized border length (NBL) before and after an optimization phase with the
   Sequential re-embedding algorithm. Placement was produced by the Greedy
-  placement algorithm (see Sect.~\ref{sec:placement_greedy}) with border length
+  placement algorithm (Section~\ref{sec:placement_greedy}) with border length
   minimization, $0$-threading, and number $Q$ of candidates per spot set to 5K
   and 20K. The average number of passes executed by Sequential before the
   threshold $W=0.2\%$ was reached is shown. The reduction of conflicts is also
@@ -298,13 +299,13 @@ $0.14\%$ more border conflicts than Greedy with $Q=40$K and no re-embedding
 ($16.6258$ NBL in $96.4$ minutes versus $16.6026$ in $189.0$ minutes,
 respectively; data not shown).
 
-Fig.~\ref{fig:sequential-bl_blm} shows the normalized border length per masking
-step of a selected $500\times 500$ chip before and after a re-embedding phase
-with Sequential for BLM. It is clear that the reduction of conflicts is achieved
-mainly between steps 45 and 65, at the expense of a small increase in conflicts
-in the final synthesis steps. This is a result of fixing the placement with
-left-most embedded probes, which leaves no room for improvements in the first
-masks.
+Figure~\ref{fig:sequential-bl_blm} shows the normalized border length per
+masking step of a selected $500\times 500$ chip before and after a re-embedding
+phase with Sequential for BLM. It is clear that the reduction of conflicts is
+achieved mainly between steps 45 and 65, at the expense of a small increase in
+conflicts in the final synthesis steps. This is a result of fixing the placement
+with left-most embedded probes, which leaves no room for improvements in the
+first masks.
 
 In terms of CIM, the reductions were slightly higher but Sequential was over 40
 times slower than in the BLM case, taking up to $36.9\%$ of the aggregate time.
@@ -313,12 +314,13 @@ conflicts with increasing $Q$ even beyond 40K, makes it difficult to justify the
 time spent with re-embedding, unless when $Q$ is approaching its limit (number
 of probes on the chip) and one is looking for the best layout possible.
 
-Fig.~\ref{fig:sequential-ci_blm} shows the normalized border length per masking
-step of the same $500\times 500$ chip of Fig.~\ref{fig:sequential-bl_blm} before
-and after a re-embedding phase with Sequential for CIM (placement was produced
-by Greedy also for CIM). Again, reduction of conflicts is restricted to the
-second half of synthesis steps because of the left-most embeddings, although
-with relatively better improvements when compared with the border length case.
+Figure~\ref{fig:sequential-ci_blm} shows the normalized border length per
+masking step of the same $500\times 500$ chip of
+Figure~\ref{fig:sequential-bl_blm} before and after a re-embedding phase with
+Sequential for CIM (placement was produced by Greedy also for CIM). Again,
+reduction of conflicts is restricted to the second half of synthesis steps
+because of the left-most embeddings, although with relatively better
+improvements when compared with the border length case.
 
 Our results also confirm that Sequential has a linear time complexity (if we
 consider that each OSPE operation can be done in constant time). Sequential
@@ -383,7 +385,7 @@ the other hand, have less choices and should be re-embedded first.
 neighbors first.
 
 This priority tries to mimic the \emph{seeded crystal growth} used by the
-Epitaxial placement algorithm (Sect.~\ref{sec:placement_epitaxial}), giving
+Epitaxial placement algorithm (Section~\ref{sec:placement_epitaxial}), giving
 preference to probes with a greater number of re-embedded neighbors. The
 argument behind this priority is that probes should not be re-embedded until a
 sufficient number of its neighbors have found their final embeddings.
@@ -395,7 +397,8 @@ have already been re-embedded in the current iteration.
 
 In case of conflict index minimization, the algorithm looks at all 48 neighbors
 in the $7\times 7$ region centered around $s$, and assigns a weight taking into
-account the distance-dependent function $\gamma$ (see Eq.~\ref{eq:dist_weight}):
+account the distance-dependent function $\gamma$
+(Equation~\ref{eq:dist_weight}):
 \[
 w(s) := \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
         \Ind{s'\text{ has been re-embedded}}
@@ -404,7 +407,7 @@ w(s) := \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
 %%
 where $s'$ ranges over all neighboring spots that are at most three cells away
 (horizontally and vertically) from $s$, in accordance with the conflict index
-model (Sec.~\ref{sec:mlp_conflict_index}).
+model (Section~\ref{sec:mlp_conflict_index}).
 
 With Priority II, once a probe is re-embedded, it is necessary to update the
 weights of its neighbors that habe been previously added to the queue (up to 4

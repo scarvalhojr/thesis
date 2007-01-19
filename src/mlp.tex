@@ -16,7 +16,7 @@ where each $p_k \in \{\text{A,C,G,T}\}^\ast$ is produced by a series of $T$
 synthesis steps. Frequently, but not necessarily, all probes have the same
 length $\ell$. Each synthesis step $t$ uses a mask $M_t$ to induce the addition
 of a particular nucleotide $N_t \in \{\text{A,C,G,T}\}$ to a subset of~$\CalP$
-(Fig.~\ref{fig:masking_process}). The \emph{nucleotide deposition sequence}
+(Figure~\ref{fig:masking_process}). The \emph{nucleotide deposition sequence}
 $N = N_{1} N_{2} \ldots N_{T}$ corresponding to the sequence of nucleotides
 added at each synthesis step is a supersequence of all $p \in \CalP$.
 
@@ -37,10 +37,10 @@ embedding of $p_{k}$ is a $T$-tuple
 $\eps_{k} = (\eps_{k,1}, \eps_{k,2}, \dots, \eps_{k,T})$ in which
 $\eps_{k,t} = 1$ if probe $p_{k}$ receives nucleotide $N_{t}$ (at step~$t$), and
 0 otherwise. In particular, a \emph{left-most embedding} is an embedding in
-which the bases are added as early as possible (as in $\eps_1$ in Fig.~
+which the bases are added as early as possible (as in $\eps_1$ in Figure
 \ref{fig:masking_process}). Similarly, a \emph{right-most embedding} is an
 embedding in which the bases are added as late as possible (as in $\eps_8$ in
-Fig.~\ref{fig:masking_process}).
+Figure~\ref{fig:masking_process}).
 
 We say that an embedding $\eps_k$ is \emph{productive} (unmasked) at step $t$ if
 $\eps_{k,t} = 1$, or \emph{unproductive} (masked) otherwise. The terms
@@ -59,8 +59,8 @@ spots, respectively.
 The deposition sequence is often a repeated permutation of the alphabet, mainly
 because of its regular structure and because such sequences maximize the number
 of distinct subsequences \citep{Chase1976}. The deposition sequence shown in
-Fig.~\ref{fig:masking_process} is a 2.5-time repetition of ACGT, and we thus say
-that it has two and a half \emph{cycles}.
+Figure~\ref{fig:masking_process} is a 2.5-time repetition of ACGT, and we thus
+say that it has two and a half \emph{cycles}.
 
 For cyclic deposition sequences, it is possible to distinguish between two types
 of embeddings: \emph{synchronous} and \emph{asynchronous}. In the former, each
@@ -128,7 +128,7 @@ $(\lambda,\eps)$ is the sum of border lengths over all masks, that is
 
 The \emph{Border Length Minimization Problem} was then defined as the problem of
 finding a layout minimizing the total border length \citep{Hannenhalli2002}. As
-an example, the six masks shown in Fig.~\ref{fig:masking_process} have
+an example, the six masks shown in Figure~\ref{fig:masking_process} have
 $\CalB_1 = 4$, $\CalB_2 = 3$, $\CalB_3 = 5$, $\CalB_4 = 4$, $\CalB_5 = 8$ and
 $\CalB_6 = 9$. The total border length of that layout is 52 (masks 7 to 10 not
 shown).
@@ -271,8 +271,8 @@ account for observation a). We defined it as
 %%
 where $d(s,s')$ is the Euclidean distance between the spots $s$ and $s'$. Note
 that in (\ref{eq:conf_idx}), $s'$ ranges over all neighboring spots that are at
-most three cells away from $s$ (see Fig.~\ref{fig:conflictindex}, left), which is
-in accordance with observation a.
+most three cells away from $s$ (see Figure~\ref{fig:conflictindex}, left), which
+is in accordance with observation a.
 
 In general, we use the terms \emph{close neighbor} or simply \emph{neighbor} of
 a spot $s$ to refer to a spot $s'$ that is at most three cells away (vertically
@@ -365,7 +365,7 @@ understood and has been an active topic of research \citep{Binder2005}.
 
 We propose the use of an exponential function, so that $\omega$ grows
 exponentially from the extremities of the probe to its center (see
-Fig.~\ref{fig:conflictindex}, right). The motivation behind this definition is
+Figure~\ref{fig:conflictindex}, right). The motivation behind this definition is
 that the probability of a successful stable hybridization of a probe with its
 target should increase exponentially with the absolute value of its Gibbs free
 energy, which increases linearly with the length of the longest perfect match
