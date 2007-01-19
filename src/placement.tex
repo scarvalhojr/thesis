@@ -39,11 +39,11 @@ Sequencing by Hybridization (SBH).
 In general, the term Gray code refers to an ordering of a set of elements in
 which successive elements differ in some pre-specified, usually small, way
 \citep{Savage1997}. The construction of Feldman and Pevzner is based on a
-two-dimensional Gray code compososed of string of length $\ell$ over a
+two-dimensional Gray code composed of strings of length $\ell$ over a
 four-letter alphabet. It generates an $2^\ell \times 2^\ell$ array filled with
 $\ell$-mer probes in which each pair of adjacent probes (horizontally or
 vertically) differs by exactly one letter. This construction is illustrated in
-Fig.~\ref{fig:uniform_placement}. An $(\ell + 1)$-mer array is constructed by
+Figure~\ref{fig:uniform_placement}. An $(\ell + 1)$-mer array is constructed by
 first copying the $\ell$-mer array into the upper left quadrant of the
 $(\ell + 1)$-mer array and reflecting it horizontally and vertically into the
 other three quadrants. The letter in front of the probes in the upper left
@@ -53,16 +53,16 @@ are extended in the same way.
 
 It can be shown that such placement generates masks with a minimum number of
 border conflicts if probes are synchronously embedded (see
-Fig.~\ref{fig:uniform_masks}). However, because this construction is restricted
-to uniform arrays and synchronous embeddings, it is of limited practical
-importance for current microarrays.
+Figure~\ref{fig:uniform_masks}). However, because this construction is
+restricted to uniform arrays and synchronous embeddings, it is of limited
+practical importance for current microarrays.
 
 \begin{figure}[t]\centering
 \begin{picture}(435,175)
 \put(0,0){ \makebox(435,175){\includegraphics[width=\textwidth]{place/uniform_masks}}}
 \end{picture}
 \caption{\label{fig:uniform_masks}%
-  Masks for the $8\times 8$ uniform array of Fig.~\ref{fig:uniform_placement}
+  Masks for the $8\times 8$ uniform array of Figure~\ref{fig:uniform_placement}
   when probes are synchronously embedded into \{ACGT\}$^{3}$. Masked spots are
   represented by shaded squares, unmasked spots by white squares. Note that
   masks of the same cycle have the same number of border conflicts.}
@@ -76,10 +76,10 @@ The border length problem on arrays of arbitrary probes was first discussed by
 \citet{Hannenhalli2002}. The article reports that the first Affymetrix chips
 were designed using a heuristic for the traveling salesman problem (TSP). The
 idea is to build a weighted graph with nodes representing probes, and edges
-containing the Hamming distances between their embeddings (see
-Eq.\ref{eq:hamming}). A TSP tour on this graph is heuristically constructed and
+containing the Hamming distances between their embeddings (see Equation
+\ref{eq:hamming}). A TSP tour on this graph is heuristically constructed and
 \emph{threaded} on the array in a row-by-row fashion
-(Fig.~\ref{fig:threading}a).
+(Figure~\ref{fig:threading}a).
 
 For uniform arrays, every solution of the TSP corresponds to a (one-dimensional)
 Gray code since consecutive elements in the tour differ in only one position,
@@ -93,7 +93,7 @@ may have very different embeddings.
 Another problem of this approach is that the TSP is known to be NP-hard
 \citep{Gross2004}, so computing an optimal TSP tour even for a small
 $300\times 300$ array is not feasible, and only fast approximation algorithms
-are suitable. In practice, Hannenhalli and co-workers managed to achieve
+are suitable. In practice, Hannenhalli et.~al.\ managed to achieve
 marginal improvements in tour cost using the 2-opt algorithm for TSP of
 \citet{Lin1973} and an algorithm for weighted matching due to \citet{Gabow1976}.
 Unfortunately, their efforts resulted in only $1.05\%$ reduction in tour cost
@@ -114,18 +114,20 @@ initially used at Affymetrix.
   (0-threading); b) 1-threading; c) 2-threading.}
 \end{figure}
 
-Since improvements in the cost of the TSP tour seemed unlikely, Hannenhalli and
-co-workers turned their attention to the problem of threading the tour on the
+Since improvements in the cost of the TSP tour seemed unlikely, Hannenhalli
+et.~al.\ turned their attention to the problem of threading the tour on the
 chip. They studied several threading alternatives, which they collectively
-called \emph{$k$-threading} (Fig.~\ref{fig:threading}).
+called \emph{$k$-threading} (Figure~\ref{fig:threading}). A $k$-threading is a
+variation of the standard row-by-row threading, in which the right-to-left and
+left-to-right paths are interspaced with alternating upward and downward
+movements over $k$ sites (the row-by-row threading can be seen as a
+$k$-threading with $k=0$); $k$ is called the \emph{amplitude} of the threading.
+Hannenhalli et.~al.\ experimentally observed that 1-threading may reduce total
+border length of layouts constructed with TSP tours in up to 20\% for large
+chips when compared to row-by-row threading.
 
-A $k$-threading is a variation of the standard row-by-row threading, in which
-the right-to-left and left-to-right paths are interspaced with alternating
-upward and downward movements over $k$ sites (the row-by-row threading can be
-seen as a $k$-threading with $k=0$); $k$ is called the \emph{amplitude} of the
-threading. Hannenhalli and co-workers experimentally observed that 1-threading
-may reduce total border length of layouts constructed with TSP tours in up to
-20\% for large chips when compared to row-by-row threading.
+From now on, we will use the term TSP\,+$k$-threading to refer to the method of
+computing a TSP tour and threading it on the array using $k$-threading.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Epitaxial placement}
@@ -142,9 +144,9 @@ The algorithm starts by placing a random probe in the center of the array and
 continues to insert probes in spots adjacent to already-filled spots. Priority
 is given to spots whose all four neighbors are filled, in which case a probe
 with the minimum number of border conflicts with the neighbors is placed.
-Otherwise, all spots with $i \geq 1$ filled neighbors are examined. For each
+Otherwise, all spots with $1 \leq i < 4$ filled neighbors are examined. For each
 spot $s$, the algorithm finds a non-assigned probe~$p$ whose number of border
-conflicts with the filled neighbors of $s$, $c(s,p)$, is minimal, and assigns a
+conflicts with the filled neighbors of $s$, $c(s,p)$, is minimal and assigns a
 normalized cost $\bar{c}(s,p) := \sigma_i \cdot c(s,p) / i$ for this assignment,
 where $0 < \sigma_i \leq 1$ are scaling coefficients (the authors propose
 $\sigma_1 = 1$, $\sigma_2 = 0.8$, and $\sigma_3 = 0.6$). The assignment with
@@ -152,18 +154,19 @@ minimum $\bar{c}(s,p)$ is made and the procedure is repeated until all probes
 have been placed.
 
 In order to avoid repeated cost computations, the authors propose keeping a list
-of probes candidates, for each spot, sorted by their normalized costs. This list
-must be updated whenever one of its neighbors is filled, thus it is compiled at
+of probe candidates, for each spot, sorted by their normalized costs. This list
+must be updated whenever one of its neighbors is filled; thus, it is updated at
 most four times (but only two times on average).
 
-With this algorithm, Kahng and co-workers claim a further 10\% reduction in
-border conflicts over TSP\,+\,1-threading. However, the Epitaxial algorithm have
+With this algorithm, Kahng et.~al.\ claim a further 10\% reduction in
+border conflicts over the TSP\,+\,1-threading approach of
+\citet{Hannenhalli2002}. However, the Epitaxial algorithm has
 at least quadratic time complexity as it examines every non-placed probe to fill
 each spot, and large memory requirements if a list of probe candidates is kept
 for each spot. Hence, like the TSP approach, it does not scale well to large
 chips. In their experiments, the Epitaxial algorithm needed 274 seconds to
 design a $100\times 100$ chip, but $4\,441$ seconds to design a $200\times 200$
-chip, that is, a $16.2$-fold increase in running time for a 4-fold increase in
+chip. That is a $16.2$-fold increase in running time for a 4-fold increase in
 number of spots. Chips of larger dimensions could not be computed because of
 prohibitively large running time and memory requirements.
 
@@ -189,17 +192,22 @@ prohibitively large running time and memory requirements.
 
 The Sliding-Window Matching algorithm \citep{Kahng2003}, SWM for short, is not
 exactly a placement algorithm as it iteratively improves an existing placement
-that can be constructed, for instance, by TSP\,+\,1-threading.
+that can be constructed, for instance, by TSP\,+\,1-threading (Section
+\ref{sec:placement_threading}).
 
 The authors noted that the TSP tour can be conveniently substituted by
-lexicographically sorting the probe sequences or their binary embedding vectors
-with a linear-time radix sort. The sorting is several times faster but it is
-also likely to produce a worse initial placement than the TSP, with consecutive
-embeddings being similar only in their first synthesis steps. The authors argue
-that this is of little importance in practice given that this placement is only
-used as a starting point for the SWM algorithm, and the lexicographical sorting
-should be the choice for large microarrays because computing a TSP tour takes
-prohibitively long for chips larger than $500\times 500$.
+lexicographically sorting the probe sequences or, alternatively, their binary
+embedding vectors with a linear-time radix sort. The sorting is faster, but it
+is also likely to produce a worse initial placement than the TSP tour, with
+consecutive embeddings being similar only in their first synthesis steps. The
+authors argue that this is of little importance in practice given that this
+placement is only used as a starting point for the SWM algorithm, and the
+lexicographical sorting should be the choice for large microarrays because
+computing a TSP tour takes prohibitively long for chips larger than
+$500\times 500$ spots. (From now on, we will use the term
+sorting\,+$k$-threading, or simply $k$-threading, to refer to the method of
+sorting probes lexicographically and threading them on the array using
+$k$-threading.)
 
 As its name implies, SWM works inside a window that starts at the top left of
 the chip and slides from left to right, top to bottom, while maintaining a
@@ -208,22 +216,22 @@ right-end of the chip, it is re-started at the left-end of the next set of rows,
 also retaining an overlap with the preceding set of rows.
 
 At each iteration, the algorithm attempts to reduce the total border length
-inside the window by relocating some of its probes (Fig.~\ref{fig:swm}a). First,
-a random maximal independent set of spots is selected, and the probes assigned
-to these spots are removed. The term independent refers to the fact that
-selected spots can be re-assigned to probes without affecting the border length
-of other selected spots. The algorithm then creates a bipartite graph with nodes
-representing the removed probes and the now vacant spots (Fig.~\ref{fig:swm}b).
-The edges of this graph are weighted with the number of border conflicts that
-are generated by the corresponding assignment.  Finally, a minimum weight
-perfect matching on this graph is computed, and the indicated assignments are
-made (Fig.~\ref{fig:swm}c).
+inside the window by relocating some of its probes (Figure~\ref{fig:swm}a).
+First, a random maximal independent set of spots is selected, and the probes
+assigned to these spots are removed. The term independent refers to the fact
+that selected spots can be re-assigned to probes without affecting the border
+length of other selected spots. The algorithm then creates a bipartite graph
+with nodes representing the removed probes and the now vacant spots
+(Figure~\ref{fig:swm}b). The edges of this graph are weighted with the number of
+border conflicts that are generated by the corresponding assignment.  Finally, a
+minimum weight perfect matching on this graph is computed, and the indicated
+assignments are made (Figure~\ref{fig:swm}c).
 
 A minimum weight perfect matching requires polynomial time \citep{Gross2004},
 but the small graphs generated by SWM can be computed rather quickly. The
 authors experimentally observed that the best results are obtained with small
-window sizes (e.g. $6\times 6$) and an overlap of half the window size. More
-over, employing less effort in each window and executing more cycles of
+window sizes (e.g. $6\times 6$) and an overlap of half the window size.
+Moreover, employing less effort in each window and executing more cycles of
 optimization gives better results than more effort in each window and less
 cycles.
 
@@ -231,11 +239,11 @@ Selecting an independent set of spots ensures that the cost of each new
 assignment can be computed independently of the other assignments. The SWM was
 designed for border length minimization (BLM) and it takes advantage of the fact
 that, in this model, an independent set of spots can be constructed by selecting
-sites that are not immediate neighbors (spots that do not share a common
-border). SWM can be adapted for conflict index minimization (CIM) by using
-larger windows containing relatively sparse independent sets (to our knowledge,
-this has not been implemented yet). Therefore several random independent sets
-should be constructed before moving the window.
+spots that do not share a common border. SWM can be adapted for conflict index
+minimization (CIM) by using larger windows containing relatively sparse
+independent sets (to our knowledge, this has not been implemented yet).
+Therefore several random independent sets should be constructed before moving
+the window.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Row-Epitaxial}
@@ -244,17 +252,17 @@ should be constructed before moving the window.
 Row-Epitaxial \citep{Kahng2003} is a variant of the Epitaxial algorithm with two
 main differences introduced to improve scalability: i) spots are filled in a
 pre-defined order, namely, from top to bottom, left to right, and ii) only a
-limited number $Q$ of probes candidates are considered for filling each spot.
+limited number $Q$ of probe candidates are considered for filling each spot.
 
 Like SWM, Row-Epitaxial improves an initial placement that can be constructed
-by, for example, Radix-sort\,+\,1-threading. For each spot $s$ with a probe $p$,
+by, for example, sorting\,+\,1-threading. For each spot $s$ with a probe $p$,
 it looks at the next $Q$ probes that lie in close proximity (to the right or
 below $s$), and swaps $p$ with the probe that generates the minimum number of
 border conflicts between $s$ and its left and top neighbors.
 
 In the experiments conducted by \citet{Kahng2003}, Row-Epitaxial was the best
 large-scale placement algorithm (for BLM), achieving up to 9\% reduction in
-border conflicts over the TSP\,+\,1-threading, whereas SWM achieved slightly
+border conflicts over TSP\,+\,1-threading, whereas SWM achieved slightly
 worse results but required significantly less time.
 
 Row-Epitaxial can also be adapted to CIM by swapping a probe of a spot $s$ with
@@ -285,13 +293,13 @@ difference due to varying $k$ for the threading were rather small for
 Row-Epitaxial --- at most $0.78\%$ in normalized border length (from $16.9760$
 with $k=0$ to $17.1085$ with $k=4$) and $0.26\%$ in average conflict index (from
 $448.0140$ with $k=0$ to $449.1653$ with $k=4$), both on a $800\times 800$ chip
-with $Q=5$K.
+with $Q=5\,000$.
 
 \begin{table}[p!]\centering
 \caption{\label{tab:reptx}
   Normalized border length and average conflict index of layouts produced by
   Row-Epitaxial (Row-Eptx) on random chips of various dimensions, with initial
-  layouts produced by Radix-sort\,+\,$k$-threading. Running times are reported
+  layouts produced by sorting\,+\,$k$-threading. Running times are reported
   in minutes and include the time for $k$-threading and Row-Epitaxial. All
   results are averages over a set of five chips.}
 \footnotesize{
@@ -378,45 +386,44 @@ disadvantage of the $k$-threading\,+\,Row-Epitaxial approach is that each swap
 made by Row-Epitaxial shuffles the probes in the not-changed spots, destroying
 the lexicographical order used during the threading.
 
-In this section, we present a new placement algorithm, called Greedy, that
-merges the Row-Epitaxial greedy heuristic with a $k$-threading filling strategy
-in a single phase, using a linked list of probes to maintain the probe order
-during the whole placement.
-
-Like Row-Epitaxial, Greedy fills the spots in a greedy fashion, i.e., for each
-spot $s$, it examines $Q$ probe candidates and chooses the one that can be
-placed at $s$ with minimum cost (Greedy can also be easily implemented for
-border length as well as conflict index minimization).
+In this section, we present a new placement algorithm, Greedy, that combines the
+Row-Epitaxial greedy heuristic and a $k$-threading filling strategy in a single
+phase, using a linked list of probes to maintain the probe order during the
+whole placement. Like Row-Epitaxial, Greedy fills the spots in a greedy fashion,
+i.e., for each spot $s$, it examines $Q$ probe candidates and chooses the one
+that can be placed at $s$ with minimum cost (Greedy can also be easily
+implemented for border length as well as for conflict index minimization).
 
 There are two main differences to Row-Epitaxial. First, instead of (re-)filling
 spots row-by-row, spots are filled with $k$-threading (there is no need for an
 initial layout). Perhaps more importantly, Greedy sorts the probes
 lexicographically and keeps them in a doubly-linked list. This list is used to
 maintain the lexicographical order during placement. Moreover, it is also used
-to improve the chances of finding a candidate with fewer conflicts with the last
-placed probe (which will be its neighbor on the chip): Once a probe $p$ is
+to improve the chances of finding a candidate having fewer conflicts with the
+last placed probe (which will be its neighbor on the chip): Once a probe $p$ is
 selected to fill a certain spot, it is removed from the list and the next search
-of candidades examines the probes around $p$'s former position in the list,
+of candidates examines the probes around $p$'s former position in the list,
 e.g., $Q/2$ probes to the left and to the right of $p$.
 
 Table~\ref{tab:greedy} shows the results of using Greedy for both border length
-and conflict index minimization on the same set of (random) chips of
-Table~\ref{tab:reptx}. The best layouts were always achieved with $k=0$.
+and conflict index minimization on the same set of (random) chips that have been
+previously used for the experiments with Row-Epitaxial
+(Table~\ref{tab:reptx}). The best layouts were always achieved with $k=0$.
 Interestingly, increasing the amplitude of the threading from $k=1$ to $k=4$
-always improved the results in terms of border length. In term os conflict
-index, increasing $k$ from 1 to 3 worsened the results, although increasing it
-from 3 to 4, most of the times, improved the layouts.
+always improved the results in terms of border length. In terms of conflict
+index, increasing $k$ from 1 to 3 worsened the results; in most cases,
+increasing it from 3 to 4 improved the results.
 
 In terms of BLM, Greedy and Row-Epitaxial produced similar results, with the
 best layout of Greedy being sometimes marginally better and sometimes marginally
 worse than the best layout of Row-Epitaxial. In terms of CIM, however, Greedy
 was constantly and significantly better than Row-Epitaxial, achieving up to
 $5.65\%$ reduction in average conflic index (from $415.6470$ to $392.1786$) on a
-$800\times 800$ chip with $Q=20$K.
+$800\times 800$ chip with $Q=20\,000$.
 
 In our results, Greedy was between $13.9\%$ and $59.9\%$ slower than
-Row-epitaxial in the BLM case ($19.7\%$ on average, overall), and between $3.7\%$
-and $18.1\%$ in the CIM case (only $5.6\%$ overall). The difference between
+Row-epitaxial in the BLM case ($19.7\%$ on average), and between $3.7\%$
+and $18.1\%$ in the CIM case (only $5.6\%$ on average). The difference between
 Row-epitaxial and Greedy drops in the CIM case because the extra time spent in
 computing the cost of each candidate is higher than in the BLM case, which
 reduces the impact of the time required to keep the doubly-linked list.
@@ -514,7 +521,7 @@ $800^2$ &  5K 0 & {\bf 16.9760} & 12.2 & {\bf 16.9124} & 15.3 &  & {\bf 448.0140
 \end{table}
 
 We also observed that, in terms of border length, increasing $Q$ above 5K has
-little positive effect (see Fig.~\ref{fig:greedy_tradeoff}). For instance, on
+little positive effect (see Figure~\ref{fig:greedy_tradeoff}). For instance, on
 $800\times 800$ chips, increasing $Q$ from 5K to 20K reduced the normalized
 border length by only $1.27\%$ (from $16.9124$ to $16.6980$ with $k=0$), while
 requiring approximately six times more time. In terms of conflict index,
@@ -528,31 +535,31 @@ probably because, in this measure, there is more room for optimization as the
 conflicts can be moved to the extremities of the probes (while retaining the
 same number of border conflicts) and a larger number of neighbors are involved.
 
-Fig.~\ref{fig:greedy_blm} shows the normalized border length per masking step of
-layouts produced by Greedy for a $500\times 500$ chip with border length and
+Figure~\ref{fig:greedy_blm} shows the normalized border length per masking step
+of layouts produced by Greedy for a $500\times 500$ chip with border length and
 conflict index minimization. With BLM, the generated layout has most border
 conflicts concentrated between steps 7 and 58. The last masks of this layout
 have low levels of border conflicts because the probes are left-most embedded,
 which leaves most embeddings in an unproductive state during the final synthesis
-steps. The first masks also have relatively few conflits, and this is a result
-of the lexicographical sorting of probes. A representation of selected
-photolithographic masks for this layout are shown in
-Fig.~\ref{fig:greedy-bl_masks}. In this figure, it is possible to see the layers
-of masked and unmasked spots in masks $M_1 \dots M_8$ that result from sorting
-probes lexicographically. Mask $M_9 \dots M_{62}$ are very ``noisy'' as there
-seems to be little regularity in their arrangement. From $M_{62}$ on, masks
-start to get ``darker'' as most probes have been already fully synthesized.
+steps. As a result of the lexicographical sorting of probes, the first masks
+also have relatively few conflicts. A representation of selected
+photolithographic masks for this layout are shown in Figure
+\ref{fig:greedy-bl_masks}. Layers of masked and unmasked regions that result
+from sorting probes lexicographically can be seen in masks $M_1 \dots M_8$. Mask
+$M_9 \dots M_{62}$ are very ``noisy'' as there seems to be little regularity in
+their arrangement. From $M_{62}$ on, masks start to get ``darker'' as most
+probes have been already fully synthesized.
 
 With CIM, Greedy shifts border conflicts away from the steps that synthesize the
-probes' middle bases (between steps 20 and 45; see Fig.~\ref{fig:greedy_blm}),
-which effectively reducing the average conflict index. Not surprinsingly, this
+probes' middle bases (between steps 20 and 45; see Figure~\ref{fig:greedy_blm}),
+which effectively reduces the average conflict index. Not surprinsingly, this
 reduction comes at the expense of an increase in total border length --- the
 normalized border length of this particular chip rose from $17.3513$ with BLM to
-$19.8461$ with CIM. Fig.~\ref{fig:greedy-ci_masks} shows a representation of
+$19.8461$ with CIM. Figure~\ref{fig:greedy-ci_masks} shows a representation of
 selected masks for this layout. Note that the first masks ($M_1 \dots M_4$)
 still exhibit a ``layered'' structured, althought the layers are much narrower
-and the masks noisier than the first masks of Fig.~\ref{fig:greedy-bl_masks}. In
-the middle masks $M_{20} \dots M_{45}$, especially between $M_{25}$ and
+and the masks noisier than the first masks of Figure~\ref{fig:greedy-bl_masks}.
+In the middle masks $M_{20} \dots M_{45}$, especially between $M_{25}$ and
 $M_{40}$, it is possible to see clusters of masked and unmasked spots that cause
 the reduction in average conflict index.
 
@@ -646,12 +653,12 @@ the reduction in average conflict index.
 In this chapter, we have surveyed placement algorithms for the Microarray Layout
 Problem, including an optimal placement strategy for uniform arrays based on a
 two-dimensional Gray code. For general arrays, we have presented more
-experimental results with Row-epitaxial, the best known placement algorithm to
+experimental results with Row-Epitaxial, the best known placement algorithm to
 date, and studied the impact of the choice of threading for its initial layout.
 
-We have also introduced a new placement algorithm, called Greedy, which achieved
-similar results in terms of BLM and better results in terms of CIM when compared
-to Row-epitaxial. However, because Greedy is significantly slower in the BLM
-case, Row-epitaxial should still be the choice in this case. For CIM, however,
-we believe that the improvements achieved by Greedy over Row-epitaxial justify
-the small increase in running times.
+We have also introduced a new placement algorithm, Greedy. Greedy achieved
+similar results in terms of BLM and better results in terms of CIM compared to
+Row-Epitaxial. For BLM, Row-Epitaxial is faster than Greedy and should still be
+the method of choice. For CIM, however, we believe that the improvements
+achieved by Greedy over Row-Epitaxial justify the small increase in running
+times.
