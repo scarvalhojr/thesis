@@ -7,12 +7,13 @@ In this chapter we give a more precise definition of the Microarray Layout
 Problem (MLP) and define criteria for evaluating a given layout. The description
 that follows assumes that probes are synthesized with photolithographic masks,
 but the concepts also apply to the maskless production (with micromirror
-arrays). Two evaluation criteria are presented: \emph{border length} and \emph{
-conflict index}. As shown later, the conflict index model can be seen as a
+arrays). Two evaluation criteria are presented: \emph{border length} and
+\emph{conflict index}. As shown later, the conflict index model can be seen as a
 generalization of the border length model.
 
 Formally, we have a set of probes $\CalP = \{p_{1}, p_{2}, \dots, p_{n}\}$,
-where each $p_k \in \{\text{A,C,G,T}\}^\ast$ is produced by a series of $T$
+where each $p_k \in \{\text{A,C,G,T}\}^\ast$ with $1 \leq k \leq n$ is produced
+by a series of $T$
 synthesis steps. Frequently, but not necessarily, all probes have the same
 length $\ell$. Each synthesis step $t$ uses a mask $M_t$ to induce the addition
 of a particular nucleotide $N_t \in \{\text{A,C,G,T}\}$ to a subset of~$\CalP$
@@ -27,8 +28,8 @@ $p_k \in \CalP$. Note that we usually refer to $s$ as containing a single probe
 $p_k$ although, in practice, it contains several million copies of it. Each
 probe is synthesized at a unique spot, hence there is a one-to-one assignment
 between probes and spots (if we assume that there are as many spots as probes,
-i.e., $m=n$). Real microarrays may have complex physical structures but, in this
-thesis, we assume that the spots are arranged in a rectangular grid with
+i.e., $m=n$). Real microarrays may have complex physical structures but
+we assume that the spots are arranged in a rectangular grid with
 $n_r$ rows and $n_c$ columns. We also assume that probes can be assigned to any
 spot.
 
@@ -37,9 +38,9 @@ embedding of $p_{k}$ is a $T$-tuple
 $\eps_{k} = (\eps_{k,1}, \eps_{k,2}, \dots, \eps_{k,T})$ in which
 $\eps_{k,t} = 1$ if probe $p_{k}$ receives nucleotide $N_{t}$ (at step~$t$), and
 0 otherwise. In particular, a \emph{left-most embedding} is an embedding in
-which the bases are added as early as possible (as in $\eps_1$ in Figure
-\ref{fig:masking_process}). Similarly, a \emph{right-most embedding} is an
-embedding in which the bases are added as late as possible (as in $\eps_8$ in
+which the bases are added as early as possible (as in $\eps_1$ in
+Figure~\ref{fig:masking_process}). Similarly, a \emph{right-most embedding} is
+an embedding in which the bases are added as late as possible (as in $\eps_8$ in
 Figure~\ref{fig:masking_process}).
 
 We say that an embedding $\eps_k$ is \emph{productive} (unmasked) at step $t$ if
@@ -104,7 +105,7 @@ functions: total border length and total conflict index.
 \section{Border length}
 \label{sec:mlp_border_length}
 
-The first formal definition of unintended illumination problem was given by
+The first formal definition of the unintended illumination problem was given by
 \citet{Hannenhalli2002}, who defined the \emph{border length}~$\CalB_t$ of a
 mask~$M_{t}$ as the number of borders separating masked and unmasked spots at
 synthesis step~$t$, that is, the number of border conflicts in $M_{t}$.
@@ -130,8 +131,8 @@ The \emph{Border Length Minimization Problem} was then defined as the problem of
 finding a layout minimizing the total border length \citep{Hannenhalli2002}. As
 an example, the six masks shown in Figure~\ref{fig:masking_process} have
 $\CalB_1 = 4$, $\CalB_2 = 3$, $\CalB_3 = 5$, $\CalB_4 = 4$, $\CalB_5 = 8$ and
-$\CalB_6 = 9$. The total border length of that layout is 52 (masks 7 to 10 not
-shown).
+$\CalB_6 = 9$. The total border length of that layout is 52 (masks $M_7$ to
+$M_{10}$ are not shown).
 
 \paragraph{Hamming distance.}
 In the next chapters, we refer to the \emph{Hamming distance} $H(k,k')$ between
