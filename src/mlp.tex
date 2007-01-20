@@ -389,7 +389,7 @@ differently, no changes to the algorithms are necessary.
 
 Most of the algorithms discussed in the next chapters can work with border
 length as well as conflict index minimization. In our experiments, we will
-usually present results for both models, making a distinction between border
+usually present results with both measures, making a distinction between border
 length minimization (BLM) and conflict index minimization (CIM).
 
 The relation between these two
@@ -410,7 +410,8 @@ with $n_r$ rows and $n_c$ columns. We thus call $\CalB(\lambda,\eps)/n_b$ the
 \emph{normalized border length} of a given layout $(\lambda,\eps)$. This can be
 further divided by the number of synthesis steps to give the \emph{normalized
 border length per mask} $\CalB(\lambda,\eps)/(n_b \cdot T)$. We may also refer
-to the normalized border length of a particular mask $M_t$ as $B_t/n_b$.
+to the normalized border length of a particular mask $M_t$ as $B_t/n_b$. Since
+$B_t \leq n_b$, $B_t/n_b \leq 1$ and thus $\CalB(\lambda,\eps)/n_b \leq T$.
 
 Similarly, it is useful to divide the total conflict index by the number of
 probes on the chip, and we define the \emph{average conflict index} of a layout
