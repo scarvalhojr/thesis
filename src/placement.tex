@@ -21,7 +21,7 @@ given embeddings.
 \label{sec:placement_uniform}
 
 \citet{Feldman1994} were the first to formally address the unintended
-illumination problem. They showed how a placement for an \emph{uniform array}
+illumination problem. They showed how a placement for a \emph{uniform array}
 with minimum number of border conflicts can be constructed using a
 two-dimensional Gray code. Uniform arrays are arrays containing all $4^\ell$
 probes of a given length $\ell$, which require a deposition sequence of length
@@ -40,7 +40,7 @@ In general, the term Gray code refers to an ordering of a set of elements in
 which successive elements differ in some pre-specified, usually small, way
 \citep{Savage1997}. The construction of Feldman and Pevzner is based on a
 two-dimensional Gray code composed of strings of length $\ell$ over a
-four-letter alphabet. It generates an $2^\ell \times 2^\ell$ array filled with
+four-letter alphabet. It generates a $2^\ell \times 2^\ell$ array filled with
 $\ell$-mer probes in which each pair of adjacent probes (horizontally or
 vertically) differs by exactly one letter. This construction is illustrated in
 Figure~\ref{fig:uniform_placement}. An $(\ell + 1)$-mer array is constructed by
@@ -545,14 +545,14 @@ steps. As a result of the lexicographical sorting of probes, the first masks
 also have relatively few conflicts. A representation of selected
 photolithographic masks for this layout are shown in Figure
 \ref{fig:greedy-bl_masks}. Layers of masked and unmasked regions that result
-from sorting probes lexicographically can be seen in masks $M_1 \dots M_8$. Mask
-$M_9 \dots M_{62}$ are very ``noisy'' as there seems to be little regularity in
-their arrangement. From $M_{62}$ on, masks start to get ``darker'' as most
-probes have been already fully synthesized.
+from sorting probes lexicographically can be seen in masks $M_1 \dots M_8$.
+Masks $M_9 \dots M_{62}$ are very ``noisy'' as there seems to be little
+regularity in their arrangement. From $M_{62}$ on, masks start to get ``darker''
+as most probes have been already fully synthesized.
 
 With CIM, Greedy shifts border conflicts away from the steps that synthesize the
 probes' middle bases (between steps 20 and 45; see Figure~\ref{fig:greedy_blm}),
-which effectively reduces the average conflict index. Not surprinsingly, this
+which effectively reduces the average conflict index. Not surprisingly, this
 reduction comes at the expense of an increase in total border length --- the
 normalized border length of this particular chip rose from $17.3513$ with BLM to
 $19.8461$ with CIM. Figure~\ref{fig:greedy-ci_masks} shows a representation of
@@ -661,4 +661,4 @@ similar results in terms of BLM and better results in terms of CIM compared to
 Row-Epitaxial. For BLM, Row-Epitaxial is faster than Greedy and should still be
 the method of choice. For CIM, however, we believe that the improvements
 achieved by Greedy over Row-Epitaxial justify the small increase in running
-times.
+time.

@@ -31,11 +31,11 @@ conflict index model).
 The optimal embedding of $p$ into $N$ is built by determining the minimum cost
 of embedding a prefix of $p$ into a prefix of $N$: We use an
 $(\ell + 1) \times (T + 1)$ matrix $D$, where $D[i,t]$ is defined as the minimum
-cost of an embedding of $p[1..i]$ into $N[1..t]$. The cost is the sum of
-conflicts induced by the embedding of $p[1..i]$ on its neighbors (when $s$ is
-unmasked and a neighbor is masked), plus the conflicts suffered by $p[1..i]$
-because of the embeddings of its neighbors (when $s$ is masked and a neighbor is
-unmasked).
+cost of an embedding of $p[1..i]$ into $N[1..t]$ for $0 \leq i \leq \ell$,
+$0 \leq t \leq T$. The cost is the sum of conflicts induced by the embedding of
+$p[1..i]$ on its neighbors (when $s$ is unmasked and a neighbor is masked), plus
+the conflicts suffered by $p[1..i]$ because of the embeddings of its neighbors
+(when $s$ is masked and a neighbor is unmasked).
 
 We can compute the value for $D[i,t]$ by looking at two previous entries in the
 matrix: $D[i,t-1]$ and $D[i-1,t-1]$. The reason is that $D[i,t]$ is the minimum
@@ -378,8 +378,8 @@ embeddings of each probe, and one based on the number re-embedded neighbors.
 
 The argument behind this priority is based on the observation that probes with
 more possible embeddings have a greater degree of freedom and can more easily
-``adapt'' to its neighbors. Probes with a restricted number of embeddings, on
-the other hand, have less choices and should be re-embedded first.
+``adapt'' to their neighbors. Probes with a restricted number of embeddings, on
+the other hand, have fewer choices and should be re-embedded first.
 
 \paragraph{Priority II:} Re-embed probes with greater number of re-embedded
 neighbors first.
@@ -415,7 +415,7 @@ with border length minimization, and 48 with conflict index minimization).
 
 \subsection{Results}
 
-Tables \ref{tab:priority_bl} and \ref{tab:priority_ci} shows the results of
+Tables \ref{tab:priority_bl} and \ref{tab:priority_ci} show the results of
 using Priority re-embedding on the same set of arrays used for Sequential
 (Tables \ref{tab:sequential_bl} and \ref{tab:sequential_ci}). In terms of BLM,
 both priorites resulted in negligible improvements when compared to Sequential
