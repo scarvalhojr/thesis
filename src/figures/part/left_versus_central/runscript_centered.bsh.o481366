@@ -1,0 +1,39 @@
+Host: doc075
+Timestamp: Mon Jan 22 20:00:29 MET 2007
+Running 2DCENTRALPART-50-GREEDYPLACER-BL-3K-0-KEEP on SRA_1000x1000-1000000-25-01_random_centered
+
+Reading input file 'SRA_1000x1000-1000000-25-01_random_centered'...
+Cloning chip for later checks...
+Total border length: 61870514 -> normalized: 30.966223223223224
+Running 2DCentralPartitioning-50-GreedyPlacer-BL-3000-0-KeepOrder...
+Elapsed time: 227.439707248 sec
+Total border length: 33937098 -> normalized: 16.985534534534533
+Total time: 227.439707248 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc075
+Timestamp: Mon Jan 22 20:05:15 MET 2007
+Computing border length per mask of SRA_1000x1000-1000000-25-01_2DCENTRALPART-50-GREEDYPLACER-BL-3K-0-KEEP_centered
+
+Reading input file 'SRA_1000x1000-1000000-25-01_2DCENTRALPART-50-GREEDYPLACER-BL-3K-0-KEEP_centered'...
+Running 2DCentralPartitioning-50-GreedyPlacer-BL-3000-0-KeepOrder...
+Elapsed time: 113.353179235 sec
+Total time: 113.353179235 sec
+---------------------------
+Host: doc075
+Timestamp: Mon Jan 22 20:07:33 MET 2007
+Computing average conflict index of SRA_1000x1000-1000000-25-01_2DCENTRALPART-50-GREEDYPLACER-BL-3K-0-KEEP_centered
+
+Reading input file 'SRA_1000x1000-1000000-25-01_2DCENTRALPART-50-GREEDYPLACER-BL-3K-0-KEEP_centered'...
+Average conflict index: 376.2458905138619
+Running 2DCentralPartitioning-50-GreedyPlacer-BL-3000-0-KeepOrder...
+Elapsed time: 537.172416862 sec
+Average conflict index: 375.923294051834
+Total time: 537.172416862 sec
+---------------------------
+Host: doc075
+Timestamp: Mon Jan 22 20:29:22 MET 2007
+
+End of script
+---------------------------
