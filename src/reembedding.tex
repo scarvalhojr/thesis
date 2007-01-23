@@ -56,20 +56,21 @@ U_t := \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
   \cdot \gamma(s',s).
 \]
 
-If $s$ is unproductive (masked) at step $t$, no base is appended to $p[1..i]$,
+If $s$ is unproductive (masked) at step $t$, no base is appended to $p[1..i-1]$,
 but a cost $M_{i,t}$ must be added for the risk of damaging $p$ (by light
 directed at neighboring spots $s'$). Since $D[i,t-1]$ is the minimum cost of
 embedding $p[1..i]$ in $N[1..t-1]$, the minimum cost up to step $t$, if $s$ is
 unmasked, is $D[i,t-1] + M_{i,t}$.
 
-Note that $M_{i,t}$ depends on the number of bases $p$ already contains (that
-is, on $i$): Each unmasked neighbor $s'$ generates a conflict on $p$ with cost
+Note that $M_{i,t}$ depends on the number of bases probe $p$ already contains
+(that is, on $i$): Each unmasked neighbor $s'$ generates a conflict on $p$ with
+cost
 \[
-\gamma(s,s') \cdot c \cdot \exp[\theta\cdot (1+\min\{i,\ell-i\})],
+\gamma(s,s') \cdot c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\})),
 \]
 in accordance with (\ref{eq:pos_mult})--(\ref{eq:b_ell}). Thus,
 \[
-M_{i,t} := c \cdot \exp[\theta\cdot (1+\min\{i,\ell-i\})] \cdot
+M_{i,t} := c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\})) \cdot
 \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
 \Ind{\eps_{k(s'),t}=1}  \cdot \gamma(s,s').
 \]
@@ -116,9 +117,9 @@ $D[0,0]$, similarly to the procedure used to build an optimal global alignment.
 This takes $O(T)$ time.
 
 The OSPE algorithm is the basic operation of several post-placement optimization
-algorithms: Chessboard, Greedy and Batched Greedy, Sequential as well as our new
-Priority re-embedding algorithm. The main difference between these algorithms
-lies in the order in which the probes are re-embedded.
+algorithms: Chessboard, Greedy and Batched Greedy, and Sequential, as well as
+our new Priority re-embedding algorithm. The main difference between these
+algorithms lies in the order in which the probes are re-embedded.
 
 Since OSPE never increases the amount of conflicts in the region around the
 re-embedded probe, optimization algorithms can execute several re-embedding
@@ -135,7 +136,7 @@ executed.
 \label{sec:reembed_chessboard}
 
 The Chessboard re-embedding algorithm \citep{Kahng2002} was initially designed
-for border length minimization, and it takes advantage of the fact that, in this
+for border length minimization and it takes advantage of the fact that, in this
 model, a chip can be bi-colored like a chessboard, in such a way that the
 embeddings of probes located on white spots are independent of those placed on
 black spots (Figure~\ref{fig:chessboard}a).
@@ -186,12 +187,12 @@ pre-selects several independent spots for re-embedding and thus sacrifices its
 greedy nature in favour of running time by postponing the update of gains.
 
 Like Chessboard, Greedy and Batched Greedy were initially developed for border
-length minmization, but they can also be extended for conflict index
+length minmization, and they can also be extended for conflict index
 minimization. The main difference is that, once a probe is re-embedded, more
 neighbors need to be updated. For Batched Greedy, the selection of independent
 spots need to take into account the minimum distance of four cells (horizonally
 and vertically) between spots, in accordance with the conflict index model
-(Section~\ref{sec:mlp_conflict_index}). Hence fewer spots may be be re-embedded
+(Section~\ref{sec:mlp_conflict_index}). Hence fewer spots may be re-embedded
 in the same iteration.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -200,9 +201,9 @@ in the same iteration.
 
 The Sequential algorithm \citep{Kahng2003a} employs a much simpler and,
 surprisingly, more efficient strategy. The algorithm just proceeds spot by spot,
-from top to bottom, left to right, re-embedding each probe optimally in regards
+from top to bottom, left to right, re-embedding each probe optimally in regard
 to its neighbors. Once the end of the array is reached, Sequential restarts at
-the top left of the array for the next iteration.
+the top left corner of the array for the next iteration.
 
 The algorithm is not only simple but also fast since there is no need to compute
 achievable gains for each spot. Nonetheless, Sequential achieved the greatest
@@ -297,7 +298,8 @@ $800\times 800$ chip, Greedy placement with $Q=20$K and two passes of Sequential
 re-embedding produced, in approximately half of the time, a layout with only
 $0.14\%$ more border conflicts than Greedy with $Q=40$K and no re-embedding
 ($16.6258$ NBL in $96.4$ minutes versus $16.6026$ in $189.0$ minutes,
-respectively; data not shown).
+respectively; data not shown). In other words, running Sequential is sometimes
+more efficient than spending more time during placement.
 
 Figure~\ref{fig:sequential-bl_blm} shows the normalized border length per
 masking step of a selected $500\times 500$ chip before and after a re-embedding
@@ -322,10 +324,10 @@ reduction of conflicts is restricted to the second half of synthesis steps
 because of the left-most embeddings, although with relatively better
 improvements when compared with the border length case.
 
-Our results also confirm that Sequential has a linear time complexity (if we
-consider that each OSPE operation can be done in constant time). Sequential
-performed around $19\,400$ re-embeddings per second in the BLM case and around
-$475$ re-embeddings per second in the CIM case, on average.
+Our results gives further indication that Sequential has approximately linear
+time complexity (if we consider that each OSPE operation can be done in constant
+time). Sequential performed around $19\,400$ re-embeddings per second in the BLM
+case and around $475$ re-embeddings per second in the CIM case, on average.
 
 \begin{figure}[t]\centering
 \includegraphics{reembed/sequential/bl}
@@ -367,7 +369,7 @@ embeddings among all probes as pivots.)
 
 The priority queue is used to retrieve the next spot $s$ whose probe $p$ should
 be re-embedded, according to the defined priority. Once a probe $p$ is
-retrieved, it is optimally re-embedded in regards to its neighbors, and all four
+retrieved, it is optimally re-embedded in regard to its neighbors, and all four
 spots adjacent to $s$ are added to the queue (if they have not been added
 previously).
 
@@ -410,7 +412,7 @@ where $s'$ ranges over all neighboring spots that are at most three cells away
 model (Section~\ref{sec:mlp_conflict_index}).
 
 With Priority II, once a probe is re-embedded, it is necessary to update the
-weights of its neighbors that habe been previously added to the queue (up to 4
+weights of its neighbors that have been previously added to the queue (up to 4
 with border length minimization, and 48 with conflict index minimization).
 
 \subsection{Results}
