@@ -1,0 +1,1 @@
+awk -f parselog.awk $1 | sort -k1,1 -k2,2 | awk '{printf("%s\t%s\t%8.4f\t%8.4f\t%8.2f\n",$1,$2,$3,$4,$5)}'

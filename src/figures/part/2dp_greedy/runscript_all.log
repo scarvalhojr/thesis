@@ -1,0 +1,1374 @@
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:26:44 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 81.274818327 sec
+Average conflict index: 342.0100309076518
+Total time: 81.274818327 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:30:14 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 105.115233141 sec
+Average conflict index: 341.31878458567235
+Total time: 105.115233141 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:34:03 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 134.743361642 sec
+Average conflict index: 341.23911179034155
+Total time: 134.743361642 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:38:23 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 163.08463606 sec
+Average conflict index: 341.17619702284634
+Total time: 163.08463606 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:43:09 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 229.079552736 sec
+Average conflict index: 341.53104941561446
+Total time: 229.079552736 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:49:00 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 81.836160573 sec
+Average conflict index: 342.2871259165127
+Total time: 81.836160573 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:52:28 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 115.064174236 sec
+Average conflict index: 341.5447308715157
+Total time: 115.064174236 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 21:56:29 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 135.560219271 sec
+Average conflict index: 341.33445400106564
+Total time: 135.560219271 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:00:50 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 149.915421642 sec
+Average conflict index: 341.3531564147027
+Total time: 149.915421642 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:05:26 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 253.104582391 sec
+Average conflict index: 341.69958921343226
+Total time: 253.104582391 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:11:45 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 80.416252892 sec
+Average conflict index: 342.1879428940204
+Total time: 80.416252892 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:15:12 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 104.989683448 sec
+Average conflict index: 341.3667856833955
+Total time: 104.989683448 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:19:02 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 134.901323791 sec
+Average conflict index: 341.2137479228271
+Total time: 134.901323791 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:23:23 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 162.604487879 sec
+Average conflict index: 341.1618408263004
+Total time: 162.604487879 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:28:11 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 251.696193897 sec
+Average conflict index: 341.6184357290752
+Total time: 251.696193897 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:34:29 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 75.235509939 sec
+Average conflict index: 342.03583575809273
+Total time: 75.235509939 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:37:51 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 103.874548405 sec
+Average conflict index: 341.2775552790204
+Total time: 103.874548405 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:41:40 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 145.998523981 sec
+Average conflict index: 341.20338107501607
+Total time: 145.998523981 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:46:12 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 163.500237049 sec
+Average conflict index: 341.1664840278307
+Total time: 163.500237049 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:51:03 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 227.137960037 sec
+Average conflict index: 341.51853843171466
+Total time: 227.137960037 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 22:56:56 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 80.433938883 sec
+Average conflict index: 342.4944366027772
+Total time: 80.433938883 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:00:23 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 103.857501916 sec
+Average conflict index: 341.54444904530095
+Total time: 103.857501916 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:04:16 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 136.836275559 sec
+Average conflict index: 341.40250627750225
+Total time: 136.836275559 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:08:38 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 162.944541507 sec
+Average conflict index: 341.3284726428666
+Total time: 162.944541507 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:13:27 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 234.859588255 sec
+Average conflict index: 341.72487915632144
+Total time: 234.859588255 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:19:27 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 75.518780427 sec
+Average conflict index: 342.0100309076518
+Total time: 75.518780427 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:22:49 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 113.833705423 sec
+Average conflict index: 341.31878458567235
+Total time: 113.833705423 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:26:50 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 134.844464739 sec
+Average conflict index: 341.23911179034155
+Total time: 134.844464739 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:31:11 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 149.723140175 sec
+Average conflict index: 341.17619702284634
+Total time: 149.723140175 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:35:47 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 250.138882171 sec
+Average conflict index: 341.53104941561446
+Total time: 250.138882171 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:42:01 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 75.994821567 sec
+Average conflict index: 342.2871259165127
+Total time: 75.994821567 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:45:27 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 115.075742518 sec
+Average conflict index: 341.5447308715157
+Total time: 115.075742518 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:49:28 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 135.713609985 sec
+Average conflict index: 341.33445400106564
+Total time: 135.713609985 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:53:50 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 163.870415659 sec
+Average conflict index: 341.3531564147027
+Total time: 163.870415659 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Tue Jan 23 23:58:39 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 231.782673204 sec
+Average conflict index: 341.69958921343226
+Total time: 231.782673204 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:04:37 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 74.761318759 sec
+Average conflict index: 342.1879428940204
+Total time: 74.761318759 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:07:57 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 104.922145129 sec
+Average conflict index: 341.3667856833955
+Total time: 104.922145129 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:11:46 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 146.706546032 sec
+Average conflict index: 341.2137479228271
+Total time: 146.706546032 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:16:19 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 162.554046871 sec
+Average conflict index: 341.1618408263004
+Total time: 162.554046871 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:21:07 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 230.22784015 sec
+Average conflict index: 341.6184357290752
+Total time: 230.22784015 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:27:02 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 75.130437666 sec
+Average conflict index: 342.03583575809273
+Total time: 75.130437666 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:30:24 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 112.529069819 sec
+Average conflict index: 341.2775552790204
+Total time: 112.529069819 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:34:19 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 146.023247212 sec
+Average conflict index: 341.20338107501607
+Total time: 146.023247212 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:38:52 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 163.504079781 sec
+Average conflict index: 341.1664840278307
+Total time: 163.504079781 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:43:43 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 247.869783471 sec
+Average conflict index: 341.51853843171466
+Total time: 247.869783471 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:50:01 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-20-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-20-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 80.814759959 sec
+Average conflict index: 342.4944366027772
+Total time: 80.814759959 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:53:28 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-25-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-25-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 112.543083909 sec
+Average conflict index: 341.54444904530095
+Total time: 112.543083909 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 00:57:26 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-30-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-30-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 148.537030788 sec
+Average conflict index: 341.40250627750225
+Total time: 148.537030788 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 01:02:01 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-35-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-35-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 149.390642252 sec
+Average conflict index: 341.3284726428666
+Total time: 149.390642252 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 01:06:37 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-40-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-40-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 256.033944126 sec
+Average conflict index: 341.72487915632144
+Total time: 256.033944126 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483655
+Timestamp: Wed Jan 24 01:13:00 MET 2007
+
+End of script
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 11:19:58 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 35.052812776 sec
+Average conflict index: 345.92328381057234
+Total time: 35.052812776 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 11:22:38 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 369.911070158 sec
+Average conflict index: 341.6871041585806
+Total time: 369.911070158 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 11:30:53 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 521.410075129 sec
+Average conflict index: 341.82954416049574
+Total time: 521.410075129 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 11:41:39 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 35.066051733 sec
+Average conflict index: 346.0700167541787
+Total time: 35.066051733 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 11:44:17 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 369.146698325 sec
+Average conflict index: 341.77429603186357
+Total time: 369.146698325 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 11:52:31 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 504.690002356 sec
+Average conflict index: 341.9362496902145
+Total time: 504.690002356 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:02:59 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 35.073706736 sec
+Average conflict index: 345.91880950433875
+Total time: 35.073706736 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:05:40 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 363.809209385 sec
+Average conflict index: 341.70098355523857
+Total time: 363.809209385 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:13:49 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 498.226855073 sec
+Average conflict index: 341.9010992218269
+Total time: 498.226855073 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:24:12 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 35.091939212 sec
+Average conflict index: 345.8787551290873
+Total time: 35.091939212 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:26:52 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 361.938459404 sec
+Average conflict index: 341.86941827069865
+Total time: 361.938459404 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:34:59 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 507.150163911 sec
+Average conflict index: 341.8293444528462
+Total time: 507.150163911 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:45:31 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 34.944158962 sec
+Average conflict index: 346.1632097898268
+Total time: 34.944158962 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:48:12 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 363.950148919 sec
+Average conflict index: 341.72577370633604
+Total time: 363.950148919 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 12:56:20 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 499.536752575 sec
+Average conflict index: 341.8209931140687
+Total time: 499.536752575 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:06:45 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 33.665828562 sec
+Average conflict index: 345.92328381057234
+Total time: 33.665828562 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:09:23 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 368.880762751 sec
+Average conflict index: 341.6871041585806
+Total time: 368.880762751 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:17:37 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 521.252183632 sec
+Average conflict index: 341.82954416049574
+Total time: 521.252183632 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:28:23 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 33.628747231 sec
+Average conflict index: 346.0700167541787
+Total time: 33.628747231 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:31:01 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 369.298703311 sec
+Average conflict index: 341.77429603186357
+Total time: 369.298703311 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:39:16 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 501.667039547 sec
+Average conflict index: 341.9362496902145
+Total time: 501.667039547 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:49:42 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 33.638122513 sec
+Average conflict index: 345.91880950433875
+Total time: 33.638122513 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 13:52:21 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 363.836708446 sec
+Average conflict index: 341.70098355523857
+Total time: 363.836708446 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:00:30 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 509.775277333 sec
+Average conflict index: 341.9010992218269
+Total time: 509.775277333 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:11:10 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 35.124160547 sec
+Average conflict index: 345.8787551290873
+Total time: 35.124160547 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:13:50 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 361.901261249 sec
+Average conflict index: 341.86941827069865
+Total time: 361.901261249 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:21:57 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 509.043364265 sec
+Average conflict index: 341.8293444528462
+Total time: 509.043364265 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:32:36 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-10-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-10-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 34.965748584 sec
+Average conflict index: 346.1632097898268
+Total time: 34.965748584 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:35:16 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-50-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-50-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 363.965885275 sec
+Average conflict index: 341.72577370633604
+Total time: 363.965885275 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:43:25 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on 2DCENTRALPART-60-GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running 2DCentralPartitioning-60-GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 497.885607358 sec
+Average conflict index: 341.8209931140687
+Total time: 497.885607358 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc020
+Job: 483749
+Timestamp: Wed Jan 24 14:53:48 MET 2007
+
+End of script
+---------------------------
+Host: doc022
+Job: 483658
+Timestamp: Tue Jan 23 21:27:34 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12437.861109461 sec
+Average conflict index: 387.5170435727894
+Total time: 12437.861109461 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 483658
+Timestamp: Wed Jan 24 00:56:57 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12420.094780448 sec
+Average conflict index: 387.69106669221225
+Total time: 12420.094780448 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 483658
+Timestamp: Wed Jan 24 04:26:02 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12243.875950337 sec
+Average conflict index: 387.67196510081646
+Total time: 12243.875950337 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 483658
+Timestamp: Wed Jan 24 07:52:10 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12130.426761823 sec
+Average conflict index: 387.59164459982617
+Total time: 12130.426761823 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 483658
+Timestamp: Wed Jan 24 11:16:25 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12235.977483591 sec
+Average conflict index: 387.51540486255897
+Total time: 12235.977483591 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc022
+Job: 483658
+Timestamp: Wed Jan 24 14:42:26 MET 2007
+
+End of script
+---------------------------
+Host: doc021
+Job: 483659
+Timestamp: Tue Jan 23 21:27:34 MET 2007
+
+SRA_800x800-640000-25-01_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-01_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5038779198603
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12336.609121504 sec
+Average conflict index: 387.5170435727894
+Total time: 12336.609121504 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Job: 483659
+Timestamp: Wed Jan 24 00:55:13 MET 2007
+
+SRA_800x800-640000-25-02_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-02_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5300408828527
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12297.933545824 sec
+Average conflict index: 387.69106669221225
+Total time: 12297.933545824 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Job: 483659
+Timestamp: Wed Jan 24 04:22:16 MET 2007
+
+SRA_800x800-640000-25-03_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-03_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.6021901333851
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12380.134649045 sec
+Average conflict index: 387.67196510081646
+Total time: 12380.134649045 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Job: 483659
+Timestamp: Wed Jan 24 07:50:41 MET 2007
+
+SRA_800x800-640000-25-04_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-04_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5896982946995
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 11706.374954447 sec
+Average conflict index: 387.59164459982617
+Total time: 11706.374954447 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Job: 483659
+Timestamp: Wed Jan 24 11:07:53 MET 2007
+
+SRA_800x800-640000-25-05_random_centered on GREEDYPLACER-CI-20K-0-SORTEMBED
+Reading input file 'SRA_800x800-640000-25-05_random_centered'...
+Cloning chip for later checks...
+Average conflict index: 745.5994489274146
+Running GreedyPlacer-CI-20000-0-SortEmbeddings...
+Elapsed time: 12418.359165868 sec
+Average conflict index: 387.51540486255897
+Total time: 12418.359165868 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc021
+Job: 483659
+Timestamp: Wed Jan 24 14:37:03 MET 2007
+
+End of script
+---------------------------
