@@ -49,12 +49,13 @@ added for the risk of damaging probes at neighboring spots $s'$. We know that
 $p[1..i-1]$ can be embedded in $N[1..t-1]$ with optimal cost $D[i-1,t-1]$.
 Hence, the minimum cost at step $t$, if $s$ is productive, is $D[i-1,t-1] +
 U_t$.  According to the conflict index model,
-\[
+\begin{equation}
+\label{eq:ospe_ucost}
 U_t := \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
   \Ind{\eps_{k(s'),t}=0}
   \cdot \omega(\eps_{k(s')},t)
   \cdot \gamma(s',s).
-\]
+\end{equation}
 
 If $s$ is unproductive (masked) at step $t$, no base is appended to $p[1..i-1]$,
 but a cost $M_{i,t}$ must be added for the risk of damaging $p$ (by light
@@ -69,11 +70,12 @@ cost
 \gamma(s,s') \cdot c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\})),
 \]
 in accordance with (\ref{eq:pos_mult})--(\ref{eq:b_ell}). Thus,
-\[
+\begin{equation}
+\label{eq:ospe_mcost}
 M_{i,t} := c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\})) \cdot
 \sum_{\substack{s'\text{: neighbor}\\\text{of } s}}
 \Ind{\eps_{k(s'),t}=1}  \cdot \gamma(s,s').
-\]
+\end{equation}
 
 Finally, $D[i,t]$ is computed as the minimum cost of the possible actions,
 \[
@@ -362,10 +364,18 @@ The algorithm starts by scanning the chip for probes which have a unique
 embedding in the deposition sequence. These are called \emph{pivots} and
 they are used as starting locations from where the re-embeddings propagate to
 other spots of the chip: Once a pivot is found, all of its four adjacent
-spots on the chip are added to the priority queue. (We assume that the chip
+spots on the chip are added to the priority queue. We assume that the chip
 has at least one pivot, otherwise the deposition sequence could be shortened. If
 this is not the case, however, we can also use probes with the minimum number of
-embeddings among all probes as pivots.)
+embeddings among all probes as pivots.
+
+If the probes are initially left-most embedded, every embedding with at least
+one productive step in the last synthesis cycle corresponds to a probe with a
+unique embedding. If probes are not left-most embedded, we can compute the
+number of embeddings $E(p,N)$ of a probe $p$ in the deposition sequence $N$ in
+$O(\ell \cdot T)$ time with dynamic programming, where $\ell$ is the length of
+the probe and $T$ is the length of $N$. In practice, it is possible to compute
+$E(p,N)$ for a million probes in a few seconds.
 
 The priority queue is used to retrieve the next spot $s$ whose probe $p$ should
 be re-embedded, according to the defined priority. Once a probe $p$ is
@@ -383,6 +393,11 @@ more possible embeddings have a greater degree of freedom and can more easily
 ``adapt'' to their neighbors. Probes with a restricted number of embeddings, on
 the other hand, have fewer choices and should be re-embedded first.
 
+In this priority, we examine each spot $s$ with a probe $p_{k(s)}$ and compute
+$E(p_{k(s)},N)$, the number of embeddings of $p_{k(s)}$ in $N$. A weight
+$w(s) := E(p_{k(s)},N)$ is assigned for each spot $s$ in the queue, and the spot
+with the highest weight in each iteration is retrieved.
+
 \paragraph{Priority II:} Re-embed probes with greater number of re-embedded
 neighbors first.
 
@@ -392,7 +407,7 @@ preference to probes with a greater number of re-embedded neighbors. The
 argument behind this priority is that probes should not be re-embedded until a
 sufficient number of its neighbors have found their final embeddings.
 
-With this priority, we assign a weight $w(s)$ for each spot $s$ in the queue,
+In this priority, we also assign a weight $w(s)$ for each spot $s$ in the queue,
 and the spot with the highest weight is retrieved. In case of border length
 minimization, $w(s)$ is set to the the number of immediate neighbors of $s$ that
 have already been re-embedded in the current iteration.

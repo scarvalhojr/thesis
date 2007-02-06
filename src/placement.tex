@@ -520,6 +520,13 @@ $800^2$ &  5K 0 & {\bf 16.9760} & 12.2 & {\bf 16.9124} & 15.3 &  & {\bf 448.0140
 \end{tabular*}}
 \end{table}
 
+It should be noted that, like Row-Epitaxial, Greedy has the drawback of treating
+the last spots of a chip ``unfairly'': While $Q$ probe candidades are examined
+for each of the first $n - Q + 1$ filled spots, the last $Q - 1$ spots have
+fewer than $Q$ candidates (in particular, when the last spot is being filled,
+there is only one probe candidate). As a result, we usually observe
+comparatively higher levels of conflicts in the last filled spots.
+
 We also observed that, in terms of border length, increasing $Q$ above 5K has
 little positive effect (see Figure~\ref{fig:greedy_tradeoff}). For instance, on
 $800\times 800$ chips, increasing $Q$ from 5K to 20K reduced the normalized
