@@ -311,8 +311,8 @@ chips).
   Total border length of random chips compared with the layouts produced by
   Greedy and GRASP with path-relinking. Reductions in border length are reported
   in percentages compared to the random layout.}
-\small{
-\begin{tabular*}{\hsize}{crcrrrcrrr}
+\footnotesize{
+\begin{tabular}{crcrrrcrrr}
           & Random & & \multicolumn{3}{c}{Greedy placement}  & & \multicolumn{3}{c}{GRASP with path-relinking}  \\ \cline{2-2} \cline{4-6} \cline{8-10}
 Chip      & Border & & Border & Reduction & Time             & & Border & Reduction & Time   \\
 dimension & length & & length & (\%)      & (sec.)           & & length & (\%)      & (sec.) \\
@@ -325,7 +325,7 @@ $10\times 10$ & 5\,985.20 & & 4\,895.60 & 18.20 & 0.06 & & 4\,911.40 & 17.94 &  
 $11\times 11$ & 7\,288.40 & & 5\,954.40 & 18.30 & 0.10 & & 5\,990.73 & 17.80 &  87.48 \\
 $12\times 12$ & 8\,714.00 & & 7\,086.20 & 18.68 & 0.11 & & 7\,159.80 & 17.84 & 152.42 \\
 \hline
-\end{tabular*}}
+\end{tabular}}
 \end{table}
 
 Our results show that GRASP-PR produces layouts with lower border lengths than
@@ -350,12 +350,12 @@ random layout). This may be because the probe embeddings are fixed and the
 reduction of conflicts is restricted to the relocation of the probes, which only
 accounts for one part of the conflict index model.
 
-\begin{table}[t]
+\begin{table}[t]\centering
 \caption{\label{tab:graspr_greedy_ci}
   Average conflict indices of random chips compared with the layouts produced by
   Greedy and GRASP with path-relinking.}
-\small{
-\begin{tabular*}{\hsize}{crcrrrcrrr}
+\footnotesize{
+\begin{tabular}{crcrrrcrrr}
           & Random & & \multicolumn{3}{c}{Greedy placement}  & & \multicolumn{3}{c}{GRASP with path-relinking}  \\ \cline{2-2} \cline{4-6} \cline{8-10}
 Chip      & Avg. C.& & Avg. C.& Reduction & Time             & & Avg. C.& Reduction & Time   \\
 dimension & Index  & & Index  & (\%)      & (sec.)           & & Index  & (\%)      & (sec.) \\
@@ -368,7 +368,7 @@ $10\times 10$ & 628.50 & & 576.49 & 8.28 & 0.11 & & 539.69 & 14.13 &  73.09 \\
 $11\times 11$ & 642.72 & & 588.91 & 8.37 & 0.12 & & 551.41 & 14.21 & 145.67 \\
 $12\times 12$ & 656.86 & & 598.21 & 8.93 & 0.12 & & 561.21 & 14.56 & 249.19 \\
 \hline
-\end{tabular*}}
+\end{tabular}}
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
