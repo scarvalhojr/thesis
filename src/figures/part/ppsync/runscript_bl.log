@@ -1,0 +1,3050 @@
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:01:38 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.407700713 sec
+Total border length: 406006 -> normalized: 20.505353535353535
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.546543746 sec
+Total border length: 391416 -> normalized: 19.76848484848485
+Total time: 5.954244459 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:01:45 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.603638784 sec
+Total border length: 424636 -> normalized: 21.446262626262627
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.552681331 sec
+Total border length: 404946 -> normalized: 20.451818181818183
+Total time: 5.156320115 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:01:51 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.091183134 sec
+Total border length: 445344 -> normalized: 22.492121212121212
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 5
+Elapsed time: 1.898003513 sec
+Total border length: 418368 -> normalized: 21.12969696969697
+Total time: 5.989186647 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:01:57 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 44.560545685 sec
+Total border length: 1531662 -> normalized: 19.241984924623114
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.678346051 sec
+Total border length: 1486444 -> normalized: 18.67391959798995
+Total time: 49.238891736 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:02:48 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 19.198059783 sec
+Total border length: 1586666 -> normalized: 19.932989949748745
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 6.073556617 sec
+Total border length: 1528000 -> normalized: 19.195979899497488
+Total time: 25.2716164 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:03:15 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 16.816650619 sec
+Total border length: 1659046 -> normalized: 20.842286432160805
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.937029773 sec
+Total border length: 1580472 -> normalized: 19.855175879396985
+Total time: 22.753680392 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:03:39 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 336.387758766 sec
+Total border length: 3316696 -> normalized: 18.487714604236345
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.62143424 sec
+Total border length: 3230128 -> normalized: 18.005172798216275
+Total time: 347.009193006 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:09:28 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 76.540622979 sec
+Total border length: 3413892 -> normalized: 19.029498327759196
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.374940408 sec
+Total border length: 3307006 -> normalized: 18.43370122630992
+Total time: 89.915563387 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:11:00 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.647877123 sec
+Total border length: 3555222 -> normalized: 19.817290969899666
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.518748636 sec
+Total border length: 3413730 -> normalized: 19.028595317725753
+Total time: 60.166625759 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:12:03 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1882.277034588 sec
+Total border length: 8853056 -> normalized: 17.74159519038076
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.562726959 sec
+Total border length: 8656856 -> normalized: 17.34840881763527
+Total time: 1911.839761547 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 20:43:59 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 934.011118046 sec
+Total border length: 9042814 -> normalized: 18.121871743486974
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.582978042 sec
+Total border length: 8806692 -> normalized: 17.64868136272545
+Total time: 963.594096088 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:00:08 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 227.019739309 sec
+Total border length: 9369084 -> normalized: 18.775719438877754
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 38.200089822 sec
+Total border length: 9063286 -> normalized: 18.16289779559118
+Total time: 265.219829131 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:04:37 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.422184609 sec
+Total border length: 407482 -> normalized: 20.57989898989899
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.542582241 sec
+Total border length: 392094 -> normalized: 19.80272727272727
+Total time: 5.96476685 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:04:44 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.650362793 sec
+Total border length: 425340 -> normalized: 21.48181818181818
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.554119999 sec
+Total border length: 404980 -> normalized: 20.453535353535354
+Total time: 5.204482792 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:04:50 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.130994016 sec
+Total border length: 446288 -> normalized: 22.53979797979798
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.551226886 sec
+Total border length: 418912 -> normalized: 21.157171717171718
+Total time: 5.682220902 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:04:57 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 49.794237235 sec
+Total border length: 1521846 -> normalized: 19.118668341708542
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.813663031 sec
+Total border length: 1478088 -> normalized: 18.568944723618092
+Total time: 54.607900266 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:05:53 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 21.352655905 sec
+Total border length: 1582804 -> normalized: 19.884472361809046
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 6.014204005 sec
+Total border length: 1524720 -> normalized: 19.154773869346734
+Total time: 27.36685991 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:06:22 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.306451756 sec
+Total border length: 1656540 -> normalized: 20.810804020100502
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 6.24772853 sec
+Total border length: 1579128 -> normalized: 19.83829145728643
+Total time: 23.554180286 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:06:47 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 334.351486775 sec
+Total border length: 3303712 -> normalized: 18.415340022296544
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.497455623 sec
+Total border length: 3218750 -> normalized: 17.9417502787068
+Total time: 344.848942398 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:12:34 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 87.288898007 sec
+Total border length: 3405892 -> normalized: 18.984905239687848
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.623826308 sec
+Total border length: 3302730 -> normalized: 18.409866220735786
+Total time: 97.912724315 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:14:14 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 48.324964342 sec
+Total border length: 3549676 -> normalized: 19.786376811594202
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.475456284 sec
+Total border length: 3408592 -> normalized: 18.99995540691193
+Total time: 61.800420626 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:15:18 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1887.491527166 sec
+Total border length: 8826158 -> normalized: 17.687691382765532
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.62916551 sec
+Total border length: 8625690 -> normalized: 17.285951903807614
+Total time: 1917.120692676 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 21:47:20 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 847.451940176 sec
+Total border length: 9027176 -> normalized: 18.090533066132263
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.683987589 sec
+Total border length: 8789730 -> normalized: 17.614689378757515
+Total time: 877.135927765 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:02:01 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 213.226854922 sec
+Total border length: 9369170 -> normalized: 18.775891783567133
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 38.095488732 sec
+Total border length: 9061772 -> normalized: 18.15986372745491
+Total time: 251.322343654 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:06:17 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.419381523 sec
+Total border length: 403726 -> normalized: 20.39020202020202
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.54058812 sec
+Total border length: 389432 -> normalized: 19.668282828282827
+Total time: 5.959969643 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:06:24 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.661226378 sec
+Total border length: 423364 -> normalized: 21.3820202020202
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.550889583 sec
+Total border length: 402940 -> normalized: 20.35050505050505
+Total time: 5.212115961 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:06:30 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.108767089 sec
+Total border length: 445620 -> normalized: 22.506060606060608
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.550318157 sec
+Total border length: 418142 -> normalized: 21.11828282828283
+Total time: 5.659085246 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:06:37 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 45.863004166 sec
+Total border length: 1536936 -> normalized: 19.30824120603015
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.955215096 sec
+Total border length: 1490292 -> normalized: 18.722261306532662
+Total time: 51.818219262 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:07:30 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 21.022498079 sec
+Total border length: 1582606 -> normalized: 19.881984924623115
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.999833414 sec
+Total border length: 1525256 -> normalized: 19.161507537688443
+Total time: 27.022331493 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:07:59 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.787834136 sec
+Total border length: 1653852 -> normalized: 20.777035175879398
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.944293742 sec
+Total border length: 1577348 -> normalized: 19.815929648241205
+Total time: 23.732127878 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:08:24 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 332.008196858 sec
+Total border length: 3310878 -> normalized: 18.455284280936453
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.612697382 sec
+Total border length: 3226354 -> normalized: 17.984136008918618
+Total time: 342.62089424 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:14:09 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 78.605663565 sec
+Total border length: 3417042 -> normalized: 19.04705685618729
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.336265959 sec
+Total border length: 3307816 -> normalized: 18.438216276477146
+Total time: 91.941929524 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:15:43 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.341196769 sec
+Total border length: 3559884 -> normalized: 19.843277591973244
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 14.060238022 sec
+Total border length: 3419406 -> normalized: 19.060234113712376
+Total time: 60.401434791 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:16:45 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1867.564191895 sec
+Total border length: 8824684 -> normalized: 17.6847374749499
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 30.051255629 sec
+Total border length: 8624384 -> normalized: 17.28333466933868
+Total time: 1897.615447524 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 22:48:28 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 830.36455408 sec
+Total border length: 9019392 -> normalized: 18.07493386773547
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.834666362 sec
+Total border length: 8783742 -> normalized: 17.602689378757514
+Total time: 860.199220442 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:02:52 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 207.338248785 sec
+Total border length: 9354628 -> normalized: 18.746749498997996
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 38.063435491 sec
+Total border length: 9050532 -> normalized: 18.13733867735471
+Total time: 245.401684276 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:07:02 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.804975959 sec
+Total border length: 404584 -> normalized: 20.433535353535355
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.536005736 sec
+Total border length: 390108 -> normalized: 19.702424242424243
+Total time: 6.340981695 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:07:09 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.840503387 sec
+Total border length: 423464 -> normalized: 21.387070707070706
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.525754872 sec
+Total border length: 403790 -> normalized: 20.393434343434343
+Total time: 5.366258259 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:07:16 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.355185674 sec
+Total border length: 447162 -> normalized: 22.583939393939392
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 5
+Elapsed time: 1.865580484 sec
+Total border length: 418896 -> normalized: 21.156363636363636
+Total time: 6.220766158 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:07:23 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 45.568900336 sec
+Total border length: 1529328 -> normalized: 19.212663316582915
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.664490203 sec
+Total border length: 1483382 -> normalized: 18.635452261306533
+Total time: 50.233390539 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:08:15 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 20.224953287 sec
+Total border length: 1582006 -> normalized: 19.874447236180906
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.883690605 sec
+Total border length: 1525112 -> normalized: 19.15969849246231
+Total time: 26.108643892 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:08:42 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.289492796 sec
+Total border length: 1656072 -> normalized: 20.80492462311558
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.843610848 sec
+Total border length: 1577874 -> normalized: 19.82253768844221
+Total time: 23.133103644 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:09:07 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 313.582721205 sec
+Total border length: 3318794 -> normalized: 18.499409141583055
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.532981336 sec
+Total border length: 3234934 -> normalized: 18.03196209587514
+Total time: 324.115702541 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:14:33 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 75.216628192 sec
+Total border length: 3429084 -> normalized: 19.114180602006687
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.378398399 sec
+Total border length: 3320106 -> normalized: 18.506722408026757
+Total time: 88.595026591 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:16:04 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.800425927 sec
+Total border length: 3553686 -> normalized: 19.808729096989968
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.514370153 sec
+Total border length: 3415046 -> normalized: 19.03593088071349
+Total time: 60.31479608 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:17:06 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1954.633915543 sec
+Total border length: 8844800 -> normalized: 17.725050100200402
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.559461936 sec
+Total border length: 8647758 -> normalized: 17.33017635270541
+Total time: 1984.193377479 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Tue Jan 30 23:50:15 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 946.438078782 sec
+Total border length: 9049968 -> normalized: 18.136208416833668
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.597350131 sec
+Total border length: 8808586 -> normalized: 17.652476953907815
+Total time: 976.035428913 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:06:36 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 234.150837628 sec
+Total border length: 9362578 -> normalized: 18.762681362725452
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 37.798757616 sec
+Total border length: 9055868 -> normalized: 18.148032064128255
+Total time: 271.949595244 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:11:12 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.575631058 sec
+Total border length: 405968 -> normalized: 20.503434343434343
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.528678476 sec
+Total border length: 391346 -> normalized: 19.764949494949494
+Total time: 6.104309534 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:11:20 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.663280113 sec
+Total border length: 423690 -> normalized: 21.39848484848485
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.539067312 sec
+Total border length: 403510 -> normalized: 20.37929292929293
+Total time: 5.202347425 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:11:26 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.204324118 sec
+Total border length: 445444 -> normalized: 22.497171717171717
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 5
+Elapsed time: 1.902748572 sec
+Total border length: 417602 -> normalized: 21.091010101010102
+Total time: 6.10707269 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:11:33 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 47.939365766 sec
+Total border length: 1532692 -> normalized: 19.254924623115578
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.726595361 sec
+Total border length: 1487372 -> normalized: 18.685577889447234
+Total time: 52.665961127 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:12:27 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 21.123279556 sec
+Total border length: 1586276 -> normalized: 19.928090452261305
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 6.08107375 sec
+Total border length: 1528820 -> normalized: 19.206281407035174
+Total time: 27.204353306 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:12:56 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.617508047 sec
+Total border length: 1661500 -> normalized: 20.873115577889447
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.973215093 sec
+Total border length: 1583866 -> normalized: 19.89781407035176
+Total time: 23.59072314 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:13:21 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 314.571333223 sec
+Total border length: 3318262 -> normalized: 18.49644370122631
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.514410917 sec
+Total border length: 3232168 -> normalized: 18.01654403567447
+Total time: 325.08574414 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:18:48 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 80.095299033 sec
+Total border length: 3421130 -> normalized: 19.06984392419175
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.401997097 sec
+Total border length: 3314950 -> normalized: 18.47798216276477
+Total time: 93.49729613 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:20:24 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.900356027 sec
+Total border length: 3570996 -> normalized: 19.905217391304348
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.414455466 sec
+Total border length: 3427274 -> normalized: 19.104091415830545
+Total time: 60.314811493 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:21:27 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1837.408962521 sec
+Total border length: 8846782 -> normalized: 17.729022044088175
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.188401335 sec
+Total border length: 8647152 -> normalized: 17.328961923847697
+Total time: 1866.597363856 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 00:52:38 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 855.409686894 sec
+Total border length: 9083628 -> normalized: 18.203663326653306
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.828348768 sec
+Total border length: 8838416 -> normalized: 17.712256513026052
+Total time: 885.238035662 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:07:28 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 201.269863811 sec
+Total border length: 9413844 -> normalized: 18.86541883767535
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 37.378294485 sec
+Total border length: 9102864 -> normalized: 18.2422124248497
+Total time: 238.648158296 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:11:31 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.346655497 sec
+Total border length: 406006 -> normalized: 20.505353535353535
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.535514286 sec
+Total border length: 391416 -> normalized: 19.76848484848485
+Total time: 5.882169783 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:11:37 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.623675871 sec
+Total border length: 424636 -> normalized: 21.446262626262627
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.562875021 sec
+Total border length: 404946 -> normalized: 20.451818181818183
+Total time: 5.186550892 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:11:44 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.079749977 sec
+Total border length: 445344 -> normalized: 22.492121212121212
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 5
+Elapsed time: 1.890739377 sec
+Total border length: 418368 -> normalized: 21.12969696969697
+Total time: 5.970489354 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:11:51 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 42.241458078 sec
+Total border length: 1531662 -> normalized: 19.241984924623114
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.676815283 sec
+Total border length: 1486444 -> normalized: 18.67391959798995
+Total time: 46.918273361 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:12:39 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 19.144696904 sec
+Total border length: 1586666 -> normalized: 19.932989949748745
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.922172125 sec
+Total border length: 1528000 -> normalized: 19.195979899497488
+Total time: 25.066869029 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:13:05 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 16.879802291 sec
+Total border length: 1659046 -> normalized: 20.842286432160805
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.940185114 sec
+Total border length: 1580472 -> normalized: 19.855175879396985
+Total time: 22.819987405 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:13:30 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 315.654669819 sec
+Total border length: 3316696 -> normalized: 18.487714604236345
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.581643614 sec
+Total border length: 3230128 -> normalized: 18.005172798216275
+Total time: 326.236313433 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:18:58 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 77.137746529 sec
+Total border length: 3413892 -> normalized: 19.029498327759196
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.479525735 sec
+Total border length: 3307006 -> normalized: 18.43370122630992
+Total time: 90.617272264 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:20:31 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.035479623 sec
+Total border length: 3555222 -> normalized: 19.817290969899666
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.999380074 sec
+Total border length: 3413730 -> normalized: 19.028595317725753
+Total time: 60.034859697 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:21:33 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1940.157920669 sec
+Total border length: 8853056 -> normalized: 17.74159519038076
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.811940685 sec
+Total border length: 8656856 -> normalized: 17.34840881763527
+Total time: 1969.969861354 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 01:54:28 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1007.027221803 sec
+Total border length: 9042814 -> normalized: 18.121871743486974
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.942587229 sec
+Total border length: 8806692 -> normalized: 17.64868136272545
+Total time: 1036.969809032 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:11:49 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 232.008585894 sec
+Total border length: 9369084 -> normalized: 18.775719438877754
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 38.051749668 sec
+Total border length: 9063286 -> normalized: 18.16289779559118
+Total time: 270.060335562 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:16:24 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.323037287 sec
+Total border length: 407482 -> normalized: 20.57989898989899
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.541475297 sec
+Total border length: 392094 -> normalized: 19.80272727272727
+Total time: 5.864512584 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:16:30 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.687887421 sec
+Total border length: 425340 -> normalized: 21.48181818181818
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.564448104 sec
+Total border length: 404980 -> normalized: 20.453535353535354
+Total time: 5.252335525 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:16:37 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.163563144 sec
+Total border length: 446288 -> normalized: 22.53979797979798
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.563711027 sec
+Total border length: 418912 -> normalized: 21.157171717171718
+Total time: 5.727274171 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:16:43 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 48.341177646 sec
+Total border length: 1521846 -> normalized: 19.118668341708542
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.731197616 sec
+Total border length: 1478088 -> normalized: 18.568944723618092
+Total time: 53.072375262 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:17:38 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 21.333882585 sec
+Total border length: 1582804 -> normalized: 19.884472361809046
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.992800366 sec
+Total border length: 1524720 -> normalized: 19.154773869346734
+Total time: 27.326682951 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:18:07 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.268104066 sec
+Total border length: 1656540 -> normalized: 20.810804020100502
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 6.014419924 sec
+Total border length: 1579128 -> normalized: 19.83829145728643
+Total time: 23.28252399 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:18:31 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 354.85393723 sec
+Total border length: 3303712 -> normalized: 18.415340022296544
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.699506402 sec
+Total border length: 3218750 -> normalized: 17.9417502787068
+Total time: 365.553443632 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:24:39 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 86.653333497 sec
+Total border length: 3405892 -> normalized: 18.984905239687848
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.582765412 sec
+Total border length: 3302730 -> normalized: 18.409866220735786
+Total time: 97.236098909 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:26:19 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 47.730459617 sec
+Total border length: 3549676 -> normalized: 19.786376811594202
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.400306955 sec
+Total border length: 3408592 -> normalized: 18.99995540691193
+Total time: 61.130766572 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:27:22 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1883.173285286 sec
+Total border length: 8826158 -> normalized: 17.687691382765532
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.845578666 sec
+Total border length: 8625690 -> normalized: 17.285951903807614
+Total time: 1913.018863952 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 02:59:19 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 788.291430047 sec
+Total border length: 9027176 -> normalized: 18.090533066132263
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.76973105 sec
+Total border length: 8789730 -> normalized: 17.614689378757515
+Total time: 818.061161097 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:13:02 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 210.48983415 sec
+Total border length: 9369170 -> normalized: 18.775891783567133
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 37.963839353 sec
+Total border length: 9061772 -> normalized: 18.15986372745491
+Total time: 248.453673503 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:17:15 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.395982873 sec
+Total border length: 403726 -> normalized: 20.39020202020202
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.536633472 sec
+Total border length: 389432 -> normalized: 19.668282828282827
+Total time: 5.932616345 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:17:22 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.7012215 sec
+Total border length: 423364 -> normalized: 21.3820202020202
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.552096488 sec
+Total border length: 402940 -> normalized: 20.35050505050505
+Total time: 5.253317988 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:17:28 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.077051124 sec
+Total border length: 445620 -> normalized: 22.506060606060608
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.529181782 sec
+Total border length: 418142 -> normalized: 21.11828282828283
+Total time: 5.606232906 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:17:34 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 42.210812612 sec
+Total border length: 1536936 -> normalized: 19.30824120603015
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.849183151 sec
+Total border length: 1490292 -> normalized: 18.722261306532662
+Total time: 48.059995763 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:18:24 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 20.514578803 sec
+Total border length: 1582606 -> normalized: 19.881984924623115
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 6.073201003 sec
+Total border length: 1525256 -> normalized: 19.161507537688443
+Total time: 26.587779806 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:18:52 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.81956063 sec
+Total border length: 1653852 -> normalized: 20.777035175879398
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.946023047 sec
+Total border length: 1577348 -> normalized: 19.815929648241205
+Total time: 23.765583677 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:19:17 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 325.522623074 sec
+Total border length: 3310878 -> normalized: 18.455284280936453
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.552215443 sec
+Total border length: 3226354 -> normalized: 17.984136008918618
+Total time: 336.074838517 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:24:55 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 78.273238856 sec
+Total border length: 3417042 -> normalized: 19.04705685618729
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.407891516 sec
+Total border length: 3307816 -> normalized: 18.438216276477146
+Total time: 91.681130372 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:26:29 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.396351412 sec
+Total border length: 3559884 -> normalized: 19.843277591973244
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.519850559 sec
+Total border length: 3419406 -> normalized: 19.060234113712376
+Total time: 59.916201971 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:27:31 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1891.953883941 sec
+Total border length: 8824684 -> normalized: 17.6847374749499
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.795295993 sec
+Total border length: 8624384 -> normalized: 17.28333466933868
+Total time: 1921.749179934 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 03:59:38 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 912.701660157 sec
+Total border length: 9019392 -> normalized: 18.07493386773547
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.843573035 sec
+Total border length: 8783742 -> normalized: 17.602689378757514
+Total time: 942.545233192 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:15:25 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 206.222500323 sec
+Total border length: 9354628 -> normalized: 18.746749498997996
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 37.882111449 sec
+Total border length: 9050532 -> normalized: 18.13733867735471
+Total time: 244.104611772 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:19:34 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.700108237 sec
+Total border length: 404584 -> normalized: 20.433535353535355
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.55297483 sec
+Total border length: 390108 -> normalized: 19.702424242424243
+Total time: 6.253083067 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:19:41 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.828069242 sec
+Total border length: 423464 -> normalized: 21.387070707070706
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.534892307 sec
+Total border length: 403790 -> normalized: 20.393434343434343
+Total time: 5.362961549 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:19:47 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.490951735 sec
+Total border length: 447162 -> normalized: 22.583939393939392
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 5
+Elapsed time: 1.949122443 sec
+Total border length: 418896 -> normalized: 21.156363636363636
+Total time: 6.440074178 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:19:54 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 44.808186 sec
+Total border length: 1529328 -> normalized: 19.212663316582915
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.662979362 sec
+Total border length: 1483382 -> normalized: 18.635452261306533
+Total time: 49.471165362 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:20:45 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 20.51745818 sec
+Total border length: 1582006 -> normalized: 19.874447236180906
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.849319876 sec
+Total border length: 1525112 -> normalized: 19.15969849246231
+Total time: 26.366778056 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:21:13 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.210776461 sec
+Total border length: 1656072 -> normalized: 20.80492462311558
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.84170794 sec
+Total border length: 1577874 -> normalized: 19.82253768844221
+Total time: 23.052484401 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:21:38 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 309.538436512 sec
+Total border length: 3318794 -> normalized: 18.499409141583055
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.511501511 sec
+Total border length: 3234934 -> normalized: 18.03196209587514
+Total time: 320.049938023 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:27:00 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 73.858447584 sec
+Total border length: 3429084 -> normalized: 19.114180602006687
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.390245665 sec
+Total border length: 3320106 -> normalized: 18.506722408026757
+Total time: 87.248693249 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:28:29 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 45.834252077 sec
+Total border length: 3553686 -> normalized: 19.808729096989968
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.426703792 sec
+Total border length: 3415046 -> normalized: 19.03593088071349
+Total time: 59.260955869 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 04:29:31 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1903.484021024 sec
+Total border length: 8844800 -> normalized: 17.725050100200402
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.572314784 sec
+Total border length: 8647758 -> normalized: 17.33017635270541
+Total time: 1933.056335808 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:01:48 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 918.66157061 sec
+Total border length: 9049968 -> normalized: 18.136208416833668
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.60203759 sec
+Total border length: 8808586 -> normalized: 17.652476953907815
+Total time: 948.2636082 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:17:41 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 238.805477795 sec
+Total border length: 9362578 -> normalized: 18.762681362725452
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 39.450898087 sec
+Total border length: 9055868 -> normalized: 18.148032064128255
+Total time: 278.256375882 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:22:24 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.592683147 sec
+Total border length: 405968 -> normalized: 20.503434343434343
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.551818547 sec
+Total border length: 391346 -> normalized: 19.764949494949494
+Total time: 6.144501694 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:22:31 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 3.660970092 sec
+Total border length: 423690 -> normalized: 21.39848484848485
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 1.528710622 sec
+Total border length: 403510 -> normalized: 20.37929292929293
+Total time: 5.189680714 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:22:37 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 4.076818781 sec
+Total border length: 445444 -> normalized: 22.497171717171717
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 5
+Elapsed time: 1.869562673 sec
+Total border length: 417602 -> normalized: 21.091010101010102
+Total time: 5.946381454 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:22:44 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 44.489258922 sec
+Total border length: 1532692 -> normalized: 19.254924623115578
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 4.73613405 sec
+Total border length: 1487372 -> normalized: 18.685577889447234
+Total time: 49.225392972 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:23:34 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 20.852467152 sec
+Total border length: 1586276 -> normalized: 19.928090452261305
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.924216308 sec
+Total border length: 1528820 -> normalized: 19.206281407035174
+Total time: 26.77668346 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:24:02 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 17.641796652 sec
+Total border length: 1661500 -> normalized: 20.873115577889447
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 5.933660924 sec
+Total border length: 1583866 -> normalized: 19.89781407035176
+Total time: 23.575457576 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:24:27 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 330.201832486 sec
+Total border length: 3318262 -> normalized: 18.49644370122631
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 10.527770388 sec
+Total border length: 3232168 -> normalized: 18.01654403567447
+Total time: 340.729602874 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:30:10 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 80.734538696 sec
+Total border length: 3421130 -> normalized: 19.06984392419175
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.72483588 sec
+Total border length: 3314950 -> normalized: 18.47798216276477
+Total time: 94.459374576 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:31:47 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 46.451585965 sec
+Total border length: 3570996 -> normalized: 19.905217391304348
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 13.437066122 sec
+Total border length: 3427274 -> normalized: 19.104091415830545
+Total time: 59.888652087 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 05:32:49 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync PIVOTPART-BL-2-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running PivotPartitioning-BL-2-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1876.268768714 sec
+Total border length: 8846782 -> normalized: 17.729022044088175
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.194534804 sec
+Total border length: 8647152 -> normalized: 17.328961923847697
+Total time: 1905.463303518 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 06:04:39 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync PIVOTPART-BL-4-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running PivotPartitioning-BL-4-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 826.410827389 sec
+Total border length: 9083628 -> normalized: 18.203663326653306
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 3
+Elapsed time: 29.250993889 sec
+Total border length: 8838416 -> normalized: 17.712256513026052
+Total time: 855.661821278 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 06:18:59 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync PIVOTPART-BL-6-GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running PivotPartitioning-BL-6-GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 200.102503441 sec
+Total border length: 9413844 -> normalized: 18.86541883767535
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 4
+Elapsed time: 37.299371417 sec
+Total border length: 9102864 -> normalized: 18.2422124248497
+Total time: 237.401874858 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc024
+Job: 491971
+Timestamp: Wed Jan 31 06:23:01 MET 2007
+End of script
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:05:37 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 8.912799189 sec
+Total border length: 502272 -> normalized: 25.367272727272727
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.322951093 sec
+Total border length: 426840 -> normalized: 21.55757575757576
+Total time: 11.235750282 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:05:49 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 159.022844657 sec
+Total border length: 1915436 -> normalized: 24.06326633165829
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.657088195 sec
+Total border length: 1653296 -> normalized: 20.770050251256283
+Total time: 167.679932852 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:08:38 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 539.512287674 sec
+Total border length: 4198820 -> normalized: 23.40479375696767
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.331455614 sec
+Total border length: 3640620 -> normalized: 20.293311036789298
+Total time: 558.843743288 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:17:59 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2170.154091258 sec
+Total border length: 11232570 -> normalized: 22.510160320641283
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 55.091711688 sec
+Total border length: 9776910 -> normalized: 19.59300601202405
+Total time: 2225.245802946 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:55:09 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 9.291041656 sec
+Total border length: 501672 -> normalized: 25.336969696969696
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.300994601 sec
+Total border length: 426086 -> normalized: 21.51949494949495
+Total time: 11.592036257 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:55:21 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 156.877195414 sec
+Total border length: 1915876 -> normalized: 24.068793969849246
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 9.066931744 sec
+Total border length: 1653322 -> normalized: 20.77037688442211
+Total time: 165.944127158 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 20:58:09 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 522.121956156 sec
+Total border length: 4197314 -> normalized: 23.39639910813824
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.336831164 sec
+Total border length: 3639266 -> normalized: 20.285763656633222
+Total time: 541.45878732 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 21:07:13 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2155.802918592 sec
+Total border length: 11230412 -> normalized: 22.505835671342684
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 54.20382411 sec
+Total border length: 9771116 -> normalized: 19.581394789579157
+Total time: 2210.006742702 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 21:44:07 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 8.372756589 sec
+Total border length: 501980 -> normalized: 25.352525252525254
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.308734337 sec
+Total border length: 426694 -> normalized: 21.550202020202022
+Total time: 10.681490926 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 21:44:19 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 166.636163761 sec
+Total border length: 1915462 -> normalized: 24.06359296482412
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.546607818 sec
+Total border length: 1653916 -> normalized: 20.7778391959799
+Total time: 175.182771579 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 21:47:16 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 537.229368793 sec
+Total border length: 4196326 -> normalized: 23.39089186176143
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.277310702 sec
+Total border length: 3640084 -> normalized: 20.290323299888517
+Total time: 556.506679495 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 21:56:34 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2178.780088111 sec
+Total border length: 11233106 -> normalized: 22.511234468937875
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 55.078195963 sec
+Total border length: 9773332 -> normalized: 19.585835671342686
+Total time: 2233.858284074 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 22:33:53 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 8.95938035 sec
+Total border length: 501956 -> normalized: 25.35131313131313
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.306837572 sec
+Total border length: 426434 -> normalized: 21.537070707070708
+Total time: 11.266217922 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 22:34:05 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 166.712280181 sec
+Total border length: 1915084 -> normalized: 24.058844221105527
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.653867133 sec
+Total border length: 1653168 -> normalized: 20.768442211055277
+Total time: 175.366147314 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 22:37:02 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 554.489575328 sec
+Total border length: 4198264 -> normalized: 23.40169453734671
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 20.37335178 sec
+Total border length: 3640934 -> normalized: 20.2950613154961
+Total time: 574.862927108 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 22:46:39 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2132.623149216 sec
+Total border length: 11232456 -> normalized: 22.509931863727456
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 54.967789275 sec
+Total border length: 9775080 -> normalized: 19.58933867735471
+Total time: 2187.590938491 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 23:23:12 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 9.359333829 sec
+Total border length: 501540 -> normalized: 25.330303030303032
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.307580994 sec
+Total border length: 426338 -> normalized: 21.532222222222224
+Total time: 11.666914823 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 23:23:24 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 166.709509852 sec
+Total border length: 1914662 -> normalized: 24.05354271356784
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.662771348 sec
+Total border length: 1652586 -> normalized: 20.76113065326633
+Total time: 175.3722812 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 23:26:21 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 552.661325732 sec
+Total border length: 4197888 -> normalized: 23.399598662207357
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.291199426 sec
+Total border length: 3641104 -> normalized: 20.296008918617613
+Total time: 571.952525158 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Tue Jan 30 23:35:55 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2162.004927765 sec
+Total border length: 11234058 -> normalized: 22.51314228456914
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 54.616677777 sec
+Total border length: 9776736 -> normalized: 19.592657314629257
+Total time: 2216.621605542 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 00:12:56 MET 2007
+
+SRS-100x100-10000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 742342 -> normalized: 37.4920202020202
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 9.343792062 sec
+Total border length: 502272 -> normalized: 25.367272727272727
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.302241482 sec
+Total border length: 426840 -> normalized: 21.55757575757576
+Total time: 11.646033544 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 00:13:09 MET 2007
+
+SRS-200x200-40000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985922 -> normalized: 37.51158291457286
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 192.443112614 sec
+Total border length: 1915436 -> normalized: 24.06326633165829
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 9.068282888 sec
+Total border length: 1653296 -> normalized: 20.770050251256283
+Total time: 201.511395502 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 00:16:32 MET 2007
+
+SRS-300x300-90000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 6728294 -> normalized: 37.50442586399108
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 553.936179521 sec
+Total border length: 4198820 -> normalized: 23.40479375696767
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.369987684 sec
+Total border length: 3640620 -> normalized: 20.293311036789298
+Total time: 573.306167205 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 00:26:07 MET 2007
+
+SRS-500x500-250000-25-100-01_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-01_random_sync'...
+Cloning chip for later checks...
+Total border length: 18710432 -> normalized: 37.49585571142285
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2174.33582346 sec
+Total border length: 11232570 -> normalized: 22.510160320641283
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 54.992296688 sec
+Total border length: 9776910 -> normalized: 19.59300601202405
+Total time: 2229.328120148 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:03:21 MET 2007
+
+SRS-100x100-10000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 743122 -> normalized: 37.53141414141414
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 9.125213139 sec
+Total border length: 501672 -> normalized: 25.336969696969696
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.308341909 sec
+Total border length: 426086 -> normalized: 21.51949494949495
+Total time: 11.433555048 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:03:34 MET 2007
+
+SRS-200x200-40000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985008 -> normalized: 37.50010050251256
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 162.34612494 sec
+Total border length: 1915876 -> normalized: 24.068793969849246
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.659105606 sec
+Total border length: 1653322 -> normalized: 20.77037688442211
+Total time: 171.005230546 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:06:26 MET 2007
+
+SRS-300x300-90000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 6726278 -> normalized: 37.4931884057971
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 513.644170772 sec
+Total border length: 4197314 -> normalized: 23.39639910813824
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.326851522 sec
+Total border length: 3639266 -> normalized: 20.285763656633222
+Total time: 532.971022294 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:15:21 MET 2007
+
+SRS-500x500-250000-25-100-02_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-02_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714314 -> normalized: 37.50363527054108
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2203.618309987 sec
+Total border length: 11230412 -> normalized: 22.505835671342684
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 54.386678783 sec
+Total border length: 9771116 -> normalized: 19.581394789579157
+Total time: 2258.00498877 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:53:04 MET 2007
+
+SRS-100x100-10000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 742162 -> normalized: 37.48292929292929
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 9.131622163 sec
+Total border length: 501980 -> normalized: 25.352525252525254
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.306265834 sec
+Total border length: 426694 -> normalized: 21.550202020202022
+Total time: 11.437887997 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:53:16 MET 2007
+
+SRS-200x200-40000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 2983808 -> normalized: 37.48502512562814
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 164.826432956 sec
+Total border length: 1915462 -> normalized: 24.06359296482412
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.959545276 sec
+Total border length: 1653916 -> normalized: 20.7778391959799
+Total time: 173.785978232 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 01:56:11 MET 2007
+
+SRS-300x300-90000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 6729384 -> normalized: 37.5105016722408
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 546.181309233 sec
+Total border length: 4196326 -> normalized: 23.39089186176143
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 20.396903916 sec
+Total border length: 3640084 -> normalized: 20.290323299888517
+Total time: 566.578213149 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 02:05:40 MET 2007
+
+SRS-500x500-250000-25-100-03_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-03_random_sync'...
+Cloning chip for later checks...
+Total border length: 18713712 -> normalized: 37.50242885771543
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2149.690323222 sec
+Total border length: 11233106 -> normalized: 22.511234468937875
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 55.227969124 sec
+Total border length: 9773332 -> normalized: 19.585835671342686
+Total time: 2204.918292346 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 02:42:29 MET 2007
+
+SRS-100x100-10000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 741492 -> normalized: 37.449090909090906
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 8.926475416 sec
+Total border length: 501956 -> normalized: 25.35131313131313
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.304308131 sec
+Total border length: 426434 -> normalized: 21.537070707070708
+Total time: 11.230783547 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 02:42:42 MET 2007
+
+SRS-200x200-40000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 2985202 -> normalized: 37.50253768844221
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 166.531565972 sec
+Total border length: 1915084 -> normalized: 24.058844221105527
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.652283967 sec
+Total border length: 1653168 -> normalized: 20.768442211055277
+Total time: 175.183849939 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 02:45:38 MET 2007
+
+SRS-300x300-90000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 6727480 -> normalized: 37.49988851727982
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 553.062965656 sec
+Total border length: 4198264 -> normalized: 23.40169453734671
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.32900536 sec
+Total border length: 3640934 -> normalized: 20.2950613154961
+Total time: 572.391971016 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 02:55:13 MET 2007
+
+SRS-500x500-250000-25-100-04_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-04_random_sync'...
+Cloning chip for later checks...
+Total border length: 18716170 -> normalized: 37.507354709418834
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2129.353801546 sec
+Total border length: 11232456 -> normalized: 22.509931863727456
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 55.032438678 sec
+Total border length: 9775080 -> normalized: 19.58933867735471
+Total time: 2184.386240224 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 03:31:42 MET 2007
+
+SRS-100x100-10000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-100x100-10000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 742700 -> normalized: 37.51010101010101
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 9.149391853 sec
+Total border length: 501540 -> normalized: 25.330303030303032
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 2.306653963 sec
+Total border length: 426338 -> normalized: 21.532222222222224
+Total time: 11.456045816 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 03:31:54 MET 2007
+
+SRS-200x200-40000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-200x200-40000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 2986400 -> normalized: 37.517587939698494
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 167.767140349 sec
+Total border length: 1914662 -> normalized: 24.05354271356784
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 8.663352089 sec
+Total border length: 1652586 -> normalized: 20.76113065326633
+Total time: 176.430492438 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 03:34:52 MET 2007
+
+SRS-300x300-90000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-300x300-90000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 6724698 -> normalized: 37.48438127090301
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 523.412872922 sec
+Total border length: 4197888 -> normalized: 23.399598662207357
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 19.405607541 sec
+Total border length: 3641104 -> normalized: 20.296008918617613
+Total time: 542.818480463 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 03:43:57 MET 2007
+
+SRS-500x500-250000-25-100-05_random_sync GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRS-500x500-250000-25-100-05_random_sync'...
+Cloning chip for later checks...
+Total border length: 18714182 -> normalized: 37.50337074148297
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 2151.490835698 sec
+Total border length: 11234058 -> normalized: 22.51314228456914
+Running SequentialReembedding-BL-NoReset-0.0010...
+Number of passes: 6
+Elapsed time: 55.00039387 sec
+Total border length: 9776736 -> normalized: 19.592657314629257
+Total time: 2206.491229568 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc025
+Job: 491999
+Timestamp: Wed Jan 31 04:20:48 MET 2007
+End of script
+---------------------------

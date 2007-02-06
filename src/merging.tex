@@ -71,42 +71,96 @@ or equal to $C$.
 \section{Results}
 \label{sec:merge_results}
 
-\begin{table}[t]\centering
-\caption{\label{tab:reptxplus}
-  Normalized border length (NBL) and average conflict index (ACI) 
-  of layouts produced by Row-Epitaxial and \Greedyplus\ placement (Pl.), 
-  followed by Sequential re-embedding (Re-emb.)
-  with thresholds $W = 0.1\%$ for border length minimization
-  and $W = 0.5\%$ for conflict index minimization. $Q$ is the number of
-  probe candidates considered for each spot during placement.
-  Running times are given in seconds.}
-\begin{tabular*}{\hsize}{lrrrr}  % formerly {@{\extracolsep{\fill}}lrrrr}
-\textbf{Border length min.} & \multicolumn{2}{c}{$335 \times 335$ (E.Coli)} & \multicolumn{2}{c}{$515 \times 515$ (Maize)} \cr
+\begin{table}[p!]\centering
+\caption{\label{tab:greedyplus_nbl}
+  Normalized border length (NBL) of layouts produced by \Greedyplus\ on random
+  chips of various dimensions. The amplitude of the $k$-threading and the number
+  $Q$ of candidades per spot are shown. All results are averages over a set of
+  five arrays and running times are reported in minutes.}
+\footnotesize{
+\begin{tabular}{crcrlcrlcr}
+\vspace{1pt}
+     &     & \multicolumn{2}{c}{$Q=500$} & & \multicolumn{2}{c}{$Q=1\,000$} & & \multicolumn{2}{c}{$Q=2\,000$} \\ \cline{3-4} \cline{6-7} \cline{9-10}
+\vspace{1pt}
+Dim. & $k$ & NBL & Time & & NBL & Time & & NBL & Time \\
 \hline
-\textbf{Row-Epitaxial.}\; $Q$ &    10 K &   20 K   &  10 K     &  20 K    \cr
-Time (Pl. + Re-emb.)     & 629 + 9 & 1211 + 9 & 3333 + 38 & 6806 + 38\cr
-NBL (Pl.)                & 34.11   & 33.81    & 33.11     & 32.87    \cr
-NBL (Pl. + Re-emb.)      & 33.93   & 33.66    & 32.95     & 32.73    \cr
+$300\times 300$ &  0 &      17.9356  &  5.4 &  &      17.7136  & 10.6 &  &      17.5460  &  20.6 \\
+                &  1 &      18.0922  &  5.4 &  &      17.8988  & 10.5 &  &      17.7501  &  20.4 \\
+                &  2 &      17.9886  &  5.4 &  &      17.7905  & 10.5 &  &      17.6342  &  20.5 \\
+                &  3 &      17.9339  &  5.7 &  &      17.7406  & 10.5 &  &      17.5799  &  20.5 \\
+                &  4 &      17.8978  &  5.7 &  &      17.7155  & 11.1 &  &      17.5506  &  20.5 \\
+                &  5 &      17.8862  &  5.7 &  &      17.7013  & 10.6 &  &      17.5359  &  20.5 \\
+                &  6 &      17.8749  &  5.4 &  &      17.6908  & 10.6 &  &      17.5225  &  20.5 \\
+                &  7 &      17.8641  &  5.5 &  &      17.6807  & 10.6 &  &      17.5223  &  20.6 \\
+                &  8 &      17.8605  &  5.4 &  &      17.6711  & 10.6 &  &      17.5141  &  20.6 \\
+                &  9 &      17.8519  &  5.4 &  &      17.6685  & 10.6 &  &      17.5083  &  20.6 \\
+                & 10 &      17.8518  &  5.4 &  &      17.6657  & 10.6 &  &      17.5067  &  20.6 \\
+                & 11 & {\bf 17.8427} &  5.5 &  &      17.6705  & 10.6 &  & {\bf 17.5066} &  20.6 \\
+                & 12 &      17.8431  &  5.4 &  & {\bf 17.6643} & 10.6 &  &      17.5070  &  20.6 \\
 \hline
-\textbf{\Greedyplus.}\; $Q$            & 350     &   700    &   350     &    700   \cr
-Time (Pl. + Re-emb.)     & 596 + 12& 1158 + 12& 2633 + 53 & 4974 + 53\cr
-NBL (Pl.)                & 33.79   & 33.22    & 33.07     & 32.38    \cr
-NBL (Pl. + Re-emb.)      & 33.53   & 32.98    & 32.82     & 32.16    \cr
+$500\times 500$ &  0 &      17.3240  & 14.9 &  &      17.0576  & 29.1 &  &      17.0761  &  57.0 \\
+                &  1 &      17.4648  & 14.8 &  &      17.2483  & 28.9 &  &      16.9650  &  56.5 \\
+                &  2 &      17.3372  & 14.9 &  &      17.1318  & 29.0 &  &      16.9135  &  56.4 \\
+                &  3 &      17.2732  & 14.9 &  &      17.0785  & 29.0 &  &      16.8855  &  56.5 \\
+                &  4 &      17.2371  & 14.9 &  &      17.0436  & 29.0 &  &      16.8676  &  56.8 \\
+                &  5 &      17.2143  & 14.9 &  &      17.0264  & 29.3 &  &      16.8557  &  57.2 \\
+                &  6 &      17.1990  & 15.0 &  &      17.0141  & 29.3 &  &      16.8420  &  57.2 \\
+                &  7 &      17.1812  & 15.0 &  &      17.0049  & 29.3 &  &      16.8398  &  57.2 \\
+                &  8 &      17.1774  & 15.0 &  &      16.9965  & 29.3 &  &      16.8346  &  57.0 \\
+                &  9 &      17.1704  & 15.0 &  &      16.9921  & 29.4 &  &      16.8332  &  57.3 \\
+                & 10 &      17.1666  & 15.8 &  &      16.9876  & 29.2 &  &      16.8294  &  59.7 \\
+                & 11 &      17.1629  & 15.0 &  & {\bf 16.9814} & 29.1 &  &      16.8280  &  56.8 \\
+                & 12 & {\bf 17.1594} & 14.9 &  &      16.9821  & 29.3 &  & {\bf 16.7983} &  56.7 \\
 \hline
-\cr
-\textbf{Conflict index min.} & \multicolumn{2}{c}{$335 \times 335$ (E.Coli)} & \multicolumn{2}{c}{$515 \times 515$ (Maize)} \cr
+$800\times 800$ &  0 &      16.7983  & 38.0 &  &      16.4944  & 73.8 &  &      16.2640  & 144.4 \\
+                &  1 &      16.8849  & 37.7 &  &      16.6615  & 73.3 &  &      16.4780  & 143.3 \\
+                &  2 &      16.7420  & 37.8 &  &      16.5377  & 73.5 &  &      16.3626  & 143.6 \\
+                &  3 &      16.6693  & 37.9 &  &      16.4775  & 73.9 &  &      16.3070  & 143.9 \\
+                &  4 &      16.6266  & 38.0 &  &      16.4375  & 73.8 &  &      16.2707  & 144.2 \\
+                &  5 &      16.5938  & 38.1 &  &      16.4096  & 74.2 &  &      16.2497  & 145.1 \\
+                &  6 &      16.5700  & 38.2 &  &      16.3919  & 74.3 &  &      16.2334  & 145.2 \\
+                &  7 &      16.5543  & 38.2 &  &      16.3801  & 74.6 &  &      16.2237  & 145.2 \\
+                &  8 &      16.5435  & 38.1 &  &      16.3691  & 74.5 &  &      16.2171  & 145.3 \\
+                &  9 &      16.5379  & 38.2 &  &      16.3646  & 74.7 &  &      16.2115  & 145.8 \\
+                & 10 &      16.5297  & 38.0 &  &      16.3586  & 74.0 &  &      16.2094  & 144.5 \\
+                & 11 &      16.5229  & 38.0 &  &      16.3539  & 74.0 &  &      16.2039  & 144.5 \\
+                & 12 & {\bf 16.5210} & 38.2 &  & {\bf 16.3518} & 74.1 &  & {\bf 16.2022} & 144.6 \\
 \hline
-\textbf{Row-Epitaxial.}\; $Q$ & 5 K        & 10 K        & 5 K         & 10 K       \cr
-Time (Pl. + Re-emb.)          & 930 + 1169 & 1732 + 1167 & 4082 + 4424 & 7856 + 4415\cr
-ACI (Pl.)                     & 584.92     & 544.93      & 604.04      & 574.68     \cr
-ACI (Pl. + Re-emb.)           & 544.23     & 514.10      & 554.87      & 532.74     \cr
+\end{tabular}}
+\end{table}
+
+\begin{table}[p!]\centering
+\caption{\label{tab:greedyplus_aci}
+  Average conflict index (ACI) of layouts produced by \Greedyplus\ on random
+  chips of various dimensions. The amplitude of the $k$-threading and the number
+  $Q$ of candidades per spot are shown. All results are averages over a set of
+  five arrays and running times are reported in minutes.}
+\footnotesize{
+\begin{tabular}{crcrlcrlcr}
+\vspace{1pt}
+     &     & \multicolumn{2}{c}{$Q=500$} & & \multicolumn{2}{c}{$Q=1\,000$} & & \multicolumn{2}{c}{$Q=2\,000$} \\ \cline{3-4} \cline{6-7} \cline{9-10}
+\vspace{1pt}
+Dim. & $k$ & ACI & Time & & ACI & Time & & ACI & Time \\
 \hline
-\textbf{\Greedyplus.}\; $Q$ &    200 &     300 &    200 &    300 \cr
-Time (Pl. + Re-emb.)        & 522 + 788 & 685 + 788 & 2131 + 2926 & 2757 + 2930\cr
-ACI (Pl.)                   & 462.52 &  450.15 & 459.38 & 446.76 \cr
-ACI (Pl. + Re-emb.)         & 458.02 &  445.98 & 454.84 & 442.55 \cr
+$300\times 300$ &  0 & {\bf 462.3882} &  5.8 &  & {\bf 443.3786} & 10.5 &  & {\bf 425.9132} &  19.8 \\
+                &  1 &      468.6485  &  5.8 &  &      449.1931  & 10.6 &  &      431.1021  &  19.9 \\
+                &  2 &      472.3753  &  5.8 &  &      452.5054  & 10.6 &  &      434.1209  &  19.9 \\
+                &  3 &      474.3210  &  5.8 &  &      454.6870  & 10.6 &  &      436.2880  &  20.0 \\
+                &  4 &      474.2031  &  5.8 &  &      454.6782  & 10.6 &  &      436.2529  &  19.9 \\
 \hline
-\end{tabular*}
+$500\times 500$ &  0 & {\bf 457.3329} & 15.8 &  & {\bf 437.3920} & 28.8 &  & {\bf 419.2114} &  54.2 \\
+                &  1 &      463.6259  & 16.0 &  &      443.7018  & 30.4 &  &      424.5009  &  54.7 \\
+                &  2 &      467.3461  & 15.9 &  &      447.5021  & 29.0 &  &      428.3882  &  54.8 \\
+                &  3 &      469.2554  & 16.6 &  &      449.4136  & 29.1 &  &      430.4992  &  55.0 \\
+                &  4 &      468.9371  & 16.0 &  &      449.5197  & 29.1 &  &      430.4662  &  58.0 \\
+\hline
+$800\times 800$ &  0 & {\bf 451.8074} & 40.0 &  & {\bf 431.8977} & 73.0 &  & {\bf 413.3451} & 144.3 \\
+                &  1 &      458.1598  & 40.3 &  &      437.8440  & 73.5 &  &      418.9562  & 138.4 \\
+                &  2 &      461.6418  & 40.3 &  &      441.6484  & 73.3 &  &      423.0075  & 145.9 \\
+                &  3 &      463.5349  & 40.3 &  &      443.7868  & 73.6 &  &      425.2302  & 138.9 \\
+                &  4 &      463.1225  & 40.3 &  &      443.7802  & 73.7 &  &      425.3695  & 139.0 \\
+\hline
+\end{tabular}}
 \end{table}
 
 We compare the results of \Greedyplus\ with Row-Epitaxial. To be fair,
@@ -118,7 +172,7 @@ thresholds of $W=0.1\%$ for border length minimization and $W=0.5\%$
 for conflict index minimization, so that the algorithm stops as soon
 as the improvement in one iteration drops below $W$.
 
-Table~\ref{tab:reptxplus} shows the total border length and the
+Table shows the total border length and the
 average conflict index of layouts produced by both algorithms on two
 chips with dimensions $335 \times 335$ and $515 \times 515$, filled
 with probes randomly selected from existing GeneChip arrays (E.Coli
@@ -144,3 +198,60 @@ conflict index minimization on the $515\times 515$ chip with $Q=5\,000$ resp.\
 $200$, \Greedyplus\;and Sequential improve the average conflict index by 18\%
 (from 554.87 to 454.84) and need only 60\% of the time, compared to
 Row-Epitaxial and Sequential.
+
+\begin{table}[p!]\centering
+\caption{\label{tab:greedycomp_bl}
+  Normalized border length (NBL) of layouts produced by Greedy and \Greedyplus\
+  on random chips with the number $Q$ of candidades per spot set in such a way
+  that both algorithms spend approximately the same amount of time. Total time
+  (including placement and re-embedding) is reported in minutes. Both algorithms
+  use $0$-threading and are followed by two passes of re-embedding optimization
+  with Sequential. The relative difference in NBL between the two approaches is
+  shown in percentage.}
+\footnotesize{
+\begin{tabular}{crrrlrrrlr}
+\vspace{1pt}
+                & \multicolumn{3}{c}{Greedy and Sequential} & & \multicolumn{3}{c}{\Greedyplus\ and Sequential} \\ \cline{2-4} \cline{6-8}
+\vspace{1pt}
+Dim.            & Q       & NBL     & Time     & & Q      & NBL           & Time     & & Relative\\
+\hline
+$300\times 300$ & 10\,000 & 18.0900 &  4.4 & &    390 & {\bf 17.8717} &  4.4 & & 1.21\% \\
+                & 20\,000 & 17.9726 &  9.0 & &    820 & {\bf 17.6236} &  8.8 & & 1.94\% \\
+\hline
+$500\times 500$ & 10\,000 & 17.3809 & 15.4 & &    510 & {\bf 17.1662} & 15.4 & & 1.24\% \\
+                & 20\,000 & 17.2779 & 32.4 & & 1\,100 & {\bf 16.8901} & 32.2 & & 2.24\% \\
+\hline
+$800\times 800$ & 10\,000 & 16.7143 & 43.8 & &    570 & {\bf 16.5945} & 43.4 & & 0.72\% \\
+                & 20\,000 & 16.6258 & 93.2 & & 1\,260 & {\bf 16.2799} & 92.9 & & 2.08\% \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{table}[p!]\centering
+\caption{\label{tab:greedycomp_ci}
+  Average conflict index (ACI) of layouts produced by Greedy and \Greedyplus\
+  (with $0$-threading) on random chips in approximately the same amount of time
+  (total time in minutes including two passes of Sequential re-embedding
+  optimization). The relative difference in ACI between the two approaches is
+  shown in percentage.}
+\footnotesize{
+\begin{tabular}{crcrlrcrlr}
+\vspace{1pt}
+                & \multicolumn{3}{c}{Greedy and Sequential} & & \multicolumn{3}{c}{\Greedyplus\ and Sequential}   \\ \cline{2-4} \cline{6-8}
+\vspace{1pt}
+Dim.            & Q        & ACI            & Time     & & Q       & ACI            & Time      & & Relative \\
+\hline
+$300\times 300$ &  10\,000 & {\bf 423.1330} &     13.9 & &  1\,070 &      438.4015  &     14.0 &  & -3.61\% \\
+                &  20\,000 & {\bf 412.5536} &     24.1 & &  2\,180 &      420.8863  &     24.2 &  & -2.02\% \\
+                &  80\,000 &      402.4365  &     54.3 & &  5\,500 & {\bf 401.7005} &     54.0 &  &  0.18\% \\
+\hline
+$500\times 500$ &  10\,000 & {\bf 412.5468} &     43.2 & &  1\,225 &      428.5082  &     43.7 &  & -3.87\% \\
+                &  20\,000 & {\bf 398.6096} &     77.0 & &  2\,580 &      409.6446  &     76.9 &  & -2.77\% \\
+                & 140\,000 &      375.5428  &    352.2 & & 13\,500 & {\bf 374.9914} &    359.9 &  &  0.15\% \\
+\hline
+$800\times 800$ &  10\,000 & {\bf 405.3133} &    113.9 & &  1\,315 &      421.2380  &    113.7 &  & -3.93\% \\
+                &  20\,000 & {\bf 389.3929} &    207.9 & &  2\,790 &      401.7969  &    208.5 &  & -3.19\% \\
+                & 270\,000 &      000.0000  & 1\,000.0 & & 30\,000 & {\bf 000.0000} & 1\,000.0 &  &  0.00\% \\
+\hline
+\end{tabular}}
+\end{table}
