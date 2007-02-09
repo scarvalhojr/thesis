@@ -659,13 +659,14 @@ the reduction in average conflict index.
 
 In this chapter, we have surveyed placement algorithms for the Microarray Layout
 Problem, including an optimal placement strategy for uniform arrays based on a
-two-dimensional Gray code. For general arrays, we have presented more
+two-dimensional Gray code, an approach based on the traveling salesman problem
+and different threading techniques. For general arrays, we have presented more
 experimental results with Row-Epitaxial, the best known placement algorithm to
 date, and studied the impact of the choice of threading for its initial layout.
 
-We have also introduced a new placement algorithm, Greedy. Greedy achieved
-similar results in terms of BLM and better results in terms of CIM compared to
-Row-Epitaxial. For BLM, Row-Epitaxial is faster than Greedy and should still be
-the method of choice. For CIM, however, we believe that the improvements
+We have also introduced a new placement algorithm, called Greedy. Greedy
+achieved similar results in terms of BLM and better results in terms of CIM
+compared to Row-Epitaxial. For BLM, Row-Epitaxial is faster than Greedy and
+should still be the method of choice. For CIM, however, the improvements
 achieved by Greedy over Row-Epitaxial justify the small increase in running
 time.
