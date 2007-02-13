@@ -3,80 +3,86 @@
 \label{ch:merge}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The problem with the traditional ``place and re-embed'' approach is that the
-arrangement of probes on the chip is decided based on embeddings that are
-likely to change during the re-embedding phase. Intuitively, better results
-should be obtained when the placement and embedding phases are considered
-simultaneously instead of separately. However, because of the generally high
-number of embeddings of each single probe, it is not easy to design algorithms
-that efficiently use the additional freedom and run reasonably fast in
-practice.
+In the previous chapters we have reviewed several algorithms that deal with the
+Microarray Layout Problem in the traditional way: partitioning, placement and
+re-embedding. The problem with the ``place and re-embed'' approach is that once
+the placement is fixed, there is usually little freedom for optimization by
+re-embedding the probes. Intuitively, better results should be obtained when the
+placement and embedding phases are considered simultaneously instead of
+separately. However, because of the generally high number of embeddings of each
+single probe, it is not easy to design algorithms that efficiently use the
+additional freedom and run reasonably fast in practice. In Chapter
+\ref{ch:part}, we have shown how Pivot Partitioning successfully explored this
+extra freedom to outperform previous partitioning algorithms.
 
-We describe \Greedyplus , the first placement algorithm that simultaneously
-places and re-embeds the probes, and compare it with Row-Epitaxial, the best
-known large-scale placement algorithm.
+In this chapter, we describe the first placement algorithm that simultaneously
+places and re-embeds the probes. Our goal was to design an algorithm that is
+similar to the Greedy placement algorithm (Section \ref{sec:placement_greedy}),
+so that we can make a better assessment of the gains resulting from merging the
+placement and re-embedding phases.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\Greedyplus}
 \label{sec:merge_greedyplus}
 
-The goal is to design an algorithm that is similar to Row-Epitaxial, so that we
-can make a better assessment of the gains resulting from merging the placement
-and re-embedding phases.
+\Greedyplus\ is similar to Greedy in many respects. Spots are filled in a greedy
+fashion, sequentially, using a user-configurable $k$-threading pattern. For each
+spot $s$, \Greedyplus\ looks at $Q$ probe candidates and chooses the one that
+can be placed at $s$ with minimum cost. The main difference is that \Greedyplus\
+considers all possible embeddings of a candidate $p$ instead of only $p$'s given
+embedding. This is done by temporarily placing $p$ at the spot $s$ and using
+OSPE (Section~\ref{sec:reembed_ospe}) to compute $p$'s optimal embedding with
+respect to the already-filled neighbors of $s$. Naturally, OSPE can be used to
+compute the optimal embedding with respect to border length or conflict index.
 
-\Greedyplus\ fills the spots row-by-row, from left to right, in a
-greedy fashion, similarly to Row-Epitaxial. Also, for each spot $s$,
-it looks at $Q$ probe candidates and chooses the one that can be
-placed at $s$ with minimum cost. The difference is that we now
-consider all possible embeddings of a candidate $p$ instead of only
-$p$'s initial embedding. This is done by temporarily placing $p$ at
-$s$ and computing its optimal embedding with respect to the
-already-filled neighbors of $s$ (using OSPE from
-Section~\ref{sec:reembed_ospe}).
-
-Compared to Row-Epitaxial, \Greedyplus\ spends more time evaluating each probe
-candidate $p$ for a spot $s$. While Row-Epitaxial takes $O(T)$ time to compute
+Compared to Greedy, \Greedyplus\ spends more time evaluating each probe
+candidate $p$ for filling a spot $s$. While Greedy takes $O(T)$ time to compute
 the conflict index or the border length resulting from placing $p$ at $s$,
-\Greedyplus\ requires $O(\ell T)$ time since it uses OSPE (recall that $\ell$
-is the probe length and $T$ is the length of the deposition sequence). To
-achieve a running time comparable to Row-Epitaxial, we must therefore consider
-lower candidate numbers $Q$.
+\Greedyplus\ requires $O(\ell \cdot T)$ time since it uses OSPE (recall that
+$\ell$ is the probe length and $T$ is the deposition sequence length). We must
+therefore use lower numbers $Q$ of candidates per spot to achieve a running
+time comparable to Greedy.
 
-There are a few optimizations that reduce the time spent with OSPE
-computations when several probe candidates are examined in succession
-for the same spot. First, we note that if two probe candidates $p$ and
-$p'$ share a common prefix of length $l$, the first $l + 1$ rows of
-the OSPE dynamic programming matrix $D$ will be identical. In other
-words, if we have calculated the minimum cost of $p$, we can speed up
-the calculation of the minimum cost of $p'$ by skipping the first $l +
-1$ rows of $D$.
+There are three observations that significantly reduce the time spent with OSPE
+computations when several probe candidates are considered in succession for
+filling the same spot. First, we note that the $U_t$ and $M_{i,t}$ costs of OSPE
+(Equations \ref{eq:ospe_ucost} and \ref{eq:ospe_mcost}, respectively) need to be
+computed only once for a given spot $s$ since they do not depend on the probe
+placed at $s$ but rather on the probes placed at neighbors of $s$: $U_t$ depends
+solely on the neighbors of $s$ whereas $M_{i,t}$ depends on the neighbors of $s$
+and on the number $i$ of bases probe $p$ already contains at synthesis step $t$
+(assumming that all probes have the same length $\ell$; $c$ and $\theta$ in
+Equation \ref{eq:ospe_mcost} are constants).
 
-In order to fully exploit this fact, we examine the probes in
-lexicographical order so that we maximize the length of the common
-prefix between two consecutive candidates. We keep a doubly-linked
-list of probes and remove a probe $p$ from the list when it is placed.
-For the next spot to be filled, we look at $Q$ probes in the list
-around $p$'s former position, e.g., at $Q/2$ probes to the left and to
-the right of $p$.
+Second, once we know that a probe candidate $p$ can be placed at the spot $s$
+with minimum cost $\kappa$, we can stop the OSPE computation for another
+candidate $p'$ as soon as all values in a row of OSPE's dynamic programming
+matrix are greater than or equal to $\kappa$.
 
-Second, the $U_t$ costs of OSPE need to be computed only once for a given spot
-$s$ since $U_t$ does not depend on the probe placed at $s$. Thus, in order to
-examine another candidate, we only need to recompute the $M_{i,t}$ costs.
+Finally, we note that if two probe sequences $p$ and $p'$ share a common prefix
+of length $r$, the first $r + 1$ rows of OSPE's matrix $D$ will be identical.
+Hence, if we have previously calculated the minimum cost of $p$, we can speed up
+the calculation of the minimum cost of $p'$ by skipping the first $r + 1$ rows
+of $D$. In order to fully exploit this fact, we must examine the probes in
+lexicographical order so that we maximize the length of the common prefix
+between two consecutive probe candidates. For this reason, \Greedyplus\ uses the
+same technique used by Greedy: Initially, the probe sequences are sorted
+lexicographically and stored in a doubly-linked list. Once a probe $p$ is
+selected to fill the current spot, it is removed from the list. For the next
+spot to be filled, \Greedyplus\ looks at $Q$ probes in the list around $p$'s
+former position, e.g., at $\lfloor Q/2 \rfloor$ probes to the left and at
+$\lceil Q/2 \rceil$ probes to the right of $p$ (the list is traversed from left
+to right).
 
-Finally, once we know that a probe candidate $p$ can be placed at $s$
-with minimum cost $C$, we can stop the OSPE computation for another
-candidate $p'$ as soon as all values in a row of $D$ are greater than
-or equal to $C$.
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{sec:merge_results}
 
 \begin{table}[p!]\centering
 \caption{\label{tab:greedyplus_nbl}
   Normalized border length (NBL) of layouts produced by \Greedyplus\ on random
-  chips of various dimensions. The amplitude of the $k$-threading and the number
-  $Q$ of candidades per spot are shown. All results are averages over a set of
-  five arrays and running times are reported in minutes.}
+  chips with varying number $Q$ of candidades per spot and $k$-threading's
+  amplitude. Running times are reported in minutes.}
 \footnotesize{
 \begin{tabular}{crcrlcrlcr}
 \vspace{1pt}
@@ -95,22 +101,26 @@ $300\times 300$ &  0 &      17.9356  &  5.4 &  &      17.7136  & 10.6 &  &      
                 &  8 &      17.8605  &  5.4 &  &      17.6711  & 10.6 &  &      17.5141  &  20.6 \\
                 &  9 &      17.8519  &  5.4 &  &      17.6685  & 10.6 &  &      17.5083  &  20.6 \\
                 & 10 &      17.8518  &  5.4 &  &      17.6657  & 10.6 &  &      17.5067  &  20.6 \\
-                & 11 & {\bf 17.8427} &  5.5 &  &      17.6705  & 10.6 &  & {\bf 17.5066} &  20.6 \\
-                & 12 &      17.8431  &  5.4 &  & {\bf 17.6643} & 10.6 &  &      17.5070  &  20.6 \\
+                & 11 &      17.8427  &  5.5 &  &      17.6705  & 10.6 &  &      17.5066  &  20.6 \\
+                & 12 &      17.8431  &  5.4 &  &      17.6643  & 10.6 &  &      17.5070  &  20.6 \\
+                & 13 &      17.8455  &  5.4 &  & {\bf 17.6628} & 10.6 &  & {\bf 17.5021} &  20.6 \\
+                & 14 & {\bf 17.8423} &  5.4 &  &      17.6629  & 10.6 &  &      17.5053  &  20.5 \\
 \hline
-$500\times 500$ &  0 &      17.3240  & 14.9 &  &      17.0576  & 29.1 &  &      17.0761  &  57.0 \\
-                &  1 &      17.4648  & 14.8 &  &      17.2483  & 28.9 &  &      16.9650  &  56.5 \\
-                &  2 &      17.3372  & 14.9 &  &      17.1318  & 29.0 &  &      16.9135  &  56.4 \\
-                &  3 &      17.2732  & 14.9 &  &      17.0785  & 29.0 &  &      16.8855  &  56.5 \\
-                &  4 &      17.2371  & 14.9 &  &      17.0436  & 29.0 &  &      16.8676  &  56.8 \\
-                &  5 &      17.2143  & 14.9 &  &      17.0264  & 29.3 &  &      16.8557  &  57.2 \\
-                &  6 &      17.1990  & 15.0 &  &      17.0141  & 29.3 &  &      16.8420  &  57.2 \\
-                &  7 &      17.1812  & 15.0 &  &      17.0049  & 29.3 &  &      16.8398  &  57.2 \\
-                &  8 &      17.1774  & 15.0 &  &      16.9965  & 29.3 &  &      16.8346  &  57.0 \\
-                &  9 &      17.1704  & 15.0 &  &      16.9921  & 29.4 &  &      16.8332  &  57.3 \\
-                & 10 &      17.1666  & 15.8 &  &      16.9876  & 29.2 &  &      16.8294  &  59.7 \\
-                & 11 &      17.1629  & 15.0 &  & {\bf 16.9814} & 29.1 &  &      16.8280  &  56.8 \\
-                & 12 & {\bf 17.1594} & 14.9 &  &      16.9821  & 29.3 &  & {\bf 16.7983} &  56.7 \\
+$500\times 500$ &  0 &      17.3240  & 14.9 &  &      17.0576  & 29.1 &  &      16.8707  &  57.0 \\
+                &  1 &      17.4648  & 14.8 &  &      17.2483  & 28.9 &  &      17.0761  &  56.5 \\
+                &  2 &      17.3372  & 14.9 &  &      17.1318  & 29.0 &  &      16.9650  &  56.4 \\
+                &  3 &      17.2732  & 14.9 &  &      17.0785  & 29.0 &  &      16.9135  &  56.5 \\
+                &  4 &      17.2371  & 14.9 &  &      17.0436  & 29.0 &  &      16.8855  &  56.8 \\
+                &  5 &      17.2143  & 14.9 &  &      17.0264  & 29.3 &  &      16.8676  &  57.2 \\
+                &  6 &      17.1990  & 15.0 &  &      17.0141  & 29.3 &  &      16.8557  &  57.2 \\
+                &  7 &      17.1812  & 15.0 &  &      17.0049  & 29.3 &  &      16.8420  &  57.2 \\
+                &  8 &      17.1774  & 15.0 &  &      16.9965  & 29.3 &  &      16.8398  &  57.0 \\
+                &  9 &      17.1704  & 15.0 &  &      16.9921  & 29.4 &  &      16.8346  &  57.3 \\
+                & 10 &      17.1666  & 15.8 &  &      16.9876  & 29.2 &  &      16.8332  &  59.7 \\
+                & 11 &      17.1629  & 15.0 &  &      16.9814  & 29.1 &  &      16.8294  &  56.8 \\
+                & 12 &      17.1594  & 14.9 &  &      16.9821  & 29.3 &  &      16.8280  &  56.7 \\
+                & 13 &      17.1549  & 15.8 &  &      16.9767  & 29.1 &  & {\bf 16.8240} &  56.8 \\
+                & 14 & {\bf 17.1503} & 14.9 &  & {\bf 16.9737} & 29.1 &  &      16.8261  &  56.8 \\
 \hline
 $800\times 800$ &  0 &      16.7983  & 38.0 &  &      16.4944  & 73.8 &  &      16.2640  & 144.4 \\
                 &  1 &      16.8849  & 37.7 &  &      16.6615  & 73.3 &  &      16.4780  & 143.3 \\
@@ -124,17 +134,18 @@ $800\times 800$ &  0 &      16.7983  & 38.0 &  &      16.4944  & 73.8 &  &      
                 &  9 &      16.5379  & 38.2 &  &      16.3646  & 74.7 &  &      16.2115  & 145.8 \\
                 & 10 &      16.5297  & 38.0 &  &      16.3586  & 74.0 &  &      16.2094  & 144.5 \\
                 & 11 &      16.5229  & 38.0 &  &      16.3539  & 74.0 &  &      16.2039  & 144.5 \\
-                & 12 & {\bf 16.5210} & 38.2 &  & {\bf 16.3518} & 74.1 &  & {\bf 16.2022} & 144.6 \\
+                & 12 &      16.5210  & 38.2 &  &      16.3518  & 74.1 &  &      16.2022  & 144.6 \\
+                & 13 &      16.5194  & 38.1 &  &      16.3474  & 74.1 &  &      16.1971  & 144.7 \\
+                & 14 & {\bf 16.5118} & 38.0 &  & {\bf 16.3456} & 74.1 &  & {\bf 16.1968} & 144.8 \\
 \hline
 \end{tabular}}
 \end{table}
 
-\begin{table}[p!]\centering
+\begin{table}[t]\centering
 \caption{\label{tab:greedyplus_aci}
   Average conflict index (ACI) of layouts produced by \Greedyplus\ on random
-  chips of various dimensions. The amplitude of the $k$-threading and the number
-  $Q$ of candidades per spot are shown. All results are averages over a set of
-  five arrays and running times are reported in minutes.}
+  chips with varying number $Q$ of candidades per spot and $k$-threading's
+  amplitude. Running times are reported in minutes.}
 \footnotesize{
 \begin{tabular}{crcrlcrlcr}
 \vspace{1pt}
@@ -163,71 +174,71 @@ $800\times 800$ &  0 & {\bf 451.8074} & 40.0 &  & {\bf 431.8977} & 73.0 &  & {\b
 \end{tabular}}
 \end{table}
 
-We compare the results of \Greedyplus\ with Row-Epitaxial. To be fair,
-since Row-Epitaxial is a traditional placement algorithm that does not
-change the embeddings, we need to compare the layouts obtained by both
-algorithms after a re-embedding phase. For this task we use the
-Sequential algorithm (Section~\ref{sec:reembed_sequential}) with
-thresholds of $W=0.1\%$ for border length minimization and $W=0.5\%$
-for conflict index minimization, so that the algorithm stops as soon
-as the improvement in one iteration drops below $W$.
+We first examine how the $k$-threading's amplitude and the number $Q$ of
+candidates per spot affect the results of \Greedyplus. In the case of BLM (Table
+\ref{tab:greedyplus_nbl}), the best results were always achieved with
+surprisingly high values of $k$ (this is contrast with Greedy, which always
+produced the best results with $k=0$). The reason is not yet clear, especially
+because only conflicts between adjacent spots count in the border length model.
+It should also be noted that for a sufficiently large value of $k$, a
+``row-wise'' $k$-threading becomes a ``column-wise'' 0-threading.
 
-Table shows the total border length and the
-average conflict index of layouts produced by both algorithms on two
-chips with dimensions $335 \times 335$ and $515 \times 515$, filled
-with probes randomly selected from existing GeneChip arrays (E.Coli
-Genome 2.0 and Maize Genome, respectively). Probes are initially
-left-most embedded into the standard 74-step Affymetrix deposition
-sequence \{TGCA\}$^{18}$TG. The parameter $Q$ is chosen differently
-for both algorithms so that the running time is approximately
-comparable (e.g., for border length minimization, $Q=350$ for
-\Greedyplus\ corresponds to $Q=10\,000$ for Row-Epitaxial). We make
-the following observations.
+With BLM, increasing the amplitude from $k=0$ to $k=1$ always worsened the
+results. Increasing it further, however, improved the layouts, eventually
+resulting in less conflicts than with $k=0$ up to a point when it started to
+make little difference. The greatest difference between the worse and the best
+layouts due to the amplitude $k$ was at most $2.26\%$ (from $16.5118$ with
+$k=14$ to $16.8849$ with $k=1$ on $800\times 800$ chips and $Q=500$). In case of
+CIM (Table \ref{tab:greedyplus_aci}), the best results were always achieved with
+$k=0$, and increasing it up to $k=3$ always resulted in more conflicts, although
+increasing it to $k=4$ often resulted in slightly better layouts than with
+$k=3$.
 
-First, increasing $Q$ linearly increases placement time, while only
-marginally improving chip quality for border length minimization.
+In both cases, doubling the number $Q$ of candidates per spot roughly doubled
+the running time. In contrast with Greedy, \Greedyplus\ requires approximately
+the same time with CIM and BLM, sometimes being even slightly faster with the
+former. This can be explained as follows. The major difference the quality
+measure makes for OSPE, in terms of running time, is when the $U_t$ and
+$M_{i,t}$ costs of OSPE are computed. While for BLM at most four neighbors of a
+spot $s$ need to be examined, for CIM we must look at up to 48 neighbors of $s$.
+However, since the $U_t$ and $M_{i,t}$ costs are computed only once for a spot
+$s$ and reused for each of the $Q$ candidate probes, the greater the number $Q$,
+the less impact the quality measure makes in total running time. The fact that
+\Greedyplus\ is sometimes slightly faster with CIM than with BLM could be
+because, with the former, it more quickly finds a probe candidate with a low
+minimum cost $\kappa$ that allows it to stop computing the cost of other
+candidates sooner (when all entries in a row of OSPE's matrix are greater than
+$\kappa$).
 
-Second, re-embedding runs very quickly for border length minimization,
-even on the larger chip. For conflict index minimization, the time for
-the re-embedding phase exceeds the time for the placement phase for
-both algorithms.
-
-Finally, \Greedyplus\ always produces better layouts in the same amount of
-time (or less) while looking at fewer probe candidates.  In particular, for
-conflict index minimization on the $515\times 515$ chip with $Q=5\,000$ resp.\ 
-$200$, \Greedyplus\;and Sequential improve the average conflict index by 18\%
-(from 554.87 to 454.84) and need only 60\% of the time, compared to
-Row-Epitaxial and Sequential.
-
-\begin{table}[p!]\centering
+\begin{table}[t!]\centering
 \caption{\label{tab:greedycomp_bl}
   Normalized border length (NBL) of layouts produced by Greedy and \Greedyplus\
-  on random chips with the number $Q$ of candidades per spot set in such a way
-  that both algorithms spend approximately the same amount of time. Total time
-  (including placement and re-embedding) is reported in minutes. Both algorithms
+  on random chips with the number $Q$ of candidades per spot of \Greedyplus\ set
+  in such a way that it does not exceed the time spent by Greedy. Total time
+  including placement and re-embedding is reported in minutes. Both algorithms
   use $0$-threading and are followed by two passes of re-embedding optimization
-  with Sequential. The relative difference in NBL between the two approaches is
-  shown in percentage.}
+  with Sequential. The relative difference in NBL and time between the two
+  approaches is shown in percentage.}
 \footnotesize{
-\begin{tabular}{crrrlrrrlr}
+\begin{tabular}{crrrlrrrlrr}
 \vspace{1pt}
-                & \multicolumn{3}{c}{Greedy and Sequential} & & \multicolumn{3}{c}{\Greedyplus\ and Sequential} \\ \cline{2-4} \cline{6-8}
+                & \multicolumn{3}{c}{Greedy and Sequential} & & \multicolumn{3}{c}{\Greedyplus\ and Sequential} & & \multicolumn{2}{c}{Relative} \\ \cline{2-4} \cline{6-8} \cline{10-11}
 \vspace{1pt}
-Dim.            & Q       & NBL     & Time     & & Q      & NBL           & Time     & & Relative\\
+Dim.            & Q       & NBL     & Time  & & Q      & NBL     & Time & & NBL       & Time \\
 \hline
-$300\times 300$ & 10\,000 & 18.0900 &  4.4 & &    390 & {\bf 17.8717} &  4.4 & & 1.21\% \\
-                & 20\,000 & 17.9726 &  9.0 & &    820 & {\bf 17.6236} &  8.8 & & 1.94\% \\
+$300\times 300$ & 10\,000 & 18.0900 &   6.2 & &    300 & {\bf 17.9807} &  4.2 & & $-0.60\%$ & $-31.21\%$ \\
+                & 20\,000 & 17.9725 &  12.1 & &    700 & {\bf 17.6746} &  9.2 & & $-1.66\%$ & $-23.85\%$ \\
 \hline
-$500\times 500$ & 10\,000 & 17.3809 & 15.4 & &    510 & {\bf 17.1662} & 15.4 & & 1.24\% \\
-                & 20\,000 & 17.2779 & 32.4 & & 1\,100 & {\bf 16.8901} & 32.2 & & 2.24\% \\
+$500\times 500$ & 10\,000 & 17.3809 &  20.8 & &    450 & {\bf 17.2216} & 16.0 & & $-0.92\%$ & $-23.30\%$ \\
+                & 20\,000 & 17.2779 &  41.9 & &    950 & {\bf 16.9382} & 30.4 & & $-1.97\%$ & $-27.42\%$ \\
 \hline
-$800\times 800$ & 10\,000 & 16.7143 & 43.8 & &    570 & {\bf 16.5945} & 43.4 & & 0.72\% \\
-                & 20\,000 & 16.6258 & 93.2 & & 1\,260 & {\bf 16.2799} & 92.9 & & 2.08\% \\
+$800\times 800$ & 10\,000 & 16.7143 &  57.9 & &    500 & {\bf 16.6549} & 41.7 & & $-0.36\%$ & $-28.00\%$ \\
+                & 20\,000 & 16.6259 & 121.6 & & 1\,130 & {\bf 16.3175} & 97.7 & & $-1.85\%$ & $-19.68\%$ \\
 \hline
 \end{tabular}}
 \end{table}
 
-\begin{table}[p!]\centering
+\begin{table}[t!]\centering
 \caption{\label{tab:greedycomp_ci}
   Average conflict index (ACI) of layouts produced by Greedy and \Greedyplus\
   (with $0$-threading) on random chips in approximately the same amount of time
@@ -241,17 +252,101 @@ $800\times 800$ & 10\,000 & 16.7143 & 43.8 & &    570 & {\bf 16.5945} & 43.4 & &
 \vspace{1pt}
 Dim.            & Q        & ACI            & Time     & & Q       & ACI            & Time      & & Relative \\
 \hline
-$300\times 300$ &  10\,000 & {\bf 423.1330} &     13.9 & &  1\,070 &      438.4015  &     14.0 &  & -3.61\% \\
-                &  20\,000 & {\bf 412.5536} &     24.1 & &  2\,180 &      420.8863  &     24.2 &  & -2.02\% \\
-                &  80\,000 &      402.4365  &     54.3 & &  5\,500 & {\bf 401.7005} &     54.0 &  &  0.18\% \\
+$300\times 300$ &  10\,000 & {\bf 423.1330} &     13.9 & &  1\,070 &      438.4015  &     14.0 &  & $+3.61\%$ \\
+                &  20\,000 & {\bf 412.5536} &     24.1 & &  2\,180 &      420.8863  &     24.2 &  & $+2.02\%$ \\
+                &  80\,000 &      402.4365  &     54.3 & &  5\,500 & {\bf 401.7005} &     54.0 &  & $-0.18\%$ \\
 \hline
-$500\times 500$ &  10\,000 & {\bf 412.5468} &     43.2 & &  1\,225 &      428.5082  &     43.7 &  & -3.87\% \\
-                &  20\,000 & {\bf 398.6096} &     77.0 & &  2\,580 &      409.6446  &     76.9 &  & -2.77\% \\
-                & 140\,000 &      375.5428  &    352.2 & & 13\,500 & {\bf 374.9914} &    359.9 &  &  0.15\% \\
+$500\times 500$ &  10\,000 & {\bf 412.5468} &     43.2 & &  1\,225 &      428.5082  &     43.7 &  & $+3.87\%$ \\
+                &  20\,000 & {\bf 398.6096} &     77.0 & &  2\,580 &      409.6446  &     76.9 &  & $+2.77\%$ \\
+                & 140\,000 &      375.5428  &    352.2 & & 13\,500 & {\bf 374.9914} &    351.9 &  & $-0.15\%$ \\
 \hline
-$800\times 800$ &  10\,000 & {\bf 405.3133} &    113.9 & &  1\,315 &      421.2380  &    113.7 &  & -3.93\% \\
-                &  20\,000 & {\bf 389.3929} &    207.9 & &  2\,790 &      401.7969  &    208.5 &  & -3.19\% \\
-                & 270\,000 &      000.0000  & 1\,000.0 & & 30\,000 & {\bf 000.0000} & 1\,000.0 &  &  0.00\% \\
+$800\times 800$ &  10\,000 & {\bf 405.3133} &    113.9 & &  1\,315 &      421.2380  &    113.7 &  & $+3.93\%$ \\
+                &  20\,000 & {\bf 389.3929} &    207.9 & &  2\,790 &      401.7969  &    208.5 &  & $+3.19\%$ \\
+                & 300\,000 &      350.8412  & 2\,056.7 & & 32\,000 & {\bf 350.6951} & 2\,050.8 &  & $-0.04\%$ \\
 \hline
 \end{tabular}}
 \end{table}
+
+We now compare the results obtained by Greedy and \Greedyplus\ when both
+algorithms are given the same amount of time (the parameter $Q$ is chosen
+differently for both algorithms so that the running time is approximately
+comparable). To be fair, since Greedy is a traditional placement algorithm that
+does not change the probes' embeddings, we need to compare the layouts obtained
+by both algorithms after a re-embedding phase. For this task we use the
+Sequential algorithm (Section \ref{sec:reembed_sequential}) set to perform two
+passes of re-embedding optimization. For this experiment we use probes of length
+$\ell=25$ left-most embedded in the standard Affymetrix deposition sequence.
+
+Table \ref{tab:greedycomp_bl} compares both algorithms in terms of border length
+minimization. In all cases, \Greedyplus\ produced better layouts than Greedy in
+the same amount of time (or less) while looking at fewer probe candidates. For
+instance, on $800\times 800$ chips \Greedyplus\ with $Q=1\,130$ produced layouts
+with $1.85\%$ less border conflicts than Greedy with $Q=20\,000$ in $19.68\%$
+less time, on average.
+
+In terms of CIM (Table \ref{tab:greedycomp_ci}), Greedy is not so easily
+outperformed by \Greedyplus. With $Q=10\,000$ and $Q=20\,000$ Greedy produced
+better layouts than \Greedyplus\ in approximately the same time. For instance,
+on $800\times 800$ chips, \Greedyplus\ with $Q=2\,790$ produced layouts with
+$3.19\%$ more conflicts than Greedy with $Q=20\,000$. However, \Greedyplus\ has
+an advantage over Greedy since it needs to examine less candidates to achieve
+similar results and, for sufficiently large values of $Q$, it is usually
+possible to achieve better results with \Greedyplus\ in the same amount of time.
+For instance, on $300\times 300$ chips, \Greedyplus\ with $Q=13\,500$ produced
+layouts with only $0.18\%$ less conflicts than Greedy with $Q=80\,000$. After
+this point, however, the difference in ACI between Greedy and \Greedyplus\ tends
+to increase (data not shown). We also observed that the larger the chip, the
+less advantage \Greedyplus\ has over Greedy. On $500\times 500$ chips,
+\Greedyplus\ starts to outperform Greedy when $Q=13\,500$ (with running times in
+the order of 6 hours), approximately, and on $800\times 800$ chips around
+$Q=32\,000$ (with more than 34 hours of running time per array).
+
+\begin{table}[t!]\centering
+\caption{\label{tab:gplus_reptx}
+  Normalized border length (NBL) of layouts produced by Row-Epitaxial and
+  \Greedyplus\ (both with $0$-threading) on random chips in approximately the
+  same amount of time. (total time in minutes including two passes of Sequential
+  re-embedding optimization). The relative difference in NBL and time between
+  the two approaches is shown in percentage.}
+\footnotesize{
+\begin{tabular}{crrrlrrrlrr}
+\vspace{1pt}
+                & \multicolumn{3}{c}{Row-Epitaxial and Sequential} & & \multicolumn{3}{c}{\Greedyplus\ and Sequential} & & \multicolumn{2}{c}{Relative} \\ \cline{2-4} \cline{6-8} \cline{10-11}
+\vspace{1pt}
+Dim.            & Q       & NBL     &  Time & & Q      & NBL     & Time & & NBL       & Time \\
+\hline
+$300\times 300$ & 10\,000 & 18.0524 &   4.3 & &    300 & {\bf 17.9807} &  4.2 & & $-0.40\%$ &  $-1.24\%$ \\
+                & 20\,000 & 17.9430 &   9.5 & &    700 & {\bf 17.6746} &  9.2 & & $-1.50\%$ &  $-2.85\%$ \\
+\hline
+$500\times 500$ & 10\,000 & 17.3584 &  16.0 & &    450 & {\bf 17.2216} & 16.0 & & $-0.79\%$ &  $-0.40\%$ \\
+                & 20\,000 & 17.2502 &  34.7 & &    950 & {\bf 16.9382} & 30.4 & & $-1.81\%$ & $-12.51\%$ \\
+\hline
+$800\times 800$ & 10\,000 & 16.7176 &  45.6 & &    500 & {\bf 16.6549} & 41.7 & & $-0.38\%$ &  $-8.51\%$ \\
+                & 20\,000 & 16.6012 & 100.1 & & 1\,130 & {\bf 16.3175} & 97.7 & & $-1.71\%$ &  $-2.41\%$ \\
+\hline
+\end{tabular}}
+\end{table}
+
+Finally, we also compare \Greedyplus\ with Row-Epitaxial (Section
+\ref{sec:placement_reptx}), which, in terms of border length minimization,
+achieves results comparable to Greedy in less time. Table \ref{tab:gplus_reptx}
+shows that \Greedyplus\ also outperforms Row-Epitaxial in the same amount of
+time (or less). We observed that the larger values of $Q$ are used, the greater
+is the advantage of \Greedyplus\ over Greedy. In fact, the difference in NBL
+between Greedy and \Greedyplus, according to the results of Table
+\ref{tab:greedyplus_nbl}, could be even more significative if the latter used
+higher amplitudes of $k$-threading.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:merge_summary}
+
+In this chapter, we have presented a new placement algorithm, called
+\Greedyplus\ that for the first time places and re-embeds the probes
+simultaneously. Our results have shown that \Greedyplus\ outperforms the
+previously best placement algorithms --- Row-Epitaxial, for border length
+minimization, and Greedy, for conflict index minimization. In terms of CIM,
+Greedy produces better results when time is limited but, otherwise, \Greedyplus\
+should be the placement algorithm of choice. In fact, \Greedyplus\ achieves
+similar results to Greedy by examining fewer probe candidates per spot and, for
+this reason, it has the potential for producing better layouts.

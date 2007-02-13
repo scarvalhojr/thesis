@@ -1,0 +1,850 @@
+Host: doc020
+Job: 489002
+Timestamp: Sun Jan 28 11:12:58 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3117.470688106 sec
+Average conflict index: 405.0831738443677
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.011736218 sec
+Average conflict index: 402.44131316734365
+Total time: 3283.482424324 sec
+---------------------------
+Host: doc020
+Job: 489002
+Timestamp: Sun Jan 28 12:08:07 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3108.611323367 sec
+Average conflict index: 405.0289928162363
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.149402183 sec
+Average conflict index: 402.35951181020266
+Total time: 3274.76072555 sec
+---------------------------
+Host: doc020
+Job: 489002
+Timestamp: Sun Jan 28 13:03:08 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3134.03039511 sec
+Average conflict index: 404.7238971342034
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.321677253 sec
+Average conflict index: 402.10216318506855
+Total time: 3300.352072363 sec
+---------------------------
+Host: doc020
+Job: 489002
+Timestamp: Sun Jan 28 13:58:34 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3073.716281372 sec
+Average conflict index: 405.52629516827295
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 165.913276162 sec
+Average conflict index: 402.8766674392415
+Total time: 3239.629557534 sec
+---------------------------
+Host: doc020
+Job: 489002
+Timestamp: Sun Jan 28 14:53:00 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3077.516878345 sec
+Average conflict index: 405.05675498892697
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.571328922 sec
+Average conflict index: 402.40281949215176
+Total time: 3244.088207267 sec
+---------------------------
+Host: doc020
+Job: 489002
+Timestamp: Sun Jan 28 15:47:30 MET 2007
+End of script
+---------------------------
+Host: doc020
+Job: 489030
+Timestamp: Sun Jan 28 16:37:43 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3103.493646069 sec
+Average conflict index: 405.0831738443677
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 165.884797965 sec
+Average conflict index: 402.44131316734365
+Total time: 3269.378444034 sec
+---------------------------
+Host: doc020
+Job: 489030
+Timestamp: Sun Jan 28 17:32:39 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3086.254277617 sec
+Average conflict index: 405.0289928162363
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.118556368 sec
+Average conflict index: 402.35951181020266
+Total time: 3252.372833985 sec
+---------------------------
+Host: doc020
+Job: 489030
+Timestamp: Sun Jan 28 18:27:17 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 2807.492633505 sec
+Average conflict index: 404.7238971342034
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.003521111 sec
+Average conflict index: 402.10216318506855
+Total time: 2973.496154616 sec
+---------------------------
+Host: doc020
+Job: 489030
+Timestamp: Sun Jan 28 19:17:17 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3079.652010348 sec
+Average conflict index: 405.52629516827295
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 165.99068044 sec
+Average conflict index: 402.8766674392415
+Total time: 3245.642690788 sec
+---------------------------
+Host: doc020
+Job: 489030
+Timestamp: Sun Jan 28 20:11:49 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLACER-CI-80K-0-SORTSEQ
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlacer-CI-80000-0-SortSequences...
+Elapsed time: 3085.733870585 sec
+Average conflict index: 405.05675498892697
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 166.158733458 sec
+Average conflict index: 402.40281949215176
+Total time: 3251.892604043 sec
+---------------------------
+Host: doc020
+Job: 489030
+Timestamp: Sun Jan 28 21:06:26 MET 2007
+End of script
+---------------------------
+Host: doc022
+Job: 489005
+Timestamp: Sun Jan 28 11:24:16 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20462.671954516 sec
+Average conflict index: 377.55256004883057
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 461.259809942 sec
+Average conflict index: 375.19987726591734
+Total time: 20923.931764458 sec
+---------------------------
+Host: doc022
+Job: 489005
+Timestamp: Sun Jan 28 17:14:14 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 21035.925811578 sec
+Average conflict index: 377.97792650364613
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 461.255278575 sec
+Average conflict index: 375.6510015017459
+Total time: 21497.181090153 sec
+---------------------------
+Host: doc022
+Job: 489005
+Timestamp: Sun Jan 28 23:13:47 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 21086.771578168 sec
+Average conflict index: 377.8403762729823
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 461.198039098 sec
+Average conflict index: 375.4819947898601
+Total time: 21547.969617266 sec
+---------------------------
+Host: doc022
+Job: 489005
+Timestamp: Mon Jan 29 05:14:15 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20765.588469147 sec
+Average conflict index: 378.0756181451
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 461.137386773 sec
+Average conflict index: 375.70825900708934
+Total time: 21226.72585592 sec
+---------------------------
+Host: doc022
+Job: 489005
+Timestamp: Mon Jan 29 11:09:14 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 21088.742777304 sec
+Average conflict index: 378.00415253156484
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 462.94480229 sec
+Average conflict index: 375.6728928287014
+Total time: 21551.687579594 sec
+---------------------------
+Host: doc022
+Job: 489005
+Timestamp: Mon Jan 29 17:09:36 MET 2007
+End of script
+---------------------------
+Host: doc020
+Job: 489036
+Timestamp: Sun Jan 28 21:33:55 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20517.858351261 sec
+Average conflict index: 377.55256004883057
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 458.378064367 sec
+Average conflict index: 375.19987726591734
+Total time: 20976.236415628 sec
+---------------------------
+Host: doc020
+Job: 489036
+Timestamp: Mon Jan 29 03:24:44 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20475.109907555 sec
+Average conflict index: 377.97792650364613
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 458.894031777 sec
+Average conflict index: 375.6510015017459
+Total time: 20934.003939332 sec
+---------------------------
+Host: doc020
+Job: 489036
+Timestamp: Mon Jan 29 09:14:48 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20202.840407976 sec
+Average conflict index: 377.8403762729823
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 460.467227612 sec
+Average conflict index: 375.4819947898601
+Total time: 20663.307635588 sec
+---------------------------
+Host: doc020
+Job: 489036
+Timestamp: Mon Jan 29 15:00:23 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20570.610949991 sec
+Average conflict index: 378.0756181451
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 460.273918163 sec
+Average conflict index: 375.70825900708934
+Total time: 21030.884868154 sec
+---------------------------
+Host: doc020
+Job: 489036
+Timestamp: Mon Jan 29 20:52:05 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20557.238787967 sec
+Average conflict index: 378.00415253156484
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 460.459315981 sec
+Average conflict index: 375.6728928287014
+Total time: 21017.698103948 sec
+---------------------------
+Host: doc020
+Job: 489036
+Timestamp: Tue Jan 30 02:43:35 MET 2007
+End of script
+---------------------------
+Host: doc022
+Job: 489610
+Timestamp: Mon Jan 29 19:30:59 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20450.038823254 sec
+Average conflict index: 377.55256004883057
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 460.15045139 sec
+Average conflict index: 375.19987726591734
+Total time: 20910.189274644 sec
+---------------------------
+Host: doc022
+Job: 489610
+Timestamp: Tue Jan 30 01:20:41 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20799.487606057 sec
+Average conflict index: 377.97792650364613
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 460.985177105 sec
+Average conflict index: 375.6510015017459
+Total time: 21260.472783162 sec
+---------------------------
+Host: doc022
+Job: 489610
+Timestamp: Tue Jan 30 07:16:13 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20701.662639357 sec
+Average conflict index: 377.8403762729823
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 456.761772073 sec
+Average conflict index: 375.4819947898601
+Total time: 21158.42441143 sec
+---------------------------
+Host: doc022
+Job: 489610
+Timestamp: Tue Jan 30 13:10:04 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20588.300992269 sec
+Average conflict index: 378.0756181451
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 461.572087149 sec
+Average conflict index: 375.70825900708934
+Total time: 21049.873079418 sec
+---------------------------
+Host: doc022
+Job: 489610
+Timestamp: Tue Jan 30 19:02:04 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLACER-CI-140K-0-SORTSEQ
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlacer-CI-140000-0-SortSequences...
+Elapsed time: 20691.633878617 sec
+Average conflict index: 378.00415253156484
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 460.096242636 sec
+Average conflict index: 375.6728928287014
+Total time: 21151.730121253 sec
+---------------------------
+Host: doc022
+Job: 489610
+Timestamp: Wed Jan 31 00:55:47 MET 2007
+End of script
+---------------------------
+Host: doc021
+Job: 489003
+Timestamp: Sun Jan 28 11:12:59 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3044.13512168 sec
+Average conflict index: 404.5965300257439
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.626621448 sec
+Average conflict index: 401.7933483521985
+Total time: 3212.761743128 sec
+---------------------------
+Host: doc021
+Job: 489003
+Timestamp: Sun Jan 28 12:06:58 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3049.395908535 sec
+Average conflict index: 404.49474203993003
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.320443139 sec
+Average conflict index: 401.71569742262034
+Total time: 3217.716351674 sec
+---------------------------
+Host: doc021
+Job: 489003
+Timestamp: Sun Jan 28 13:01:02 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3048.965263923 sec
+Average conflict index: 403.9489211026741
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 169.276932624 sec
+Average conflict index: 401.13075840090454
+Total time: 3218.242196547 sec
+---------------------------
+Host: doc021
+Job: 489003
+Timestamp: Sun Jan 28 13:55:06 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 4176.147295182 sec
+Average conflict index: 404.8846811994972
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 170.415505074 sec
+Average conflict index: 402.0810154589501
+Total time: 4346.562800256 sec
+---------------------------
+Host: doc021
+Job: 489003
+Timestamp: Sun Jan 28 15:07:59 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3085.363083674 sec
+Average conflict index: 404.5916327507417
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.340198509 sec
+Average conflict index: 401.7816000342301
+Total time: 3253.703282183 sec
+---------------------------
+Host: doc021
+Job: 489003
+Timestamp: Sun Jan 28 16:02:39 MET 2007
+End of script
+---------------------------
+Host: doc021
+Job: 489031
+Timestamp: Sun Jan 28 16:37:46 MET 2007
+
+SRA_300x300-90000-25-01_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-01_random_leftmost'...
+Average conflict index: 739.6942967497233
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3049.557544815 sec
+Average conflict index: 404.5965300257439
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.919559066 sec
+Average conflict index: 401.7933483521985
+Total time: 3218.477103881 sec
+---------------------------
+Host: doc021
+Job: 489031
+Timestamp: Sun Jan 28 17:31:50 MET 2007
+
+SRA_300x300-90000-25-02_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-02_random_leftmost'...
+Average conflict index: 739.4078236346961
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3080.819467674 sec
+Average conflict index: 404.49474203993003
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.984603426 sec
+Average conflict index: 401.71569742262034
+Total time: 3249.8040711 sec
+---------------------------
+Host: doc021
+Job: 489031
+Timestamp: Sun Jan 28 18:26:26 MET 2007
+
+SRA_300x300-90000-25-03_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-03_random_leftmost'...
+Average conflict index: 739.8615764025107
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3056.997038337 sec
+Average conflict index: 403.9489211026741
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 169.099678753 sec
+Average conflict index: 401.13075840090454
+Total time: 3226.09671709 sec
+---------------------------
+Host: doc021
+Job: 489031
+Timestamp: Sun Jan 28 19:20:39 MET 2007
+
+SRA_300x300-90000-25-04_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-04_random_leftmost'...
+Average conflict index: 739.3237874821625
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3131.510406838 sec
+Average conflict index: 404.8846811994972
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.645994681 sec
+Average conflict index: 402.0810154589501
+Total time: 3300.156401519 sec
+---------------------------
+Host: doc021
+Job: 489031
+Timestamp: Sun Jan 28 20:16:05 MET 2007
+
+SRA_300x300-90000-25-05_random_leftmost GREEDYPLUS-CI-5500-0
+Reading input file 'SRA_300x300-90000-25-05_random_leftmost'...
+Average conflict index: 739.1413982486566
+Running GreedyPlusPlacer-CI-5500-0...
+Elapsed time: 3062.642145765 sec
+Average conflict index: 404.5916327507417
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 168.67998352 sec
+Average conflict index: 401.7816000342301
+Total time: 3231.322129285 sec
+---------------------------
+Host: doc021
+Job: 489031
+Timestamp: Sun Jan 28 21:10:22 MET 2007
+End of script
+---------------------------
+Host: doc023
+Job: 489006
+Timestamp: Sun Jan 28 11:24:17 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20270.092914678 sec
+Average conflict index: 377.50414974471494
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 471.528548025 sec
+Average conflict index: 374.9723050445978
+Total time: 20741.621462703 sec
+---------------------------
+Host: doc023
+Job: 489006
+Timestamp: Sun Jan 28 17:11:10 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20810.983850964 sec
+Average conflict index: 377.2998554714579
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 471.821067727 sec
+Average conflict index: 374.77561304335893
+Total time: 21282.804918691 sec
+---------------------------
+Host: doc023
+Job: 489006
+Timestamp: Sun Jan 28 23:07:07 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20566.414729737 sec
+Average conflict index: 377.2854778347402
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 471.767824157 sec
+Average conflict index: 374.74815319219977
+Total time: 21038.182553894 sec
+---------------------------
+Host: doc023
+Job: 489006
+Timestamp: Mon Jan 29 04:58:56 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20298.613545571 sec
+Average conflict index: 377.70472236124533
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 471.696892218 sec
+Average conflict index: 375.1632769617211
+Total time: 20770.310437789 sec
+---------------------------
+Host: doc023
+Job: 489006
+Timestamp: Mon Jan 29 10:46:17 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20325.751354932 sec
+Average conflict index: 377.84754201483236
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 471.854332224 sec
+Average conflict index: 375.2975854738837
+Total time: 20797.605687156 sec
+---------------------------
+Host: doc023
+Job: 489006
+Timestamp: Mon Jan 29 16:34:07 MET 2007
+End of script
+---------------------------
+Host: doc021
+Job: 489037
+Timestamp: Sun Jan 28 21:33:56 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 28984.767461441 sec
+Average conflict index: 377.50414974471494
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 473.278784709 sec
+Average conflict index: 374.9723050445978
+Total time: 29458.04624615 sec
+---------------------------
+Host: doc021
+Job: 489037
+Timestamp: Mon Jan 29 05:46:06 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20793.432277012 sec
+Average conflict index: 377.2998554714579
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 471.267250337 sec
+Average conflict index: 374.77561304335893
+Total time: 21264.699527349 sec
+---------------------------
+Host: doc021
+Job: 489037
+Timestamp: Mon Jan 29 11:41:42 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20344.76411873 sec
+Average conflict index: 377.2854778347402
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 469.513562368 sec
+Average conflict index: 374.74815319219977
+Total time: 20814.277681098 sec
+---------------------------
+Host: doc021
+Job: 489037
+Timestamp: Mon Jan 29 17:29:49 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20224.464973448 sec
+Average conflict index: 377.70472236124533
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 467.65579616 sec
+Average conflict index: 375.1632769617211
+Total time: 20692.120769608 sec
+---------------------------
+Host: doc021
+Job: 489037
+Timestamp: Mon Jan 29 23:15:52 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20325.067287485 sec
+Average conflict index: 377.84754201483236
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 469.491625645 sec
+Average conflict index: 375.2975854738837
+Total time: 20794.55891313 sec
+---------------------------
+Host: doc021
+Job: 489037
+Timestamp: Tue Jan 30 05:03:39 MET 2007
+End of script
+---------------------------
+Host: doc023
+Job: 489609
+Timestamp: Mon Jan 29 19:30:58 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Average conflict index: 742.033694507687
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 28965.740530644 sec
+Average conflict index: 377.50414974471494
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 474.910453793 sec
+Average conflict index: 374.9723050445978
+Total time: 29440.650984437 sec
+---------------------------
+Host: doc023
+Job: 489609
+Timestamp: Tue Jan 30 03:42:56 MET 2007
+
+SRA_500x500-250000-25-02_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-02_random_leftmost'...
+Average conflict index: 741.9242304619149
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20784.501282747 sec
+Average conflict index: 377.2998554714579
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 469.580843113 sec
+Average conflict index: 374.77561304335893
+Total time: 21254.08212586 sec
+---------------------------
+Host: doc023
+Job: 489609
+Timestamp: Tue Jan 30 09:38:21 MET 2007
+
+SRA_500x500-250000-25-03_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-03_random_leftmost'...
+Average conflict index: 741.851072148947
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20268.446922994 sec
+Average conflict index: 377.2854778347402
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 469.576993327 sec
+Average conflict index: 374.74815319219977
+Total time: 20738.023916321 sec
+---------------------------
+Host: doc023
+Job: 489609
+Timestamp: Tue Jan 30 15:25:10 MET 2007
+
+SRA_500x500-250000-25-04_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-04_random_leftmost'...
+Average conflict index: 741.8803486738979
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20414.487834653 sec
+Average conflict index: 377.70472236124533
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 469.56845249 sec
+Average conflict index: 375.1632769617211
+Total time: 20884.056287143 sec
+---------------------------
+Host: doc023
+Job: 489609
+Timestamp: Tue Jan 30 21:14:26 MET 2007
+
+SRA_500x500-250000-25-05_random_leftmost GREEDYPLUS-CI-13500-0
+Reading input file 'SRA_500x500-250000-25-05_random_leftmost'...
+Average conflict index: 741.9305395937663
+Running GreedyPlusPlacer-CI-13500-0...
+Elapsed time: 20488.93782339 sec
+Average conflict index: 377.84754201483236
+Running SequentialReembedding-CI-NoReset-2...
+Number of passes: 2
+Elapsed time: 469.645036693 sec
+Average conflict index: 375.2975854738837
+Total time: 20958.582860083 sec
+---------------------------
+Host: doc023
+Job: 489609
+Timestamp: Wed Jan 31 03:04:55 MET 2007
+End of script
+---------------------------
