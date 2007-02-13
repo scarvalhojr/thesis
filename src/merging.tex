@@ -49,9 +49,9 @@ filling the same spot. First, we note that the $U_t$ and $M_{i,t}$ costs of OSPE
 (Equations \ref{eq:ospe_ucost} and \ref{eq:ospe_mcost}, respectively) need to be
 computed only once for a given spot $s$ since they do not depend on the probe
 placed at $s$ but rather on the probes placed at neighbors of $s$: $U_t$ depends
-solely on the neighbors of $s$ whereas $M_{i,t}$ depends on the neighbors of $s$
-and on the number $i$ of bases probe $p$ already contains at synthesis step $t$
-(assumming that all probes have the same length $\ell$; $c$ and $\theta$ in
+solely on the neighbors of $s$, whereas $M_{i,t}$ depends on the neighbors of
+$s$ and on the number $i$ of bases probe $p$ already contains at synthesis step
+$t$ (assumming that all probes have the same length $\ell$; $c$ and $\theta$ in
 Equation \ref{eq:ospe_mcost} are constants).
 
 Second, once we know that a probe candidate $p$ can be placed at the spot $s$
@@ -81,8 +81,8 @@ to right).
 \begin{table}[p!]\centering
 \caption{\label{tab:greedyplus_nbl}
   Normalized border length (NBL) of layouts produced by \Greedyplus\ on random
-  chips with varying number $Q$ of candidades per spot and $k$-threading's
-  amplitude. Running times are reported in minutes.}
+  chips with varying number $Q$ of candidades per spot and amplitude of
+  $k$-threading. Running times are reported in minutes.}
 \footnotesize{
 \begin{tabular}{crcrlcrlcr}
 \vspace{1pt}
@@ -174,19 +174,19 @@ $800\times 800$ &  0 & {\bf 451.8074} & 40.0 &  & {\bf 431.8977} & 73.0 &  & {\b
 \end{tabular}}
 \end{table}
 
-We first examine how the $k$-threading's amplitude and the number $Q$ of
+We first examine how the amplitude of the $k$-threading and the number $Q$ of
 candidates per spot affect the results of \Greedyplus. In the case of BLM (Table
 \ref{tab:greedyplus_nbl}), the best results were always achieved with
-surprisingly high values of $k$ (this is contrast with Greedy, which always
+surprisingly high values of $k$ (this is in contrast to Greedy, which always
 produced the best results with $k=0$). The reason is not yet clear, especially
 because only conflicts between adjacent spots count in the border length model.
 It should also be noted that for a sufficiently large value of $k$, a
-``row-wise'' $k$-threading becomes a ``column-wise'' 0-threading.
+``row-wise'' $k$-threading can be seen as a ``column-wise'' 0-threading.
 
 With BLM, increasing the amplitude from $k=0$ to $k=1$ always worsened the
-results. Increasing it further, however, improved the layouts, eventually
-resulting in less conflicts than with $k=0$ up to a point when it started to
-make little difference. The greatest difference between the worse and the best
+results. Increasing it further, however, improved the layouts and eventually
+resulted in less conflicts than with $k=0$ up to a point when it started to make
+little difference. The greatest difference between the worse and the best
 layouts due to the amplitude $k$ was at most $2.26\%$ (from $16.5118$ with
 $k=14$ to $16.8849$ with $k=1$ on $800\times 800$ chips and $Q=500$). In case of
 CIM (Table \ref{tab:greedyplus_aci}), the best results were always achieved with
@@ -202,9 +202,9 @@ measure makes for OSPE, in terms of running time, is when the $U_t$ and
 $M_{i,t}$ costs of OSPE are computed. While for BLM at most four neighbors of a
 spot $s$ need to be examined, for CIM we must look at up to 48 neighbors of $s$.
 However, since the $U_t$ and $M_{i,t}$ costs are computed only once for a spot
-$s$ and reused for each of the $Q$ candidate probes, the greater the number $Q$,
-the less impact the quality measure makes in total running time. The fact that
-\Greedyplus\ is sometimes slightly faster with CIM than with BLM could be
+$s$ and are reused for each of the $Q$ candidate probes, the greater the number
+$Q$, the less impact the quality measure makes in total running time. The fact
+that \Greedyplus\ is sometimes slightly faster with CIM than with BLM could be
 because, with the former, it more quickly finds a probe candidate with a low
 minimum cost $\kappa$ that allows it to stop computing the cost of other
 candidates sooner (when all entries in a row of OSPE's matrix are greater than
@@ -271,9 +271,9 @@ We now compare the results obtained by Greedy and \Greedyplus\ when both
 algorithms are given the same amount of time (the parameter $Q$ is chosen
 differently for both algorithms so that the running time is approximately
 comparable). To be fair, since Greedy is a traditional placement algorithm that
-does not change the probes' embeddings, we need to compare the layouts obtained
-by both algorithms after a re-embedding phase. For this task we use the
-Sequential algorithm (Section \ref{sec:reembed_sequential}) set to perform two
+does not change the embeddings of the probes, we need to compare the layouts
+obtained by both algorithms after a re-embedding phase. For this task we use the
+Sequential algorithm (Section \ref{sec:reembed_sequential}) performing two
 passes of re-embedding optimization. For this experiment we use probes of length
 $\ell=25$ left-most embedded in the standard Affymetrix deposition sequence.
 
@@ -344,8 +344,8 @@ higher amplitudes of $k$-threading.
 In this chapter, we have presented a new placement algorithm, called
 \Greedyplus\ that for the first time places and re-embeds the probes
 simultaneously. Our results have shown that \Greedyplus\ outperforms the
-previously best placement algorithms --- Row-Epitaxial, for border length
-minimization, and Greedy, for conflict index minimization. In terms of CIM,
+previously best placement algorithms --- Row-Epitaxial for border length
+minimization and Greedy for conflict index minimization. In terms of CIM,
 Greedy produces better results when time is limited but, otherwise, \Greedyplus\
 should be the placement algorithm of choice. In fact, \Greedyplus\ achieves
 similar results to Greedy by examining fewer probe candidates per spot and, for
