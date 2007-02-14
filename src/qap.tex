@@ -3,9 +3,9 @@
 \label{ch:qap}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this chapter, we show that the Microarray Placement Problem (MLP) with
+In this chapter, we show that the microarray layout problem (MLP) with
 general distance-dependent and position-dependent weights is an instance of the
-\emph{Quadratic Assignment Problem} (QAP), a classical combinatorial
+\emph{quadratic assignment problem} (QAP), a classical combinatorial
 optimization problem introduced by~\citet{Koopmans1957}, which opens up the way
 for using QAP techniques to design microarray chips.
 
@@ -203,8 +203,8 @@ particularly hard to solve in practice. Instances of size larger than
 $n = 20$ are generally considered to be impossible to solve to
 optimality. Fortunately, several heuristics exist, including approaches based on
 tabu search, simulated annealing and genetic algorithms
-\citep[for a survey, see][]{Cela1997}. Our formulation is thus of interest
-because we can now use existing QAP heuristics to design the layout of
+\citep[for a survey, see][]{Cela1997,Loiola2007}. Our formulation is thus of
+interest because we can now use existing QAP heuristics to design the layout of
 microarrays minimizing either the sum of border lengths or conflict indices.
 
 As an example, we briefly describe a general QAP heuristic known as GRASP \citep
@@ -293,7 +293,7 @@ Section~\ref{sec:placement_greedy}), with the number $Q$ of candidates per spot
 set to a sufficiently large value so that all available probes are considered
 for each spot.
 
-We used a C implementation of GRASP-PR provided by \citet{Oliveira2004} with
+We used a C implementation of GRASP-PR provided by \citet{Oliveira2003} with
 default parameters (32 iterations, $\alpha=0.1$, $\beta=0.5$, and elite set of
 size $10$). The main routine takes three arguments: the dimension $n$ of the
 problem (in our case, the number of spots or probes) and matrices $F$ and $D$.

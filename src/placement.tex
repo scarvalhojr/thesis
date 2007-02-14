@@ -26,7 +26,7 @@ with minimum number of border conflicts can be constructed using a
 two-dimensional Gray code. Uniform arrays are arrays containing all $4^\ell$
 probes of a given length $\ell$, which require a deposition sequence of length
 $4\cdot \ell$. These arrays were initially developed for the technique known as
-Sequencing by Hybridization (SBH).
+Sequencing by Hybridization \citep{Southern1992}.
 
 \begin{figure}[t]\centering
 \includegraphics[width=\textwidth]{place/uniform_placement}
@@ -260,10 +260,10 @@ it looks at the next $Q$ probes that lie in close proximity (to the right or
 below $s$), and swaps $p$ with the probe that generates the minimum number of
 border conflicts between $s$ and its left and top neighbors.
 
-In the experiments conducted by \citet{Kahng2003}, Row-Epitaxial was the best
-large-scale placement algorithm (for BLM), achieving up to 9\% reduction in
-border conflicts over TSP\,+\,1-threading, whereas SWM achieved slightly
-worse results but required significantly less time.
+In the experiments conducted by \citet{Kahng2003,Kahng2004}, Row-Epitaxial was
+the best large-scale placement algorithm (for BLM), achieving up to 9\%
+reduction in border conflicts over TSP\,+\,1-threading, whereas SWM achieved
+slightly worse results but required significantly less time.
 
 Row-Epitaxial can also be adapted to CIM by swapping a probe of a spot $s$ with
 the probe candidate that minimizes the sum of conflict indices in a region
@@ -535,12 +535,11 @@ requiring approximately six times more time. In terms of conflict index,
 however, increasing $Q$ even above 40K still results in significant improvements
 for large chips. For instance, on $800\times 800$ chips, increasing $Q$ from 40K
 to 80K reduced the average conflict index by $3.18\%$ (from $378.3110$ to
-$366.8446$ with $k=0$, data not shown).
-
-The fact that increasing $Q$ has more effect in terms of conflict index is
-probably because, in this measure, there is more room for optimization as the
-conflicts can be moved to the extremities of the probes (while retaining the
-same number of border conflicts) and a larger number of neighbors are involved.
+$366.8446$ with $k=0$, data not shown). The fact that increasing $Q$ has more
+effect in terms of conflict index is probably because, in this measure, there is
+more room for optimization as the conflicts can be moved to the extremities of
+the probes (while retaining the same number of border conflicts) and a larger
+number of neighbors are involved.
 
 Figure~\ref{fig:greedy_blm} shows the normalized border length per masking step
 of layouts produced by Greedy for a $500\times 500$ chip with border length and
@@ -657,8 +656,8 @@ the reduction in average conflict index.
 \section{Summary}
 \label{sec:placement_summary}
 
-In this chapter, we have surveyed placement algorithms for the Microarray Layout
-Problem, including an optimal placement strategy for uniform arrays based on a
+In this chapter, we have surveyed placement algorithms for the microarray layout
+problem, including an optimal placement strategy for uniform arrays based on a
 two-dimensional Gray code, an approach based on the traveling salesman problem
 and different threading techniques. For general arrays, we have presented more
 experimental results with Row-Epitaxial, the best known placement algorithm to
