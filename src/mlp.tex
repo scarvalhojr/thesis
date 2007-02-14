@@ -3,8 +3,8 @@
 \label{ch:mlp}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this chapter we give a more precise definition of the Microarray Layout
-Problem (MLP) and define criteria for evaluating a given layout. The description
+In this chapter we give a more precise definition of the microarray layout
+problem (MLP) and define criteria for evaluating a given layout. The description
 that follows assumes that probes are synthesized with photolithographic masks,
 but the concepts also apply to the maskless production (with micromirror
 arrays). Two evaluation criteria are presented: \emph{border length} and
@@ -77,8 +77,8 @@ in 74~steps with 18.5 cycles of TGCA --- we refer to this sequence as the
 Ideally, the deposition sequence should be as short as possible in order to
 reduce manufacturing time, cost and probability of errors \citep{Rahmann2003}.
 Finding the shortest deposition sequence to synthesize a set of probes is an
-instance of a classical computer science problem known as the Shortest Common
-Supersequence problem, which will be the focus of Chapter~\ref{ch:scs}. For the
+instance of a classical computer science problem known as the shortest common
+supersequence problem, which will be the focus of Chapter~\ref{ch:scs}. For the
 MLP, however, we assume that $N$ is a fixed sequence given as input.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,7 +127,7 @@ $(\lambda,\eps)$ is the sum of border lengths over all masks, that is
   \CalB(\lambda,\eps) := \sum_{t=1}^{T} \CalB_t.
 \end{equation}
 
-The \emph{Border Length Minimization Problem} was then defined as the problem of
+The \emph{border length minimization problem} was then defined as the problem of
 finding a layout minimizing the total border length \citep{Hannenhalli2002}. As
 an example, the six masks shown in Figure~\ref{fig:masking_process} have
 $\CalB_1 = 4$, $\CalB_2 = 3$, $\CalB_3 = 5$, $\CalB_4 = 4$, $\CalB_5 = 8$ and
@@ -361,8 +361,9 @@ The most appropriate choice of $\omega$ depend on the chemical properties of the
 hybridization between probes and targets. Although it is generally agreed that
 the chances of a successful hybridization are higher if a mismatched base occurs
 at the extremities of the formed duplex instead of at its center
-\citep{Hubbell1999}, the precise effects of this position is not yet fully
-understood and has been an active topic of research \citep{Binder2005}.
+\citep{Hubbell1999,Southern1999,Guo1997}, the precise effects of this position
+is not yet fully understood and has been an active topic of research
+\citep{Binder2004,Binder2005}.
 
 We propose the use of an exponential function, so that $\omega$ grows
 exponentially from the extremities of the probe to its center (see
@@ -419,12 +420,12 @@ probes on the chip, and we define the \emph{average conflict index}, ACI for
 short, of a layout as $\CalC(\lambda,\eps)/|\CalP|$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{How hard is the Microarray Layout Problem?}
+\section{How hard is the microarray layout problem?}
 \label{sec:mlp_how_hard}
 
 The MLP appears to be hard because of the super-exponential number of possible
 arrangements, although no NP-hardness proof is yet known. A formulation of the
-MLP as a Quadratic Assignment Problem (QAP) is given in Chapter~\ref{ch:qap}.
+MLP as a quadratic assignment problem (QAP) is given in Chapter~\ref{ch:qap}.
 The QAP is a classical combinatorial optimization problem that is, in general,
 NP-hard, and particularly hard to solve in practice \citep{Cela1997}. Optimal
 solutions are thus unlikely to be found even for small chips and even if we
