@@ -1,0 +1,24 @@
+Host: doc029
+Job: 531159
+Timestamp: Thu Feb 15 17:03:41 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLUS-BL-950-0
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlusPlacer-BL-950-0...
+Elapsed time: 1667.134676453 sec
+Total border length: 8524298 -> normalized: 17.08276152304609
+Running SequentialReembedding-BL-NoReset-2...
+Number of passes: 2
+Elapsed time: 12.078142566 sec
+Total border length: 8455600 -> normalized: 16.945090180360722
+Total time: 1679.212819019 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc029
+Job: 531159
+Timestamp: Thu Feb 15 17:31:47 MET 2007
+End of script
+---------------------------

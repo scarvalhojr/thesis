@@ -1,0 +1,24 @@
+Host: doc028
+Job: 531469
+Timestamp: Thu Feb 15 18:18:01 MET 2007
+
+SRA_500x500-250000-25-01_random_leftmost GREEDYPLACER-BL-20K-0-SORTEMBED
+Reading input file 'SRA_500x500-250000-25-01_random_leftmost'...
+Cloning chip for later checks...
+Total border length: 15424272 -> normalized: 30.91036472945892
+Running GreedyPlacer-BL-20000-0-SortEmbeddings...
+Elapsed time: 1982.696874573 sec
+Total border length: 8682442 -> normalized: 17.399683366733466
+Running SequentialReembedding-BL-NoReset-2...
+Number of passes: 2
+Elapsed time: 12.019782078 sec
+Total border length: 8641798 -> normalized: 17.31823246492986
+Total time: 1994.716656651 sec
+New layout is not equal to the original specification.
+New layout is compatible with the original specification.
+---------------------------
+Host: doc028
+Job: 531469
+Timestamp: Thu Feb 15 18:51:22 MET 2007
+End of script
+---------------------------
