@@ -16,8 +16,9 @@ set mxtics 5
 set mytics
 
 # display grid
-# set grid
-# set key off
+set grid xtics
+
+set key off
 
 # set title "Normalized border length" font "Times,20"
 
