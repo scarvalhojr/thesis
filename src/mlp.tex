@@ -12,11 +12,11 @@ arrays). Two evaluation criteria are presented: \emph{border length} and
 generalization of the border length model.
 
 Formally, we have a set of probes $\CalP = \{p_{1}, p_{2}, \dots, p_{n}\}$,
-where each $p_k \in \{\text{A,C,G,T}\}^\ast$ with $1 \leq k \leq n$ is produced
+where each $p_k \in \{\tA,\tC,\tG,\tT\}^\ast$ with $1 \leq k \leq n$ is produced
 by a series of $T$
 synthesis steps. Frequently, but not necessarily, all probes have the same
 length $\ell$. Each synthesis step $t$ uses a mask $M_t$ to induce the addition
-of a particular nucleotide $N_t \in \{\text{A,C,G,T}\}$ to a subset of~$\CalP$
+of a particular nucleotide $N_t \in \{\tA,\tC,\tG,\tT\}$ to a subset of~$\CalP$
 (Figure~\ref{fig:masking_process}). The \emph{nucleotide deposition sequence}
 $N = N_{1} N_{2} \ldots N_{T}$ corresponding to the sequence of nucleotides
 added at each synthesis step is a supersequence of all $p \in \CalP$.
@@ -60,8 +60,8 @@ spots, respectively.
 The deposition sequence is often a repeated permutation of the alphabet, mainly
 because of its regular structure and because such sequences maximize the number
 of distinct subsequences \citep{Chase1976}. The deposition sequence shown in
-Figure~\ref{fig:masking_process} is a 2.5-time repetition of ACGT, and we thus
-say that it has two and a half \emph{cycles}.
+Figure~\ref{fig:masking_process} is a 2.5-time repetition of \Seq{ACGT}, and we
+thus say that it has two and a half \emph{cycles}.
 
 For cyclic deposition sequences, it is possible to distinguish between two types
 of embeddings: \emph{synchronous} and \emph{asynchronous}. In the former, each
@@ -71,8 +71,9 @@ length 25. In the latter, probes can have any number of nucleotides synthesized
 in any given cycle, allowing shorter deposition sequences. For this reason,
 asynchronous embeddings are usually the choice for commercial microarrays.  For
 instance, all GeneChip arrays that we know of can be asynchronously synthesized
-in 74~steps with 18.5 cycles of TGCA --- we refer to this sequence as the
-\emph{standard Affymetrix deposition sequence} (see Chapter~\ref{ch:affy}).
+in 74~steps with $N=(\Seq{TGCA})^{18}\Seq{TG}$., i.e., $18.5$ cycles of
+\Seq{TGCA} --- we refer to this sequence as the \emph{standard Affymetrix
+deposition sequence} (see Chapter~\ref{ch:affy}).
 
 Ideally, the deposition sequence should be as short as possible in order to
 reduce manufacturing time, cost and probability of errors \citep{Rahmann2003}.
