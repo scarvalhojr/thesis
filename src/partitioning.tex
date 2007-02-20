@@ -20,13 +20,12 @@ candidates for filling the spots.
 We describe four partitioning algorithms: 1-Dimensional Partitioning (1-DP),
 2\hyph Dimensional Partitioning (2-DP), Centroid-based Quadrisection (CQ), and
 Pivot Partitioning (PP). Like placement algorithms, they assume that an initial
-(left-most, right-most, synchronous or otherwise pre-computed) embedding of the
-probes is given. Pivot Partitioning is the only algorithm that modifies these
-embeddings.  As we shall see, 1-DP and 2-DP generate a few masks with extremely
-few conflicts, but leave the remaining masks with high levels of conflicts that
-are difficult to handle. CQ and PP offer a more uniform optimization over all
-masks. Earlier results indicate that PP produces better layouts than CQ on large
-chips \citep{Carvalho2006}.
+embedding of the probes is given. Pivot Partitioning is the only algorithm that
+modifies these embeddings.  As we shall see, 1-DP and 2-DP generate a few masks
+with extremely few conflicts, but leave the remaining masks with many conflicts
+that are difficult to handle, whereas CQ and PP offer a more uniform
+optimization over all masks. Earlier results indicate that PP produces better
+layouts than CQ on large chips \citep{Carvalho2006}.
 
 Partitioning is clearly a compromise in solution quality since it restricts the
 space of solutions and may lead to conflicts at partition borders, although it
@@ -40,9 +39,9 @@ the placement and partitioning algorithms.
 \section{1-Dimensional Partitioning}
 \label{sec:part_1d}
 
-1-Dimensional Partitioning (1-DP) divides the set of probes based on the state
-of their embeddings at a particular synthesis step. It starts by creating two
-subsets of $\mathcal{P}$:
+The 1-Dimensional Partitioning algorithm (1-DP) divides the set of probes based
+on the state of their embeddings at a particular synthesis step. It starts by
+creating two subsets of $\mathcal{P}$:
 %%
 \[
 \mathcal{P}_0 = \{ p_k \in \mathcal{P} | \eps_{k,1} = 0 \},
@@ -90,17 +89,17 @@ process is illustrated in Figure~\ref{fig:1dpart}, where at each step~$t$, a
 band is labeled ``0'' when its embeddings are unproductive, and ``1'' when its
 embeddings are productive. The resulting binary numbers from top to bottom form
 a binary Gray code, that is, a permutation of the binary numbers between 0 and
-$2^n - 1$ such that neighboring elements have exactly one differing bit, as do
-the first and last elements \citep{Kreher1999}.
+$2^n - 1$ such that neighboring elements differ in exactly one bit, as do the
+first and last elements \citep{Kreher1999}.
 
 The Gray code highlights an interesting property of 1-DP. After $d$~levels of
 partitionings (based on steps $1$ to $d$), the embeddings of any two immediate
 neighbors differ among the first $d$~steps in at most one step.  As a result,
-masks $M_1 \dots M_d$ exhibit a layered structure that effectively reduces
+masks $M_1$ to $M_d$ exhibit a layered structure that effectively reduces
 border conflicts. The Gray code is disrupted as soon as a region cannot be
-divided (because all probes of that region are, for instance, masked at a
-particular step). This will certainly happen as several binary numbers are
-unlikely to be substrings of embeddings (think of, for example, a long run of
+divided (because all probes of that region are masked at a particular step,
+for instance). This will certainly happen as several binary numbers are unlikely
+to be substrings of embeddings (for example, numbers containing long runs of
 zeros).
 
 Moreover, 1-DP can optimize only a limited number of masks because the
@@ -123,11 +122,11 @@ embeddings at the first synthesis step, resulting in sub-sets $\mathcal{P}_0$
 and $\mathcal{P}_1$ with, say, 638 and 262 probes, respectively. The chip must
 thus be divided into two sub-regions, the upper one containing
 $[30 \cdot 638/900]=21$ rows and the lower one with $[30 \cdot 262/900]=9$ rows
-($[x]$ is $x$ rounded to the nearest integer). The problem is that the upper
+(where $[x]$ denotes the nearest integer of $x$). The problem is that the upper
 region then contains $21 \cdot 30 = 630$ spots but it has to accommodate 638
 probes, whereas the lower region contains $9 \cdot 30 = 270$ spots but only 262
 probes. The solution is to (arbitrarily) move 8 probes from $\mathcal{P}_0$ to
-$\mathcal{P}_1$, which, results in some imperfections in the layers of the
+$\mathcal{P}_1$, which results in some imperfections in the layers of the
 corresponding mask (a few masked spots in a region of unmasked spots and
 vice-versa).
 
@@ -157,7 +156,7 @@ a result, regions whose embeddings are at the same state (productive or
 unproductive) are joined as far as possible.
 
 If regions were always equally divided, 2-DP would have the same property as 1-
-DP: After $d$~levels of partitionings (based on steps $1$ to $d$), the
+DP: After $d$~levels of partitionings, the
 embeddings of any two immediate neighbors would differ among the first $d$ steps
 in at most one step. However, this is not always the case since 2-DP is likely
 to create regions with different dimensions, forcing some regions to share a
@@ -167,18 +166,17 @@ Figure~\ref{fig:2dpart} region ``0010'' borders with ``0000'', ``1010'', and
 
 Like 1-DP, the maximum partitioning depth, $d_{max}$, is limited by the number
 of rows and columns on the chip, and it varies since regions are likely to be
-unevenly divided. 2-DP can also be configured to stop partitioning a region once
-its dimensions (height and width) drop bellow a given threshold $L_{max}$ (the
-largest final region will contain at most ${L_{max}}^2$ spots).
+unevenly divided. 2-DP can also be configured to stop partitioning a region as
+soon as its dimensions (height and width) drop bellow a given threshold
+$L_{max}$ (the largest final region will contain at most ${L_{max}}^2$ spots).
 
 Figure \ref{fig:2dpart_bl} shows the normalized border length per masking step
 of layouts produced by 2-DP for a random $1\,000\times 1\,000$ chip. With maximum
 partitioning depth ($L_{max}=1$), 2-DP produced a layout with the best masks for
 the first 22 synthesis steps. However, because the chip is partitioned until all
-regions are $1\times 1$ (containing a single probe), the placement algorithm has
-no freedom for reducing border conflicts in the remaining masks. As a result,
-from step 33 on, the levels of border conflicts are as high as in the random
-layout.
+regions contain a single probe, the placement algorithm has no freedom for
+reducing border conflicts in the remaining masks. As a result, after step 32,
+the levels of border conflicts are as high as in the random layout.
 
 With $L_{max}=10$, there is more room for optimization during placement since
 the final regions can be as large as $10\times 10$. In this case, we used the
@@ -211,13 +209,13 @@ compare both algorithms with their maximum partitioning depths ($H_{max}=1$ for
 regions and leaves no room for optimization during placement. In constrast, 1-DP
 with $H_{max}=1$ produces regions with a single row but, in this case, with
 $1\,000$ columns (and $1\,000$ probes), leaving a considerable degree of
-flexibility for the placement algorithm. To be fair, we thus compare 1-DP and
+freedom for the placement algorithm. To be fair, we thus compare 1-DP and
 2-DP using a placement algorithm that places probes randomly inside each final
 region, so that the results are only due to the partitionings (and not to the
 placement algorithm). In our results, with maximum partitioning depths, 1-DP and
-2-DP produced layouts with similar levels of border conflicts in mask
-$M_{33} \dots M_{74}$, although the layout produced by 2-DP was slightly better
-in masks $M_{58} \dots M_{69}$. However, while 1-DP was able to produce masks
+2-DP produced layouts with similar levels of border conflicts in masks
+$M_{33}$ to $M_{74}$, although the layout produced by 2-DP was slightly better
+in masks $M_{58}$ to $M_{69}$. However, while 1-DP was able to produce masks
 with relatively few conflicts in the first 17 steps, 2-DP achieved even greater
 reductions of border conflicts in the first 32 steps. The normalized border
 length of these layouts are $25.8543$ (with 1-DP) and $21.5588$ (with 2-DP).
@@ -231,7 +229,7 @@ about the same degree of freedom provided by 1-DP with $H_{max}=1$. We used a
 sufficiently large number $Q$ of candidates per spot so that all probes of a
 region were considered for filling its spots. With these settings, the layouts
 produced by 1-DP and 2-DP have similar levels of border conflicts in masks
-$M_{20} \dots M_{74}$. In the first 18 synthesis steps, however, 2-DP produced
+$M_{20}$ to $M_{74}$. In the first 18 synthesis steps, however, 2-DP produced
 better masks, especially after step 5. The normalized border length of these
 layouts are $18.0078$ (1-DP) and $17.1629$ (2-DP).
 
@@ -249,7 +247,7 @@ layouts are $18.0078$ (1-DP) and $17.1629$ (2-DP).
 
 A representation of selected photolithographic masks generated by 2-DP for a
 $300\times 300$ chip are shown in Figure \ref{fig:2dpart_masks}. The resulting
-rectangular regions can be seen, clearly, up to mask $M_{18}$. In the first
+rectangular regions can be clearly seen up to mask $M_{18}$. In the first
 eight masks it is possible to see some ``imperfections'' (unmasked spots on
 masked regions or vice-versa) that result from arbitrarily moving probes between
 regions in order to force exact divisions. On a chip of this size, 2-DP can
@@ -378,7 +376,7 @@ Centered   & 2-DP with $L_{max}=60$ and Greedy with $Q=3\,600$ &      341.8634  
 %% Centered   & 2-DP with $L_{max}=35$ and Greedy with $Q=1\,225$ & {\bf 341.2372} & 2.7 \\
 
 When carefully used, 1-DP and 2-DP can improve placement by producing a few
-masks with very low levels of border conflicts and breaking the problem into
+masks with very low levels of border conflicts, and breaking the problem into
 smaller sub-problems that are easier to handle. Table \ref{tab:2dp_greedy} shows
 results on $800\times 800$ arrays using 2-DP with centered mask optimization and
 Greedy with conflict index minimization for the placement, in comparison to
@@ -409,8 +407,8 @@ results were achieved with $L_{max}=30$.
 \caption{\label{fig:quadrisect}%
   First three levels of Centroid-based Quadrisection. Dashed lines show the
   divisions performed in each step; solid lines indicate regions delimited in
-  previous steps. The centroids of each partition $R_{c_1} \dots R_{c_4}$ are
-  represented by small circles (labeled with $p_{c_1} \dots p_{c_4}$ in the
+  previous steps. The centroids of each partition $R_{c_1}$ to $R_{c_4}$ are
+  represented by small circles (labeled with $p_{c_1}$ to $p_{c_4}$ in the
   first step).}
 \end{figure}
 
@@ -424,10 +422,9 @@ used to guide the assignment of the remaining probes to the sub-regions.
 A centroid is a representative of its region: It should symbolize the ``average
 embedding'' in that region. The remaining probes
 $p_k \in \CalP \setminus \{p_{c_1},p_{c_2},p_{c_3},p_{c_4}\}$ are compared to
-each centroid and assigned to the sub-region $R_{c_i}$ whose centroid's
-embedding $\eps_{c_i}$ has minimum $H(k,c_i)$, where $H(k,k')$ is the Hamming
-distance between the embeddings $\eps_k$ of $p_k$ and $\eps_{k'}$ of $p_{k'}$
-(see Section \ref{sec:mlp_border_length}).
+each centroid and assigned to the sub-region $R_{c_i}$ whose centroid minimize
+the Hamming distance $H(k,c_i)$ (as defined in Section
+\ref{sec:mlp_border_length}).
 
 The authors argue that, in order to improve the ``clustering'' of similar
 probes, the four centroids should be as different from each other as possible.
@@ -447,17 +444,16 @@ partitioning. For measuring partitioning quality, the algorithm uses the sum of
 Hamming distances between the embeddings of the probes and the embedding of the
 centroid (the partitioning that results in the least sum is selected).
 
-The maximum partitioning depth $d_{max}$ of CQ is $\sqrt{n_r}$, assuming that
-$n_r$ is square and that $n_c=n_r$ ($n_r$ and $n_c$ are the number of rows and
-columns on the chip, respectively). In practice, the partitioning continues
+The maximum partitioning depth $d_{max}$ of CQ is $\log_2 n_r$, assuming that
+$n_r$ is a power of 2 and that $n_c=n_r$ ($n_r$ and $n_c$ are the number of rows
+and columns on the chip, respectively). In practice, the partitioning continues
 until a pre-defined depth $D$ has been reached.
 
-CQ was developed for border length minimization (BLM), but it can be adapted for
-conflict index minimization (CIM) by using the \emph{conflict index distance}
-$C(k,k')$ between the embeddings $\eps_k$ and $\eps_{k'}$ (as defined in Section
-\ref{sec:mlp_conflict_index}) instead of the Hamming distance $H(k,k')$ for
-selecting the centroids as well as for deciding which partition a probe should
-be assigned to.
+Although CQ was developed for border length minimization (BLM), it can be
+adapted for conflict index minimization (CIM) by using the \emph{conflict index
+distance} $C(k,k')$ (as defined in Section \ref{sec:mlp_conflict_index}) instead
+of the Hamming distance $H(k,k')$ for selecting the centroids as well as for
+deciding which partition a probe should be assigned to.
 
 As mentioned in Section \ref{sec:placement_greedy}, placement algorithms such as
 Row-Epitaxial and Greedy have the drawback of treating the last $Q - 1$ filled
@@ -525,7 +521,7 @@ Output: \> set of assignments $\CalA = \{a_1, a_2, \dots a_{2^D}\}$ \\
 \item (Select pivot candidates.) Select probes $p \in \CalP$ with minimum number
       of embeddings $E(p)$ as pivot candidates:
   \begin{enumerate}
-    \item Let $\CalQ = \{p \in \CalP \;|\; E(p,N) \mbox{ is minimal}\}$
+    \item Let $\CalQ = \{p \in \CalP \;|\; E(p,N) \mbox{ is minimum}\}$
     \item Set $\CalP \leftarrow \CalP \setminus \CalQ$
   \end{enumerate}
 \item (Call RecursivePartitioning.) Call recursive procedure with initial
@@ -583,7 +579,7 @@ Output: \> set of assignments $\CalA = \{a_1, a_2, \dots a_{2^{(D-d)}}\}$ \\
   \begin{enumerate}
     \item Re-embed each $p \in \mathcal{P}$ optimally with respect to all
           $q \in \mathcal{Q}$
-    \item Return $(\CalP \cup \CalQ, R)$
+    \item Return $\{(\CalP \cup \CalQ, R)\}$
   \end{enumerate}
 \item (Choose pivot pair.) \label{step:pp_pivots} Select
       $q_{c_1}, q_{c_2} \in \CalQ$ such that $C(c_1,c_2)$ is maximal
@@ -649,11 +645,11 @@ $\CalP_{c_j}$ considering all valid embeddings of $p_k$ with respect to the
 embedding of pivot $q_{c_j}$. This is done by computing the \emph{minimum
 conflict index distance} $M_C(k,c_j)$ or the \emph{minimum Hamming distance}
 $M_H(k,c_j)$ in case of BLM. $M_C(k,c_j)$ is defined as the minimum conflict
-index distance $C(\bar{k},c_j)$ between any embedding $\eps_{\bar{k}}$ of $p_k$
+index distance $C(x,c_j)$ between any embedding $\eps_{x}$ of $p_k$
 and a fixed embedding $\eps_{c_j}$ (see Section \ref{sec:mlp_conflict_index} for
 the definition of conflict index distance). Similarly, $M_H(k,c_j)$ is defined
-as the minimum Hamming distance $H(\bar{k},c_j)$ between any embedding
-$\eps_{\bar{k}}$ of $p_k$ and $\eps_{c_j}$ (see Section
+as the minimum Hamming distance $H(x,c_j)$ between any embedding
+$\eps_{x}$ of $p_k$ and $\eps_{c_j}$ (see Section
 \ref{sec:mlp_border_length} for the definition of Hamming distance).
 
 $M_C(k,c_j)$ and $M_H(k,c_j)$ are computed with the OSPE algorithm of Section
@@ -819,14 +815,13 @@ $17.3154$) on $500\times 500$ chips with $D=2$ when compared with no
 partitioning. In this particular case, there was also a reduction of $13.2\%$ in
 running time (from $2\,214.3$ to $1\,921.2$ seconds). With CIM, the reduction in
 average conflict index was up to $13.67\%$ (from $440.8775$ to $380.6258$) on
-$500\times 500$ chips with $D=2$ when compared with no partitioning.
-
-Increasing the partitioning depth up to $D=6$ still resulted in better layouts,
-although with relatively less reduction in normalized border length and average
-conflict index when compared to $D=2$. In terms of running time, however, we
-observed a reduction of as much as $89.3\%$ in the BLM case (from $560.5$ to
-$60.2$ seconds) and $67.9\%$ in the CIM case (from $2\,780.5$ to $891.5$
-seconds) on $300\times 300$ chips with $D=6$ when compared with no partitioning.
+$500\times 500$ chips with $D=2$ when compared with no partitioning. Increasing
+the partitioning depth up to $D=6$ still resulted in better layouts, although
+with relatively less reduction in normalized border length and average conflict
+index when compared to $D=2$. In terms of running time, however, we observed a
+reduction of as much as $89.3\%$ in the BLM case (from $560.5$ to $60.2$
+seconds) and $67.9\%$ in the CIM case (from $2\,780.5$ to $891.5$ seconds) on
+$300\times 300$ chips with $D=6$ when compared with no partitioning.
 
 It should be noted that the results shown on Tables \ref{tab:pp_x_cq} and
 \ref{tab:pp_sync} use a deposition sequence of length $T=100$, which allows a

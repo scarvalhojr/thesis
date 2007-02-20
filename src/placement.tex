@@ -183,7 +183,7 @@ prohibitively large running time and memory requirements.
 \end{picture}
 \caption{\label{fig:swm}%
   Sliding-Window Matching algorithm. a) Initial arrangement of probes
-  $p_1 \dots p_{16}$ inside a $4 \times 4$ window (with spots $s_1 \dots s_{16}$
+  $p_1$ to $p_{16}$ inside a $4 \times 4$ window (with spots $s_1$ to $s_{16}$
   and a selected maximal independent set of spots (shaded). b) Bipartite graph
   with selected probes and spots, and a minimum weight perfect matching (dark
   edges) resulting in a minimum cost re-assignment of probes to spots. c) New
@@ -551,9 +551,9 @@ steps. As a result of the lexicographical sorting of probes, the first masks
 also have relatively few conflicts. A representation of selected
 photolithographic masks for this layout are shown in Figure
 \ref{fig:greedy-bl_masks}. Layers of masked and unmasked regions that result
-from sorting probes lexicographically can be seen in masks $M_1 \dots M_8$.
-Masks $M_9 \dots M_{62}$ are very ``noisy'' as there seems to be little
-regularity in their arrangement. From $M_{62}$ on, masks start to get ``darker''
+from sorting probes lexicographically can be seen in masks $M_1$ to $M_8$.
+Masks $M_9$ to $M_{62}$ are very ``noisy'' as there seems to be little
+regularity in their arrangement. After $M_{62}$, masks start to get ``darker''
 as most probes have been already fully synthesized.
 
 With CIM, Greedy shifts border conflicts away from the steps that add the
@@ -562,10 +562,10 @@ which effectively reduces the average conflict index. Not surprisingly, this
 reduction comes at the expense of an increase in total border length --- the
 normalized border length of this particular chip rose from $17.3513$ with BLM to
 $19.8461$ with CIM. Figure~\ref{fig:greedy-ci_masks} shows a representation of
-selected masks for this layout. Note that the first masks ($M_1 \dots M_4$)
+selected masks for this layout. Note that the first masks ($M_1$ to $M_4$)
 still exhibit a ``layered'' structured, althought the layers are much narrower
 and the masks noisier than the first masks of Figure~\ref{fig:greedy-bl_masks}.
-In the central masks $M_{20} \dots M_{45}$, especially between $M_{25}$ and
+In the central masks $M_{20}$ to $M_{45}$, especially between $M_{25}$ and
 $M_{40}$, it is possible to see clusters of masked and unmasked spots that cause
 the reduction in average conflict index.
 
