@@ -313,21 +313,6 @@ $Q=32\,000$ (with more than 34 hours of running time per array).
   passes of re-embedding optimization with Sequential.}
 \end{figure}
 
-The fact that \Greedyplus\ does not outperform Greedy so easily in terms of CIM
-as it does in terms of BLM could be explained by the fact that probes are sorted
-lexicographically, which increases the chances of finding candidates that have
-similar prefixes but not good ``matches'' for the middle part of the embeddings.
-Greedy has an advantage since it looks at more candidates in the
-lexicographically sorted list of probes. One possibility that could improve the
-results of \Greedyplus\ is to sort the list of probes with an emphasis on the
-middle bases. Although this is technically possible, it would require a
-different implementation of OSPE in order to avoid increasing its running time
-since consecutive candidates would then be unlikely to have similar prefixes. In
-this implementation, the dynamic programming matrix must be computed in two
-parts, from the middle rows towards the first and the last rows so that
-consective candidates can be examined quickly by skipping the computation of
-identical rows of the matrix.
-
 \begin{table}[t!]\centering
 \caption{\label{tab:gplus_reptx}
   Normalized border length (NBL) of layouts produced by Row-Epitaxial and
@@ -432,3 +417,20 @@ choice. In fact, \Greedyplus\ achieves similar results to Greedy by examining
 fewer probe candidates per spot and, for this reason, it has the potential for
 producing better layouts.
 
+\subsection{Future work}
+
+The fact that \Greedyplus\ does not outperform Greedy so easily in terms of CIM
+as it does in terms of BLM could be explained by the fact that probes are sorted
+lexicographically, which increases the chances of finding candidates that have
+similar prefixes but not good ``matches'' for the middle part of the embeddings.
+Greedy has an advantage since it looks at more candidates in the
+lexicographically sorted list of probes. One possibility that could improve the
+results of \Greedyplus\ is to sort the list of probes with an emphasis on the
+middle bases. Although this is technically possible, with our current
+implementation of OSPE it would result in an increase in running time because
+consecutive candidates would then be unlikely to have a common prefix, requiring
+the dynamic programming matrix to be entirely re-computed for each probe
+considered. We leave as an open problem the question of finding an ordering of
+the probes with an emphasis on the middle bases and an implementation of OSPE in
+such a way that consective candidates can be examined quickly by skipping the
+computation of identical rows of the matrix.
