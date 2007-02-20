@@ -265,7 +265,7 @@ not receiving light.
 \end{figure}
 
 Function $\gamma(s,s')$ is a ``closeness'' measure between $s$ and $s'$ (to
-account for observation a). We defined it as
+account for observation a). We define it as
 %%
 \begin{equation}\label{eq:dist_weight}
 \gamma(s,s') := (d(s,s'))^{-2},\nopagebreak
@@ -274,15 +274,14 @@ account for observation a). We defined it as
 where $d(s,s')$ is the Euclidean distance between the spots $s$ and $s'$. Note
 that in (\ref{eq:conf_idx}), $s'$ ranges over all neighboring spots that are at
 most three cells away from $s$ (see Figure~\ref{fig:conflictindex}, left), which
-is in accordance with observation a.
-
-In general, we use the terms \emph{close neighbor} or simply \emph{neighbor} of
-a spot $s$ to refer to a spot $s'$ that is at most three cells away (vertically
-and horizontally) from $s$. In other words, $s'$ is inside a $7\times 7$ region
-centered around $s$. This is in contrast to the terms \emph{direct} or \emph{
-immediate neighbor} of $s$, used to denote a spot $s'$ that is adjacent to $s$
-(in other words, when $s'$ shares a common border with $s$ on the chip).
-Obviously, an immediate neighbor $s'$ is also a close neighbor of $s$.
+is in accordance with observation a. In general, we use the terms \emph{close
+neighbor} or simply \emph{neighbor} of a spot $s$ to refer to a spot $s'$ that
+is at most three cells away (vertically and horizontally) from $s$. In other
+words, $s'$ is inside a $7\times 7$ region centered around $s$. This is in
+contrast to the terms \emph{direct} or \emph{immediate neighbor} of $s$, used to
+denote a spot $s'$ that is adjacent to $s$ (in other words, when $s'$ shares a
+common border with $s$ on the chip). Obviously, an immediate neighbor $s'$ is
+also a close neighbor of $s$.
 
 The position-dependent weighting function $\omega(\eps,t)$ accounts for the
 significance of the location inside the probe where the undesired nucleotide is
@@ -306,8 +305,11 @@ where $c>0$ and $\theta>0$ are constants, and for $1\leq t\leq T$,
 
 In other words, $\ell_\eps$ is the length of the final probe specified by $\eps$
 (equal to the number of ones in the embedding), and $b_{\eps,t}$ denotes the
-number of nucleotides added up to and including step~$t$.
-
+number of nucleotides added up to and including step~$t$. The parameter $\theta$
+controls how steeply the exponential weighting function rises towards the middle
+of the probe (Figure~\ref{fig:conflictindex}, right). In our experiments, unless
+stated otherwise, we use probes of length $\ell=25$, and parameters
+$\theta = 5/\ell$ and $c = 1/\exp{(\theta)}$.
 We can now speak of the \emph{total conflict index} of a given layout
 $(\lambda,\eps)$ as the sum of conflict indices over all spots, that is
 %%
@@ -373,11 +375,6 @@ that the probability of a successful stable hybridization of a probe with its
 target should increase exponentially with the absolute value of its Gibbs free
 energy, which increases linearly with the length of the longest perfect match
 between probe and target.
-
-The parameter $\theta$ controls how steeply the exponential weighting function
-rises towards the middle of the probe. In our experiments, unless stated
-otherwise, we use probes of length $\ell=25$, and parameters $\theta = 5/\ell$
-and $c = 1/\exp{(\theta)}$.
 
 Finding the best choice of $\gamma$ and $\omega$ for a particular technology is
 beyond the scope of this thesis. We note, however, that all algorithms discussed
