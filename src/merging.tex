@@ -3,7 +3,7 @@
 \label{ch:merge}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In the previous chapters we have reviewed several algorithms that deal with the
+In the previous chapters we have described several algorithms that deal with the
 microarray layout problem in the traditional way: partitioning, placement and
 re-embedding. The problem with the ``place and re-embed'' approach is that once
 the placement is fixed, there is usually little freedom for optimization by
@@ -12,7 +12,7 @@ placement and embedding phases are considered simultaneously instead of
 separately. However, because of the generally high number of embeddings of each
 single probe, it is not easy to design algorithms that efficiently use the
 additional freedom and run reasonably fast in practice. In Chapter
-\ref{ch:part}, we have shown how Pivot Partitioning successfully explored this
+\ref{ch:part}, we have shown how Pivot Partitioning successfully exploits this
 extra freedom to outperform previous partitioning algorithms.
 
 In this chapter, we describe the first placement algorithm that simultaneously
@@ -53,7 +53,7 @@ computed only once for a given spot $s$ since they do not depend on the probe
 placed at $s$ but rather on the probes placed at neighbors of $s$: $U_t$ depends
 solely on the neighbors of $s$, whereas $M_{i,t}$ depends on the neighbors of
 $s$ and on the number $i$ of bases probe $p$ already contains at synthesis step
-$t$ (assumming that all probes have the same length $\ell$; $c$ and $\theta$ in
+$t$ (if all probes have the same length $\ell$, then $c$ and $\theta$ in
 Equation \ref{eq:ospe_mcost} are constants).
 
 Second, once we know that a probe candidate $p$ can be placed at the spot $s$
@@ -188,7 +188,7 @@ It should also be noted that for a sufficiently large value of $k$, a
 With BLM, increasing the amplitude from $k=0$ to $k=1$ always worsened the
 results. Increasing it further, however, improved the layouts and eventually
 resulted in less conflicts than with $k=0$ up to a point when it started to make
-little difference. The greatest difference between the worse and the best
+little difference. The greatest difference between the worst and the best
 layouts due to the amplitude $k$ was at most $2.26\%$ (from $16.5118$ with
 $k=14$ to $16.8849$ with $k=1$ on $800\times 800$ chips and $Q=500$). In case of
 CIM (Table \ref{tab:greedyplus_aci}), the best results were always achieved with
@@ -291,7 +291,7 @@ outperformed by \Greedyplus. With $Q=10\,000$ and $Q=20\,000$ Greedy produced
 better layouts than \Greedyplus\ in approximately the same time. For instance,
 on $800\times 800$ chips, \Greedyplus\ with $Q=2\,790$ produced layouts with
 $3.19\%$ more conflicts than Greedy with $Q=20\,000$. However, \Greedyplus\ has
-an advantage over Greedy since it needs to examine less candidates to achieve
+an advantage over Greedy since it needs to examine fewer candidates to achieve
 similar results and, for sufficiently large values of $Q$, it is usually
 possible to achieve better results with \Greedyplus\ in the same amount of time.
 For instance, on $300\times 300$ chips, \Greedyplus\ with $Q=13\,500$ produced
@@ -313,24 +313,20 @@ $Q=32\,000$ (with more than 34 hours of running time per array).
   passes of re-embedding optimization with Sequential.}
 \end{figure}
 
-One advantage of \Greedyplus\ is that, unlike Greedy, it is not influenced by
-the initial embeddings of the probes. Figure \ref{fig:gplus_blm} shows the
-normalized border length of layouts produced by Greedy and \Greedyplus\ with
-border length minimization for a selected $500\times 500$ chip with equivalent
-numbers $Q$ of candidates per spot (in accordance with Table
-\ref{tab:greedycomp_bl}). Because the probes were initially left-most embedded,
-Greedy produced a layout in which the border conflicts are concentrated between
-steps 7 and 58; starting on step 59, the normalized border length drops steadily
-as the embeddings reach their last productive steps. In contrast, \Greedyplus\
-produces a layout with a more uniform distribution of conflicts in the final
-synthesis steps. In both cases the first masks have relatively few conflicts as
-a result of lexicographically sorting the probes. A representation of selected
-masks for the layout produced by \Greedyplus\ is shown in Figure
-\ref{fig:gplus-bl_masks}. Layers of masked and unmasked regions in masks
-$M_1 \dots M_9$ are similar to the ones shown in Figure
-\ref{fig:greedy-bl_masks}, although the masks produced by Greedy are
-``noisier''. The normalized border length of these layouts are $17.3182$
-(Greedy) and $16.9451$ (\Greedyplus).
+The fact that \Greedyplus\ does not outperform Greedy so easily in terms of CIM
+as it does in terms of BLM could be explained by the fact that probes are sorted
+lexicographically, which increases the chances of finding candidates that have
+similar prefixes but not good ``matches'' for the middle part of the embeddings.
+Greedy has an advantage since it looks at more candidates in the
+lexicographically sorted list of probes. One possibility that could improve the
+results of \Greedyplus\ is to sort the list of probes with an emphasis on the
+middle bases. Although this is technically possible, it would require a
+different implementation of OSPE in order to avoid increasing its running time
+since consecutive candidates would then be unlikely to have similar prefixes. In
+this implementation, the dynamic programming matrix must be computed in two
+parts, from the middle rows towards the first and the last rows so that
+consective candidates can be examined quickly by skipping the computation of
+identical rows of the matrix.
 
 \begin{table}[t!]\centering
 \caption{\label{tab:gplus_reptx}
@@ -358,29 +354,24 @@ $800\times 800$ & 10\,000 & 16.7176 &  45.6 & &    500 & {\bf 16.6549} & 41.7 & 
 \end{tabular}}
 \end{table}
 
-Finally, we also compare \Greedyplus\ with Row-Epitaxial (Section
-\ref{sec:placement_reptx}), which, in terms of border length minimization,
-achieves results comparable to Greedy in less time. Table \ref{tab:gplus_reptx}
-shows that \Greedyplus\ also outperforms Row-Epitaxial in the same amount of
-time (or less). We observed that the larger values of $Q$ are used, the greater
-is the advantage of \Greedyplus\ over Greedy. In fact, the difference in NBL
-between Greedy and \Greedyplus, according to the results of Table
-\ref{tab:greedyplus_nbl}, could be even more significative if the latter used
-higher amplitudes of $k$-threading.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Summary}
-\label{sec:merge_summary}
-
-In this chapter, we have presented a new placement algorithm, called
-\Greedyplus\ that for the first time places and re-embeds the probes
-simultaneously. Our results have shown that \Greedyplus\ outperforms the
-previously best placement algorithms --- Row-Epitaxial for border length
-minimization and Greedy for conflict index minimization. In terms of CIM,
-Greedy produces better results when time is limited but, otherwise, \Greedyplus\
-should be the placement algorithm of choice. In fact, \Greedyplus\ achieves
-similar results to Greedy by examining fewer probe candidates per spot and, for
-this reason, it has the potential for producing better layouts.
+One advantage of \Greedyplus\ is that, unlike Greedy, it is not influenced by
+the initial embeddings of the probes. Figure \ref{fig:gplus_blm} shows the
+normalized border length of layouts produced by Greedy and \Greedyplus\ with
+border length minimization for a selected $500\times 500$ chip with equivalent
+numbers $Q$ of candidates per spot (in accordance with Table
+\ref{tab:greedycomp_bl}). Because the probes were initially left-most embedded,
+Greedy produced a layout in which the border conflicts are concentrated between
+steps 7 and 58; starting on step 59, the normalized border length drops steadily
+as the embeddings reach their last productive steps. In contrast, \Greedyplus\
+produces a layout with a more uniform distribution of conflicts in the final
+synthesis steps. In both cases the first masks have relatively few conflicts as
+a result of lexicographically sorting the probes. A representation of selected
+masks for the layout produced by \Greedyplus\ is shown in Figure
+\ref{fig:gplus-bl_masks}. Layers of masked and unmasked regions in masks
+$M_1 \dots M_9$ are similar to the ones shown in Figure
+\ref{fig:greedy-bl_masks}, although the masks produced by Greedy are
+``noisier''. The normalized border length of these layouts are $17.3182$
+(Greedy) and $16.9451$ (\Greedyplus).
 
 \begin{figure}[p]\centering
 %%
@@ -417,3 +408,27 @@ this reason, it has the potential for producing better layouts.
   deposition sequence. Unmasked (masked) spots are represented by light (dark)
   dots.}
 \end{figure}
+
+Finally, we also compare \Greedyplus\ with Row-Epitaxial (Section
+\ref{sec:placement_reptx}), which, in terms of border length minimization,
+achieves results comparable to Greedy in less time. Table \ref{tab:gplus_reptx}
+shows that \Greedyplus\ also outperforms Row-Epitaxial in the same amount of
+time (or less). The larger values of $Q$ are used, the greater is the advantage
+of \Greedyplus. According to the results of Table \ref{tab:greedyplus_nbl}, the
+difference in NBL between \Greedyplus\ and Row-Epitaxial could be even greater
+if the former used higher $k$-threading amplitudes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\label{sec:merge_summary}
+
+We have presented a new placement algorithm, called \Greedyplus, that for the
+first time places and re-embeds the probes simultaneously. Our results have
+shown that \Greedyplus\ outperforms the previously best placement algorithms ---
+Row-Epitaxial for border length minimization and Greedy for conflict index
+minimization. In terms of CIM, Greedy produces better results when time is
+limited but, otherwise, \Greedyplus\ should be the placement algorithm of
+choice. In fact, \Greedyplus\ achieves similar results to Greedy by examining
+fewer probe candidates per spot and, for this reason, it has the potential for
+producing better layouts.
+
