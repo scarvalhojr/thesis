@@ -5,116 +5,135 @@
 
 Microarrays are a ubiquitous tool in molecular biology with a wide range of
 applications on a whole-genome scale including high-throughput gene expression
-analysis, genotyping, and resequencing.
+analysis, genotyping, and resequencing. Although several different microarray
+platforms exist, we focus on high-density oligonucleotide arrays, sometimes
+called DNA chips. One of the advantages of higher density arrays is that they
+allow the simultaneous measurement of the expression of several thousand genes
+at once, possibly covering all genes of a species in a single experiment.
 
-Several different microarray platforms exist, but this thesis focuses on
-high-density oligonucleotide arrays. The advantage of higher densities arrays
-is that they allow, for instance, the simultaneous measurement of the expression
-of several thousand genes at once.
+Oligonucleotide microarrays consist of short DNA molecules, called
+\emph{probes}, affixed or synthesized at specific locations of a solid support.
+Probes are built, nucleotide-by-nucleotide, by a light-directed combinatorial
+chemistry. Because of the natural properties of light, the quality of a
+microarray can be compromised if the physical arrangement of the probes on the
+array and their synthesis schedule are not carefully designed. This thesis is
+mainly concerned with the problem of designing the layout of a microarray in
+such a way that the incidence of the \emph{unintended illumination problem} is
+reduced. We call it the \emph{microarray layout problem} (MLP), using the term
+\emph{layout} to refer to where and how the probes are synthesized on the array,
+i.e., their arrangement and their \emph{embeddings}.
 
-High-density microarrays are usually produced by light-directed combinatorial
-chemistry that builds the probe sequences base-by-base. Because of the natural
-properties of light, the quality of a microarray can be improved by carefully
-designing the physical arrangement, or \emph{layout}, of its probes.
+In the first chapter of this thesis, we briefly review the role of microarrays
+in analyzing complex genetic information. We then describe the technology
+currently employed in the production of high-density microarrays as well as the
+problems that arise during manufacturing. In Chapter \ref{ch:mlp}, we give a
+formal definition to the microarray layout problem and describe in detail two
+quality measures that are used to evaluate a given layout. Finding an optimal
+layout with respect to any of these two measures seems unlikely, even for very
+small arrays. As we shall see in Chapter \ref{ch:qap}, the MLP can be modeled as
+a quadratic assignment problem (QAP), a classical combinatorial optimization
+problem that is notoriously hard to solve in practice, which gives further
+indication that the MLP is, in fact, a hard problem. For this reason, the layout
+problem is usually approached in several ``phases'' with a range of heuristic
+algorithms.
 
-In this thesis, we review models for evaluating the layout of oligonucleotide
-microarrays and survey algorithmic approaches that can be used in their design.
+The \emph{placement} phase is the subject of Chapter \ref{ch:placement}.
+Traditionally, this phase consists of fixing an embedding for all probes and
+finding an arrangement minimizing a given cost function. We describe several
+known placement algorithms with an emphasis on methods that can be used to
+design large arrays. A new algorithm, called Greedy, is also presented. One of
+the reason why we show the relation between the MLP and the QAP is that we can
+now use QAP techniques as placement algorithms. This is interesting because
+there is a rich literature on methods for solving the QAP. In Chapter
+\ref{ch:qap}, we also show the results of using one QAP heuristic to design
+small artificial chips, and discuss how this approach can be applied to larger
+microarrays.
 
-%% What follows is from Sven's thesis: use it as a template
+Chapter \ref{ch:reembed} focuses on the \emph{re-embedding} phase that usually
+follows the placement. In this phase, one attempts to further improve the layout
+by finding a different embedding of the probes without changing their location
+on the chip. Again, we review all known re-embedding algorithms, describring the
+most successful ones in detail. We also introduce a new algorithm, called
+Priority re-embedding.
 
-DNA chips allow to quickly obtain and compare gene expression profiles
-of different cell or tissue samples. As one of many applications, one
-hopes to better understand various types and subtypes of cancer and to
-improve cancer therapy by characterizing the differences between
-the expression profiles of healthy cells and tumor cells.
+In the last decade, commercial microarrays have grown from a few thousands to
+more than a million probe sequences on a single chip. Many placement algorithms
+are unable to deal with such large arrays because of their non-linear time and
+space complexities. For this reason, the layout problem is sometimes broken into
+smaller sub-problem by a \emph{partitioning} algorithm. This is the focus of
+Chapter \ref{ch:part}, where we present an extensive practical evaluation of
+existing algorithms and show how the partitioning phase can improve solution
+quality and reduce running time.
 
-The first chapter of this thesis offers an overview of existing
-microarray technologies and contrasts them with other techniques for
-gene expression analysis. High-density oligonucleotide arrays are
-described in detail.
+In Chapter \ref{ch:merge}, we discuss the disadvantages of the tradional ``place
+and re-embed'' approach to the layout problem. We then propose a new algorithm,
+called \Greedyplus, that for the first merges the placement and re-embedding
+phases into a single one. Our results show that \Greedyplus indeed outperforms
+all known placement algorithms.
 
-Gene expression analysis with DNA chips is a high-throughput technique
-that produces massive amounts of data; however, this technique is not
-error-free. Each step of an experiment must be performed carefully. In
-particular, the DNA chip must be carefully designed and manufactured.
-This thesis proposes and describes solutions for some of the
-algorithmic problems that arise in this phase. These problems are
-formulated in detail in the last section of Chapter x.
+In Chapter \ref{ch:affy}, we present a pioneering analysis and evaluation of the
+layout of several GeneChip arrays, considered the industry standard in terms of
+high-density oligonucleotide microarrays. We describe in detail design decisions
+that might affect the quality of these commercially available arrays. We then
+use some of the algorithms presented in earlier chapters to propose alternative
+layouts for two of the latest generation of GeneChip arrays, showing how the
+risk of the unintended illumination problem can be reduced.
 
-My research started with the general question of how to find
-oligonucleotide probes for highly homologous transcripts when it
-cannot be guaranteed that a sufficiently large set of clearly
-transcript-specific (or \emph{unique}) probes can be found. An
-interesting future large-scale application could be the individual
-expression measurement of all splice variations of all genes in the
-human genome, for example. The basic idea was to find several
-\emph{non-unique} probes such that different probes hybridize to
-different combinations of targets, with the hope that the measured
-signal can then be decoded into the individual expression levels. Two
-question then follow immediately: How does the decoding work, and how
-can the probes be designed in a way that makes the decoding as simple
-as possible?
-
-In early 2001, custom probe design was in its infancy. The design of
-the large commercial chips, such as the Affymetrix GeneChip\textR, was
-a well guarded secret of the respective companies. Several other
-research groups were also beginning to work on probe selection, and
-their results, made the
-problem more popular.  I soon realized that, before actually working
-on non-unique probes, more fundamental questions should be addressed.
-A high-performance large-scale probe selection system for unique
-probes would be very useful but did not exist. Such a system could
-then be used as a basis for non-unique probe design. These
-considerations are reflected in this thesis.
-
-Once a set of probes is chosen for a chip design, the chip must be
-produced. With several technologies, such as the Affymetrix
-GeneChip\textR\ arrays and febit's {\sffamily geniom}\textR\ 
-{\sffamily one} system, the probes are synthesized in situ on the chip
-with a combination of photolithography and combinatorial chemistry.
-We consider the problem of optimizing the nucleotide deposition
-sequence to lower production costs and to decrease the overall error
-rate during synthesis.
-
-A concluding discussion about the results of this thesis and an
-outlook into the future can be found in Chapter~\ref{ch:discussion}.
+Another problem related to the production of microarrays is the problem of
+finding the shortest synthesis schedule for a given set of probes, which we
+refer to as the \emph{shortest deposition sequence problem} (SDSP). The SDSP is
+an instance of the shortest common supersequence problem (SCSP), a classical
+problem in computer science that is known to be NP-complete even under various
+restrictions. Several existing heuristics are able to find good approximate
+solutions for the SCSP, but, in Chapter \ref{ch:scs}, we investigate the
+feasibility of finding \emph{the shortest} deposition sequence for currently
+available oligonucleotide microarrays. Chapter \ref{ch:discuss} concludes this
+thesis with a short discussion about the presented results.
 
 \paragraph{Publications.}
-Parts of this thesis have been published in advance.
+Parts of this thesis have been published in advance. The conflict index model
+for evaluating a microarray layout (Chapter \ref{ch:mlp}) and the Pivot
+Partitioning algorithm (Section \ref{sec:part_pp}) were first presented at the
+Workshop on Algorithms in Bioinformatics (WABI), in Z\"urich
+\citep{Carvalho2006}. The conflict index model was also presented, together with
+the QAP formulation of the microarray layout problem (Chapter \ref{ch:qap}), at
+the German Conference on Bioinformatics (GCB) in T\"ubingen
+\citep{Carvalho2006a}. The work on the shortest common supersequence (Chapter
+\ref{ch:scs}) was first published as a technical report at the Faculty of
+Technology of Bielefeld University \citep{Carvalho2005}. Finally, a book chapter
+containing a more accessible description of the microarray layout problem and of
+most algorithms presented here is expected to appear in late 2007
+\citep{Carvalho2007}.
 
-This thesis also contains previously unpublished material, namely
+This thesis also contains previously unpublished material, namely:
 \begin{itemize}
-\item new placement algorithm that simultaneously places and re-embeds
-  the probes
+\item the Greedy placement algorithm (Section \ref{sec:placement_greedy}) that
+      outperforms previous algorithms in terms of conflict index minimization;
+\item the Priority re-embedding algorithm (Section \ref{sec:reembed_priority})
+      that achieves marginal improvements compared to the best known algorithms;
+\item analysis of the layout of several commercially available GeneChip arrays
+      with respect to the defined evaluation criteria (Chapter \ref{ch:affy}).
 \end{itemize}
 
-Most of the material was published as a book chapter in \citet{Carvalho2007}.
-
-The stuff on the SCS appeared in \citet{Carvalho2005}.
-
 \paragraph{Acknowledgments.}
-This work was carried out while I was at the...
-It has been a very enjoyable experience, thanks to all present and
-former colleagues and students in the Bioinformatics program.
+This work was carried out while I was a member of the Junior research group
+(recently-renamed) Computational Methods for Emerging Technologies (COMET), which
+is part of the AG Genominformatik led by Prof.~Jens Stoye. I thank all present
+and former colleagues as well as students of the International NRW Graduate
+School in Bioinformatics and Genome Research and the Graduiertenkolleg
+Bioinformatik, of which I am also a member, for the nice research atmosphere I
+found in Bielefeld, and for an enjoyable time I had in the last three years.
 
-I would especially like to thank Sven Rahmann for suggesting the
-topic, providing initial ideas, and for the opportunity to write this
-thesis under his guidance.
-
-The support of the whole computer service group at the CeBiTec was
-crucial to the success of this work, and I cannot thank them enough
-for their help.
-
-I enjoyed fruitful discussions with many people while this thesis was
-underway; in particular, I am grateful to ...
-for their valuable hints and comments. 
-
-Ferdinando Cicalese, Jos\'e Augusto Amgarten Quitzau, Klaus-Bernd Sch\"urmann,
-... read early drafts of several chapters of this thesis and helped to improve
-it in many ways through their comments.
-
-I would like to thank Dr. Peter Hahn and Chris MacPhee for working on
-several QAP instances derived from artificial microarrays from
+Special thanks go to Dr.~Sven Rahmann for suggesting the topic and for the
+opportunity to work under his supervision. This work owes much to his expertise.
+Whenever I write ``we'' in this thesis, I mean ``Sven and I''. On several
+occasions, the support of the Bioinformatics Resource facility (BRF) at the
+CeBiTec (Center for BioTechnology) was crucial to the success of this work,
+and I cannot thank them enough for their help. Epameinondas Fritzilas,
+Ferdinando Cicalese, Francisco Pereira Lobo, Jos\'e Augusto Amgarten Quitzau,
+and Klaus-Bernd Sch \"urmann read early drafts of several chapters of this
+thesis and helped to improve them in many ways. I would also like to thank
+Dr.~Peter Hahn and Chris MacPhee for working on several QAP instances of
 Chapter~\ref{ch:qap} and for helpful discussions.
 
 \vspace*{6ex}
