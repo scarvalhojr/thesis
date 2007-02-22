@@ -16,10 +16,10 @@ for two commercially available microarrays.
 
 We obtained the specification of several GeneChip arrays containing the list of
 probe sequences and their positions on the chip from Affymetrix's web
-site\footnote{\url{http://www.affymetrix.com}}. As discussed below, we have to
-make a few assumptions because some details such as the deposition sequence used
-to synthesize the probes, the probe embeddings, and the contents of ``special''
-spots are not publicly available.
+site\footnote{\url{http://www.affymetrix.com/support/technical/byproduct.affx?cat=arrays}}.
+As discussed below, we have to make a few assumptions because some details such
+as the deposition sequence used to synthesize the probes, the probe embeddings,
+and the contents of ``special'' spots are not publicly available.
 
 Some of the special spots are used to help the mechanical alignment of the chip
 with the scanner that captures the image with the hybridization signals. Others
@@ -141,7 +141,7 @@ $1\,164\times 1\,164$ spots), and suggest yet another placement strategy.
 Figure \ref{fig:ecoli_masks} shows a representation of selected masks for the
 E.\ coli Genome 2.0. The low levels of conflicts in the first synthesis steps
 are a result of the pattern of masked and unmasked layers that can be seen in
-masks $M_1 \dots M_9$. This pattern is similar to the ones produced by Greedy
+masks $M_1$ to $M_9$. This pattern is similar to the ones produced by Greedy
 (Figure \ref{fig:greedy-bl_masks}) and \Greedyplus\ (Figure
 \ref{fig:gplus-bl_masks}). A more careful examination, however, reveals that the
 layers are arranged in a way that resembles the Gray-code--based arrangement
@@ -334,7 +334,7 @@ border length and conflict index. It is clear that placing perfect match (PM)
 and mismatch (MM) probes on adjacent spots reduces the incidence of border
 conflicts. However, this also has the disadvantage of concentrating the
 conflicts on the synthesis steps that add the middle bases, precisely where the
-probes are most likely to be damaged
+probes are most likely to be damaged.
 
 We have also showed that two algorithms presented in earlier chapters,
 \Greedyplus\ and Sequential re-embedding, performed well on real microarrays,
