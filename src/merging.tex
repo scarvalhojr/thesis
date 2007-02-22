@@ -25,17 +25,18 @@ placement and re-embedding phases.
 \section{\Greedyplus}
 \label{sec:merge_greedyplus}
 
-\Greedyplus\ is similar to Greedy in many respects. Spots are filled in a greedy
-fashion, sequentially, using a user-configurable $k$-threading pattern. For each
-spot $s$, \Greedyplus\ looks at $Q$ probe candidates and chooses the one that
-can be placed at $s$ with minimum cost. The main difference is that \Greedyplus\
-considers all possible embeddings of a candidate $p$ instead of only $p$'s given
-embedding. This is done by temporarily placing $p$ at the spot $s$ and using
-OSPE (Section~\ref{sec:reembed_ospe}) to compute $p$'s optimal embedding with
-respect to the already-filled neighbors of $s$. (Naturally, OSPE can be used to
-compute the optimal embedding with respect to border length or conflict index.)
-Another difference is that, unlike Greedy and Row-Epitaxial, \Greedyplus\ does
-not assume that an initial embedding of the probes is given.
+\Greedyplus\ \cite{Carvalho2007} is similar to Greedy in many respects. Spots
+are filled in a greedy fashion, sequentially, using a user-configurable
+$k$-threading pattern. For each spot $s$, \Greedyplus\ looks at $Q$ probe
+candidates and chooses the one that can be placed at $s$ with minimum cost. The
+main difference is that \Greedyplus\ considers all possible embeddings of a
+candidate $p$ instead of only $p$'s given embedding. This is done by temporarily
+placing $p$ at the spot $s$ and using OSPE (Section~\ref{sec:reembed_ospe}) to
+compute $p$'s optimal embedding with respect to the already-filled neighbors of
+$s$. (Naturally, OSPE can be used to compute the optimal embedding with respect
+to border length or conflict index.) Another difference is that, unlike Greedy
+and Row-Epitaxial, \Greedyplus\ does not assume that an initial embedding of the
+probes is given.
 
 Compared to Greedy, \Greedyplus\ spends more time evaluating each probe
 candidate $p$ for filling a spot $s$. While Greedy takes $O(T)$ time to compute
