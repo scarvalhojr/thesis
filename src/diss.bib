@@ -884,6 +884,47 @@ Encoding: Cp1252
   timestamp = {2007.02.14}
 }
 
+@ARTICLE{Irizarry2006,
+  author = {Rafael A Irizarry and Zhijin Wu and Harris A Jaffee},
+  title = {Comparison of Affymetrix GeneChip expression measures},
+  journal = {Bioinformatics},
+  year = {2006},
+  volume = {22},
+  pages = {789--794},
+  number = {7},
+  month = {Apr},
+  abstract = {MOTIVATION: In the Affymetrix GeneChip system, preprocessing occurs
+	before one obtains expression level measurements. Because the number
+	of competing preprocessing methods was large and growing we developed
+	a benchmark to help users identify the best method for their application.
+	A webtool was made available for developers to benchmark their procedures.
+	At the time of writing over 50 methods had been submitted. RESULTS:
+	We benchmarked 31 probe set algorithms using a U95A dataset of spike
+	in controls. Using this dataset, we found that background correction,
+	one of the main steps in preprocessing, has the largest effect on
+	performance. In particular, background correction appears to improve
+	accuracy but, in general, worsen precision. The benchmark results
+	put this balance in perspective. Furthermore, we have improved some
+	of the original benchmark metrics to provide more detailed information
+	regarding precision and accuracy. A handful of methods stand out
+	as providing the best balance using spike-in data with the older
+	U95A array, although different experiments on more current arrays
+	may benchmark differently. AVAILABILITY: The affycomp package, now
+	version 1.5.2, continues to be available as part of the Bioconductor
+	project (http://www.bioconductor.org). The webtool continues to
+	be available at http://affycomp.biostat.jhsph.edu CONTACT: rafa@jhu.edu
+	SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics
+	online.},
+  doi = {bioinformatics/btk046},
+  keywords = {Algorithms; Benchmarking; Gene Expression Profiling; Oligonucleotide
+	Array Sequence Analysis; Reproducibility of Results; Software},
+  owner = {Sergio},
+  pii = {btk046},
+  pmid = {16410320},
+  timestamp = {2007.02.22},
+  url = {http://dx.doi.org/bioinformatics/btk046}
+}
+
 @ARTICLE{Itoga1981,
   author = {Stephen Y. Itoga},
   title = {The string merging problem},
@@ -1507,6 +1548,19 @@ Encoding: Cp1252
   url = {http://www.sciencedirect.com/science/article/B6VCT-4HWXJ62-1/2/b5115b113130832be43e56b1cacb942e}
 }
 
+@INPROCEEDINGS{Manber1990,
+  author = {Udi Manber and Gene Myers},
+  title = {Suffix arrays: a new method for on-line string searches},
+  booktitle = {Proceedings of the first annual {ACM-SIAM} symposium on discrete
+	algorithms ({SODA})},
+  year = {1990},
+  pages = {319--327},
+  address = {Philadelphia, PA, USA},
+  publisher = {{SIAM} Society for Industrial and Applied Mathematics},
+  owner = {Sergio},
+  timestamp = {2007.02.22}
+}
+
 @ARTICLE{Marton1998,
   author = {M. J. Marton and J. L. DeRisi and H. A. Bennett and V. R. Iyer and
 	M. R. Meyer and C. J. Roberts and R. Stoughton and J. Burchard and
@@ -1594,6 +1648,56 @@ Encoding: Cp1252
   owner = {Sergio},
   pmid = {12227735},
   timestamp = {2007.02.12}
+}
+
+@ARTICLE{Millenaar2006,
+  author = {Frank F Millenaar and John Okyere and Sean T May and Martijn van
+	Zanten and Laurentius A C J Voesenek and Anton J M Peeters},
+  title = {How to decide? Different methods of calculating gene expression from
+	short oligonucleotide array data will give different results},
+  journal = {BMC Bioinformatics},
+  year = {2006},
+  volume = {7},
+  pages = {137},
+  abstract = {BACKGROUND: Short oligonucleotide arrays for transcript profiling
+	have been available for several years. Generally, raw data from
+	these arrays are analysed with the aid of the Microarray Analysis
+	Suite or GeneChip Operating Software (MAS or GCOS) from Affymetrix.
+	Recently, more methods to analyse the raw data have become available.
+	Ideally all these methods should come up with more or less the same
+	results. We set out to evaluate the different methods and include
+	work on our own data set, in order to test which method gives the
+	most reliable results. RESULTS: Calculating gene expression with
+	6 different algorithms (MAS5, dChip PMMM, dChip PM, RMA, GC-RMA
+	and PDNN) using the same (Arabidopsis) data, results in different
+	calculated gene expression levels. Consequently, depending on the
+	method used, different genes will be identified as differentially
+	regulated. Surprisingly, there was only 27 to 36\% overlap between
+	the different methods. Furthermore, 47.5\% of the genes/probe sets
+	showed good correlation between the mismatch and perfect match intensities.
+	CONCLUSION: After comparing six algorithms, RMA gave the most reproducible
+	results and showed the highest correlation coefficients with Real
+	Time RT-PCR data on genes identified as differentially expressed
+	by all methods. However, we were not able to verify, by Real Time
+	RT-PCR, the microarray results for most genes that were solely calculated
+	by RMA. Furthermore, we conclude that subtraction of the mismatch
+	intensity from the perfect match intensity results most likely in
+	a significant underestimation for at least 47.5\% of the expression
+	values. Not one algorithm produced significant expression values
+	for genes present in quantities below 1 pmol. If the only purpose
+	of the microarray experiment is to find new candidate genes, and
+	too many genes are found, then mutual exclusion of the genes predicted
+	by contrasting methods can be used to narrow down the list of new
+	candidate genes by 64 to 73\%.},
+  doi = {10.1186/1471-2105-7-137},
+  keywords = {Algorithms; Arabidopsis Proteins; Decision Making; Gene Expression
+	Profiling; Oligonucleotide Array Sequence Analysis; Reproducibility
+	of Results; Sensitivity and Specificity; Software; Software Validation},
+  owner = {Sergio},
+  pii = {1471-2105-7-137},
+  pmid = {16539732},
+  timestamp = {2007.02.22},
+  url = {http://dx.doi.org/10.1186/1471-2105-7-137}
 }
 
 @ARTICLE{Naef2003,
@@ -2061,6 +2165,38 @@ Encoding: Cp1252
   owner = {Sergio},
   pmid = {1380482},
   timestamp = {2007.02.12}
+}
+
+@ARTICLE{Sung2003,
+  author = {Wing-Kin Sung and Wah-Heng Lee},
+  title = {Fast and accurate probe selection algorithm for large genomes},
+  journal = {Proceedings of the IEEE Computational Society Bioinformatics Conference},
+  year = {2003},
+  volume = {2},
+  pages = {65--74},
+  abstract = {The oligo microarray (DNA chip) technology in recent years has a significant
+	impact on genomic study. Many fields such as gene discovery, drug
+	discovery, toxicological research and disease diagnosis, will certainly
+	benefit from its use. A microarray is an orderly arrangement of
+	thousands of DNA fragments where each DNA fragment is a probe (or
+	a fingerprint) of a gene/cDNA. It is important that each probe must
+	uniquely associate with a particular gene/cDNA. Otherwise, the performance
+	of the microarray will be affected. Existing algorithms usually
+	select probes using the criteria of homogeneity, sensitivity, and
+	specificity. Moreover, they improve efficiency employing some heuristics.
+	Such approaches reduce the accuracy. Instead, we make use of some
+	smart filtering techniques to avoid redundant computation while
+	maintaining the accuracy. Based on the new algorithm, optimal short
+	(20 bases) or long (50 or 70 bases) probes can be computed efficiently
+	for large genomes.},
+  keywords = {Algorithms; Base Sequence; Chromosome Mapping; DNA Probes; Equipment
+	; Equipment Design; Failure Analysis; Genome; Models, Genetic; Models,
+	Statistical; Molecular Sequence Data; Oligonucleotide Array Sequence
+	Analysis; Pattern Recognition, Automated; Sequence Alignment; Sequence
+	Analysis, DNA},
+  owner = {Sergio},
+  pmid = {16452780},
+  timestamp = {2007.02.22}
 }
 
 @ARTICLE{Tolonen2002,
