@@ -1,4 +1,926 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Shortest Common Supersequence}
+\chapter{The Shortest Deposition Sequence Problem}
 \label{ch:scs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Several interesting computational problems emerge in the design and production
+of DNA microarrays. The shortest common supersequence (SCS) problem is one such
+a problem, which arises during the synthesis of probes on the array. It is an
+classical problem in computer science that has already been proved to be
+NP-complete. The aim of this report is to analyze the feasibility of finding
+shortest common supersequences for the production of DNA microarrays. Several
+different strategies are considered. Because of time and space constraints, we
+propose a branch-and-bound depth-first search. This strategy relies on computing
+upper and lower bounds on the length of the SCS to prune the search space. A
+computer program was implemented to analyze its performance in practice. The
+implementation is described in detail, along with several attempts to reduce its
+running time. Finally, we describe some experiments and conclude with an
+evaluation of the implementation as well as the feasibility of such an approach.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:scs_intro}
+
+In the arrays manufactured by Affymetrix, the probe sequences are
+synthesized on the chip, in parallel, nucleotide by nucleotide. The
+process consists of a series of steps. In each step the same
+nucleotide is appended to all probes located on selected spots. This
+selection occurs by exposure to light, with a mask that is placed over
+the chip to ensure that only the appropriate spots are activated to
+receive the nucleotide. After that, a solution containing the
+nucleotides is flushed on the chip and allowed to hybridize.
+
+The sequence of nucleotides used in the synthesis process is called
+the \textit{deposition sequence}. Clearly, each probe is a
+(non-contiguous) subsequence of the deposition sequence, which is, in
+turn, a supersequence of the set of probes. It is common to use a
+deposition sequence that consists of repetitions of \Seq{ACGT}. This
+sequence is used because of its simplicity and relative effectiveness
+\cite{Rahmann2004}.
+
+Ideally, the deposition sequence should be as short as possible so
+that the number of steps is reduced and, consequently, the
+manufacturing time is shortened. Moreover, the masking process is
+subject to errors, i.e., there is a risk of having the light shining
+over a spot that was not supposed to be activated. Hence, if the
+number of steps is reduced, the chance of unwanted spot activation is
+also reduced, and the overall quality of the chip is improved.
+
+The issue of accidental activation can also be diminished by carefully
+arranging the probes on the chip. It is evident that the spots more
+likely to be affected by stray light are those which lie immediately
+next to an unmasked spot. More precisely, the chances are higher on
+the \emph{borders} shared with an unmasked spot. For this reason, the
+risk of errors can be reduced by minimizing the number of borders
+shared by masked and unmasked spots in each step of the synthesis
+process.
+
+This report, however, will concentrate on minimizing the length of the
+deposition sequence. More precisely, we are interested in finding the
+shortest supersequence of a given set of sequences such that all
+probes of a microarray chip can be synthesized. This is, of course, a
+well-known problem in the computer science literature and is usually
+referred as the shortest common supersequence (SCS) problem. It was
+shown to be NP-complete for strings over an alphabet of size greater than or equal to 2.
+\cite{Raiha1981}. For this reason, several heuristics have been
+devised to compute approximate solutions more efficiently ---
+see \citet{Fraser1995} for a survey. But, to this day,
+finding an exact solution seems to be limited to small sets of
+sequences and reduced alphabet sizes.
+
+The objective of this report is, therefore, to analyze the feasibility
+of computing a solution to the SCS problem in the context of the
+production of DNA microarrays.
+
+Formally we have a set of $n$ sequences $\mathcal{P} = \{ p_{1},
+p_{2}, p_{3}, \ldots, p_{n} \}$, drawn from the alphabet $\Omega$,
+whose size is $z = | \Omega |$. The length of any sequence $p_{i}$ is
+$m = |p_{i}|$ (for simplicity, all sequences are assumed to have the
+same length, but this assumption is not necessary).  Given this input,
+we want to find $s$, the shortest common supersequence for the set
+$\mathcal{P}$. The DNA chip production setting constrains these
+variables to the values shown in table \ref{tab:constraints}.
+
+\begin{table}
+\centering
+\begin{tabular}{|l|c|} \hline
+Number of sequences: & $10,000 \leq n \leq 1,000,000$ \\ \hline
+Length of sequences: &$20 \leq m \leq 30$ \\ \hline
+Alphabet: & $\Omega = \{\tA,\tC,\tG,\tT\}$ \\ \hline
+Alphabet size: & $z = | \Omega | = 4$ \\ \hline
+\end{tabular}
+\caption{Variable constraints in the DNA chip production setting.}
+\label{tab:constraints}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alternatives}
+\label{sec:scs_alternatives}
+
+Several approaches may be tried in order to find an exact solution to
+the shortest supersequence problem. Naively, one can generate all
+possible sequences with length $k$, checking whether each of them is a
+viable supersequence. The initial value of $k$ can be set to $m$ (the
+length of the sequences) since a supersequence must be, at least,
+$m$~characters long. If no supersequence is found with $k$ characters,
+the value of $k$ is increased and all sequences of this new length are
+generated and examined. The value of $k$ denotes the length of the
+shortest common supersequence as soon as a supersequence is found.
+
+Clearly, $m$ is not a good initial value for $k$. The shortest
+supersequence of a typical DNA chip can be expected to be between 55
+and 95 characters long (see \cite{Rahmann2003}). Fortunately, reasonably
+good lower bounds on the length of the SCS can easily be computed and
+the search can start with a higher value for $k$.
+
+With the methods described in section \ref{sec:scs_lbound}, one can expect
+to find a lower bound of around 60 characters for a typical set of $n
+= 10,000$ probes of length $m = 25$. Starting from $k = 60$ (and not
+$k = 25$) alone saves a significant amount of time. But this is not
+enough. For $k = 60$, about $1.33\cdot 10^{36}$ candidate sequences
+are generated. This approach is obviously not feasible since, for each
+candidate, we still need to check whether it is a supersequence or
+not.
+
+Efficient algorithms for the SCS problem can be found in the computer
+science literature. Most of them are based on dynamic programming ---
+such as those developed by Itoga \cite{Itoga1981}, Foulser at al.
+\cite{Foulser1992} and the improvements suggested by Fraser
+\cite{Fraser1995}. However, they were not developed for problem sets in
+the order we are investigating here. In fact, they are not feasible in
+this context due to their $O(m^{n})$ space complexity (recall that the
+number of sequences $n$ is usually in the order of $10^{5}$). In
+practice these algorithms can only be used to solve problem instances
+with small $n$.
+
+The only viable approach to compute an exact solution to the SCS problem of such
+magnitude seems to be a branch-and-bound search. The reason is that its space
+complexity is merely $O(n m)$ for simple implementations (and this memory is
+used only for storing the input sequences).
+
+In practice, as it will be demonstrated in the next section, the approach taken
+here employs techniques that speed up the algorithm at the expense of greater
+memory requirements. This approach is similar to the one used by
+\citet{Fraser1995}, although he worked on much smaller problem instances (the number of
+sequences was not greater than 24).
+
+\subsection{Searching for the SCS}
+
+As stated earlier, the approach adopted here to solve the SCS problem for the
+DNA chip production setting is based on a branch-and-bound search strategy.
+Essentially, this approach is an improvement on the naive algorithm described in
+the previous section.
+
+Consider what happens when the naive algorithm searches for a SCS. For
+the sake of simplicity, suppose the alphabet from which the sequences
+are draw consists of only three letters, say $\Omega = \{A, B, C\}$.
+As $k$ increases from 1 to 3, the following sequences are generated,
+in this order (increasing $k$, from left to right):
+
+\begin{tabbing}
+$k = 1 \Rightarrow$ \= $A$, $B$, $C$ \\
+$k = 2 \Rightarrow$ \= $AA$, $AB$, $AC$, $BA$, $BB$, $BC$, $CA$, $CB$, $CC$ \\
+$k = 3 \Rightarrow$ \= $AAA$, $AAB$, $AAC$, $ABA$, $ABB$, $ABC$, $ACA$, $\ldots$, $CCC$
+\end{tabbing}
+
+If no supersequence of length 3 is found, three sequences are generated when
+$k = 1$, nine when $k = 2$ and 27 when $k = 3$, totaling 39 candidate sequences.
+These sequences can be arranged in a (complete) tree $\mathcal{T}$ of height
+$h = 3$ in such a way that each candidate sequence is represented by a path in
+$\mathcal{T}$ (and each path in $\mathcal{T}$ yields a candidate). Each node has
+precisely three children, one for each possible letter of the alphabet, and the
+root node represents an empty sequence.
+
+It is not difficult to see that the naive algorithm examines each node of
+$\mathcal{T}$ in a \textit{breadth-first} fashion. It first investigates all
+nodes in the first level of $\mathcal{T}$ (directly reached from the root node),
+then all nodes of the second level (reached from first-level nodes), and finally
+all nodes of the third level.
+
+Alternatively, the nodes of $\mathcal{T}$ could be explored in a
+\textit{depth-first} fashion, which searches ``deeper'' in the graph whenever
+possible \cite{Cormen2001}. In this way, the sequences are visited in
+the following order: $A$, $AA$, $AAA$, $AAB$, $AAC$, $AB$, $ABA$, $ABB$, $ABC$,
+$AC$, $ACA$, $ACB$, $ACC$, $B$, $BA$, $BAA$, $\ldots$, $CCC$.
+
+Changing from a breadth-first to a depth-first search does not make the
+algorithm any better. The key point is that it can be more easily combined with
+a branch-and-bound strategy to produce an efficient way of exploring the search
+space.
+
+\subsection{A Branch-and-Bound Strategy}
+
+A branch-and-bound strategy means that, before exploring a node
+further down, we check whether the node has a chance of leading to a
+better solution than the best solution found so far
+\cite{Horowitz1996}. If it does not, the node is ignored and the
+search proceeds to the next node. The implications of this definition
+are two-fold.
+
+First, it implies that we already have a solution, although we are
+looking for a better one --- or, ultimately, the best solution.
+Moreover, we need an \textsl{initial} solution, even before the search
+starts. An initial solution means one proper supersequence of the set,
+preferably, one that is relatively short and that can be found
+relatively quickly. For this purpose, we can use the heuristics
+algorithms described in section \ref{sec:scs_ubound}. These algorithms are
+able to quickly produce an approximate solution to the SCS. (In
+practice, we can run several of those methods and pick the shortest
+sequence among them.) This approximate solution is an upper bound that
+defines the limits of the search-space that needs to be explored.
+During the search, we keep track of the best solution found so far,
+i.e., the shortest known supersequence of the set. The shorter it is,
+the more branches of the tree can be skipped.
+
+Second, we need a way of checking whether a node can lead to a better
+solution or not. More precisely, we must be able to predict the length
+of the shortest supersequence that can be found from the node, i.e. a
+lower bound on the length of any supersequence reachable from it.
+Again, an exact answer is not necessary, but only a good and quickly
+computed estimate. For this purpose we can use the heuristic
+algorithms described in section \ref{sec:scs_lbound}. These algorithms
+compute the minimum length that a sequence must have in order to be a
+proper supersequence of the set; in other words, they give a lower
+bound on the length of the supersequence.
+
+Note that, when the search is at a node $x$ of the tree, its corresponding
+sequence $d_{x}$ is a prefix of a set of candidate sequences. Moreover, for each
+sequence $p_{i}$ in the set $\mathcal{P}$, $d_{x}$ is a supersequence of a
+(possibly empty) prefix of $p_{i}$. Let $c_{i}$ be the longest prefix of $p_{i}$
+which is a subsequence of $d_{x}$, and $r_{i}$ be the remainder of $p_{i}$ in
+such a way that $p_{i}$ is a concatenation of $c_{i}$ and $r_{i}$. In order to
+be a proper supersequence of $\mathcal{P}$, $d_{x}$ must be extended with a
+suffix $u$ in such a way that it ``consumes'' the remainders of each sequence.
+In other words, $u$ must be a supersequence of the set
+$\mathcal{R} = \{r_{1}, r_{2}, \ldots, r_{n}\}$. Naturally, the algorithms of
+section \ref{sec:scs_lbound} can again be used to estimate the minimum length of
+$u$. And since we know the length of $d_{x}$, we can estimate the minimum length
+of any sequence that has $d_{x}$ as a prefix must have in order to be a proper
+supersequence of $\mathcal{P}$. At this point, if this minimum length is already
+greater than the length of the shortest known supersequence, the node can safely
+be ignored.
+
+In this way, the algorithm proceeds with the goal of finding a
+sequence that is shorter than the best supersequence already found
+(known as the search's \textit{bounding condition}). And whenever a
+better solution is encountered, the goal is updated and, hopefully,
+more parts of the tree can be pruned off.
+
+This is precisely the approach taken here, a branch-and-bound depth-first
+search. Note that a branch-and-bound strategy could also be used in conjunction
+with a breadth-first search. However, doing so would require keeping track of
+the branches which are still ``alive'' --- i.e. the nodes in the current level
+of the tree that need to be further investigated --- and this would consume an
+enormous amount of memory as the search reached deeper levels of the tree.
+
+A depth-first search, on the other hand, does not require such
+bookkeeping. Each child of a node is reached by a different letter of
+the alphabet, and can be explored in \emph{any} order, e.g., their
+alphabetical order, and the order can be different for each node. When
+the search backtracks to a certain node, the next child is selected.
+When a node is skipped, the search backtracks until it finds a node
+whit an estimate that is greater than the shortest sequence already
+found.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Upper bound algorithms}
+\label{sec:scs_ubound}
+
+In this section, two heuristic algorithms used to compute an approximate
+solution to the shortest common supersequence  problem will be briefly
+described: \textsc{MajorityMerge} and \textsc{AlphabetCycle}. These algorithms
+are used to set an upper bound on the length of the SCS for the branch-and-bound
+search algorithm described in details in section \ref{sec:scs_implementation}. Refer to
+\cite{Fraser1995} for other approximation algorithms.
+
+\subsection{AlphabetCycle}
+\label{sec:scs_acycle}
+
+The \textsc{AlphabetCycle} algorithm is essentially the trivial
+\textsc{AlphabetLeftmost} algorithm analyzed in more detail by Rahmann in
+\cite{Rahmann2003}. Let $\lambda$ be any permutation of letters of the alphabet
+$\Omega$. If $m$ is the length of the longest input sequence and $s$ is an
+m-fold repetition of $\lambda$, $s$ is a supersequence of the set. Moreover, it is
+a $|\Omega|$-factor approximation of the SCS. The sequence $s$ can be further
+improved by considering the left-most embedding of the input sequences in $s$
+(where ``useless'' characters are removed).
+
+This algorithm can be easily implemented in the following way. First set $s$ to
+the empty sequence. Given a permutation $\lambda$, the algorithm proceeds by
+constructing $s$ in a series of steps. At each step, it takes a character $c$ of
+$\lambda$. Then it removes the first character of all input sequences that have
+$c$ as a prefix, and append $c$ to $s$. If no sequence has $c$ as a prefix at a
+given step of the algorithm, the character is simply ignored and not appended to
+$s$. The character $c$ assumes values from $\lambda$ in a cyclical way. The
+algorithm terminates when all sequences have been reduced to empty sequences.
+
+According to Rahmann and to our own empirical results, this algorithm is hard to
+be outperformed \cite{Rahmann2003}. The choice of the permutation $\lambda$ is not
+really important but if the alphabet is small, it is worth trying all possible
+permutations of $\Omega$ and select the best result.
+
+\subsection{MajorityMerge}
+\label{sec:scs_mmerge}
+
+This algorithm was proposed by Jiang and Li \cite{Jiang1995}, and it
+can be seen as a variation of the \textsc{AlphabetCycle}. The idea is
+that the supersequence is also built in a series of steps until all
+input sequences have been reduced to empty sequences.
+
+The choice of the character $c$, however, is not taken from a fixed
+permutation. Instead, at each step, the algorithm examines the first
+character of all sequences and sets $c$ to the most frequent one. Ties
+are broken arbitrarily or other measure is used such as considering
+the average length of the remaining sequences.
+
+MajorityMerge typically performs much worse on typical
+microarray-scale problems than AlphabetCycle \cite{Rahmann2003}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lower Bound Algorithms}
+\label{sec:scs_lbound}
+
+This section will briefly describe some heuristic algorithms that can be used to
+compute a lower bound on the length of the SCS.
+
+\subsection{Simple algorithm}
+\label{sec:scs_simple}
+
+Perhaps the most simple way of computing a lower bound on the length of the SCS
+is to simply take the length of the longest sequence in the set. If the longest
+sequence in $\mathcal{P}$ has length $x$, the SCS must be, at least, $x$
+characters long. Clearly, when all sequences have the same length (like in the
+context this work is focused on, where all sequences have length $m$), this
+result is not really interesting. On the other hand, if the sequences are short,
+have different lengths and are restricted to a small alphabet, this
+easy-to-compute algorithm can be an option to consider.
+
+\subsection{Counting occurrences of single letters}
+\label{sec:scs_singleletters}
+
+A stronger result is achieved by finding the maximum number of
+occurrences of the letter $c$ over all sequences, $\mathcal{N}(c)$,
+for all letters of the alphabet. Obviously, the shortest common
+supersequence must have, at least, $\mathcal{N}(c)$ occurrences of $c$
+(figure \ref{fig:countingSingleLetters}).
+
+\begin{figure}
+\centering
+\begin{tabular}{|r|c|c|c|c|} \hline
+$x =$             & A & B & C & Sum\\ \hline \hline
+CABBABAC          & 3 & 3 & 2 & 8 \\
+CCABBABC          & 2 & 3 & 3 & 8 \\
+BBBBAACC          & 2 & 4 & 2 & 8 \\ \hline
+$\mathcal{N}(x)=$ & 3 & 4 & 3 & 10 \\ \hline
+\end{tabular}
+\caption{\textbf{Counting occurrences of single letters.}
+A lower bound on the length of the SCS is computed for a set of three sequences
+of length 8. The alphabet is $\Omega = \{A, B, C\}$. After the number of $A$s,
+$B$s and $C$s are counted, the maxima over all sequences are taken and summed
+up. The SCS must have, at least, 3 $A$s, 4 $B$s and 3 $C$s. Its length,
+therefore, cannot be shorter than 10.}
+\label{fig:countingSingleLetters}
+\end{figure}
+
+\subsection{Counting pairs and triples}
+\label{sec:scs_pairstriples}
+
+The previous algorithm can be naturally extended to count occurrences of pairs
+or even triples instead of single letters, and the same reasoning can be used to
+compute a lower bound as illustrated in figure \ref{fig:countingPairs}.
+
+It should be clear that the algorithm of figure \ref{fig:countingPairs} produced
+a tighter lower bound (11) than the one produced with the method described in
+figure \ref{fig:countingSingleLetters} (10). That is, therefore, a better
+result. While the previous method proved that the SCS must have at least 10
+characters, figure \ref{fig:countingPairs}  goes even further by showing that in
+fact, it can be no shorter than 11 characters long.
+
+It might be somewhat intuitive to think that this algorithm is likely to produce
+better results than simply counting single letters because its prediction is
+based on ``more information''. However, much to one’s surprise, this method
+rarely produces better results in the context of DNA chip production. In fact,
+the example of figures \ref{fig:countingSingleLetters} and
+\ref{fig:countingPairs} were carefully designed to produce a tighter bound with the
+second method. Furthermore, this method clearly has a higher cost in terms of
+time complexity. While the method of section \ref{sec:scs_singleletters} can be
+implemented in linear time, this method has $O(n^{2})$ time complexity.
+
+\begin{figure}
+\centering
+\begin{tabular}{|r|c|c|c|c|c|c|c|c|c|c|} \hline
+$x =$              & AA & AB & AC & BA & BB & BC & CA & CB & CC & Sum \\ \hline \hline
+CABBABAC           & 3  & 4  & 3  & 5  & 3  & 3  & 3  & 3  & 1  & 28 \\
+CCABBABC           & 1  & 4  & 2  & 2  & 3  & 3  & 4  & 6  & 3  & 28 \\
+BBBBAACC           & 1  & 0  & 4  & 8  & 6  & 8  & 0  & 0  & 1  & 28 \\ \hline
+$\mathcal{N}(xy)=$ & 3  & 4  & 4  & 8  & 6  & 8  & 4  & 6  & 3  & 46 \\ \hline
+\end{tabular}
+\caption{\textbf{Counting pairs.} This is the
+same example shown in figure \ref{fig:countingSingleLetters}. Each sequence has
+length 8 which gives room for 28 possible pairs. After the number of occurrences
+of each possible pair are counted, the maxima over all sequences are taken and
+summed up. The SCS must have, at least, 3 $AA$s, 4 $AB$s, 4 $AC$s and so on,
+totaling 46 distinct pairs. Since it must accommodate 46 pairs, the SCS can be
+no shorter than 11 (a sequence of length 10 has only ${10 choose 2}=45$
+pairs).}
+\label{fig:countingPairs}
+\end{figure}
+
+\subsection{Looking for Better Estimations}
+
+As it will become clear in the next section, computing a good lower bound on the
+length of the SCS is key to the success of the approach developed in this work.
+After some of the previous algorithms had been tried, it was obvious that a
+better method was needed. In the pursuit of such a method, some relations were
+investigated, like the following one:
+
+\begin{equation}
+|w|_{xy} + |w|_{yx} = |w|_{x} \times |w|_{y}
+\label{eq:simple}
+\end{equation}
+
+This relation is valid for any $w \in \Omega^{*}$ and
+$x, y \in \Omega, x \neq y$. The notation $|w|_{xy}$ refers to the number of
+occurrences of the pair $xy$ in $w$.
+
+It is not difficult to see that this relation holds for any sequence, and hence
+it must also hold for the supersequence. The question is: what happens when we
+take the maximum number of occurrences of single letters and pairs over the set
+of sequences?
+
+\begin{equation}
+\mathcal{N}(xy) + \mathcal{N}(yx) \; ? \; \mathcal{N}(x) \times \mathcal{N}(y)
+\label{eq:simpleDerived}
+\end{equation}
+
+Here $\mathcal{N}(x)$ is the maximum number of occurrences of the letter $x$ in
+the input sequences for $x \in \Omega$. Similarly, $\mathcal{N}(xy)$ is the
+maximum number of occurrences of the pair $xy$ for $x, y \in \Omega$. Again, the
+SCS must have at least $\mathcal{N}(x)$ occurrences of $x$, and at least
+$\mathcal{N}(xy)$ occurrences of the pair $xy$.
+
+Given the input sequences, we can easily compute $\mathcal{N}(x)$ and
+$\mathcal{N}(xy)$ for all $x, y \in \Omega$. It seemed intuitive that a
+``greater than'' would be found in relation (\ref{eq:simpleDerived}) since
+counting pairs would ``carry more information'' than counting single letters. If
+this was the case, we could estimate the length of the SCS in the following way.
+First, we would compute $\mathcal{N}(x)$ and $\mathcal{N}(x)$ for all
+$x, y \in \Omega$. Then, with these values in hand, we would create several
+relations in the form of (\ref{eq:simpleDerived}) and increase the values on the
+right-hand side of these relations (the values of $\mathcal{N}(x)$ and
+$\mathcal{N}(x)$) until we had equalities as in (\ref{eq:simple}).
+
+However, the intuition turned out to be wrong. It is still not clear why this is
+the case but, in practice, it was observed that the relation
+(\ref{eq:simpleDerived}) have a ``less than'' or an ``equal'' sign in the majority of
+the cases, which prevented it to be used to compute a tighter lower bound on the
+length of the SCS.
+
+Another interesting relation that seemed promising in the beginning was the
+Cauchy inequality \cite{Salomaa2003} \cite{Mateescu2004}:
+
+\begin{equation}
+|w|_{y} \times |w|_{xyz} \leq |w|_{xy} \times |w|_{yz}
+\label{eq:cauchy}
+\end{equation}
+
+Once more, the notations $|w|_{y}$ and $|w|_{xyz}$ refers to the number of
+occurrences of the sequence $y$ and $xyz$ in $w$, respectively, for
+$x, y, z \in \Omega^{*}$. It is clear that this inequality also holds when $x$,
+$y$ and $z$ are not sequences but single letters ($x, y, z \in \Omega$. Now
+consider a similar relation concerning the maximum number of occurrences of
+single letters, pairs and triples over all sequences:
+
+\begin{equation}
+\mathcal{N}(y) \times \mathcal{N}(xyz) \; ? \; \mathcal{N}(xy) \times \mathcal{N}(yz)
+\label{eq:cauchyDerived}
+\end{equation}
+
+Contrary to the case with relation (\ref{eq:simpleDerived}), there is no
+intuitive notion to predict how it behaves in practice. However, if a ``greater
+than'' was the case, we could estimate the length of the SCS by increasing the
+values of $\mathcal{N}(yz)$ and $\mathcal{N}(xy)$ until we had a ``less than or
+equal'' sign, agreeing with relation (\ref{eq:cauchy}).
+
+But, unfortunately, this is not the case. When we check this relation in
+real-world examples, we find a ``less than or equal'' sign, already in accordance
+with the Cauchy inequality. Then again, it was not possible to conceive a better
+method to compute a lower bound on the length of the SCS.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Implementation}
+\label{sec:scs_implementation}
+
+So far we have only outlined the approach used in developing a computer
+program to search for the shortest common supersequence in the context of DNA
+chip production. In this section, the actual implementation will be described in
+more detail.
+
+The program takes as input a text file with $n$ sequences of length $m$, one
+sequence per line. Each sequence consists of a series of characters draw from a
+fixed (and small) alphabet $\Omega$ which must be known beforehand. The
+sequences are read and stored in memory.
+
+As explained earlier, in order to start the search, an upper bound on the length
+of the SCS is needed, and both \textsc{MajorityMerge} and \textsc{AlphabetCycle}
+(described in section \ref{sec:scs_ubound}) are used for this purpose. In fact, the
+\textsc{AlphabetCycle} is run with every possible permutation of the alphabet
+and the best result is kept in a variable $\mathcal{U}$. (Since these algorithms
+are relatively fast and run only once, their influence on the total running time
+is negligible.) In fact, at any given time, $\mathcal{U}$ will store the length
+of the shortest known supersequence.
+
+Recall that the approach taken here is a
+branch-and-bound depth-first search. This means that the program will look for
+the SCS in a tree which represents all sequences that can be constructed with
+the characters of $\Omega$.
+
+The search starts from the root node and proceeds down the tree as far
+as it can. At every node $x$, the program computes a lower bound $L_x$
+on the length of the shortest supersequence that can be found from
+$x$. For this purpose one algorithm of those described in section
+\ref{sec:scs_lbound} is used (more on the topic later). Again, a node $x$
+in this tree represents a sequence $d_{x}$ of $\Omega^{*}$. If $d_{x}$
+is not a proper supersequence of the set, the program must search for
+a supersequence further down the tree. However, the search proceeds to
+a child node of $x$ only if $L_{x} + |d_{x}| < \mathcal{U}$. Otherwise
+node $x$ is skipped and the search proceeds to a sibling node of $x$
+or, if there is no sibling node of $x$ which has not been visited yet,
+the search goes back to the parent node of $x$.
+
+Whenever the search finds a sequence $d_{x}$ which is a supersequence
+of the set, it knows that $d_{x}$ is shorter than the previously known
+supersequence (otherwise the search would have never reached the
+corresponding node). In this case, $\mathcal{U}$ is set to $|d_{x}|$.
+Then, with a new value for $\mathcal{U}$, the search backtracks to a
+node $y$ in the tree where $L_{y} + |d_{y}| < \mathcal{U}$.
+
+The program proceeds in this way until the tree has been completely traversed.
+In the end, the program can assure that the length of the shortest common
+supersequence for the input sequences is $\mathcal{U}$ since it can be proven
+that all nodes which have not been examined can not be a prefix of a
+supersequence whose length is shorter than $\mathcal{U}$.
+
+\subsection{Bounding condition}
+
+With regard to the evaluation of a node (checking if it can lead to a
+supersequence that is shorter than the one already found), several approaches
+have been tried as described in section \ref{sec:scs_lbound}. Obviously, unlike the
+initial upper bound estimation, we cannot afford to run all methods to choose
+the best result because this estimation is done at every single node of the
+search space. Therefore, one strategy must be chosen.
+
+Initial experiments quickly revealed that the best alternative is to compute the
+lower bound based solely on the number of occurrences of single characters.
+The reasons are two-fold. First,
+this strategy produced the best results in the majority of cases. Second, it is
+significantly faster and consumes less memory than the others. The experiments
+also showed that counting pairs to compute the lower bound produced tighter
+bounds in only 10\% of the cases. However, the
+extra costs could not compensate for the slightly tighter bounds. In other
+words, although the tighter bounds meant more branches of the tree could be
+pruned off, the time spent in estimating the lower bound and maintaining the
+necessary data structures was greater than the time saved for not traversing
+those branches.
+
+\subsection{Computing lower bounds}
+
+Recall that when the search is at one node
+$x$ of the tree, the sequence $d_x$ represented by $x$ is a prefix of
+a set of candidate sequences. Moreover, for each sequence $p_{i}$ in
+the input set $\mathcal{P}$, $d_{x}$ is a supersequence of a (possibly
+empty) prefix of $p_{i}$. Let $c_{i}$ be the longest such prefix and
+$r_{i}$ be the remainder of $p_{i}$ in the same way defined earlier.
+Recall that, in order to be a proper supersequence of $\mathcal{P}$,
+$d_{x}$ must be extended with a suffix $u$ in such a way that it
+``consumes'' the remainders of each sequence. In other words, $u$ must
+be a supersequence of the set $\mathcal{R} = \{r_{1}, r_{2}, \ldots,
+r_{n}\}$. This means that the value $L_{x}$ of a node is computed by
+finding the SCS of $\mathcal{R}$.
+
+As the search proceeds from one node to the other, the program keeps track of
+the longest prefix of each sequence $p_{i}$ in $\mathcal{P}$ that is a
+subsequence of $d_{x}$, with the help of a table containing $n$ index values,
+$I_{1}$ to $I_{n}$, one for each input sequence. Before the search starts, the
+index values are initialized to zero. When the search proceeds from a parent
+node to one of its children, (incrementing the sequence $d_{y}$ with character
+$c$ to produce $d_{x}$) the program examines every input sequence $p_{i}$ at the
+position indicated by the corresponding index $I_{i}$. If $p_{i}[I_{i}]$
+contains the character $c$, $I_{i}$ is incremented by 1. Otherwise $I_{i}$ is
+left unchanged.
+
+Clearly, when the search proceeds from the child node to its parent, a similar
+procedure must also be executed to update the index values. But what may not be
+so easy to realize is the fact that, with the index table alone, this mechanism
+is not reversible.
+
+In fact, the program needs to maintain a second table $R$, called reverse index
+table, whose size is equal to $n \times m$. This table is updated whenever an
+index $I$ is updated. If an index $I_{i}$ is incremented the program records the
+length of the sequence $d_{x}$ in $R_{i}[I_{i}]$. This indicates that the
+character at the position $I_{i}$ of $p_{i}$, $p_{i}[I_{i}]$, corresponds to the
+character at the position $R_{i}[I_{i}]$ of $d_{x}$. Note that the sequence
+$d_{x}$ will be a prefix of any sequence $d_{z}$ as the search progresses down
+the tree and, therefore, $I_{i}$ will always point to a valid position.
+
+Now, when the search goes from child node $x$ to parent node $y$, it is possible
+to update table $I$ with the help of table $R$. The index $I_{i}$ is decremented
+only if a) $p_{i}[I_{i}]$ is equal to the character $c$ corresponding to the
+edge that is being traversed back and b) $R_{i}[I_{i}]$ is equal to $|d_{x}|$.
+
+In this way, the program can quickly determine the set $\mathcal{R}$ for which
+it needs to find the SCS. But this is not enough. The most critical part of the
+search is, precisely, computing the lower bounds at every node of the tree.
+Hence, it is not feasible to run the algorithm of section \ref{sec:scs_singleletters}
+from scratch for every instance of $\mathcal{R}$. A cleverer way is needed.
+Indeed, if we carefully observe how the search traverses the tree, we can note
+that it is possible to compute the lower bound $L_{x}$ of node $x$ ``reusing''
+information gained when computing $L_{y}$ for $y$, the parent node of $x$. This
+is true due to the fact that very little changes are observed in the set
+$\mathcal{R}$ when the search goes from nodes $y$ to $x$ and vice-versa.
+
+Hence, the program also keeps track of, for each input sequence, the number of
+occurrences of each letter of the alphabet, $N_{i}[c]$. This table is updated
+together with the index table $I$. Whenever the index $I_{i}$ is incremented,
+the number of occurrences of the character $p_{i}[I_{i}]$, $N[p_{i}[I_{i}]]$ is
+decremented by 1, and vice-versa.
+
+However, in order to compute the lower bound on the length of the SCS of
+$\mathcal{R}$, the program needs to find the maximum value of $N_{i}[c]$ over
+all sequences, $Max[c]$, for all letters of the alphabet. Fortunately, this
+information can also be maintained as the search goes from one node to the
+other.
+
+When going from one node to its parent, if a particular $N_{i}[c]$ is
+incremented and becomes greater than $Max[c]$, $Max[c]$ is updated.
+Unfortunately, the reverse procedure is not so simple. In fact, when going from
+one node to one of its children, the program must first update the $N_{i}[c]$
+values for all sequences and all letters of the alphabet. Only after that, it
+can update the $Max[c]$ values by scanning all $N_{i}[c]$ values and taking the
+maximum among them.
+
+Finally, with the $Max$ table on hand, the lower bound computation is reduced to
+summing up its values. Precisely, the lower bound on the length of any
+supersequence represented by a given node $x$, $L_{x}$ is equal to
+$\Sigma \: Max[c]$.
+
+One last table is used for speeding up the search process. It is used to store
+the estimate values, $L_{i}$, computed for every node $i$ in the tree. This
+table avoids the need to recompute these values when the search backtracks to a
+certain point in the tree --- either because one of its branches has been fully
+traversed or a shorter supersequence has been found.
+
+However, once a node has been skipped or fully traversed (all of its branches
+have already been examined), its $L$ value is not needed anymore. This is true
+because the search will never go back to this node or any of its children again.
+In fact, at any given time, the only $L$ values needed are those corresponding
+to the nodes in the path to the current node. Hence, the maximum size the $L$
+table can take is equal to $\mathcal{U}$ since the length of the longest path to
+be traversed in the tree will be no greater than the shortest supersequence
+already found.
+
+Although the final implementation used the method described in section
+\ref{sec:scs_singleletters} to compute lower bounds, it should be noted that this mechanism
+can be easily extended to keep track of the number of occurrences of pairs and
+triples so that the other methods described in section \ref{sec:scs_lbound} can be
+used. However, it must be now clear that keeping track of pairs and triples not
+only requires more memory space but also increases the time spent at each node.
+
+\subsection{Visiting Order}
+
+In the initial implementations of the search program, the order in
+which the child nodes were traversed was the lexicographical
+order, i.e. if the alphabet is $\Omega = \{A, C, G, T\}$, the first
+child to be visited was the one reached with an $A$, followed by the
+one reached with a $C$, and so on.
+
+However, as mentioned earlier, the sooner a shorter supersequence is found, the
+higher is the chance of pruning off more branches of the search space. With this
+in mind, it was soon realized that the search could be speeded up by changing
+the order in which the child nodes are visited. If the order is always the same,
+say $ACGT$, the search will initially dive into the tree in a series of $A$s
+until there is no more $A$s in the input sequences or the estimate of a node
+exceeds the current upper bound. In fact, it takes a long time until the search
+backtracks to a point where the candidate sequence is note prefixed by a long
+run of $A$s.
+
+For this reason, different orders have been tried. In the final implementation,
+the order in which the children of a node are visited was set to depend on the
+character that led to the current node or, in other words, on the last character
+appended to the current sequence. Given a fixed permutation of the alphabet, say
+$\{\tA,\tC,\tG,\tT\}$, if the last appended character was a $\tG$, the first child node
+to be visited would be the one reached with a $\tT$, followed by the one reached
+by an $\tA$ and so on.
+
+In this way, the very first dive into the tree produces a candidate sequence
+which is a repetition of $ACGT$. It is not difficult to see that this sequence
+has a much higher chance of reaching a shorter sequence more quickly, which, as
+mentioned earlier, will increase the chances of pruning off more branches of the
+tree.
+
+\subsection{Code Tuning}
+
+The program was coded initially in Perl because of its natural suitability for
+quick prototyping. It made it particularly easy to modify the program and try
+different approaches, especially with regard to the lower bound estimation. When
+the program reached its maturity, it was translated into C for maximum
+performance.
+
+Coding in C made it possible to fine-tune some parts of the program that used
+implicit structures in Perl. For instance, it was possible to store the
+sequences in a more compact fashion and to play with its memory lay-out in order
+to favor cache locality.
+
+The compact representation took advantage of the fact that the size of the
+alphabet is rather small in the context this program is focused on. The number
+of actual bits used for each character in memory depends on the size of the
+alphabet. For instance, if the alphabet size is not larger than four (as in the
+case of a DNA alphabet), only two bits are used. This means that one byte can be
+used to store four characters. Similarly, if the alphabet contains only two
+different characters, only one bit is used to represent a character. The
+implementation determines the number of bits according to the alphabet in use (
+which can be configured in the code).
+
+This not only reduces the memory requirements but also increases the efficiency
+of the memory cache since more data can fit in a cache block. For small inputs,
+this compact representation gives little or no improvement at all, but as the
+size of the input (number and size of sequences) gets larger, significant
+improvements are observed.
+
+Another small improvement was gained by rearranging the sequences in memory.
+Initially, the sequences were stored in the obvious way, with one complete
+sequence after the other. However, if we observe how these sequences are
+accessed in the search’s main loop we can see that when the search goes from one
+node to the other, only one character of each sequence is actually needed,
+precisely those pointed by the $I$ index values. In the general case, the values
+of those index values tend to have similar values most of the times. For
+instance, in the beginning of the search, the first character of all sequences
+will be accessed. If the sequences are organized in the obvious way, the program
+will access virtually all memory blocks.
+
+Therefore, a different memory arrangement was devised. Instead of having
+complete sequences, one after the other, the program stores the first characters
+of all sequences, followed by the second characters, and so on. In this way, it
+is very likely that, in most of the times, very few blocks of memory will be
+accessed. But, although this alternative memory lay-out may favor cache
+locality, only a limited improvement could be observed in practice.
+
+A last effort towards improving the performance of the program came from
+converting the characters of the alphabet to numbers. This has to do with the
+table $N$, which keeps track of the number of occurrences of letters in the
+sequences. Whenever a new node is reached, the program must read the characters
+in the appropriate positions in the sequences and update the corresponding
+counters for those characters. In practice there is a table which is indexed by
+the sequence number and the character which is being counted. For instance,
+$N_{i}[c]$ gives the number of occurrences of the character $c$ in the input
+sequence $p_{i}$. In C, the \texttt{char} type can be used to index an array
+but, since the size of the alphabet is much smaller than the possible values of
+a char variable, we must map each letter of the alphabet to a number that will
+be used to index this table. And since this operation is repeated several times
+as the search goes from one node to the other, even such a cheap operation (of
+mapping a character to a number via another table) can, in the end, account for
+a few seconds.
+
+Hence, in order to avoid this problem, the sequences are converted --- during
+the reading process --- to numbers according to the position of each character
+in a fixed permutation of the alphabet. For instance, if
+$\Omega = \{\tA,\tC,\tG,\tT\}$, then a sequence $\tC\tT\tT\tG\tT\tA$ is stored as $133230$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+\label{sec:scs_results}
+
+This section will analyze how the implementation of the branch-and-bound search
+algorithm described in the previous section performs in practice.
+
+Three variables determine how much time is necessary to completely traverse the
+search space with the approach outlined in the previous sections.
+
+The length of the sequences, $m$, will ultimately affect the length of the
+shortest supersequence and, therefore, how deep in the tree the program must go.
+The size of the alphabet, $z$, influences the breadth of the tree. Finally, the
+number of sequences, $n$, does not influence the number of explored nodes but
+determines how much time is spent at each node.
+
+It is not difficult to predict that $z$ is the most critical factor as it
+increases exponentially the size of the search-space. (The number of nodes in
+the $h^{th}$ level of the tree is $z^{(h - 1)}$.) As empirical results showed,
+even small variations in $z$ can drastically
+change the total running time. The value of $n$, on the other hand, is the less
+critical one since the work done at each node is nearly proportional to $O(n)$.
+
+Fortunately, since this work is focused on a DNA chip production setting, the
+values taken by $z$ and $m$ are relatively small, although $n$ is way greater
+than in any other known previous study. As described earlier,
+$m$ is restricted to between 20 and 30, $z$ is equal to 4 (DNA alphabet) and $n$
+is between 10,000 and 1,000,000. These values give a glimmer of hope that it
+might be possible to compute an exact solution to the SCS.
+
+Table \ref{tab:runningTimes} shows the running times of several experiments
+performed on a computer equipped with a Pentium III 850 GHz processor and 256 MB
+of memory.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|r|c|c|c|r|c|} \hline
+\# & z & n      & m  & Heuristic & SCS & Time      & Notes \\ \hline \hline
+1 & 3 & 1,000   & 10 & 28        & 27  & 5 sec.    & \\
+2 & 3 & 10,000  & 10 & 29        & 28  & 13 sec.   & \\ 
+3 & 4 & 10,000  & 10 & 36        & 36  & 37 min.   & \\ 
+4 & 3 & 10,000  & 15 & 40        & 39  & 6.25 min. & \\
+5 & 3 & 100     & 17 & 40        & 39  & 34 min.   & \dag \\
+6 & 3 & 1,000   & 20 & 53        & ?   & ? hours   & \S \\ \hline \hline
+\multicolumn{8}{|l|}{\dag: SCS found in less than 1 min.} \\
+\multicolumn{8}{|l|}{\S: 50-char sequence found in less than 1 min.} \\ \hline \hline
+\end{tabular}
+\caption{\textbf{Running times with random sequences.} The first
+four columns show the experiment number, the size of the alphabet (z), the
+number of sequences (n) and their length (m). The fifth column shows the length
+of the shorter supersequence found by the heuristics methods,
+whereas the sixth column displays the length of the shortest common
+supersequence. The sixth column gives the total running time.}
+\label{tab:runningTimes}
+\end{table}
+
+Several interesting conclusions can be drawn from these results. Comparing the
+first two experiments we can conclude that, in fact, the impact of the number of
+sequences ($n$) in the running time is very small. Although the number of
+sequences in the second experiment was 10 times as larger, the total time was
+increased by a factor of only 2,5.
+
+On the other hand, comparing experiments 2 and 3 we can verify that increasing
+the size of the alphabet ($z$) by only 1 character can increase the time by a
+factor of 170. A similar comparison between experiments 2 and 4 reveals that the
+impact of increasing the length of the sequences ($m$) is also significant.
+
+It is not difficult to see that, as the values of $z$, $n$ and $m$ approach the
+values stated earlier, the time spent by the program to
+search for the SCS becomes impractical. Even with an alphabet of size three and
+a reduced input of only 1,000 sequences of length 20, the program was not able
+to finish the search after several hours (experiment 6). In fact, from the point
+where it was interrupted it was possible to conclude that it would take more
+than one day to terminate.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Disscussion}
+\label{sec:scs_disscussion}
+
+In order for this program to be deemed practical, we could accept, in the
+extreme case, running times  of up to one or two days, perhaps even a week. An
+extreme case would be, for instance, when a newly DNA microarray chip is
+designed to be produced in large scale. In this case, it would make sense to
+spend a few days before starting the manufacturing of several thousand chips
+since even a reduction of one step in the synthesis process could, in the end,
+save a significant amount of money in the production line. And it does not seem
+naive to believe that some days may be arranged for this computation during the
+design phase or perhaps in parallel with other activities in the project of such
+a chip.
+
+However, judging from how an increase in the three variables $z$, $n$ and $m$,
+affect the total time, we can conclude that this implementation would take
+several days or maybe years to terminate with a real-world input data and,
+therefore, in its current state, it cannot be applied to solve the shortest
+common supersequence problem in the context of DNA microarrays.
+
+Having said that, one good feature of this approach must be pointed out. From
+the results of table \ref{tab:runningTimes} we can see that improvements of one,
+two characters or even mode are usually possible for small inputs. We cannot
+prove that this is also the case for real-world problem instances simply
+because, at the moment, the program cannot terminate in a reasonable amount of
+time. However, it is not unusual to find, even for very large inputs, an
+improvement of one or two characters in the first minutes of execution.
+
+For instance, experiment 5 shows that the SCS, which is one character shorter
+than the one found by the heuristic methods, was found in the first minute of
+execution. Similarly, in experiment 6, only 1 minute after a 53-character long
+sequence was found with the heuristics, the program could find a supersequence
+with only 50 characters. Of course, this is not always the case, but the
+frequency in which this happens is not rare.
+
+There is an intuitive explanation for this behavior. Most of the supersequences
+found by the heuristic methods have a prefix which is just a repetition of a
+certain permutation of the alphabet --- this characteristic is the result of how
+these methods build such sequences. This prefix is then followed by suffix which
+is constructed in a more or less accidental way.
+
+As described earlier, the order in which the child nodes
+are visited in the final implementation of the program also produces a sequence
+whose prefix has the same characteristic, i.e. a repetition of a certain
+permutation of the alphabet. When the input is large, within a couple of hours,
+the program can only investigate a certain branch of the tree which corresponds
+to a set of sequences with such a prefix. However, within this time, the program
+is able to investigate and try all different possibilities of suffixes and,
+therefore, it is usually able to shorten the supersequence. The problem is that,
+again, the program takes too much time to come back to a point where it can try
+different prefixes.
+
+Finally, it should be mentioned that this approach also has the ability to prove
+very quickly that no sequence of a given length exists for the input set, if
+this length is very short. Say a given input set is known to have a
+supersequence of length 50. If we want to know whether there exists a
+supersequence of length 40, for instance, we can search in the tree with an
+initial value of $\mathcal{U}$ set to 40. This will prune off all branches whose
+root node has an estimate larger than 40 and, consequently, the program will
+terminate much faster. Of course, if there is a sequence of length 40 (or less),
+such a sequence will be found.
+
+Other code-tuning techniques may be applied to make the current implementation
+faster but clearly, in order to make this whole approach feasible, a better way
+of computing the lower bounds for each node of the search tree must be devised,
+one that not only finds tighter bounds --- so that more branches of the tree can
+be pruned off --- but also one that can be computed quickly --- so that less
+time is spent at each node.
+
+As discussed in Chapter \ref{ch:affy}, there is evidence that Affymetrix
+design their arrays by selecting probes that fit a fixed deposition sequence,
+regardless of how large the probe set is. It is thus unlikely that a shorter
+deposition sequence could be found for any GeneChip array. This approach
+clearly restricts the sequences that can be used as probes  
+
+Instead of fixing the probe sequences and looking for
+the shortest supersequence, \citet{Tolonen2002} proposed a different approach
+to reduce the length of the
+deposition sequence. Their method consists of initially defining a set of
+probe sequences that could be used to query
+each gene of interest. Then, iteratively, a single probe or a sub-set of probes
+that require the minimum number of synthesis step is selected.
