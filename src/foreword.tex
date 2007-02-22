@@ -32,8 +32,8 @@ quality measures that are used to evaluate a given layout. Finding an optimal
 layout with respect to any of these two measures seems unlikely, even for very
 small arrays. As we shall see in Chapter \ref{ch:qap}, the MLP can be modeled as
 a quadratic assignment problem (QAP), a classical combinatorial optimization
-problem that is notoriously hard to solve in practice, which gives further
-indication that the MLP is, in fact, a hard problem. For this reason, the layout
+problem that is notoriously hard to solve in practice, giveing further
+indication that the MLP is, in fact, a hard problem. In practice, the layout
 problem is usually approached in several ``phases'' with a range of heuristic
 algorithms.
 
@@ -61,29 +61,29 @@ more than a million probe sequences on a single chip. Many placement algorithms
 are unable to deal with such large arrays because of their non-linear time and
 space complexities. For this reason, the layout problem is sometimes broken into
 smaller sub-problem by a \emph{partitioning} algorithm. This is the focus of
-Chapter \ref{ch:part}, where we present an extensive practical evaluation of
-existing algorithms and show how the partitioning phase can improve solution
-quality and reduce running time.
+Chapter \ref{ch:part}, where we present an extensive evaluation of existing
+algorithms and show how the partitioning phase can improve solution quality and
+reduce running time.
 
 In Chapter \ref{ch:merge}, we discuss the disadvantages of the tradional ``place
 and re-embed'' approach to the layout problem. We then propose a new algorithm,
 called \Greedyplus, that for the first merges the placement and re-embedding
-phases into a single one. Our results show that \Greedyplus indeed outperforms
+phases into a single one. Our results show that \Greedyplus\ indeed outperforms
 all known placement algorithms.
 
 In Chapter \ref{ch:affy}, we present a pioneering analysis and evaluation of the
 layout of several GeneChip\textR\ arrays, considered the industry standard in
-terms of high-density oligonucleotide microarrays. We describe in detail design
-decisions that might affect the quality of these commercially available arrays.
-We then use some of the algorithms presented in earlier chapters to propose
-alternative layouts for two of the latest generation of GeneChip arrays, showing
-how the risk of the unintended illumination problem can be reduced.
+terms of high-density oligonucleotide microarrays. Some design decisions that
+might affect the quality of these arrays are described in detail. We then use
+some of the algorithms presented in earlier chapters to propose alternative
+layouts for two of the latest generation of GeneChip arrays, showing how the
+risk of the unintended illumination problem can be reduced.
 
-Another problem related to the production of microarrays is the problem of
-finding the shortest synthesis schedule for a given set of probes, which we
-refer to as the \emph{shortest deposition sequence problem} (SDSP). The SDSP is
-an instance of the shortest common supersequence problem (SCSP), a classical
-problem in computer science that is known to be NP-complete even under various
+Another problem related to the production of microarrays is to find the shortest
+synthesis schedule for a given set of probes, which we refer to as the
+\emph{shortest deposition sequence problem} (SDSP). The SDSP is an instance of
+the shortest common supersequence problem (SCSP), a classical problem in
+computer science that is known to be NP-complete even under various
 restrictions. Several existing heuristics are able to find good approximate
 solutions for the SCSP, but, in Chapter \ref{ch:scs}, we investigate the
 feasibility of finding \emph{the shortest} deposition sequence for currently
@@ -112,8 +112,9 @@ This thesis also contains previously unpublished material, namely:
       outperforms previous algorithms in terms of conflict index minimization;
 \item the Priority re-embedding algorithm (Section \ref{sec:reembed_priority})
       that achieves marginal improvements compared to the best known algorithms;
-\item analysis of the layout of several commercially available GeneChip arrays
-      with respect to the defined evaluation criteria (Chapter \ref{ch:affy}).
+\item an analysis of the layout of several commercially available GeneChip
+      arrays with respect to the defined evaluation criteria (Chapter
+      \ref{ch:affy}).
 \end{itemize}
 
 \paragraph{Acknowledgments.}
@@ -131,11 +132,11 @@ Whenever I write ``we'' in this thesis, I mean ``Sven and I''. On several
 occasions, the support of the Bioinformatics Resource facility (BRF) at the
 CeBiTec (Center for BioTechnology) was crucial to the success of this work,
 and I cannot thank them enough for their help. Epameinondas Fritzilas,
-Ferdinando Cicalese, Francisco Pereira Lobo, Jos\'e Augusto Amgarten Quitzau,
-and Klaus-Bernd Sch \"urmann read early drafts of several chapters of this
-thesis and helped to improve them in many ways. I would also like to thank
-Dr.~Peter Hahn and Chris MacPhee for working on several QAP instances of
-Chapter~\ref{ch:qap} and for helpful discussions.
+Ferdinando Cicalese, Jos\'e Augusto Amgarten Quitzau, and Klaus-Bernd
+Sch\"urmann read early drafts of several chapters of this thesis and helped to
+improve them in many ways. I would also like to thank Dr.~Peter Hahn and Chris
+MacPhee for working on several QAP instances of Chapter~\ref{ch:qap} and for
+helpful discussions.
 
 \vspace*{6ex}
 S\'ergio A. de Carvalho Jr.\hfill Bielefeld, \handindate
