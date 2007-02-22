@@ -1,49 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Discussion}
-\label{ch:discussion}
+\label{ch:discuss}
 
-This thesis makes several contributions to the field of....
+We have focused on two computational problems related to the production of
+oligonucleotide microarrays: the microarray layout problem (MLP) and the
+shortest deposition sequence problem (SDSP). With respect to the former, this
+thesis constitutes a detailed study of strategies and algorithmic approaches
+that can be used to design the layout of high-density microarrays. Because of
+the super-exponential number of possible layouts and the relation to the
+quadratic assignment problem (QAP), we cannot expect to find optimal solutions.
+Indeed, the algorithms we presented are heuristics with an emphasis on good
+scalability and, ideally, a user-controllable trade-off between running time and
+solution quality, albeit without any known provable guarantees. We have
+concentrated our work on algorithms that can handle, in reasonable time,
+relatively large chips with the 25-mer probes typically found on GeneChip
+arrays, presenting an extensive range of empirical results on the best known
+methods. We hope that this work will help improving the quality of the next
+generation of microarrays. In summary, we have made the following contributions.
 
-We introduce the \emph{conflict index}...
+\paragraph{Extended model for microarray layout evaluation.} In Chapter
+\ref{ch:mlp} we gave a formal definition to the microarray layout problem and
+introduced the conflict index model for evaluating a microarray layout and
+estimating the risk of unintended illumination. This model extends the border
+length definition of \citet{Hannenhalli2002} by taking into account the position
+inside the probe where the conflict occurs and the distance between the spots.
 
-In Chapter X we present a algorithm...
+Although adjusting this model to a particular fabrication technology is beyond
+the scope of this thesis, all algorithms discussed in later chapters make no
+assumption about the range of values returned by the weighting functions used in
+our definition of conflict index. Consequently, our empirical results should be
+reproducible using differents constants or even similarly-defined functions.
 
-We are not aware of any previous work that combines placement and
-re-embedding, even our results showed that such an approach has
-obvious benefits...
+\paragraph{QAP formulation of MLP.} In Chapter \ref{ch:qap} we showed that the
+microarray layout problem can be formulated as a quadratic assigment problem
+(QAP). We then showed how a microarray can be designed using QAP heuristics, and
+reported experimental results using a QAP algorithm, known as GRASP, to design
+the layout of small artificial microarrays. Although GRASP was able to produce
+good layouts, there was clearly a problem of running time, and we do not expect
+any QAP algorithm to outperform the best known placement algorithms.
+Nevertheless, our formulation is of interest as there is a rich literature on
+QAP and numerous methods that can now be applied for the MLP. As a suggestion
+for further work, we discussed how an existing layout could be improved using
+our QAP approach, iteratively.
 
-We have surveyed algorithms for the microarray layout problem (MLP), divided
-into placement, (re-)embedding, and partitioning algorithms.  Because of the
-super-exponential number of possible layouts and the relation to the quadratic
-assignment problem (QAP), we cannot expect to find optimal solutions. Indeed,
-the algorithms we present are heuristics with an emphasis on good scalability
-and ideally a user-controllable trade-off between running time and solution
-quality, albeit without any known provable guarantees.
+\paragraph{Algorithms.} After describing all known placement algorithms in
+detail, we introduced a new algorithm, called Greedy (Section
+\ref{sec:placement_greedy}), in Chapter \ref{ch:placement}. In terms of border
+length minimization, Greedy achieved results comparable to Row-Epitaxial
+\citep{Kahng2003}, the previously best known placement algorithm, although
+Greedy was slower in our results. In terms of conflict index minimization,
+however, Greedy clearly outperformed Row-Epitaxial.
 
-We believe that solution quality is more important than the running time of a
-placement algorithm. Even if an algorithm takes a couple of days to complete,
-it is time well spent given that commercial microarrays are likely to be
-produced in large quantities. This is specially true when we consider the time
-required for the whole design process of a microarray chip. Even customer
-designed chips, that usually have a limited number of produced units, are likely
-to benefit from a few extra hours of computing time.
+Chapter \ref{ch:reembed} was devoted to the re-embedding phase that usually
+follows the placement in an attempt to further reduce conflicts. After
+describing all known algorithms of this kind, we introduced a new algorithm,
+called Priority re-embedding. In our results, Priority achieved marginal
+improvements compared to Sequential, the best re-embedding algorithm to our
+knowledge. Unfortunately, the extra complexity and slower performance of
+Priority make it hard to justify its use. In fact, we view these results as a
+further indication that there is little room for improvements on the
+re-embedding phase.
 
-Among the presented approaches, two recent ones (Pivot Partitioning and
-\Greedyplus) indicate that the traditional ``place first and then re-embed''
-approach can be improved upon by merging the partitioning/placement and
-(re-)embedding phases. Ongoing work will show the full potential of such
-combined approaches.
+In Chapter \ref{ch:part}, we first described, 1-Dimensional and 2-Dimensional
+Partitioning \citep{Carvalho2007}. We demonstrated how these two algorithms can
+be used to generate a few masks with extremely low levels of conflicts, which
+can be especially helpful in case of conflict index minimization. We also
+described two partitioning algorithms, Centroid-based Quadrisection
+\citep{Kahng2003a} and Pivot Partitioning \citep{Carvalho2006}, that offer a
+more uniform optimization over all synthesis steps. Earlier results on chips
+with relatively long deposition sequences suggested that Pivot Partitioning is
+better than Centroid-based Quadrisection, and that these algorithms improve
+solution quality and reduce running times.
 
-As a suggestion for further work, we note the needed for improving
-the selection of probe candidates considered for filling each spot. For
-example, instead using a sorted list of probes, one could use a TSP tour
-like the one described in Section~\ref{sec:placement_threading}. However,
-it is not clear if the more time-consuming TSP approach will pay off
-(instead, we could use this extra time to look at more candidates).
+Our new results on chips with the shorter deposition sequence used by
+Affymetrix, however, showed that the restriction in number of candidates per
+probe during placement of the last spots of a region (when algorithms such as
+Row-Epitaxial and Greedy are used for the placement) often impacts the solution
+quality more significantly than the gains due to grouping similar probes
+together. As a result, Pivot Partitioning improved solution quality only in
+terms of conflict index, although it often reduced running time. Nevertheless,
+we believe that there is still room for improvements on partitioning algorithms.
 
-An alternative that sounds interesting would be to build some kind of
-``clustering'' of the probes, perhaps based on a graph or a tree, in such a
-way that we can find similar probes more easily and spend time on candidates
-that are more likely to produce less conflicts.
+Our new approach to the layout problem that merges the placement and
+re-embedding phases was discussed in Chapter \ref{ch:merge}, where we presented
+\Greedyplus\ \citep{Carvalho2007}. Our results showed that \Greedyplus\
+outperforms previous algorithms based on the traditional approach, such as
+Greedy and Row-Epitaxial, in terms of border length as well as conflict index
+minimization. Although Greedy might produce better results on large chips if
+time is restricted, we believe that \Greedyplus\ has a greater potential for
+producing the best layouts in both quality measures because it needs to examine
+fewer probe candidates to achive similar results. Among all presented
+algorithms, \Greedyplus\ and Pivot Partitioning and indicate that the
+traditional ``place first and then re-embed'' approach can be improved upon by
+merging the partitioning/placement and (re-)embedding phases.
 
-Question: why PM and MM probes are placed together and aligned except for the
-middle base?
+As a suggestion for further work on placement algorithms, we note the
+possibility of improving the order in which probe candidates are considered for
+filling each spot by algorithms such as Row-Epitaxial, Greedy, and \Greedyplus.
+Sorting the probes lexicographically tends to improve the first synthesis steps
+more than the others. One possibility is to use the TSP-base approach described
+in Section~\ref{sec:placement_threading}. However, it is unlikely that the
+time-consuming TSP computation will pay off, especially for large chips ---
+instead, we could use this extra time to look at more probe candidates. As
+discussed in the end of Chapter \ref{ch:merge}, sorting the probes with an
+emphasis on the middle bases is likely to improve the layouts in terms of
+conflict index. For \Greedyplus, however, it remains to be seen whether a
+different implementation of OSPE can be used in combination with such an
+ordering without incurring in increased running times.
+
+\paragraph{Analysis of Affymetrix microarrays.} In Chapter \ref{ch:affy} we used
+the border length and conflict index quality measures to make, for the first time, an
+evaluation of the layout of several GeneChip arrays. Our analysis
+revealed that the design approach used by Affymetrix
+evolved since the first generation of chips, probably as a result of attempting
+to reduce border conflicts. We showed that the current approach of placing
+perfect match (PM) and mismatch (MM) probes on adjacent spots reduces
+border conflicts, but it also results in a concentration of
+conflicts on the synthesis steps where an error is more likely to damage the
+probes. This fact could add to the argument that the PM/MM pairing used by
+Affymetrix should be dropped altogether, as some researches have recently
+proposed \citep{Lauren2003}. Although the PM probe is expected to have a higher
+affinity for the specific target than the MM probe, it has been reported that
+sometimes the signals from the mismatch spots are stronger than the perfect
+match \citep{Naef2003}. The reliability of the PM/MM approach to account for
+nonspecific hybridizations has not yet been estabilished by published
+experiments, and some researches claim that comparable or better analysis are
+possible without the MM signals. In fact, there is a wide range of alternative
+methods for analyzing the gene expression experiments obtained from Affymetrix
+chips \citep{Irizarry2006,Millenaar2006}.
+
+Since the position of the probe on the chip bears no relation with its function,
+we proposed different layouts for two of the latest GeneChip arrays, where the
+PM and MM probes were allowed to occupy non-adjacent spots. Our results showed
+that the Affymetrix layouts can be significantly improved, especially in terms
+of conflict index. Even in terms of border length, we managed to produce layouts
+with as much as $8.10\%$ less border conflicts using the algorithms presented in
+earlier chapters.
+
+\paragraph{Shortest common supersequence.}
+In Chapter \ref{ch:scs}, we studied the shortest deposition sequence problem as
+an instance of the shortest common supersequence problem (SCSP). Althoug several
+heuristic algorithms exist for the SCSP, our goal was to determine the
+feasibility of finding \emph{the shortest} deposition sequence for a given set
+of probes. We employed a branch-and-bound algorithm, the only approach that
+seems feasible for our setting. Our results indicate that the problem remains
+intractable for a typical high-density microarray. This, however, does not seem
+to be a major problem for microarray production because, commonly, a deposition
+sequence is fixed even before the probe sequences are selected.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outlook}
+\label{sec:discuss_outlook}
+
+Today, Affymetrix produces up to $1\,164\times 1\,164$ arrays in large scale,
+and we have showed that good layouts for arrays of this size can be designed in
+a few hours. When the best results are required, one or two days are enough,
+with reasonable computing power. We expect to see larger microarrays being
+produced in the near future as there is an increasing need for widening the
+range of genes that can be monitored in a single experiment. Still, we belive
+that this should cause no major problems in terms of layout design, for two
+reasons. First, because a continuous increase in computing power should also be
+expected. Second, because it is possible to control the running time of the best
+algorithms presented here (Greedy and \Greedyplus), so they can be configured to
+compute the best layout in the available time. 
+
+For commercial microarrays, we believe that, even if an algorithm takes a week
+to complete, it is time well spent given that they are likely to be produced in
+large quantities. This is specially true if we consider that a week is a
+relatively short time compared to the the time required for the entire design
+process of an off-the-shelf microarray chip.
+
+The fact that it is possible to control the running time of the best algorithms
+is also good news for custom microarray production, because, in this case, only
+a few units are usually produced, and there is an obvious need to design them as
+quickly as possible. Custom chips produced today are still relatively small when
+compared to chips produced in large scale. This could change as
+technologies, such as the self-contained {\sffamily geniom} platform of febit
+biotech GmbH, become increasingly more mature and affordable.
