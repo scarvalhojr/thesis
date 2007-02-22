@@ -39,9 +39,9 @@ the placement and partitioning algorithms.
 \section{1-Dimensional Partitioning}
 \label{sec:part_1d}
 
-The 1-Dimensional Partitioning algorithm (1-DP) divides the set of probes based
-on the state of their embeddings at a particular synthesis step. It starts by
-creating two subsets of $\mathcal{P}$:
+The 1-Dimensional Partitioning algorithm \cite{Carvalho2007} divides the set of
+probes based on the state of their embeddings at a particular synthesis step. It
+starts by creating two subsets of $\mathcal{P}$:
 %%
 \[
 \mathcal{P}_0 = \{ p_k \in \mathcal{P} | \eps_{k,1} = 0 \},
@@ -144,11 +144,11 @@ vice-versa).
   code.}%
 \end{figure}
 
-The 2-Dimensional Partitioning algorithm extends the idea of 1-DP to two
-dimensions, with the potential of optimizing twice as many masks. The algorithm
-is similar: $\mathcal{P}$ is divided into subsets based on the state of the
-embeddings at a particular synthesis step. The differences are that 2-DP
-alternates horizontal and vertical divisions of regions, and that the
+The 2-Dimensional Partitioning algorithm \cite{Carvalho2007} extends the idea of
+1-DP to two dimensions, with the potential of optimizing twice as many masks.
+The algorithm is similar: $\mathcal{P}$ is divided into subsets based on the
+state of the embeddings at a particular synthesis step. The differences are that
+2-DP alternates horizontal and vertical divisions of regions, and that the
 assignments of probes to regions obey a two-dimensional binary Gray code (Figure
 \ref{fig:2dpart}). In a 2-D Gray code, the binary numbers are arranged in a
 matrix in such a way that two neighboring numbers differ in at most one bit. As
