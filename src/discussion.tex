@@ -61,7 +61,7 @@ Priority make it hard to justify its use. In fact, we view these results as a
 further indication that there is little room for improvements on the
 re-embedding phase.
 
-In Chapter \ref{ch:part}, we first described, 1-Dimensional and 2-Dimensional
+In Chapter \ref{ch:part}, we first described 1-Dimensional and 2-Dimensional
 Partitioning \citep{Carvalho2007}. We demonstrated how these two algorithms can
 be used to generate a few masks with extremely low levels of conflicts, which
 can be especially helpful in case of conflict index minimization. We also
@@ -98,7 +98,7 @@ As a suggestion for further work on placement algorithms, we note the
 possibility of improving the order in which probe candidates are considered for
 filling each spot by algorithms such as Row-Epitaxial, Greedy, and \Greedyplus.
 Sorting the probes lexicographically tends to improve the first synthesis steps
-more than the others. One possibility is to use the TSP-base approach described
+more than the others. One possibility is to use the TSP-based approach described
 in Section~\ref{sec:placement_threading}. However, it is unlikely that the
 time-consuming TSP computation will pay off, especially for large chips ---
 instead, we could use this extra time to look at more probe candidates. As
@@ -118,7 +118,7 @@ perfect match (PM) and mismatch (MM) probes on adjacent spots reduces
 border conflicts, but it also results in a concentration of
 conflicts on the synthesis steps where an error is more likely to damage the
 probes. This fact could add to the argument that the PM/MM pairing used by
-Affymetrix should be dropped altogether, as some researches have recently
+Affymetrix should be dropped altogether, as some researchers have recently
 proposed \citep{Lauren2003}. Although the PM probe is expected to have a higher
 affinity for the specific target than the MM probe, it has been reported that
 sometimes the signals from the mismatch spots are stronger than the perfect
