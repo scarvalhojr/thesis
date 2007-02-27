@@ -100,8 +100,8 @@ genes, possibly covering the entire genome of an organism. This type of
 microarray was originally designed in the late 1980s as a tool for DNA
 sequencing, a technology that is known as Sequencing by Hybridization (SBH).
 Today, the pioneering Affymetrix GeneChip\textR\ arrays, for instance, have up
-to $1.3$ million spots on a coated quartz substrate measuring a little over 1~cm
-$^2$. The spots are as narrow as 5~$\mu$m (5~microns, or 0.005 mm), and are
+to $1.3$ million spots on a coated quartz substrate measuring a little over
+1~cm$^2$. The spots are as narrow as 5~$\mu$m (5~microns, or 0.005 mm), and are
 arranged in a regularly-spaced rectangular grid \citep{McGall2002}.
 
 \subsection{Photolithography}
@@ -119,12 +119,12 @@ which probes receive the nucleotide is achieved by photolithography
 \includegraphics[width=.38\textwidth]{genechip.eps}
 \hfill
 \includegraphics[width=.58\textwidth]{production.eps}
-\caption{Left: Affymetrix GeneChip array (source: Affymetrix, Inc.). Right:
-probe synthesis via photolithographic masks. The chip is coated with a chemical
-compound and a light-sensitive protecting group; masks are used to direct light
-and activate selected probes for chemical coupling; nucleotides are appended to
-deprotected probes; the process is repeated until all probes have been fully
-synthesized.}
+\caption{Left: Affymetrix GeneChip array (image courtesy of Affymetrix, Inc.).
+  Right: probe synthesis via photolithographic masks. The chip is coated with a
+  chemical compound and a light-sensitive protecting group; masks are used to
+  direct light and activate selected probes for chemical coupling; nucleotides
+  are appended to deprotected probes; the process is repeated until all probes
+  have been fully synthesized.}
 \label{fig:photolithography}
 \end{figure}
 
@@ -183,18 +183,19 @@ illumination. This issue becomes even more important as there is a need to
 accommodate more probes on a single chip, which requires the production of spots
 at higher densities and, consequently, with reduced distances between probes.
 
+The main focus of this thesis is to design the layout of a microarray in such a
+way that we minimize the incidence of the unintended illumination problem, what
+we call the \emph{microarray layout problem} (MLP). Our goal is to study the
+several phases of the design in detail, and to provide better and faster
+algorithms for each phase. The MLP is discussed in Chapters \ref{ch:mlp} to
+\ref{ch:affy}. A related problem is the \emph{shortest deposition sequence
+problem}, which attempts to find the shortest deposition sequence to synthesize
+a given set of probes. In Chapter \ref{ch:scs}, we analyze the feasibility of
+finding an exact solution to this problem.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Manufacturing and design problems}
 \label{sec:intro_problems}
-
-The main focus of this thesis is to design the layout of a microarray in such a
-way that we minimize the incidence of the unintended illumination problem, what
-we call the \emph{microarray layout problem} (MLP). The MLP is the focus of
-Chapters \ref{ch:mlp} to \ref{ch:affy}. A related problem is the \emph{shortest
-deposition sequence problem}, which attempts to find the shortest deposition
-sequence to synthesize a given set of probes in order to reduce manufacturing
-time, cost and probability of errors. This problem is studied in more details in
-Chapter \ref{ch:scs}.
 
 We conclude this chapter by briefly describing other interesting mathematical
 and computational problems that arise in the design and production of
@@ -215,10 +216,10 @@ ensures that probes are unique to each gene and eliminates probes that could
 cross-hybridize.
 
 This problem has been extensively studied in the past few years
-\citep{Li2001,Kaderali2002}, and many algorithms have been proposed to speed up
-the specificity check, regarded as the most computational intensive step
-\citep{Rahmann2002,Sung2003,Chou2004}. Among the presented approaches,
-\cite{Rahmann2002} proposed a fast algorithm based on suffix arrays
+\citep{Li2001,Kaderali2002,Rahmann2004}, and many algorithms have been proposed
+to speed up the specificity check, regarded as the most computational intensive
+step \citep{Rahmann2002,Sung2003,Chou2004}. Among the presented approaches,
+\citet{Rahmann2002} proposed a fast algorithm based on suffix arrays
 \citep{Manber1990} that eliminates candidates that have a long common factor
 with other genes.
 
