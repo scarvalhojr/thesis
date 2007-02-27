@@ -26,13 +26,15 @@ i.e., their arrangement and their \emph{embeddings}.
 In the first chapter of this thesis, we briefly review the role of microarrays
 in analyzing complex genetic information. We then describe the technology
 currently employed in the production of high-density microarrays as well as the
-problems that arise during manufacturing. In Chapter \ref{ch:mlp}, we give a
+problems that arise during manufacturing.
+
+In Chapter \ref{ch:mlp}, we give a
 formal definition to the microarray layout problem and describe in detail two
 quality measures that are used to evaluate a given layout. Finding an optimal
 layout with respect to any of these two measures seems unlikely, even for very
 small arrays. As we shall see in Chapter \ref{ch:qap}, the MLP can be modeled as
 a quadratic assignment problem (QAP), a classical combinatorial optimization
-problem that is notoriously hard to solve in practice, giveing further
+problem that is notoriously hard to solve in practice, giving further
 indication that the MLP is, in fact, a hard problem. In practice, the layout
 problem is usually approached in several ``phases'' with a range of heuristic
 algorithms.
@@ -72,12 +74,12 @@ phases into a single one. Our results show that \Greedyplus\ indeed outperforms
 all known placement algorithms.
 
 In Chapter \ref{ch:affy}, we present a pioneering analysis and evaluation of the
-layout of several GeneChip\textR\ arrays, considered the industry standard in
-terms of high-density oligonucleotide microarrays. Some design decisions that
-might affect the quality of these arrays are described in detail. We then use
-some of the algorithms presented in earlier chapters to propose alternative
-layouts for two of the latest generation of GeneChip arrays, showing how the
-risk of the unintended illumination problem can be reduced.
+layout of several Affymetrix GeneChip\textR\ arrays, considered the industry
+standard in terms of high-density oligonucleotide microarrays. Some design
+decisions that might affect the quality of these arrays are described in detail.
+We then use some of the algorithms presented in earlier chapters to propose
+alternative layouts for two of the latest generation of GeneChip arrays, showing
+how the risk of unintended illumination can be reduced.
 
 Another problem related to the production of microarrays is to find the shortest
 synthesis schedule for a given set of probes, which we refer to as the
@@ -98,24 +100,30 @@ Workshop on Algorithms in Bioinformatics (WABI), in Z\"urich
 \citep{Carvalho2006}. The conflict index model was also presented, together with
 the QAP formulation of the microarray layout problem (Chapter \ref{ch:qap}), at
 the German Conference on Bioinformatics (GCB) in T\"ubingen
-\citep{Carvalho2006a}. The work on the shortest common supersequence (Chapter
-\ref{ch:scs}) was first published as a technical report at the Faculty of
-Technology of Bielefeld University \citep{Carvalho2005}. Finally, a book chapter
-containing a more accessible description of the microarray layout problem and of
-several algorithms presented here, including the previously unpublished
-\Greedyplus, 1-Dimensional and 2-Dimensional Partitioning, is expected to appear
-in late 2007 \citep{Carvalho2007}.
+\citep{Carvalho2006a}.
+
+The work on the shortest common supersequence (Chapter \ref{ch:scs}) was first
+published as a technical report at the Faculty of Technology of Bielefeld
+University \citep{Carvalho2005}. Finally, a book chapter containing a more
+accessible description of the microarray layout problem and of several
+algorithms presented here, including the previously unpublished \Greedyplus,
+1-Dimensional and 2-Dimensional Partitioning, is expected to appear in late 2007
+\citep{Carvalho2007}.
 
 This thesis also contains previously unpublished material, namely:
 \begin{itemize}
-\item the Greedy placement algorithm (Section \ref{sec:placement_greedy}) that
-      outperforms previous algorithms in terms of conflict index minimization;
-\item the Priority re-embedding algorithm (Section \ref{sec:reembed_priority})
-      that achieves marginal improvements compared to the best known algorithms;
-\item an analysis of the layout of several commercially available GeneChip
-      arrays with respect to the defined evaluation criteria (Chapter
-      \ref{ch:affy}).
+\item the Greedy placement algorithm (Section \ref{sec:placement_greedy});
+\item the Priority re-embedding algorithm (Section \ref{sec:reembed_priority});
+\item the layout analysis of several commercially available GeneChip arrays with
+      respect to the defined evaluation criteria (Chapter \ref{ch:affy}).
 \end{itemize}
+
+\paragraph{Software.}
+Most algorithms described in this thesis have been implemented in Java, along
+with several Perl and Python scripts to parse chip specifications from
+Affymetrix and manipulate microarray layouts. The branch-and-bound search for
+the shortest deposition sequence (Chapter \ref{ch:scs}) was implemented in Perl
+and, subsequently, in C. Source code is available from the author upon request.
 
 \paragraph{Acknowledgments.}
 This work was carried out while I was a member of the Junior research group
@@ -128,15 +136,18 @@ found in Bielefeld, and for an enjoyable time I had in the last three years.
 
 Special thanks go to Dr.~Sven Rahmann for suggesting the topic and for the
 opportunity to work under his supervision. This work owes much to his expertise.
-Whenever I write ``we'' in this thesis, I mean ``Sven and I''. On several
-occasions, the support of the Bioinformatics Resource facility (BRF) at the
-CeBiTec (Center for BioTechnology) was crucial to the success of this work,
-and I cannot thank them enough for their help. Epameinondas Fritzilas,
+Whenever I write ``we'' in this thesis, I mean ``Sven and I''.
+
+On several occasions, the support of the Bioinformatics Resource facility (BRF)
+at the CeBiTec (Center for BioTechnology) was crucial to the success of this
+work, and I cannot thank them enough for their help. Epameinondas Fritzilas,
 Francisco Pereira Lobo, Ferdinando Cicalese, Jos\'e Augusto Amgarten Quitzau,
 and Klaus-Bernd Sch\"urmann read early drafts of several chapters of this thesis
-and helped to improve them in many ways. I would also like to thank Dr.~Peter
-Hahn and Chris MacPhee for working on several QAP instances of
-Chapter~\ref{ch:qap} and for helpful discussions.
+and helped improving it in many ways. I would also like to thank Dr.~Peter
+Hahn, (University of Pennsylvania, USA) Chris MacPhee (University of New
+Brunswick, Canada) and Prof.~Dr.~Zvi Drezner (California State University, USA)
+for working on several QAP instances of Chapter~\ref{ch:qap} and for helpful
+discussions on the QAP.
 
 \vspace*{6ex}
-S\'ergio A. de Carvalho Jr.\hfill Bielefeld, \handindate
+S\'ergio A. de Carvalho Jr.\hfill Bielefeld, \handinmonth
