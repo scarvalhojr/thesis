@@ -352,8 +352,8 @@ of the middle bases in the conflict index measure.
   minimization and used $0$-threading. Results are averages over a set of five
   arrays and running times are reported in minutes.}
 \footnotesize{
-\begin{tabular}{clrr}
-Embeddings & Algorithm & ACI & Time \\
+\begin{tabular}{cld{4}r}
+Embeddings & Algorithm & \multicolumn{1}{r}{ACI} & Time \\
 \hline
 Left-most  & Greedy with $Q=20$K & 392.1786 & 186.4 \\
 Left-most  & Greedy with $Q=40$K & 378.3110 & 357.0 \\
@@ -363,7 +363,7 @@ Centered   & Greedy with $Q=20$K & 387.5974 & 205.1 \\
 \hline
 Centered   & 2-DP with $L_{max}=10$ and Greedy with $Q=100$    &      345.9908  & 0.6 \\
 Centered   & 2-DP with $L_{max}=20$ and Greedy with $Q=400$    &      342.2031  & 1.3 \\
-Centered   & 2-DP with $L_{max}=30$ and Greedy with $Q=900$    & {\bf 341.2786} & 2.3 \\
+Centered   & 2-DP with $L_{max}=30$ and Greedy with $Q=900$    & \nb{341}{2786} & 2.3 \\
 Centered   & 2-DP with $L_{max}=40$ and Greedy with $Q=1\,200$ &      341.6185  & 4.0 \\
 Centered   & 2-DP with $L_{max}=50$ and Greedy with $Q=2\,000$ &      341.7515  & 6.1 \\
 Centered   & 2-DP with $L_{max}=60$ and Greedy with $Q=3\,600$ &      341.8634  & 8.4 \\
@@ -702,24 +702,23 @@ M_{i,t} := c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\}))
   the results of using PP on similar input. The relative diffence between the
   two algorithms is shown in percentage.}
 \footnotesize{
-\begin{tabular}{lcccc}
+\begin{tabular}{ld{4}d{4}d{4}d{4}}
 \vspace{1pt}
- & $100\times 100$ & $200\times 200$ & $300\times 300$ & $500\times 500$ \\
-\cline{2-5}
+ & \multicolumn{1}{c}{$100\times 100$} & \multicolumn{1}{c}{$200\times 200$} & \multicolumn{1}{c}{$300\times 300$} & \multicolumn{1}{c}{$500\times 500$} \\ \cline{2-5}
 \vspace{1pt}
- & NBL             & NBL             & NBL             & NBL \\
+ & \multicolumn{1}{r}{NBL} & \multicolumn{1}{r}{NBL} & \multicolumn{1}{r}{NBL} & \multicolumn{1}{r}{NBL} \\
 \hline
 CQ $D=1$ &      19.8595  &      19.1558  &      19.4735  &      19.1310  \\
-PP $D=2$ & {\bf 19.7414} & {\bf 18.6572} & {\bf 17.9959} & {\bf 17.3154} \\
-Relative &     $-0.60\%$ &     $-2.60\%$ &     $-7.59\%$ &     $-9.49\%$ \\
+PP $D=2$ & \nb{19}{7414} & \nb{18}{6572} & \nb{17}{9959} & \nb{17}{3154} \\
+Relative &     -0.60$\%$ &     -2.60$\%$ &     -7.59$\%$ &     -9.49$\%$ \\
 \hline
-CQ $D=2$ & {\bf 20.1673} &      19.4199  &      19.0263  &      18.7480  \\
-PP $D=4$ &      20.4057  & {\bf 19.1756} & {\bf 18.4533} & {\bf 17.6462} \\
-Relative &     $+1.18\%$ &     $-1.26\%$ &     $-3.01\%$ &     $-5.88\%$ \\
+CQ $D=2$ & \nb{20}{1673} &      19.4199  &      19.0263  &      18.7480  \\
+PP $D=4$ &      20.4057  & \nb{19}{1756} & \nb{18}{4533} & \nb{17}{6462} \\
+Relative &     +1.18$\%$ &     -1.26$\%$ &     -3.01$\%$ &     -5.88$\%$ \\
 \hline
-CQ $D=3$ & {\bf 20.7378} & {\bf 19.7625} &      19.1470  &      18.6523  \\
-PP $D=6$ &      21.1305  &      19.8459  & {\bf 19.0458} & {\bf 18.1701} \\
-Relative &     $+1.89\%$ &     $+0.42\%$ &     $-0.53\%$ &     $-2.59\%$ \\
+CQ $D=3$ & \nb{20}{7378} & \nb{19}{7625} &      19.1470  &      18.6523  \\
+PP $D=6$ &      21.1305  &      19.8459  & \nb{19}{0458} & \nb{18}{1701} \\
+Relative &     +1.89$\%$ &     +0.42$\%$ &     -0.53$\%$ &     -2.59$\%$ \\
 \hline
 \end{tabular}}
 \end{table}
