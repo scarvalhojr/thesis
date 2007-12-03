@@ -28,7 +28,7 @@ occurring in plants, animals and bacteria. The sequence that forms a protein is
 coded directly in the mRNA in terms of successive groups of three nucleotides
 called \emph{codons}. The \emph{genes} are the RNA-encoding segments of the DNA,
 and they are said to be \emph{expressed} in a cell when they are transcribed.
-The the set of all mRNA molecules, or transcripts, produced in one or a
+The set of all mRNA molecules, or transcripts, produced in one or a
 population of cells is called \emph{transcriptome}.
 
 To meet the challenge posed by functional genomics, new and highly ingenious
@@ -87,9 +87,9 @@ discovery of gene functions \citep{Cho1998,Hughes2000}, drug target
 identification and validation \citep{Marton1998,Liotta2000}, analysis of drug
 response \citep{Debouck1999}, classification of clinical samples
 \citep{Perou1999} and detection of splicing variants \citep{Hu2001}. Microarrays
-are also used for genotypic analysis, in two main areas: SNPs analysis, and
+are also used for genotypic analysis, in two main areas: SNP analysis, and
 mutation and variant detection. Single nucleotide polymorphisms (SNP) are the
-most common source of genetic variation and, in fact, large number of SNPs have
+most common source of genetic variation and, in fact, large numbers of SNPs have
 been discovered using microarrays \citep{Lindblad-Toh2000}. Special mutation
 detection arrays have also been used, for instance, to identify HIV variants
 \citep{Kozal1996}.
@@ -100,14 +100,14 @@ genes, possibly covering the entire genome of an organism. This type of
 microarray was originally designed in the late 1980s as a tool for DNA
 sequencing, a technology that is known as Sequencing by Hybridization (SBH).
 Today, the pioneering Affymetrix GeneChip\textR\ arrays, for instance, have up
-to $1.3$ million spots on a coated quartz substrate measuring a little over
+to $6.5$ million spots on a coated quartz substrate measuring a little over
 1~cm$^2$. The spots are as narrow as 5~$\mu$m (5~microns, or 0.005 mm), and are
 arranged in a regularly-spaced rectangular grid \citep{McGall2002}.
 
 \subsection{Photolithography}
 
 GeneChip arrays are produced by combinatorial chemistry and techniques derived
-from micro-electronics and integrated circuits fabrication. Probes are typically
+from micro-electronics and integrated circuit fabrication. Probes are typically
 25 bases long and are synthesized on the chip, in parallel, in a series of
 repetitive steps. Each step appends the same kind of nucleotide to probes of
 selected regions of the chip. The sequence of nucleotides added in each step is
@@ -207,17 +207,17 @@ design and, ultimely, layout design.
 \paragraph{Probe selection.} Although a probe should only hybridize to its
 target, it is known that, in practice, cross-hybridizations are likely to occur.
 The goal of the probe selection problem is to find the smallest number of probes
-with the specified length covering all gene of interest satisfying the three
+with the specified length covering all genes of interest satisfying the three
 criteria: homogeneity, sensitivity and specificity as proposed by
-\citep{Lockhart1996}. Homogeneity ensures that can hybridize to their targets at
-about the same experimental temperature. Sensitivity detects
+\citet{Lockhart1996}. Homogeneity ensures that probes can hybridize to their
+targets at about the same experimental temperature. Sensitivity detects
 self-complementarity and prevents probes with secondary structures. Specificity
 ensures that probes are unique to each gene and eliminates probes that could
 cross-hybridize.
 
 This problem has been extensively studied in the past few years
 \citep{Li2001,Kaderali2002,Rahmann2004}, and many algorithms have been proposed
-to speed up the specificity check, regarded as the most computational intensive
+to speed up the specificity check, regarded as the most computationally intensive
 step \citep{Rahmann2002,Sung2003,Chou2004}. Among the presented approaches,
 \citet{Rahmann2002} proposed a fast algorithm based on suffix arrays
 \citep{Manber1990} that eliminates candidates that have a long common factor
@@ -233,8 +233,8 @@ of flashes before a more expensive fabrication technology must be used. Ideally,
 each mask must be decomposed in the minimum number of rectangles in order to
 reduce costs and incidence of errors.
 
-\citet{Hannenhalli2002} studied this problem, called the mask decomposition
-problem, as an instance of the rectilinear polygon interior cover problem,
+\citet{Hannenhalli2002} studied this problem, called \emph{mask decomposition
+problem}, as an instance of the rectilinear polygon interior cover problem,
 which, according to \citet{Garey1979} was first shown to be NP-hard by
 \citet{Masek}. Although approximation algorithms with small performance ratios
 are known \citep{Franzblau1986}, \citet{Hannenhalli2002} explored the particular

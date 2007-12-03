@@ -192,7 +192,7 @@ Like Chessboard, Greedy and Batched Greedy were initially developed for border
 length minmization, and they can also be extended for conflict index
 minimization. The main difference is that, once a probe is re-embedded, more
 neighbors need to be updated. For Batched Greedy, the selection of independent
-spots need to take into account the minimum distance of four cells (horizonally
+spots needs to take into account the minimum distance of four cells (horizonally
 and vertically) between spots, in accordance with the conflict index model
 (Section~\ref{sec:mlp_conflict_index}). Hence fewer spots may be re-embedded
 in the same iteration.
@@ -221,7 +221,7 @@ placement algorithm (Section~\ref{sec:placement_greedy}). The chips initially
 contained random probes of length 25, uniformly generated, and left-most
 embedded in the standard Affymetrix deposition sequence.
 The threshold $W$ was set to $0.2\%$ (Sequential stopped as soon as the total
-reduction of conflicts in one pass droped below $0.2\%$). In all cases, the
+reduction of conflicts in one pass dropped below $0.2\%$). In all cases, the
 threshold was reached after two passes.
 
 \begin{table}[t]\centering
@@ -284,12 +284,12 @@ with border length and $0.829\%$ for CIM), which shows that there is little room
 for improvements once the placement is fixed. In fact, the more time is spent
 during placement (greater $Q$), the less reduction of conflicts is achieved by
 re-embedding. For instance, on a $300\times 300$ chip, the reduction in average
-conflict index dropped by $0.12$ percentage point (from $0.829\%$ to $0.709\%$)
+conflict index dropped by $0.12$ percentage points (from $0.829\%$ to $0.709\%$)
 when the number of candidades per spot considered by Greedy during placement was
 increased from 5K to 20K.
 
 Although the reductions of conflicts were relatively small, Sequential required
-approximately half a minute to re-embedded (two times) all probes of a
+approximately half a minute to re-embed (two times) all probes of a
 $800\times 800$ chip in the BLM case, which represented about $3.44\%$ of the
 aggregate time (placement and re-embedding) when $Q=5$K and only $0.56\%$ when
 $Q=20$K.
@@ -326,7 +326,7 @@ reduction of conflicts is restricted to the second half of synthesis steps
 because of the left-most embeddings, although with relatively better
 improvements when compared with the border length case.
 
-Our results gives further indication that Sequential has approximately linear
+Our results give further indication that Sequential has approximately linear
 time complexity (if we consider that each OSPE operation can be done in constant
 time). Sequential performed around $19\,400$ re-embeddings per second in the BLM
 case and around $475$ re-embeddings per second in the CIM case, on average.
@@ -348,8 +348,8 @@ case and around $475$ re-embeddings per second in the CIM case, on average.
   ({\tiny $\boxdot$}) and after ({\tiny $\times$}) a re-embedding phase with
   Sequential for conflict index minimization. Layout was produced by the Greedy
   placement algorithm for conflict index minimization with $0$-threading and
-  $Q=20$K. The number of middle bases synthesized at each step is shown in boxes
-  (right y-axis)}
+  $Q=20$K. The histogram shows the number of middle bases synthesized at each
+  step (right y-axis)}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -358,7 +358,7 @@ case and around $475$ re-embeddings per second in the CIM case, on average.
 
 In this section we describe a new re-embedding algorithm, called Priority
 re-embedding (PR), which uses a priority queue to control the order in which
-probes are re-embeded.
+probes are re-embedded.
 
 The algorithm starts by scanning the chip for probes which have a unique
 embedding in the deposition sequence. These are called \emph{pivots} and
@@ -452,7 +452,7 @@ again achieved negligible improvements when compared to Sequential --- at most
 $0.0029\%$ (from $412.5536$ to $412.5418$ on $300\times 300$ chips and Greedy
 placement with $Q=20$K). The difference in running times between Sequential and
 Priority dropped in comparison with the same difference in the BLM case. This is
-because OSPE is significantly slower with CIM, so the extra time spent
+because OSPE is significantly slower with CIM, so the extra time spent on
 re-embedding probes reduces the impact of the extra work with the priority
 queue. For this reason, Priority I was always within $0.1\%$ of the time
 required by Sequential, whereas Priority II was at most $11.37\%$ slower.
@@ -518,7 +518,7 @@ $800^2$ &  5K & 426.0757 &  & 422.6277 & 1357.9 &  & 422.6478 & 1357.9 &  & {\bf
 In this chapter, we have presented an extension of the Optimum Single Probe
 Embedding algorithm (OSPE) of \citet{Kahng2002} that is general enough to work
 with border length as well as conflict index minimization. We have also surveyed
-re-embeddings algorithms based on OSPE and presented experimental results with
+re-embedding algorithms based on OSPE and presented experimental results with
 Sequential, the best known algorithm to date.
 
 In our results, it is evident that there is little room for improvements by
@@ -528,7 +528,7 @@ by changing the order of re-embeddings based on priorities. We have experimented
 with two priorities: probes with fewer embeddings first (Priority I) and probes
 with more re-embedded neighbors (Priority II).
 
-Our results show that our algorithm can achive negligible improvements when
+Our results show that our algorithm can achieve negligible improvements when
 compared to Sequential, with Priority I being the best for BLM and Priority II
 the best for CIM. However, because of the extra time required by Priority,
 Sequential offers a better trade-off between solution quality and running time,

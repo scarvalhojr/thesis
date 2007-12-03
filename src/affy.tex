@@ -31,10 +31,10 @@ spots.
 
 What could interfere with our analysis is the fact that some arrays have a
 significant number of empty spots (as much as $11.94\%$ on the Chicken Genome
-array). The physical location of some empty spots suggest that they might be
+array). The physical locations of some empty spots suggest that they might be
 used as ``spacers'' to separate regions of the chip. Others might be empty
 simply because the number of spots exceeds the number of probes. A high number
-of empty spots result in a relatively low normalized border length (as defined
+of empty spots results in a relatively low normalized border length (as defined
 in Section \ref{sec:mlp_bl_vs_ci}) since we divide the total number of border
 conflicts by the number of internal borders of the chip (an empty spot
 contributes to the number of internal borders but obviously not to the number of
@@ -44,14 +44,15 @@ defined as the total border length divided by the number of probes. As we shall
 see, an array with many empty spots might still have an advantage depending on
 how the empty spots are distributed on the chip.
 
-It has been reported that a fixed 74-step deposition sequence is used by
-Affymetrix \citep{Kahng2004}. An analysis with the algorithms presented in
-Chapter \ref{ch:scs} revealed that all GeneChip arrays, regardless of their
-size, can be synthesized in $N=(\Seq{TGCA})^{18}\Seq{TG}$, i.e., $18.5$ cycles
-of \Seq{TGCA}, and that a shorter deposition sequence is indeed unlikely. This
-suggests that only sub-sequences of this particular deposition sequence can be
-used as probes on Affymetrix chips. In principle, this should not be a problem
-as this sequence covers about $98.45\%$ of all 25-mers \citep{Rahmann2006}.
+Most GeneChip expression arrays use a 74-step deposition sequence (whereas most
+genotyping arrays use a 80-step sequence). In fact, an analysis with the
+algorithms presented in Chapter \ref{ch:scs} revealed that most GeneChip
+expression arrays, regardless of their size, can be synthesized in
+$N=(\Seq{TGCA})^{18}\Seq{TG}$, i.e., $18.5$ cycles of \Seq{TGCA}, and that a
+shorter deposition sequence is indeed unlikely. This suggests that only
+sub-sequences of this particular deposition sequence can be used as probes on
+Affymetrix chips. In principle, this should not be a problem as this sequence
+covers about $98.45\%$ of all 25-mers \citep{Rahmann2006}.
 
 \begin{figure}[t]\centering
 \begin{tabular}{lc}
@@ -83,21 +84,22 @@ variations \citep{Affymetrix2001}. The MM probe is a copy of the PM probe except
 for the middle base (position 13 of the 25-mer), which is exchanged with its
 Watson-Crick complement. The layout of GeneChip arrays alternate rows of PM
 probes with rows of MM probes in such a way that probes of a pair are always
-adjacent on the chip. Moreover, PM and MM probes are \emph{pair-wise left-most
-embedded} \citep{Kahng2004}. Informally, a pair-wise left-most embedding is
-obtained from left-most embeddings by shifting the second half of one embedding
-to the right until the two embeddings are ``aligned'' in the synthesis steps
-that follow the mismatched middle bases (Figure \ref{fig:pairwise_leftmost}).
-This approach reduces border conflicts between the probes of a pair, although it
-leaves a conflict in the steps that add the middle bases.
+adjacent on the chip. Moreover, PM and MM probes are usually \emph{pair-wise
+left-most embedded} or \emph{pair-wise right-most embedded}. Informally, a
+pair-wise left-most embedding is obtained from left-most embeddings by shifting
+the second half of one embedding to the right until the two embeddings are
+``aligned'' in the synthesis steps that follow the mismatched middle bases
+(Figure \ref{fig:pairwise_leftmost}). This approach reduces border conflicts
+between the probes of a pair, although it leaves a conflict in the steps that
+add the middle bases.
 
 The fact that probes must appear in pairs restricts even more which sequences
 can be used as probes on GeneChip arrays because both PM and MM probes must
 ``fit'' in the deposition sequence. For example, although
 $p=\Seq{CGTAGGTACGTTATAAGTCACTAAA}$ has an embeddeding in
 $N=(\Seq{TGCA})^{18}\Seq{TG}$, it cannot be used as a probe because its
-corresponding mismatch probe $\bar{p}=\Seq{CGTAGGTACGTTTTAAGTCACTAAA}$ cannot be
-embedded in $N$, as shown below.
+corresponding mismatch probe $\bar{p}=\Seq{CGTAGGTACGTTTTAAGTCACTAAA}$ is not
+a subsequence of $N$, as shown below.
 
 \begin{tabular}{lc}
 $N$              & \footnotesize{\tt{\verb|TGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATG  |}} \\
@@ -117,29 +119,29 @@ $\eps_{\bar{p}}$ & \footnotesize{\tt{\verb|  C  G  T  A G   G  T  A  C  G  T   T
   Average number of border conflicts per probe per masking step (on the left
   y-axis) of three GeneChip arrays, assuming pair-wise left-most embeddings:
   Yeast Genome S98 ({\scriptsize $\times$}), Human Genome U95A2 ({\tiny $+$}),
-  and E.\ coli Genome 2.0 ({\tiny $\boxdot$}). The number of middle bases
-  synthesized at each step on the E.\ coli Genome 2.0 is shown in boxes (on the
-  right y-axis).}
+  and \emph{E.\ coli} Genome 2.0 ({\tiny $\boxdot$}). The histogram shows the
+  number of middle bases synthesized at each step on the \emph{E.\ coli} Genome
+  2.0 (right y-axis).}
 \end{figure}
 
-Figure \ref{fig:affy_blm} shows the average number border conflicts per probe
+Figure \ref{fig:affy_blm} shows the average number of border conflicts per probe
 per masking step of three GeneChip arrays. We assume that the probes are
 pair-wise left-most embedded in $N=(\Seq{TGCA})^{18}\Seq{TG}$, and we consider
 all spots whose contents are not available as empty spots. In all chips we
 analyzed, the number of border conflicts are higher in the steps that add the
 middle bases, a result of placing PM and MM probes in adjacent spots. The Yeast
-Genome S98 array has the worst layout in terms of border conflicts and most of
-the earlier GeneChip arrays such as the E.\ coli Antisense Genome have similar
+Genome S98 array has the worst layout in terms of border conflicts, and most of
+the earlier GeneChip arrays such as the \emph{E.\ coli} Antisense Genome have similar
 levels of conflicts. The layout of the Human Genome U95A2 array has signficantly
 less border conflicts than the Yeast array, suggesting that it was designed with
-a better placement strategy. The curve of the E.\ coli Genome 2.0 array, with
+a better placement strategy. The curve of the \emph{E.\ coli} Genome 2.0 array, with
 very low levels of conflicts in the first 10 masks, is typical of the latest
 generation of GeneChip arrays, including the Chicken Genome and the Wheat Genome
 (one of the largest GeneChip arrays currently available with
 $1\,164\times 1\,164$ spots), and suggest yet another placement strategy.
 
 Figure \ref{fig:ecoli_masks} shows a representation of selected masks for the
-E.\ coli Genome 2.0. The low levels of conflicts in the first synthesis steps
+\emph{E.\ coli} Genome 2.0. The low levels of conflicts in the first synthesis steps
 are a result of the pattern of masked and unmasked layers that can be seen in
 masks $M_1$ to $M_9$. This pattern is similar to the ones produced by Greedy
 (Figure \ref{fig:greedy-bl_masks}) and \Greedyplus\ (Figure
@@ -181,15 +183,17 @@ binary embeddings formed an approximation of a Gray code.
 }\end{picture}
 %%
 \caption{\label{fig:ecoli_masks}%
-  Selected masks of Affymetrix's E.\ coli Genome 2.0 GeneChip array, assuming
+  Selected masks of Affymetrix's \emph{E.\ coli} Genome 2.0 GeneChip array, assuming
   pair-wise left-most embeddings. Unmasked (masked) spots are represented by
   light (dark) dots. White regions represent spots whose contents are not
   publicly available.}
 \end{figure}
 
 Table \ref{tab:genechip} confirms that the layout of the Human Genome U95A2
-array is the best in terms of normalized border length and average conflict
-index. This, however, has more to do with empty spots than with the placement
+array is better than the layouts of the Yeast Genome S98 and the \emph{E.\ coli}
+Genome 2.0 arrays, as suggested in Figure \ref{fig:affy_blm}; in fact, the U95A2
+has one the best layous among those shown in Table \ref{tab:genechip}.
+This, however, has more to do with empty spots than with the placement
 strategy as this chip has about $1.83\%$ of empty spots that are evenly
 distributed on the chip surface (Figure \ref{fig:chipmaps}, left). In contrast,
 the Chicken Genome array has an exceptionally high percentage of empty spots
@@ -209,9 +213,9 @@ lower part of the chip (Figure \ref{fig:chipmaps}, right).
 GeneChip Array            & Dimension             & Unknown  & Empty     & ABC     & NBL     & ACI \\
 \hline
 Yeast Genome S98          & $534\times 534$       & $1.22\%$ &  $1.70\%$ & 44.8168 & 21.7945 & 669.0663 \\
-E.\ coli Antisense Genome & $544\times 544$       & $1.17\%$ &  $3.12\%$ & 43.3345 & 20.7772 & 663.7353 \\
+\emph{E.\ coli} Antisense Genome & $544\times 544$       & $1.17\%$ &  $3.12\%$ & 43.3345 & 20.7772 & 663.7353 \\
 Human Genome U95A2        & $640\times 640$       & $0.96\%$ &  $1.83\%$ & 28.2489 & 13.7517 & 510.3418 \\
-E.\ coli Genome 2.0       & $478\times 478$       & $1.08\%$ &  $0.46\%$ & 29.2038 & 14.4079 & 550.2014 \\
+\emph{E.\ coli} Genome 2.0       & $478\times 478$       & $1.08\%$ &  $0.46\%$ & 29.2038 & 14.4079 & 550.2014 \\
 Chicken Genome            & $984\times 984$       & $0.46\%$ & $11.94\%$ & 28.2087 & 12.3680 & 540.5022 \\
 Wheat Genome              & $1\,164\times 1\,164$ & $0.38\%$ &  $0.08\%$ & 27.6569 & 13.7771 & 539.9632 \\
 \hline
@@ -238,7 +242,7 @@ are concentrated on the synthesis steps that add the middle bases.
 %%
 \caption{\label{fig:chipmaps}%
   Distribution of empty spots on two GeneChip arrays. Chip dimensions are
-  indicated in parenthesis (images were scaled differently). Non-empty spots are
+  indicated in parentheses (images were scaled differently). Non-empty spots are
   represented by dark dots. White dots represent empty spots or spots whose
   contents are not publicly available.}
 \end{figure}
@@ -249,7 +253,7 @@ are concentrated on the synthesis steps that add the middle bases.
 
 We used \Greedyplus\ (Chapter \ref{ch:merge}) and Sequential re-embedding
 (Section \ref{sec:reembed_sequential}) to create alternative layouts for two of
-the latest generation of GeneChip arrays: E.\ coli Genome 2.0 and Wheat Genome.
+the latest generation of GeneChip arrays: \emph{E.\ coli} Genome 2.0 and Wheat Genome.
 \Greedyplus\ was modified to avoid placing probes on special spots or empty
 spots that we believe might have a function on the chip.
 
@@ -264,15 +268,15 @@ corresponding MM probes. With conflict index minimization, this rate dropped to
 between $12.89\%$ and $21.25\%$.
 
 Figure \ref{fig:alternative_ec2} shows the normalized border length per masking
-step of the layout produced by \Greedyplus\ and Sequential for the E.\ coli
+step of the layout produced by \Greedyplus\ and Sequential for the \emph{E.\ coli}
 Genome 2.0 array in comparison with the original Affymetrix layout. For
 comparison, we also show the result of running a ``pair-aware'' version of
 Sequential on the original layout (this version ensures that the embeddings of
 PM-MM pairs remain pair-wise ``aligned''). The normalized border length and
-average conflict indices of these layouts are shown on Table
+average conflict indices of these layouts are shown in Table
 \ref{tab:alternative}, together with several layouts for the Wheat Genome array.
 \Greedyplus\ with $Q=10$K produced a layout with $8.10\%$ less border conflicts
-than the original layout for the E.\ coli array ($13.2406$ versus $14.4079$) in
+than the original layout for the \emph{E.\ coli} array ($13.2406$ versus $14.4079$) in
 $218.3$ minutes. With $Q=2$K, this difference was $7.15\%$, although that
 required only $46.9$ minutes. For the Wheat array, \Greedyplus\ with $Q=2$K
 generated a layout with $7.36\%$ less border conflicts than the original layout
@@ -280,12 +284,12 @@ generated a layout with $7.36\%$ less border conflicts than the original layout
 CIM since the original layouts were probably designed to minimize border
 conflicts (and not conflict indices). Nevertheless, the results produced by
 \Greedyplus\ and Sequential are comparable to the results on random chips
-presented on Chapter \ref{ch:merge}.
+presented in Chapter \ref{ch:merge}.
 
 \begin{table}[t!]\centering
 \caption{\label{tab:alternative}
   Normalized border length (NBL) and average conflict index (ACI) of several
-  layouts for the E.\ coli Genome 2.0 and Wheat Genome GeneChip arrays.
+  layouts for the \emph{E.\ coli} Genome 2.0 and Wheat Genome GeneChip arrays.
   \Greedyplus\ and Sequential run with border length and conflict index
   minimization (BLM and CIM, respectively) as indicated. \Greedyplus\ used
   $k$-threading with $k=5$ for BLM and $k=0$ for CIM. Running times are reported
@@ -295,7 +299,7 @@ presented on Chapter \ref{ch:merge}.
 \begin{tabular}{llrrr}
 Array & Layout                                                  & NBL     & ACI      & Time\\
 \hline
-E.\ coli 2.0 & Affymetrix with pair-wise left-most              & 14.4079 & 550.2014 & --- \\
+\emph{E.\ coli} 2.0 & Affymetrix with pair-wise left-most              & 14.4079 & 550.2014 & --- \\
              & Affymetrix after ``pair-aware'' Sequential (BLM) & 13.5005 & 541.0954 & --- \\
              & \Greedyplus\ with $Q=2$K and Sequential (BLM)    & 13.3774 & 529.8129 &  46.9 \\
              & \Greedyplus\ with $Q=10$K and Sequential (BLM)   & 13.2406 & 515.5917 & 218.3 \\
@@ -315,7 +319,7 @@ Wheat        & Affymetrix with pair-wise left-most              & 13.7771 & 539.
 \begin{figure}[t]\centering
 \includegraphics{affy/alternative/EC2}
 \caption{\label{fig:alternative_ec2}%
-  Normalized border length per masking step of several layouts for the E.\ coli
+  Normalized border length per masking step of several layouts for the \emph{E.\ coli}
   Genome 2.0 GeneChip array: original Affymetrix layout with pair-wise left-most
   embeddings ({\tiny $\odot$}), original Affymetrix layout after running two
   passes of a ``pair-aware'' version of Sequential re-embedding ({\tiny $+$}),

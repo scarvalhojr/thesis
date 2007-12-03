@@ -29,7 +29,7 @@ find a permutation $\pi$ of $\{1, 2, \ldots n\}$ such that
 The attribute \emph{quadratic} stems from the fact that the target function can
 be written with $n^2$ binary indicator variables $x_{ik}\in\{0,1\}$, where
 $x_{ik}:=1$ if and only if $k=\pi(i)$. The objective~(\ref{eq:qap_def}) then
-becomes
+becomes a quadratic integer programming problem:
 %%
 \[
   \sum_{i=1}^{n} \sum_{j=1}^{n}\,  f_{ij} \cdot 
@@ -121,15 +121,17 @@ Note that $d_{kl}$ is related to the conflict index distance $C(k,l)$ defined in
 Section~\ref{sec:mlp_conflict_index} (Equation~\ref{eq:ci_dist}):
 %%
 \begin{eqnarray*}
- &   & d_{kl} + d_{lk} \\
- & = & \sum_{t=1}^{T} \Bigl( \Ind{\eps_{k,t}=0} \cdot \omega(\eps_k,t) \cdot \Ind{\eps_{l,t}=1} \Bigr)
-     + \sum_{t=1}^{T} \Bigl( \Ind{\eps_{l,t}=0} \cdot \omega(\eps_l,t) \cdot \Ind{\eps_{k,t}=1} \Bigr) \\
- & = & \sum_{t=1}^{T} \Bigl( \Ind{\eps_{k,t}=0 \text{ and } \eps_{l,t}=1} \cdot \omega(\eps_k,t) \Bigr)
-     + \sum_{t=1}^{T} \Bigl( \Ind{\eps_{l,t}=0 \text{ and } \eps_{k,t}=1} \cdot \omega(\eps_l,t) \Bigr) \\
- & = & \sum_{t=1}^{T} \Bigl(
-                        \Ind{\eps_{k,t}=0 \text{ and } \eps_{l,t}=1} \cdot \omega(\eps_k,t) +
-                        \Ind{\eps_{l,t}=0 \text{ and } \eps_{k,t}=1} \cdot \omega(\eps_l,t)
-                      \Bigr) \\
+d_{kl} + d_{lk} & = &
+  \sum_{t=1}^{T} \Bigl( \Ind{\eps_{k,t}=0} \cdot \omega(\eps_k,t) \cdot \Ind{\eps_{l,t}=1} \Bigr)
+  + \sum_{t=1}^{T} \Bigl( \Ind{\eps_{l,t}=0} \cdot \omega(\eps_l,t) \cdot \Ind{\eps_{k,t}=1} \Bigr) \\
+& = &
+  \sum_{t=1}^{T} \Bigl( \Ind{\eps_{k,t}=0 \text{ and } \eps_{l,t}=1} \cdot \omega(\eps_k,t) \Bigr)
+  + \sum_{t=1}^{T} \Bigl( \Ind{\eps_{l,t}=0 \text{ and } \eps_{k,t}=1} \cdot \omega(\eps_l,t) \Bigr) \\
+& = &
+  \sum_{t=1}^{T} \Bigl(
+                   \Ind{\eps_{k,t}=0 \text{ and } \eps_{l,t}=1} \cdot \omega(\eps_k,t) +
+                   \Ind{\eps_{l,t}=0 \text{ and } \eps_{k,t}=1} \cdot \omega(\eps_l,t)
+                  \Bigr) \\
  & = & C(k,l)
 \end{eqnarray*}
 
@@ -337,7 +339,7 @@ $11\times 11$ or larger chips. In terms of running time, Greedy is faster and
 shows little variation as the number of probes grows. In contrast, the time
 required to compute a layout with GRASP-PR increases at a fast rate.
 
-Table~\ref{tab:graspr_greedy_ci} shows better results in terms of conflict
+Table~\ref{tab:graspr_greedy_ci} shows results in terms of conflict
 indices. GRASP-PR consistently produces better layouts on all chip dimensions,
 achieving up to $6.38$\% less conflicts on $10\times 10$ chips, for example,
 when compared to Greedy. In terms of running times, GRASP-PR is even slower than
@@ -385,13 +387,13 @@ potential of the MLP-QAP-relation.
 As our results show, however, even heuristic algorithms are too slow to deal
 with chips of dimensions larger than $12 \times 12$, and although we could
 design a $20 \times 20$ chip with a QAP heuristic within a day, we have to keep
-in mind that this would still be a very small part of bigger problem as real
+in mind that this would still be a very small part of a larger problem as real
 microarray dimensions range from $200 \times 200$ up to $1164 \times 1164$.
 
 For this reason, we restricted our experiments to such small chips and QAP
 heuristics that could handle the problems within a few minutes. Up to now,
 finding exact solutions even to these small microarrays seems to be an
-incredible hard task. We mention here experiments conducted by Dr. Peter Hahn,
+incredibly hard task. We mention here experiments conducted by Dr. Peter Hahn,
 who used two branch-and-bound algorithms to solve some problem instances from
 Table \ref{tab:graspr_greedy_bl}. With RTL-2 \citep{Adams}, it was possible to
 find two solutions with total border length of $1\,652$ for a selected
@@ -426,13 +428,13 @@ that it is certainly possible to use it on small sub-regions of a chip, which
 opens up the way for two alternatives.
 
 First, the QAP approach could be used combined with a partitioning algorithm
-such as those discussed in Chapter \ref{ch:part} to the design the smaller
+such as those discussed in Chapter \ref{ch:part} to design the smaller
 regions that result from the partitioning. This, however, does not seem
 promising because, as we will see later, a partitioning is a compromise in
 solution quality, and level of partitioning required to achieve the dimensions
 supported by the QAP approach is too high.
 
-It is interesting to extrapolate the times shown on Table
+It is interesting to extrapolate the times shown in Table
 \ref{tab:graspr_greedy_bl} to predict the total time that would be required to
 design the layout of commercial microarrays, if we were to combine GRASP-PR with
 a partitioning algorithm. If the partitioning produced $6\times 6$ regions,

@@ -12,14 +12,14 @@ time. By reducing the number of synthesis steps, the chances of unintended
 illumination are also reduced.
 
 In this chapter, we study the \emph{shortest deposition sequence problem}
-(SDSP), which aims at finding the shortest supersequence $N$ to synthesize a
+(SDSP), which aims at finding a shortest supersequence $N$ to synthesize a
 given set of probes. The SDSP is an instance of a classical computer science
 problem known as the \emph{shortest common supersequence problem} (SCSP). The
 SCSP is NP-complete for strings over an alphabet of size $\sigma \geq 2$
 \citep{Raiha1981}. Although several heuristics for the SCSP exist
 \citep[for a survey, see][]{Fraser1995}, finding exact solutions seems to be
 limited to small sets of sequences and reduced alphabet sizes. Nevertheless, we
-analyze the feasibility of finding the shortest deposition sequence for a
+analyze the feasibility of finding a shortest deposition sequence for a
 typical microarray.
 
 Formally, we have a set of $n$ probe sequences
@@ -27,7 +27,7 @@ $\CalP = \{p_1, p_2, \ldots p_n \}$, where each $p_k$ is drawn from an alphabet
 $\Sigma$ with size $\sigma = | \Sigma |$, that is, $p_k \in \Sigma^{\ast}$ for
 $1 \leq k \leq n$. For simplicity, we assume that all probe sequences
 $p_k \in \CalP$ have the same length $\ell$. Our aim is to find the length $T$
-of the \emph{shortest common supersequence} (SCS) $N \in \Sigma^T$ of all
+of a \emph{shortest common supersequence} (SCS) $N \in \Sigma^T$ of all
 $p_k \in \CalP$. The microarray production setting imposes the following
 constraints to the problem: $10\,000 \leq n \leq 1\,500\,000$,
 $10 \leq \ell \leq 70$, $\Sigma = \{\tA,\tC,\tG,\tT\}$,
@@ -38,11 +38,11 @@ $\sigma = | \Sigma | = 4$.
 \label{sec:scs_ourapproach}
 
 Several efficient algorithms for the SCSP exist, but most are based on dynamic
-programming and have a $O(m^n)$ space complexity \citep{Itoga1981,Foulser1992},
+programming and have a $O(\ell^n)$ space complexity \citep{Itoga1981,Foulser1992},
 and they can thus only be used to solve problem instances with small $n$. The
 only feasible approach to compute an exact solution to the SCSP for large $n$
 seems to be a branch-and-bound search because its space complexity is merely
-$O(n \cdot m)$ for simple implementations.
+$O(n \cdot \ell)$ for simple implementations.
 
 \begin{figure}[t]\centering
 \includegraphics[width=0.95\textwidth]{scs_tree}
@@ -57,7 +57,7 @@ letters of the alphabet $\Sigma$. The root node represents an empty sequence,
 and each node has $\sigma$ children, one for each possible letter of the
 alphabet. A node $f$ of $\CalT$ represents a sequence $d_f$ formed by the
 sequence of letters in the path from the root to $f$. The nodes of such a tree
-with height $h$ contains all sequences formed with $0 \leq r \leq h$ letters of
+with height $h$ contain all sequences formed with $0 \leq r \leq h$ letters of
 $\Sigma$. Figure \ref{fig:scs_tree} shows $\CalT$ for
 $\Sigma = \{\tA,\tB,\tC\}$.
 
@@ -94,19 +94,19 @@ to be explored; the shorter it is, the more branches of the tree are likely to
 be skipped. During the search, we keep track of the best solution found and
 update it whenever a shorter supersequence is encountered. Section
 \ref{sec:scs_ubound} describes heuristic algorithms that can be used to produce
-an approximate solution to the SCS relatively quickly. Second, the
+an approximate solution to the SCSP relatively quickly. Second, the
 branch-and-bound strategy requires a way of checking whether a node can lead to
 a better solution or not, i.e., we need a lower bound on the length of any
 supersequence that can be found from a given node (each node in $\CalT$ is a
 prefix of a set of candidate sequences). Section \ref{sec:scs_lbound}
-discuss possible lower bounds for the SCSP. As we shall see, the success of the
+discusses possible lower bounds for the SCSP. As we shall see, the success of the
 branch-and-bound search depends on finding a good lower bound that can be
 computed quickly.
 
 In principle, a branch-and-bound strategy could also be used with a
 breadth-first search. However, doing so would require keeping track of the
 branches of the tree that need to be further investigated, which would consume a
-prohibitively amount of memory as the search reached deeper levels of the tree.
+prohibitive amount of memory as the search reaches deeper levels of the tree.
 A depth-first search, on the other hand, does not require such bookkeeping. Each
 child of a node is reached by a different letter of the alphabet, and they can
 be examined in a pre-defined order, e.g., alphabetical order. When a node is
@@ -117,7 +117,7 @@ When the search is at a node $f$ of the tree, its corresponding sequence $d_f$
 is a prefix of a set of candidate sequences. For each sequence
 $p_k \in \CalP$, $d_f$ is a supersequence of a (possibly empty) prefix of $p_k$.
 Let $c_k$ be the longest prefix of $p_k$ which is a subsequence of $d_f$, and
-$\bar{c}_k$ be the remainder of $p_k$ in such a way that $p_k$ is a
+$\bar{c}_k$ be the remainder of $p_k$ such that $p_k$ is a
 concatenation of $c_k$ and $\bar{c}_k$. In order to be a proper supersequence of
 $\CalP$, $d_f$ must be extended with a suffix that is a supersequence of the set
 $\CalR = \{\bar{c}_1, \bar{c}_2, \ldots \bar{c}_n\}$. The lower bounds discussed
@@ -163,7 +163,7 @@ of the longest sequence in $\CalP$. In this section we examine more interesting
 
 \paragraph{Counting occurrences of single letters.}
 Let $\CalN(c)$ be the maximum number of occurrences of the letter $c$ over all
-sequences $p_k \in \CalP$. Clearly, the shortest common supersequence must
+sequences $p_k \in \CalP$. Clearly, a shortest common supersequence must
 have, at least, $\CalN(c)$ occurrences of each $c \in \Sigma$.
 
 For instance, consider the set of sequences $\CalP = \{p_1, p_2, p_3 \}$ of
@@ -171,16 +171,16 @@ length $\ell = 8$, where $\Sigma = \{\tA,\tB,\tC \}$, $p_1 = \Seq{CABBABAC}$,
 $p_2 = \Seq{CCABBABC}$ and $p_3 = \Seq{BBBBAACC}$. The maximum number of
 occurrences of $\tA$ is $\CalN(\tA)=3$. Similarly, $\CalN(\tB)=4$ and
 $\CalN(\tC)=3$. The SCS must thus contain, at least, 3 $\tA$s, 4 $\tB$s, and 3
-$\tC$s, i.e., its length must not be shorter than
+$\tC$s, i.e., its length cannot be shorter than
 $\CalN(\tA) + \CalN(\tB) + \CalN(\tC) = 10$.
 
 \paragraph{Counting pairs and triples.}
 
 The same idea can be extended to count occurrences of pairs of letters or even triples,
-using the same reasoning above. For instance, let
+using the same reasoning as above. For instance, let
 $\CalN(c_i \, c_j)$ be the maximum number of occurrences of the subsequence
 $c_i \, c_j$ (i.e., the subsequence consisting of letters $c_i$ and $c_j$, in
-this order) over all sequences $p_k \in \CalP$. The shortest common
+this order) over all sequences $p_k \in \CalP$. A shortest common
 supersequence must have, at least, $\CalN(c_i \, c_j)$ occurrences of each
 subsequence formed with letters $c_i, c_j \in \Sigma$.
 
@@ -195,7 +195,7 @@ at least
 \[
 \sum_{c_i, c_j \in \Sigma} \CalN(c_i \, c_j) = 46
 \]
-distinct pairs, and its length must thus not be shorter than 11 (a sequence of
+distinct pairs, and its length thus cannot be shorter than 11 (a sequence of
 length 10 can only contain ${10 \choose 2} = 45$ pairs).
 
 It might seem intuitive to think that counting pairs should produce tighter
@@ -203,9 +203,9 @@ lower bounds than counting single letters (as it did in this example, giving a
 lower bound of 11 instead of 10) because the former is based on ``more
 information''. In practice, however, counting pairs or triples rarely produced
 better results than counting single letters in our microarray production
-setting. Another disadvantage of counting pair and triples is that they require
+setting. Another disadvantage of counting pairs and triples is that they require
 $O(\ell^2)$ and $O(\ell^3)$ time for each $p_k \in \CalP$, respectively. In
-contrast, we can count the occurrences of single letter in linear time.
+contrast, we can count the occurrences of single letters in linear time.
 
 \subsection{Looking for better lower bounds}
 
@@ -222,7 +222,7 @@ $|w|_{xy}$ refers to the number of occurrences of the subsequence $xy$ in $w$.
 
 Since this relation holds for any sequence, it should also hold for the
 supersequence. We then analyzed a similar relation based on the
-minimum number of occurrences of single letters and pairs over all sequences
+least number of occurrences of single letters and pairs over all sequences
 $p \in \CalP$, $\CalN(x)$
 and $\CalN(x \, y)$, respectively, and found that, in the majority of cases,
 %%
@@ -353,14 +353,14 @@ total, $O(n)$ and $O(n \cdot \ell)$ space, respectively.
 During the search, we also keep track of the number of occurrences of each
 letter of the alphabet for each input sequence $p_k \in \CalP$, and the maximum
 number of occurrences of each letter over all sequences. This requires
-an extra $O(n \cdot \Sigma)$ space.
+an extra $O(n \cdot \sigma)$ space.
 
 Finally, we also store the lower bounds for every node in the path from the root
 to the current node, so that they do not need to be re-computed when the search
 backtracks. The maximum size required for these values is $O(T)$, where $T$ is
 the length of the SCS. In this way, we significantly reduce the total running
 time of the search at the expense of an increase in space complexity of the
-branch-and-bound search from $O(n)$ to $O(n(\ell \cdot \Sigma) + T)$.
+branch-and-bound search from $O(n)$ to $O(n(\ell \cdot \sigma) + T)$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -380,7 +380,7 @@ $\sigma^{(h - 1)}$). Empirical results showed that the smallest variation in
 $\sigma$ can drastically increase total running time. In contrast, the value of
 $n$ is the less critical one, since the work done at each node is nearly $O(n)$.
 Fortunately, the microarray production setting constrains $\sigma$ and $\ell$
-to relatively short values, although $n$ is much larger than any other known
+to relatively small values, although $n$ is much larger than any other known
 similar study --- a branch-and-bound depth-first search was also used by
 \citet{Fraser1995}, but the problem instances had $n \leq 24$.
 
@@ -420,11 +420,11 @@ In some cases, the search found a supersequence shorter than the one computed
 with the heuristic algorithms in relatively short time. For instance, with
 $\sigma = 4$, $\ell = 10$ and $n=10\,000$, a supersequence of length 50, three
 characters less than the one found with the heuristic algorithms, was found in
-less than a minute. With $\sigma = 3$, $\ell = 17$ and $n=100$, the SCS was
+less than a minute. With $\sigma = 3$, $\ell = 17$ and $n=100$, a SCS was
 found in the first minute of execution, although the search required $34.3$
 minutes to complete.
 
-Our results suggest that, the time required to search for the shortest
+Our results suggest that the time required to search for a shortest
 deposition sequence of a typical microarray is prohibitive, except for unusually
 small probe lengths ($\ell = 10$). For sequences of length $\ell = 20$, even
 with an alphabet of size $\sigma = 3$ and a reduced input of only $1\,000$
@@ -434,7 +434,7 @@ take several days to terminate.
 
 Running times of up to a few days might be acceptable in case of commercial
 microarrays produced in large scale. For custom microarrays, it does not seem
-practical to wait for more than a day to find the shortest deposition sequence.
+practical to wait for more than a day to find a shortest deposition sequence.
 Unfortunately, our results suggest that, with $\sigma = 4$ and more common probe
 lengths (e.g. $\ell = 25$), running times of, at least, several weeks should be
 expected. There are three factors that can reduce the total running time of this
@@ -449,9 +449,9 @@ selected as probes. As discussed in Chapter \ref{ch:affy}, this seems to be the
 case with Affymetrix GeneChip arrays. This approach clearly restricts the
 sequences that can be used as probes. A different approach to reduce the length
 of the deposition sequence that might not compromise the range of probe
-sequences of a microarray so severly was proposed by \citet{Tolonen2002}. Their
+sequences of a microarray so severely was proposed by \citet{Tolonen2002}. Their
 method consists of defining a set of probe sequences that could be used to query
 each gene of interest satisfying the usual homogeneity, sensitivity and
 specificity criteria, and selecting, iteratively, a single probe or a sub-set of
-probes for each gene in such a way the the number of synthesis steps is
+probes for each gene in such a way that the number of synthesis steps is
 minimized.

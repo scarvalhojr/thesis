@@ -10,7 +10,7 @@ that are easier to manage. A partitioning algorithm divides the set of probes
 $\mathcal{P}$ into smaller subsets, and assigns them to defined regions of the
 chip. Each region can then be treated as an independent chip (and processed by a
 placement algorithm) or be recursively partitioned. This is especially helpful
-for placement algorithms with non-linear time or space complexities that are
+for placement algorithms with superlinear time or space complexities that are
 otherwise unable to handle very large chips. Linear-time placement algorithms
 may also benefit from a partitioning since probes with similar embeddings are
 typically assigned to the same region --- Greedy and Row-Epitaxial
@@ -39,7 +39,7 @@ the placement and partitioning algorithms.
 \section{1-Dimensional Partitioning}
 \label{sec:part_1d}
 
-The 1-Dimensional Partitioning algorithm \cite{Carvalho2007} divides the set of
+The 1-Dimensional Partitioning algorithm \citep{Carvalho2007} divides the set of
 probes based on the state of their embeddings at a particular synthesis step. It
 starts by creating two subsets of $\mathcal{P}$:
 %%
@@ -144,7 +144,7 @@ vice-versa).
   code.}%
 \end{figure}
 
-The 2-Dimensional Partitioning algorithm \cite{Carvalho2007} extends the idea of
+The 2-Dimensional Partitioning algorithm \citep{Carvalho2007} extends the idea of
 1-DP to two dimensions, with the potential of optimizing twice as many masks.
 The algorithm is similar: $\mathcal{P}$ is divided into subsets based on the
 state of the embeddings at a particular synthesis step. The differences are that
@@ -206,7 +206,7 @@ Figure~\ref{fig:1dp_versus_2dp} compares the results obtained by 1-DP and 2-DP
 on the same $1\,000\times 1\,000$ chip of Figure \ref{fig:2dpart_bl}. We first
 compare both algorithms with their maximum partitioning depths ($H_{max}=1$ for
 1-DP and $L_{max}=1$ for 2-DP). With $L_{max}=1$, 2-DP produces $1\times 1$
-regions and leaves no room for optimization during placement. In constrast, 1-DP
+regions and leaves no room for optimization during placement. In contrast, 1-DP
 with $H_{max}=1$ produces regions with a single row but, in this case, with
 $1\,000$ columns (and $1\,000$ probes), leaving a considerable degree of
 freedom for the placement algorithm. To be fair, we thus compare 1-DP and
@@ -218,7 +218,7 @@ $M_{33}$ to $M_{74}$, although the layout produced by 2-DP was slightly better
 in masks $M_{58}$ to $M_{69}$. However, while 1-DP was able to produce masks
 with relatively few conflicts in the first 17 steps, 2-DP achieved even greater
 reductions of border conflicts in the first 32 steps. The normalized border
-length of these layouts are $25.8543$ (with 1-DP) and $21.5588$ (with 2-DP).
+lengths of these layouts are $25.8543$ (with 1-DP) and $21.5588$ (with 2-DP).
 
 In Figure~\ref{fig:1dp_versus_2dp} we also compare 1-DP with $H_{max}=1$ and
 2-DP with $L_{max}=50$ using Greedy for the placement. With $L_{max}=50$, 2-DP
@@ -230,8 +230,8 @@ sufficiently large number $Q$ of candidates per spot so that all probes of a
 region were considered for filling its spots. With these settings, the layouts
 produced by 1-DP and 2-DP have similar levels of border conflicts in masks
 $M_{20}$ to $M_{74}$. In the first 18 synthesis steps, however, 2-DP produced
-better masks, especially after step 5. The normalized border length of these
-layouts are $18.0078$ (1-DP) and $17.1629$ (2-DP).
+better masks, especially after step 5. The NBLs of these layouts are $18.0078$
+(1-DP) and $17.1629$ (2-DP).
 
 \begin{figure}[t]\centering
 \includegraphics{part/1d_versus_2d/bl}
@@ -313,8 +313,8 @@ $T/2, (T/2)\pm 1, (T/2)\pm 2, \dots, (T/2)\pm\lfloor d/2\rfloor$; we call this a
   with border length minimization and $Q=2.5$K for a $1\,000 \times 1\,000$ chip
   with random probe sequences: left-most mask optimization with left-most
   embeddings ({\tiny $\boxdot$}); centered mask optimization with centered
-  embeddings ({\scriptsize $\times$}). The number of middle bases synthesized at
-  each step (with centered embeddings) is shown in boxes (right y-axis).}
+  embeddings ({\scriptsize $\times$}). The histogram shows the number of middle
+  bases synthesized at each step with centered embeddings (right y-axis).}
 \end{figure}
 
 For left-most optimization, it makes sense to embed the probes in a left-most
@@ -371,16 +371,12 @@ Centered   & 2-DP with $L_{max}=60$ and Greedy with $Q=3\,600$ &      341.8634  
 \end{tabular}}
 \end{table}
 
-%% data removed from table {tab:2dp_greedy}
-%% Centered   & 2-DP with $L_{max}=25$ and Greedy with $Q=625$    &      341.4105  & 1.8 \\
-%% Centered   & 2-DP with $L_{max}=35$ and Greedy with $Q=1\,225$ & {\bf 341.2372} & 2.7 \\
-
 When carefully used, 1-DP and 2-DP can improve placement by producing a few
 masks with very low levels of border conflicts, and breaking the problem into
 smaller sub-problems that are easier to handle. Table \ref{tab:2dp_greedy} shows
 results on $800\times 800$ arrays using 2-DP with centered mask optimization and
 Greedy with conflict index minimization for the placement, in comparison to
-using Greedy alone (results with Greedy as shown on Table \ref{tab:greedy} and
+using Greedy alone (results with Greedy as shown in Table \ref{tab:greedy} and
 Figure \ref{fig:greedy_tradeoff}). Results of Greedy with centered embeddings
 are also shown. In our results, the layouts produced by 2-DP are even better
 than the ones produced by Greedy with $Q=80$K. This is a consequence of the
@@ -422,7 +418,7 @@ used to guide the assignment of the remaining probes to the sub-regions.
 A centroid is a representative of its region: It should symbolize the ``average
 embedding'' in that region. The remaining probes
 $p_k \in \CalP \setminus \{p_{c_1},p_{c_2},p_{c_3},p_{c_4}\}$ are compared to
-each centroid and assigned to the sub-region $R_{c_i}$ whose centroid minimize
+each centroid and assigned to the sub-region $R_{c_i}$ whose centroid minimized
 the Hamming distance $H(k,c_i)$ (as defined in Section
 \ref{sec:mlp_border_length}).
 
@@ -744,7 +740,7 @@ Our results show that PP produced layouts with less border conflicts than CQ
 except on the smaller chips with higher partitioning depths. On $500\times 500$
 chips, for instance, PP with $D=2$ produced a layout with $9.49\%$ less border
 conflicts than CQ with $D=1$, on average. With $D=6$ (respectively, $D=3$ for
-CQ), this difference droped to $2.60\%$. On $100\times 100$ chips, however, PP
+CQ), this difference dropped to $2.59\%$. On $100\times 100$ chips, however, PP
 produced worse layouts, with up to $1.89\%$ more border conflicts with $D=6$.
 We suspect that this disadvantage is due to the ``borrowing heuristic'' used by
 CQ (and not implemented in PP) that permits, during placement, borrowing probes
@@ -823,7 +819,7 @@ reduction of as much as $89.3\%$ in the BLM case (from $560.5$ to $60.2$
 seconds) and $67.9\%$ in the CIM case (from $2\,780.5$ to $891.5$ seconds) on
 $300\times 300$ chips with $D=6$ when compared with no partitioning.
 
-It should be noted that the results shown on Tables \ref{tab:pp_x_cq} and
+It should be noted that the results shown in Tables \ref{tab:pp_x_cq} and
 \ref{tab:pp_sync} use a deposition sequence of length $T=100$, which allows a
 considerable degree of freedom for embedding probes of length $\ell=25$; these
 experiments were mainly performed to compare PP with previous results on CQ. In
@@ -974,7 +970,7 @@ smaller chips with higher partitioning depths are due to the borrowing heuristic
 implemented in CQ that allows the placement algorithm to keep a high number of
 probe candidates per spot when the last sites of a quadrant are being filled.
 
-With shorter deposition sequences, we have showed that the restriction in number
+With shorter deposition sequences, we have shown that the restriction in number
 of candidates per probe during placement of the last spots of a region often
 impacts the solution quality more significantly than the gains due to grouping
 similar probes together. As a result, in terms of BLM, PP failed to improve the

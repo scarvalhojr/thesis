@@ -91,10 +91,12 @@ sequence $N$ as specified above, the MLP asks to specify a chip layout
 $(\lambda,\eps)$ that consists of
 \begin{enumerate}
 \item a bijective assignment $\lambda: \CalS\to \{1,\dots,n\}$ that specifies a
-  probe index $k(s)$ for each spot $s$ (meaning that $p_{k(s)}$ will be
+  probe index $k(s)$ for each spot $s$ (meaning that probe $p_{k(s)}$ will be
   synthesized at $s$),
 \item an assignment $\eps: \{1,\dots,n\}\to \{0,1\}^T$ specifying an embedding
   $\eps_k = (\eps_{k,1},\dots,\eps_{k,T})$ for each probe index $k$, such that
+  the deposition sequence, restricted to the selected positions where
+  $\eps_{k,t}=1$, spells out the probe sequence $p_k$, i.e.,
   $N[\eps_k] :\equiv (N_t)_{t: \eps_{k,t}=1} = p_k$,
 \end{enumerate}
 such that a given penalty function is minimized.  We introduce two such penalty
@@ -164,7 +166,7 @@ four arcs with the least weights of every node. Furthermore, assuming that the
 chip is a rectangular grid with $n_r$ rows and $n_c$ columns, we delete the
 heaviest $2 \cdot (n_r + n_c)$ remaining arcs, because the spots on the borders
 of the chip have less than four neighbors. It is not difficult to see that the
-cost of any placement must be greather than the total arc weight of $L$, and we
+cost of any placement must be greater than the total arc weight of $L$, and we
 obtain the following theorem.
 
 \begin{theorem}
@@ -204,7 +206,7 @@ The border length measures the quality of an individual mask or set of masks.
 With this model, however, it is not possible to know how the border conflicts
 are distributed among the probes. Ideally, all probes should have roughly the
 same risk of being damaged by unintended illumination, so that all signals are
-affected in approximately the same way.
+affected by approximately the same amount.
 
 The \emph{conflict index} is a quality measure defined with the aim of
 estimating the risk of damaging probes at a particular spot
@@ -259,7 +261,7 @@ not receiving light.
   Left: approximate values of the distance-dependent weighting function
   $\gamma(s,s')$ for a spot $s$ in the center and close neighbors~$s'$. Right:
   position-dependent weights $\omega(\eps,t)$ on the y-axis for each value of~
-  $b_{\eps,t}\in\{0,\dots,25\}$ on the x-axis, using $\theta = 5/\ell$ and
+  $b_{\eps,t}\in\{0,\dots,25\}$ on the x-axis, using $\theta = 5/\ell_\eps$ and
   $c = 1/\exp{(\theta)}$.
   }%
 \end{figure}
@@ -271,8 +273,8 @@ account for observation a). We define it as
 \gamma(s,s') := (d(s,s'))^{-2},\nopagebreak
 \end{equation}\nopagebreak
 %%
-where $d(s,s')$ is the Euclidean distance between the spots $s$ and $s'$. Note
-that in (\ref{eq:conf_idx}), $s'$ ranges over all neighboring spots that are at
+where $d(s,s')$ is the Euclidean distance between the spots $s$ and $s'$. In
+(\ref{eq:conf_idx}), $s'$ ranges over all neighboring spots that are at
 most three cells away from $s$ (see Figure~\ref{fig:conflictindex}, left), which
 is in accordance with observation a. In general, we use the terms \emph{close
 neighbor} or simply \emph{neighbor} of a spot $s$ to refer to a spot $s'$ that
@@ -306,7 +308,7 @@ where $c>0$ and $\theta>0$ are constants, and for $1\leq t\leq T$,
 In other words, $\ell_\eps$ is the length of the final probe specified by $\eps$
 (equal to the number of ones in the embedding), and $b_{\eps,t}$ denotes the
 number of nucleotides added up to and including step~$t$. The parameter $\theta$
-controls how steeply the exponential weighting function rises towards the middle
+controls how steeply the exponential weighting function rises toward the middle
 of the probe (Figure~\ref{fig:conflictindex}, right). In our experiments, unless
 stated otherwise, we use probes of length $\ell=25$, and parameters
 $\theta = 5/\ell$ and $c = 1/\exp{(\theta)}$.
@@ -365,7 +367,7 @@ hybridization between probes and targets. Although it is generally agreed that
 the chances of a successful hybridization are higher if a mismatched base occurs
 at the extremities of the formed duplex instead of at its center
 \citep{Hubbell1999,Southern1999,Guo1997}, the precise effects of this position
-is not yet fully understood and has been an active topic of research
+are not yet fully understood and have been an active topic of research
 \citep{Binder2004,Binder2005}.
 
 We propose the use of an exponential function, so that $\omega$ grows

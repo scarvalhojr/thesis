@@ -44,7 +44,7 @@ Traditionally, this phase consists of fixing an embedding for all probes and
 finding an arrangement minimizing a given cost function. We describe several
 known placement algorithms with an emphasis on methods that can be used to
 design large arrays. A new algorithm, called Greedy, is also presented. One of
-the reason why we show the relation between the MLP and the QAP is that we can
+the reasons why we show the relation between the MLP and the QAP is that we can
 now use QAP techniques as placement algorithms. This is interesting because
 there is a rich literature on methods for solving the QAP. In Chapter
 \ref{ch:qap}, we also show the results of using one QAP heuristic to design
@@ -54,7 +54,7 @@ microarrays.
 Chapter \ref{ch:reembed} focuses on the \emph{re-embedding} phase that usually
 follows the placement. In this phase, one attempts to further improve the layout
 by finding a different embedding of the probes without changing their location
-on the chip. Again, we review all known re-embedding algorithms, describring the
+on the chip. Again, we review all known re-embedding algorithms, describing the
 most successful ones in detail. We also introduce a new algorithm, called
 Priority re-embedding.
 
@@ -62,14 +62,14 @@ In the last decade, commercial microarrays have grown from a few thousands to
 more than a million probe sequences on a single chip. Many placement algorithms
 are unable to deal with such large arrays because of their non-linear time and
 space complexities. For this reason, the layout problem is sometimes broken into
-smaller sub-problem by a \emph{partitioning} algorithm. This is the focus of
+smaller sub-problems by a \emph{partitioning} algorithm. This is the focus of
 Chapter \ref{ch:part}, where we present an extensive evaluation of existing
 algorithms and show how the partitioning phase can improve solution quality and
 reduce running time.
 
 In Chapter \ref{ch:merge}, we discuss the disadvantages of the tradional ``place
 and re-embed'' approach to the layout problem. We then propose a new algorithm,
-called \Greedyplus, that for the first merges the placement and re-embedding
+called \Greedyplus, that for the first time merges the placement and re-embedding
 phases into a single one. Our results show that \Greedyplus\ indeed outperforms
 all known placement algorithms.
 
@@ -81,14 +81,14 @@ We then use some of the algorithms presented in earlier chapters to propose
 alternative layouts for two of the latest generation of GeneChip arrays, showing
 how the risk of unintended illumination can be reduced.
 
-Another problem related to the production of microarrays is to find the shortest
+Another problem related to the production of microarrays is to find a shortest
 synthesis schedule for a given set of probes, which we refer to as the
 \emph{shortest deposition sequence problem} (SDSP). The SDSP is an instance of
 the shortest common supersequence problem (SCSP), a classical problem in
 computer science that is known to be NP-complete even under various
 restrictions. Several existing heuristics are able to find good approximate
 solutions for the SCSP, but, in Chapter \ref{ch:scs}, we investigate the
-feasibility of finding \emph{the shortest} deposition sequence for currently
+feasibility of finding \emph{a shortest} deposition sequence for currently
 available oligonucleotide microarrays. Chapter \ref{ch:discuss} concludes this
 thesis with a short discussion about the presented results.
 
