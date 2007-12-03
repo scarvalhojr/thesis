@@ -186,13 +186,13 @@ spots.
 
 A faster version of this algorithm, called Batched Greedy \citep{Kahng2002},
 pre-selects several independent spots for re-embedding and thus sacrifices its
-greedy nature in favour of running time by postponing the update of gains.
+greedy nature in favor of running time by postponing the update of gains.
 
 Like Chessboard, Greedy and Batched Greedy were initially developed for border
-length minmization, and they can also be extended for conflict index
+length minimization, and they can also be extended for conflict index
 minimization. The main difference is that, once a probe is re-embedded, more
 neighbors need to be updated. For Batched Greedy, the selection of independent
-spots needs to take into account the minimum distance of four cells (horizonally
+spots needs to take into account the minimum distance of four cells (horizontally
 and vertically) between spots, in accordance with the conflict index model
 (Section~\ref{sec:mlp_conflict_index}). Hence fewer spots may be re-embedded
 in the same iteration.
@@ -285,7 +285,7 @@ for improvements once the placement is fixed. In fact, the more time is spent
 during placement (greater $Q$), the less reduction of conflicts is achieved by
 re-embedding. For instance, on a $300\times 300$ chip, the reduction in average
 conflict index dropped by $0.12$ percentage points (from $0.829\%$ to $0.709\%$)
-when the number of candidades per spot considered by Greedy during placement was
+when the number of candidates per spot considered by Greedy during placement was
 increased from 5K to 20K.
 
 Although the reductions of conflicts were relatively small, Sequential required
@@ -409,11 +409,11 @@ sufficient number of its neighbors have found their final embeddings.
 
 In this priority, we also assign a weight $w(s)$ for each spot $s$ in the queue,
 and the spot with the highest weight is retrieved. In case of border length
-minimization, $w(s)$ is set to the the number of immediate neighbors of $s$ that
+minimization, $w(s)$ is set to the number of immediate neighbors of $s$ that
 have already been re-embedded in the current iteration.
 
 In case of conflict index minimization, the algorithm looks at all 48 neighbors
-in the $7\times 7$ region centered around $s$, and assigns a weight taking into
+in the $7\times 7$ region centered on $s$, and assigns a weight taking into
 account the distance-dependent function $\gamma$
 (Equation~\ref{eq:dist_weight}):
 \[
@@ -435,7 +435,7 @@ with border length minimization, and 48 with conflict index minimization).
 Tables \ref{tab:priority_bl} and \ref{tab:priority_ci} show the results of
 using Priority re-embedding on the same set of arrays used for Sequential
 (Tables \ref{tab:sequential_bl} and \ref{tab:sequential_ci}). In terms of BLM,
-both priorites resulted in negligible improvements when compared to Sequential
+both priorities resulted in negligible improvements when compared to Sequential
 (with Priority I giving the best results). The greatest difference was only
 $0.0032\%$ (from $18.2121$ with Sequential to $18.2115$ with Priority I on
 $300\times 300$ chips and Greedy placement with $Q=5$K). Moreover, Priority I
@@ -444,7 +444,7 @@ between 2 to 5 times slower than Sequential.
 
 Priority II is slower than Priority I because after it re-embeds a spot $s$, it
 needs to update the weights of all neighbors of $s$ that have been previously
-added to the queue. With Priority I, the nuber of embeddings of each probe does
+added to the queue. With Priority I, the number of embeddings of each probe does
 not change, so they are computed only once, before the first iteration.
 
 In terms of CIM, Priority I produced the worse layouts, whereas Priority II once

@@ -93,7 +93,7 @@ $(\lambda,\eps)$ that consists of
 \item a bijective assignment $\lambda: \CalS\to \{1,\dots,n\}$ that specifies a
   probe index $k(s)$ for each spot $s$ (meaning that probe $p_{k(s)}$ will be
   synthesized at $s$),
-\item an assignment $\eps: \{1,\dots,n\}\to \{0,1\}^T$ specifying an embedding
+\item an assignment $\eps: \{1,\dots,n\}\to \{0,1\}^T$ that specifies an embedding
   $\eps_k = (\eps_{k,1},\dots,\eps_{k,T})$ for each probe index $k$, such that
   the deposition sequence, restricted to the selected positions where
   $\eps_{k,t}=1$, spells out the probe sequence $p_k$, i.e.,
@@ -181,7 +181,7 @@ $L'$. For the arc weights, however, it is necessary to estimate the minimum
 number of border conflicts between the two probes (among all of their possible
 embeddings).
 
-\citet{Kahng2002} observed that the number of bases of a probe $p_k$ that can
+\citet{Kahng2002} observed that the number of bases of probe $p_k$ that can
 be ``aligned'' with bases of $p_{k'}$ cannot exceed the length of $LCS(p_k,p_{k'})$,
 where $LCS(p_k,p_{k'})$ is the
 \emph{longest common subsequence} of $p_k$ and $p_{k'}$. Therefore, an arc of $L'$
@@ -279,7 +279,7 @@ most three cells away from $s$ (see Figure~\ref{fig:conflictindex}, left), which
 is in accordance with observation a. In general, we use the terms \emph{close
 neighbor} or simply \emph{neighbor} of a spot $s$ to refer to a spot $s'$ that
 is at most three cells away (vertically and horizontally) from $s$. In other
-words, $s'$ is inside a $7\times 7$ region centered around $s$. This is in
+words, $s'$ is inside a $7\times 7$ region centered on $s$. This is in
 contrast to the terms \emph{direct} or \emph{immediate neighbor} of $s$, used to
 denote a spot $s'$ that is adjacent to $s$ (in other words, when $s'$ shares a
 common border with $s$ on the chip). Obviously, an immediate neighbor $s'$ is
@@ -355,14 +355,14 @@ probes of a spot $s$ due to unintended illumination. The definitions of $\gamma$
 and $\omega$ given here are an arbitrary choice in an attempt to capture the
 characteristics of the problem.
 
-However, the most appropriate choice of $\gamma$ depend on several attributes of
+However, the most appropriate choice of $\gamma$ depends on several attributes of
 the specific technology utilized to produce the chips such as the size of the
 spots, the density of the probes on the chip, the physical properties of the
 light being used (intensity, frequency, etc.), the distance between the light
 source and the mask, and the distance between the mask (or the micromirrors) and
 the chip surface.
 
-The most appropriate choice of $\omega$ depend on the chemical properties of the
+The most appropriate choice of $\omega$ depends on the chemical properties of the
 hybridization between probes and targets. Although it is generally agreed that
 the chances of a successful hybridization are higher if a mismatched base occurs
 at the extremities of the formed duplex instead of at its center
@@ -406,7 +406,7 @@ lengths as well as low conflict indices.
 
 To better compare border lengths for chips of different sizes, we usually divide
 the total border length by the number $n_b$ of internal borders of the chip,
-which equals $n_r(n_c - 1) + n_c(n_r - 1)$ if the the chip is a rectangular grid
+which equals $n_r(n_c - 1) + n_c(n_r - 1)$ if the chip is a rectangular grid
 with $n_r$ rows and $n_c$ columns. We thus call $\CalB(\lambda,\eps)/n_b$ the
 \emph{normalized border length}, NBL for short, of a given layout
 $(\lambda,\eps)$. This can be further divided by the number of synthesis steps

@@ -369,7 +369,7 @@ $800\times 800$ &  5K & 0 &   &      23.6818  & \nb{16}{9760} & 12.2 &  &      6
 
 Our results also give further indication that the running time of Row-Epitaxial
 is approximately $O(Qn)$, i.e., linear in the chip size, where $Q$ is a
-user-defined parameter that controls the number of probe candidades examined for
+user-defined parameter that controls the number of probe candidates examined for
 each spot. In this way, solution quality can be traded for running time: More
 candidates yield better layouts but also demand more time.
 
@@ -419,7 +419,7 @@ In terms of BLM, Greedy and Row-Epitaxial produced similar results, with the
 best layout of Greedy being sometimes marginally better and sometimes marginally
 worse than the best layout of Row-Epitaxial. In terms of CIM, however, Greedy
 was constantly and significantly better than Row-Epitaxial, achieving up to
-$5.65\%$ reduction in average conflic index (from $415.6470$ to $392.1786$) on a
+$5.65\%$ reduction in average conflict index (from $415.6470$ to $392.1786$) on a
 $800\times 800$ chip with $Q=20$K.
 
 In our results, Greedy was between $13.9\%$ and $59.9\%$ slower than
@@ -454,7 +454,7 @@ reduces the impact of the time required to keep the doubly-linked list.
 \caption{\label{tab:greedy}
   Normalized border length (NBL) and average conflict index (ACI) of layouts
   produced by Greedy on random chips of various dimensions. The results of
-  Row-Epitaxial on the same set of chips (Table~\ref{tab:reptx}) is shown for
+  Row-Epitaxial on the same set of chips (Table~\ref{tab:reptx}) are shown for
   comparison. Running times in minutes.}
 \footnotesize{
 \begin{tabular*}{\hsize}{crd{4}rd{4}rld{4}rd{4}r}
@@ -523,7 +523,7 @@ $800^2$ &  5K 0 & \nb{16}{9760} & 12.2 & \nb{16}{9124} & 15.3 &  & \nb{448}{0140
 \end{table}
 
 It should be noted that, like Row-Epitaxial, Greedy has the drawback of treating
-the last spots of a chip ``unfairly'': While $Q$ probe candidades are examined
+the last spots of a chip ``unfairly'': While $Q$ probe candidates are examined
 for each of the first $n - Q + 1$ filled spots, the last $Q - 1$ spots have
 fewer than $Q$ candidates (in particular, when the last spot is being filled,
 there is only one probe candidate). As a result, we usually observe
@@ -550,7 +550,7 @@ conflicts concentrated between steps 7 and 58. The last masks of this layout
 have low levels of border conflicts because the probes are left-most embedded,
 which leaves most embeddings in an unproductive state during the final synthesis
 steps. As a result of the lexicographical sorting of probes, the first masks
-also have relatively few conflicts. A representation of selected
+also have relatively few conflicts. Representations of selected
 photolithographic masks for this layout are shown in Figure
 \ref{fig:greedy-bl_masks}. Layers of masked and unmasked regions that result
 from sorting probes lexicographically can be seen in masks $M_1$ to $M_8$.
@@ -565,7 +565,7 @@ reduction comes at the expense of an increase in total border length --- the
 normalized border length of this particular chip rose from $17.3513$ with BLM to
 $19.8461$ with CIM. Figure~\ref{fig:greedy-ci_masks} shows a representation of
 selected masks for this layout. Note that the first masks ($M_1$ to $M_4$)
-still exhibit a ``layered'' structure, althought the layers are much narrower
+still exhibit a ``layered'' structure, although the layers are much narrower
 and the masks noisier than the first masks of Figure~\ref{fig:greedy-bl_masks}.
 In the central masks $M_{20}$ to $M_{45}$, especially between $M_{25}$ and
 $M_{40}$, it is possible to see clusters of masked and unmasked spots that cause

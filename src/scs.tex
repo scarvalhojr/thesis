@@ -52,7 +52,7 @@ $O(n \cdot \ell)$ for simple implementations.
   Each node has $\sigma = | \Sigma | = 3$ children.}
 \end{figure}
 
-Consider a complete tree $\CalT$ of degree $\sigma$ with edges labelled with the
+Consider a complete tree $\CalT$ of degree $\sigma$ with edges labeled with the
 letters of the alphabet $\Sigma$. The root node represents an empty sequence,
 and each node has $\sigma$ children, one for each possible letter of the
 alphabet. A node $f$ of $\CalT$ represents a sequence $d_f$ formed by the
@@ -340,7 +340,7 @@ proceeds to a child node $g$ (incrementing the sequence $d_f$ with a letter $x$
 to produce $d_g$), we examine every input sequence $p_k \in \CalP$, and
 increment $I_k$ if and only if $p_k[I_k + 1] = x$.
 
-When the search proceeds a the child node back to its parent, a similar
+When the search proceeds from the child node back to its parent, a similar
 procedure must also be executed to update each $I_k$. In order to make the
 updates reversible, however, we need to know whether the last letter of $c_k$
 corresponds to the letter that is being deleted from $d_g$. Therefore, when an
@@ -438,7 +438,7 @@ practical to wait for more than a day to find a shortest deposition sequence.
 Unfortunately, our results suggest that, with $\sigma = 4$ and more common probe
 lengths (e.g. $\ell = 25$), running times of, at least, several weeks should be
 expected. There are three factors that can reduce the total running time of this
-approach: using signficantly faster computers, introducing parallel processing
+approach: using significantly faster computers, introducing parallel processing
 (running several instances of the search on different branches of the search
 tree), and finding tighter lower bounds on the length of the SCS that can be
 computed quickly.

@@ -61,7 +61,7 @@ cost.
 
 The MLP can be seen as an instance of the QAP, where we want to find a
 one-to-one correspondence between spots and probes minimizing a given penalty
-funtion such as total border length or total conflict index (defined in Chapter
+function such as total border length or total conflict index (defined in Chapter
 \ref{ch:mlp}). To formulate it, we use the facility location example by viewing
 the probes as locations and the spots as facilities, i.e., the spots are
 assigned to the probes. The flow matrix $F$ then contains the ``closeness''
@@ -341,7 +341,7 @@ required to compute a layout with GRASP-PR increases at a fast rate.
 
 Table~\ref{tab:graspr_greedy_ci} shows results in terms of conflict
 indices. GRASP-PR consistently produces better layouts on all chip dimensions,
-achieving up to $6.38$\% less conflicts on $10\times 10$ chips, for example,
+achieving up to $6.38$\% fewer conflicts on $10\times 10$ chips, for example,
 when compared to Greedy. In terms of running times, GRASP-PR is even slower than
 in the border length case. The reason is not clear, but it could be because the
 distance matrix contains fewer zero entries with the conflict index formulation.
@@ -453,7 +453,7 @@ parallel.
 A better alternative is to use the QAP approach to improve an existing layout,
 iteratively, by relocating probes inside a defined region of the chip, in a
 sliding-window fashion. Each iteration of this method would produce an instance
-of a QAP whose size equals the number of spots inside the window.The QAP
+of a QAP whose size equals the number of spots inside the window. The QAP
 heuristics could then be used to check whether a different arrangement of the
 probes inside the window can reduce the conflicts. For this approach to work,
 however, we also need to take into account the conflicts due to the spots around

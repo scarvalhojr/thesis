@@ -55,7 +55,7 @@ probes with productive embeddings. The chip is then divided into two horizontal
 (or vertical) bands, proportionally to the number of probes in $\mathcal{P}_0$
 and $\mathcal{P}_1$, so each band accommodates one subset of $\mathcal{P}$.
 
-This procedure is recursively applied to each band, using the the next synthesis
+This procedure is recursively applied to each band, using the next synthesis
 steps to further divide each subset of probes. For instance, the following
 subsets of $\mathcal{P}_0$ and $\mathcal{P}_1$ are created during step $t=2$:
 %%
@@ -93,7 +93,7 @@ $2^n - 1$ such that neighboring elements differ in exactly one bit, as do the
 first and last elements \citep{Kreher1999}.
 
 The Gray code highlights an interesting property of 1-DP. After $d$~levels of
-partitionings (based on steps $1$ to $d$), the embeddings of any two immediate
+partitioning (based on steps $1$ to $d$), the embeddings of any two immediate
 neighbors differ among the first $d$~steps in at most one step.  As a result,
 masks $M_1$ to $M_d$ exhibit a layered structure that effectively reduces
 border conflicts. The Gray code is disrupted as soon as a region cannot be
@@ -156,7 +156,7 @@ a result, regions whose embeddings are at the same state (productive or
 unproductive) are joined as far as possible.
 
 If regions were always equally divided, 2-DP would have the same property as 1-
-DP: After $d$~levels of partitionings, the
+DP: After $d$~levels of partitioning, the
 embeddings of any two immediate neighbors would differ among the first $d$ steps
 in at most one step. However, this is not always the case since 2-DP is likely
 to create regions with different dimensions, forcing some regions to share a
@@ -195,7 +195,7 @@ of an increase of border conflicts in the first 20 masks.
 \caption{\label{fig:2dpart_bl}
   Normalized border length per masking step of several layouts for a
   $1\,000\times 1\,000$ chip with random probes left-most embedded in the
-  standard Affymetrix depostion sequence: random layout ({\tiny $\boxdot$}); 2-D
+  standard Affymetrix deposition sequence: random layout ({\tiny $\boxdot$}); 2-D
   Partitioning with $L_{max}=1$ ({\scriptsize $\times$}); 2-D Partitioning with
   $L_{max}=10$ and Greedy placement with $Q=100$ ({\tiny $\odot$}); 2-D
   Partitioning with $L_{max}=50$ and Greedy placement with $Q=2\,500$
@@ -238,7 +238,7 @@ better masks, especially after step 5. The NBLs of these layouts are $18.0078$
 \caption{\label{fig:1dp_versus_2dp}
   Normalized border length per masking step of layouts produced by 1-D and 2-D
   Partitioning for a $1\,000\times 1\,000$ chip with random probes left-most
-  embedded in the standard Affymetrix depostion sequence: 1-DP with $H_{max}=1$
+  embedded in the standard Affymetrix deposition sequence: 1-DP with $H_{max}=1$
   and random placement ({\scriptsize $\times$}); 2-DP with $L_{max}=1$
   ({\tiny $\boxdot$}); 1-DP with $H_{max}=1$ and Greedy placement with
   $Q=1\,000$ ({\tiny $+$}); 2-DP with $L_{max}=50$ and Greedy placement with
@@ -666,7 +666,7 @@ M_{i,t} := c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\})) \cdot \Ind{\eps_{c_j,t
 At Step \ref{step:pp_part_r}, the region $R$ is partitioned into sub-regions
 $R_{c_1}$ and $R_{c_2}$ proportionally to the number of probes in
 $\CalP_{c_1} \cup \CalQ_{c_1}$ and $\CalP_{c_2} \cup \CalQ_{c_2}$. The algorithm
-alternates between vertical (if current partitiong depth $d$ is even) and
+alternates between vertical (if current partitioning depth $d$ is even) and
 horizontal (if $d$ is odd) divisions.
 
 Pivot Partitioning continues recursively up to a pre-defined maximum
@@ -699,7 +699,7 @@ M_{i,t} := c \cdot \exp(\theta\cdot (1+\min\{i,\ell-i\}))
   $1$-threading and $Q = 20\,000$, and are followed by the Sequential
   re-embedding algorithm with threshold $W=0.1\%$. The data shows the normalized
   border length of chips produced by CQ as reported by \citet{Kahng2003a}, and
-  the results of using PP on similar input. The relative diffence between the
+  the results of using PP on similar input. The relative difference between the
   two algorithms is shown in percentage.}
 \footnotesize{
 \begin{tabular}{ld{4}d{4}d{4}d{4}}
@@ -724,7 +724,7 @@ Relative &     +1.89$\%$ &     +0.42$\%$ &     -0.53$\%$ &     -2.59$\%$ \\
 \end{table}
 
 Table \ref{tab:pp_x_cq} shows a comparison between Pivot Partitioning and
-Centroid-based Quadrisection. For this comparsion, we reproduce the results of
+Centroid-based Quadrisection. For this comparison, we reproduce the results of
 \citet{Kahng2003a}, which used chips with random probes of length $\ell=25$ that
 were, initially, synchronously embedded in a cyclic deposition sequence of
 length $N=100$. We run PP on similar input and report the results with
@@ -804,7 +804,7 @@ re-embedding algorithm with threshold $W=0.1\%$ after placement.
 
 Our results show that PP improves the quality of layouts in both measures at the
 same time that it significantly reduces running time. The best layouts were
-invariably achived with $D=2$ and the improvements were higher on larger chips.
+invariably achieved with $D=2$ and the improvements were higher on larger chips.
 The reduction in normalized border length was up to $11.60\%$ (from $19.5884$ to
 $17.3154$) on $500\times 500$ chips with $D=2$ when compared with no
 partitioning. In this particular case, there was also a reduction of $13.2\%$ in
@@ -917,10 +917,10 @@ $Q$ & Alg.     & ACI      & Time       & & ACI      & Time       & & ACI      & 
 With BLM (Table \ref{tab:pp_async_bl}), we observed that partitioning the chip
 always resulted in worse layouts than without partitioning, although there was
 always a reduction in running time. Again, increasing the partitioning depth
-from $D=2$ to $D=6$ worsened the results. For instance, the percentual increase
+from $D=2$ to $D=6$ worsened the results. For instance, the percentage increase
 in normalized border length on $800\times 800$ arrays in comparison with no
 partitioning raised from $2.02\%$ with $D=2$ to $4.93\%$ with $D=6$ (with $Q=20$
-K), although the percentual reduction in running time also raised from $12.1\%$
+K), although the percentage reduction in running time also raised from $12.1\%$
 to $80.0\%$. The reduction in running time was higher on the smaller arrays and
 with higher values of $Q$ because, in these cases, the restriction on the number
 of probe candidates per spot is more significant.
@@ -957,7 +957,7 @@ partitioning algorithm and its parameters.
 While Centroid-based Quadrisection and Pivot Partition offer more homogeneous
 improvements over all synthesis steps, 1-DP and 2-DP are able to achieve
 significant reduction of conflicts for a few selected masks, which can be
-benefical for the conflict index measure where a conflict in the middle of the
+beneficial for the conflict index measure where a conflict in the middle of the
 probe is penalized more severely.
 
 On chips with a 100-step cyclic deposition sequence, Pivot Partitioning

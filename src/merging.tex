@@ -84,7 +84,7 @@ to right).
 \begin{table}[p!]\centering
 \caption{\label{tab:greedyplus_nbl}
   Normalized border length (NBL) of layouts produced by \Greedyplus\ on random
-  chips with varying number $Q$ of candidades per spot and amplitude of
+  chips with varying number $Q$ of candidates per spot and amplitude of
   $k$-threading. Running times are reported in minutes.}
 \footnotesize{
 \begin{tabular}{crcrlcrlcr}
@@ -147,7 +147,7 @@ $800\times 800$ &  0 &      16.7983  & 38.0 &  &      16.4944  & 73.8 &  &      
 \begin{table}[t]\centering
 \caption{\label{tab:greedyplus_aci}
   Average conflict index (ACI) of layouts produced by \Greedyplus\ on random
-  chips with varying number $Q$ of candidades per spot and $k$-threading's
+  chips with varying number $Q$ of candidates per spot and $k$-threading's
   amplitude. Running times are reported in minutes.}
 \footnotesize{
 \begin{tabular}{crcrlcrlcr}
@@ -216,7 +216,7 @@ $\kappa$).
 \begin{table}[t!]\centering
 \caption{\label{tab:greedycomp_bl}
   Normalized border length (NBL) of layouts produced by Greedy and \Greedyplus\
-  on random chips with the number $Q$ of candidades per spot of \Greedyplus\ set
+  on random chips with the number $Q$ of candidates per spot of \Greedyplus\ set
   in such a way that it does not exceed the time spent by Greedy. Total time
   including placement and re-embedding is reported in minutes. Both algorithms
   use $0$-threading and are followed by two passes of re-embedding optimization
@@ -433,5 +433,5 @@ consecutive candidates would then be unlikely to have a common prefix, requiring
 the dynamic programming matrix to be entirely re-computed for each probe
 considered. We leave as an open problem the question of finding an ordering of
 the probes with an emphasis on the middle bases and an implementation of OSPE in
-such a way that consective candidates can be examined quickly by skipping the
+such a way that consecutive candidates can be examined quickly by skipping the
 computation of identical rows of the matrix.

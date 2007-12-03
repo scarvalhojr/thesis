@@ -45,7 +45,7 @@ see, an array with many empty spots might still have an advantage depending on
 how the empty spots are distributed on the chip.
 
 Most GeneChip expression arrays use a 74-step deposition sequence (whereas most
-genotyping arrays use a 80-step sequence). In fact, an analysis with the
+genotyping arrays use an 80-step sequence). In fact, an analysis with the
 algorithms presented in Chapter \ref{ch:scs} revealed that most GeneChip
 expression arrays, regardless of their size, can be synthesized in
 $N=(\Seq{TGCA})^{18}\Seq{TG}$, i.e., $18.5$ cycles of \Seq{TGCA}, and that a
@@ -96,7 +96,7 @@ add the middle bases.
 The fact that probes must appear in pairs restricts even more which sequences
 can be used as probes on GeneChip arrays because both PM and MM probes must
 ``fit'' in the deposition sequence. For example, although
-$p=\Seq{CGTAGGTACGTTATAAGTCACTAAA}$ has an embeddeding in
+$p=\Seq{CGTAGGTACGTTATAAGTCACTAAA}$ has an embedding in
 $N=(\Seq{TGCA})^{18}\Seq{TG}$, it cannot be used as a probe because its
 corresponding mismatch probe $\bar{p}=\Seq{CGTAGGTACGTTTTAAGTCACTAAA}$ is not
 a subsequence of $N$, as shown below.
@@ -128,11 +128,11 @@ Figure \ref{fig:affy_blm} shows the average number of border conflicts per probe
 per masking step of three GeneChip arrays. We assume that the probes are
 pair-wise left-most embedded in $N=(\Seq{TGCA})^{18}\Seq{TG}$, and we consider
 all spots whose contents are not available as empty spots. In all chips we
-analyzed, the number of border conflicts are higher in the steps that add the
+analyzed, the number of border conflicts is higher in the steps that add the
 middle bases, a result of placing PM and MM probes in adjacent spots. The Yeast
 Genome S98 array has the worst layout in terms of border conflicts, and most of
 the earlier GeneChip arrays such as the \emph{E.\ coli} Antisense Genome have similar
-levels of conflicts. The layout of the Human Genome U95A2 array has signficantly
+levels of conflicts. The layout of the Human Genome U95A2 array has significantly
 less border conflicts than the Yeast array, suggesting that it was designed with
 a better placement strategy. The curve of the \emph{E.\ coli} Genome 2.0 array, with
 very low levels of conflicts in the first 10 masks, is typical of the latest
@@ -192,7 +192,7 @@ binary embeddings formed an approximation of a Gray code.
 Table \ref{tab:genechip} confirms that the layout of the Human Genome U95A2
 array is better than the layouts of the Yeast Genome S98 and the \emph{E.\ coli}
 Genome 2.0 arrays, as suggested in Figure \ref{fig:affy_blm}; in fact, the U95A2
-has one the best layous among those shown in Table \ref{tab:genechip}.
+has one of the best layouts among those shown in Table \ref{tab:genechip}.
 This, however, has more to do with empty spots than with the placement
 strategy as this chip has about $1.83\%$ of empty spots that are evenly
 distributed on the chip surface (Figure \ref{fig:chipmaps}, left). In contrast,
