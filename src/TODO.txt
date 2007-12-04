@@ -1,6 +1,21 @@
-Check:
+To do:
 ------
+- Tables: bold for best values; align numbers (done on Chapter 1-6)
+- Graphs: embed legends
 
--> Use of words Chaper and Section in references within the text
+Done:
+-----
+- Check permission on affy photo
+- Remove unnecessary definitions (def.tex)
+- Notation (removed)
+- Remove list of tables/figures
+- "\emph{E.\ coli}" (in italics)
+- "in Figure", "in Table", "in Chapter", "in Section"  (instead of "on"; check capitals)
+- et al.
+- Spell check
+- Thanks!
 
-- check permission on affy photo
+Ignored:
+--------
+- New reference to CSB paper
+- Include result of defense
